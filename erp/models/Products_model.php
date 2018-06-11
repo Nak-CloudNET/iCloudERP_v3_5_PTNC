@@ -2220,7 +2220,7 @@ class Products_model extends CI_Model
 		$this->db->join('products', 'enter_using_stock_items.code = products.code', 'left');
 		$this->db->join('units', 'units.id = products.unit', 'left');
 		$this->db->join('warehouses_products', 'enter_using_stock_items.warehouse_id = warehouses_products.warehouse_id and products.id = warehouses_products.product_id', 'left');
-		$this->db->where('enter_using_stock_items.id', $id);
+		$this->db->where('enter_using_stock_items.reference_no', $id);
 			
 		$this->db->group_by('e_id');
 		$q=$this->db->get();

@@ -1,4 +1,5 @@
 $(document).ready(function (e) {
+
 	var $customer = $('#customer');
 	$customer.change(function (e) {
         __setItem('customer', $(this).val());
@@ -47,9 +48,9 @@ $(document).ready(function (e) {
 	 * On Edit 
 	 * ---------------------- */
 
-	if (__getItem('usitems')) {
-		loadItems();
-	}
+    if (__getItem('usitems')) {
+        loadItems();
+    }
 
 	/* ---------------------- 
 	 * Delete Row Method 
@@ -338,7 +339,7 @@ function loadItems() {
 		//=================== End ====================//
         $("#UsData tbody").empty();
         usitems = JSON.parse(__getItem('usitems'));
-		
+
 		var no_ = 1;
 		$('#from_location').select2("readonly", true);
 		item_description 		= '';
@@ -346,6 +347,7 @@ function loadItems() {
 		item_qty_use     		= 0;
 		item_qty_by_unit     	= '';
         $.each(usitems, function () {
+
             var item 			= this;
             var item_id 		= site.settings.item_addition == 1 ? item.item_id : item.id;
             usitems[item_id] 	= item;
@@ -362,20 +364,25 @@ function loadItems() {
 				item_proj		= item.project_qty,
 				have_plan		= item.row.have_plan,
 				stock_item_id 	= item.stock_item;
-			item_qty_use 		= formatPurDecimal(item.row.qty_use);
-			
+				item_qty_use 		= formatPurDecimal(item.row.qty_use);
+
 			var desc = $("<select id=\"description\" name=\"description\[\]\" style=\"padding-top: 2px !important;\" class=\"form-control description\" />");
-            if(item.positions !== false) {
+
+			if(item.positions !== false) {
                 $.each(item.positions, function () {
-					$("<option />", {value: this.id, text: this.name, id:this.id}).appendTo(desc);  
-				  
+
+                	if(this.id == item.row.description){
+                        $("<option />", {value: this.id, text: this.name, id:this.id, selected:'selected' }).appendTo(desc);
+					}else{
+                        $("<option />", {value: this.id, text: this.name, id:this.id }).appendTo(desc);
+					}
+
 				});
             } else {
-                $("<option />", {value: 0, text: 'n/a'}).appendTo(desc);
-                desc = desc.hide();
+                	$("<option />", {value: 0, text: 'n/a'}).appendTo(desc);
+                	desc = desc.hide();
             }
 
-           
 
             var opt = $("<select id=\"unit\" name=\"unit\[\]\" style=\"padding-top: 2px !important;\" class=\"form-control unit\" />");
             if(item.option_unit !== false) {
@@ -415,7 +422,7 @@ function loadItems() {
 			} else {
 				item_description = '';
 			}*/
-			
+
 			if(item.reason){
 				item_reason = item.reason;
 			}
@@ -459,7 +466,7 @@ function loadItems() {
  ---------------------------- */
 
 function add_using_stock_item(item) {
-		
+
     if (count == 1) {
         usitems = {};
         if ($('#account').val()) {

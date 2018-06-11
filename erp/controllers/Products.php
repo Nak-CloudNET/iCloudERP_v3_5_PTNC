@@ -5215,10 +5215,8 @@ class Products extends MY_Controller
 						
         $this->datatables
             ->select("erp_enter_using_stock.id as id,erp_enter_using_stock.date, erp_enter_using_stock.reference_no as refno,
-			erp_companies.company, erp_warehouses.name as warehouse_name, erp_users.username, erp_position.name, erp_enter_using_stock.type as type, erp_enter_using_stock.is_return", FALSE)
+			erp_companies.company, erp_warehouses.name as warehouse_name, erp_users.username,erp_enter_using_stock.type as type, erp_enter_using_stock.is_return", FALSE)
             ->from("erp_enter_using_stock")
-            ->join('erp_enter_using_stock_items', 'erp_enter_using_stock.reference_no=erp_enter_using_stock_items.reference_no', 'left')
-            ->join('erp_position', 'erp_enter_using_stock_items.description=erp_position.id', 'left')
 		    ->join('erp_companies', 'erp_companies.id=erp_enter_using_stock.shop', 'inner')
             ->join('erp_warehouses', 'erp_enter_using_stock.warehouse_id=erp_warehouses.id', 'left')
             ->join('erp_project_plan', 'erp_enter_using_stock.plan_id = erp_project_plan.id', 'left')
@@ -5318,7 +5316,7 @@ class Products extends MY_Controller
 	
 	public function edit_using_stock_by_id($id=NULL, $type=NULL)
 	{
-		$this->erp->checkPermissions('adjustments');
+
         $data['error'] 				= (validation_errors()) ? validation_errors() : $this->session->flashdata('error');
         $this->data['warehouses'] 	= $this->site->getAllWarehouses();
 		$AllUsers					= $this->site->getAllUsers();
@@ -5343,11 +5341,14 @@ class Products extends MY_Controller
         $reference_no               = $getUsingStock->reference_no;
 		$date				        = $getUsingStock->date;
 		$wh_id						= $getUsingStock->warehouse_id;
-        $getUsingStockItem          = $this->products_model->getUsingStockItemsByID($id);
-		//$getUsingStockItem			= $this->products_model->getUsingStockItemsByRef($reference_no);
-		
+
+		$getUsingStockItem			= $this->products_model->getUsingStockItemsByRef($reference_no);
+
 		$c = rand(100000, 9999999);
 		foreach ($getUsingStockItem as $row) {
+            $positions   	= $this->products_model->getAllPositionData();
+
+            //$this->erp->print_arrays($getUsingStockItem);
 			$option_unit  		= $this->products_model->getUnitAndVaraintByProductId($row->id);
 			$opt_pro      		= $this->products_model->getProductVariantByOptionID($row->option_id);
 			$row->project_qty   = 0;
@@ -5371,11 +5372,11 @@ class Products extends MY_Controller
 			}
 			
 			$ri = $this->Settings->item_addition ? $row->id : $c;
-			$pr[$ri] = array('id' => $c, 'item_id' => $row->id, 'label' => $row->name . " (" . $row->product_code . ")", 'row' => $row, 'option_unit' => $option_unit, 'project_qty' => $row->project_qty,'stock_item' => $row->e_id, 'expiry_date' => $expiry_date);
+			$pr[$ri] = array('id' => $c, 'item_id' => $row->id, 'label' => $row->name . " (" . $row->product_code . ")", 'row' => $row, 'option_unit' => $option_unit, 'project_qty' => $row->project_qty,'stock_item' => $row->e_id, 'expiry_date' => $expiry_date,'positions'=>$positions);
 			$c++;
 		
 		}
-	
+
 		$this->data['items'] 		= json_encode($pr);
 
         $this->data['refer']        = $reference_no;
