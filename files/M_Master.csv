@@ -1,0 +1,76 @@
+﻿Code,Name,Name KH,Category Code,Unit ID,Cost,Price,Alert Quantity, Tax Rate Name,Tax Method,Subcategory Code,Product Variants Separated by |,Supplier1(No),Supplier2(No),Supplier3(No),Supplier4(No),Supplier5(No),Custom Field 1,Custom Field 2,Custom Field 3,Custom Field 4,Custom Field 5,Custom Field 6,Image,Type(standard or service)
+M0001,ម៉ូទ័រកាត់ឆាប 1 តឹក,,C-005,12,1,1,0, No Tax, exclusive,SC-5-001,,,,,,,,,,,,,no_image.png,standard
+M0002,ម៉ូទ័រកាត់ឆាប 1.2 តឹក,,C-005,12,1,1,0, No Tax, exclusive,SC-5-001,,,,,,,,,,,,,no_image.png,standard
+M0003,ម៉ូទ័រកាត់ឆាប 1.5 តឹក,,C-005,12,1,1,0, No Tax, exclusive,SC-5-001,,,,,,,,,,,,,no_image.png,standard
+M0004,ម៉ូទ័រកាត់ឆាប 1.8 តឹក,,C-005,12,1,1,0, No Tax, exclusive,SC-5-001,,,,,,,,,,,,,no_image.png,standard
+M0005,ម៉ូទ័រកាត់ 2 តឹក,,C-005,12,1,1,0, No Tax, exclusive,SC-5-001,,,,,,,,,,,,,no_image.png,standard
+M0006,ម៉ូទ័រកាត់សង្កត់ 3.5 តឹក,,C-005,12,1,1,0, No Tax, exclusive,SC-5-001,,,,,,,,,,,,,no_image.png,standard
+M0007,ម៉ូទ័រកាត់សង្កត់ 3HP ប្រើខ្សែពាន,,C-005,12,1,1,0, No Tax, exclusive,SC-5-001,,,,,,,,,,,,,no_image.png,standard
+M0021,ម៉ូទ័រកាត់ឈើ 1.8 តឹក,,C-005,12,1,1,0, No Tax, exclusive,SC-5-002,,,,,,,,,,,,,no_image.png,standard
+M0022,ម៉ូទ័រឃ្វីលឈើ,,C-005,12,1,1,0, No Tax, exclusive,SC-5-002,,,,,,,,,,,,,no_image.png,standard
+M0031,ម៉ូទ័រញាក់បេតុង,,C-005,12,1,1,0, No Tax, exclusive,SC-5-003,,,,,,,,,,,,,no_image.png,standard
+M0041,ម៉ូទ័រស្វានវីស 10 លី,,C-005,12,1,1,0, No Tax, exclusive,SC-5-004,,,,,,,,,,,,,no_image.png,standard
+M0042,ម៉ូទ័រស្វានវីស 13 លី,,C-005,12,1,1,0, No Tax, exclusive,SC-5-004,,,,,,,,,,,,,no_image.png,standard
+M0043,ម៉ូទ័រស្វានវីស 15 លី,,C-005,12,1,1,0, No Tax, exclusive,SC-5-004,,,,,,,,,,,,,no_image.png,standard
+M0044,ម៉ូទ័រស្វានបុក 18 លី,,C-005,12,1,1,0, No Tax, exclusive,SC-5-004,,,,,,,,,,,,,no_image.png,standard
+M0045,ម៉ូទ័រស្វានបុក 22 លី,,C-005,12,1,1,0, No Tax, exclusive,SC-5-004,,,,,,,,,,,,,no_image.png,standard
+M0046,ម៉ូទ័រស្វានបុក 25 លី,,C-005,12,1,1,0, No Tax, exclusive,SC-5-004,,,,,,,,,,,,,no_image.png,standard
+M0047,ម៉ូទ័រស្វានបុក2តង់ ,,C-005,12,1,1,0, No Tax, exclusive,SC-5-004,,,,,,,,,,,,,no_image.png,standard
+M0048,ម៉ូទ័រស្វានបុក3តង់ ,,C-005,12,1,1,0, No Tax, exclusive,SC-5-004,,,,,,,,,,,,,no_image.png,standard
+M0049,ម៉ូទ័រ ខួងបេតុង,,C-005,12,1,1,0, No Tax, exclusive,SC-5-004,,,,,,,,,,,,,no_image.png,standard
+M0061,ម៉ូទ័រផ្លុំខ្យល់ 3 សេស ,,C-005,12,1,1,0, No Tax, exclusive,SC-5-005,,,,,,,,,,,,,no_image.png,standard
+M0071,ម៉ូទ័រពន្លាដែក 6 លី - 10 លី,,C-005,12,1,1,0, No Tax, exclusive,SC-5-006,,,,,,,,,,,,,no_image.png,standard
+M0072,ម៉ូទ័រពត់ដែក 10 លី - 32 លី,,C-005,12,1,1,0, No Tax, exclusive,SC-5-006,,,,,,,,,,,,,no_image.png,standard
+M0073,ម៉ូទ័រពត់ដែកកាយេ 10 លី - 32 លី,,C-005,12,1,1,0, No Tax, exclusive,SC-5-006,,,,,,,,,,,,,no_image.png,standard
+M0081,ម៉ូទ័រតារ៉ូដែកថ្នាំងអំពៅ,,C-005,12,1,1,0, No Tax, exclusive,SC-5-007,,,,,,,,,,,,,no_image.png,standard
+M0082,ម៉ូទ័រតារ៉ូដែកទីប,,C-005,12,1,1,0, No Tax, exclusive,SC-5-007,,,,,,,,,,,,,no_image.png,standard
+M0091,ម៉ូទ័របូមទឹក 1 សេស,,C-005,12,1,1,0, No Tax, exclusive,SC-5-008,,,,,,,,,,,,,no_image.png,standard
+M0092,ម៉ូទ័របូមទឹក 1.5 សេស,,C-005,12,1,1,0, No Tax, exclusive,SC-5-008,,,,,,,,,,,,,no_image.png,standard
+M0093,ម៉ូទ័របូមទឹក 2 សេស,,C-005,12,1,1,0, No Tax, exclusive,SC-5-008,,,,,,,,,,,,,no_image.png,standard
+M0094,ម៉ូទ័របូមទឹក 3 សេស,,C-005,12,1,1,0, No Tax, exclusive,SC-5-008,,,,,,,,,,,,,no_image.png,standard
+M0095,ម៉ូទ័របូមទឹក 5 សេស,,C-005,12,1,1,0, No Tax, exclusive,SC-5-008,,,,,,,,,,,,,no_image.png,standard
+M0101,ម៉ូទ័របូមទឹកជ្រលក់ 1 សេស,,C-005,12,1,1,0, No Tax, exclusive,SC-5-008,,,,,,,,,,,,,no_image.png,standard
+M0102,ម៉ូទ័របូមទឹកជ្រលក់ 1.5 សេស,,C-005,12,1,1,0, No Tax, exclusive,SC-5-008,,,,,,,,,,,,,no_image.png,standard
+M0103,ម៉ូទ័របូមទឹកជ្រលក់ 2 សេស,,C-005,12,1,1,0, No Tax, exclusive,SC-5-008,,,,,,,,,,,,,no_image.png,standard
+M0104,ម៉ូទ័របូមទឹកជ្រលក់ 2.5 សេស,,C-005,12,1,1,0, No Tax, exclusive,SC-5-008,,,,,,,,,,,,,no_image.png,standard
+M0105,ម៉ូទ័របូមទឹកជ្រលក់ 3 សេស,,C-005,12,1,1,0, No Tax, exclusive,SC-5-008,,,,,,,,,,,,,no_image.png,standard
+M0106,ម៉ូទ័របូមទឹកជ្រលក់ 5 សេស,,C-005,12,1,1,0, No Tax, exclusive,SC-5-008,,,,,,,,,,,,,no_image.png,standard
+M0116,ម៉ូទ័របាញ់ទឹក,,C-005,12,1,1,0, No Tax, exclusive,SC-5-008,,,,,,,,,,,,,no_image.png,standard
+M0117,ម៉ូទ័ររុញសំពាធទឹក,,C-005,12,1,1,0, No Tax, exclusive,SC-5-008,,,,,,,,,,,,,no_image.png,standard
+M0118,ម៉ូទ័រតេស្តសំពាធទឹក,,C-005,12,1,1,0, No Tax, exclusive,SC-5-008,,,,,,,,,,,,,no_image.png,standard
+M0121,ម៉ូទ័រធ្វើបំពង់កាប,,C-005,12,1,1,0, No Tax, exclusive,SC-5-008,,,,,,,,,,,,,no_image.png,standard
+M0122,ម៉ូទ័រកៀបបំពង់កាប,,C-005,12,1,1,0, No Tax, exclusive,SC-5-008,,,,,,,,,,,,,no_image.png,standard
+M0123,ម៉ូទ័រក្រញ៉ាញ់កាប,,C-005,12,1,1,0, No Tax, exclusive,SC-5-008,,,,,,,,,,,,,no_image.png,standard
+M0124,ម៉ូទ័រទាញរិតកាប,,C-005,12,1,1,0, No Tax, exclusive,SC-5-008,,,,,,,,,,,,,no_image.png,standard
+M0141,ប៉ុស្តិ៍ផ្សា 180 A,,C-005,12,1,1,0, No Tax, exclusive,SC-5-009,,,,,,,,,,,,,no_image.png,standard
+M0142,ប៉ុស្តិ៍ផ្សា 200 A,,C-005,12,1,1,0, No Tax, exclusive,SC-5-009,,,,,,,,,,,,,no_image.png,standard
+M0143,ប៉ុស្តិ៍ផ្សា 250 A,,C-005,12,1,1,0, No Tax, exclusive,SC-5-009,,,,,,,,,,,,,no_image.png,standard
+M0144,ប៉ុស្តិ៍ផ្សា 280 A,,C-005,12,1,1,0, No Tax, exclusive,SC-5-009,,,,,,,,,,,,,no_image.png,standard
+M0145,ប៉ុស្តិ៍ផ្សា 300 A,,C-005,12,1,1,0, No Tax, exclusive,SC-5-009,,,,,,,,,,,,,no_image.png,standard
+M0146,ប៉ុស្តិ៍ផ្សា 350 A,,C-005,12,1,1,0, No Tax, exclusive,SC-5-009,,,,,,,,,,,,,no_image.png,standard
+M0147,ប៉ុស្តិ៍ផ្សា 400 A,,C-005,12,1,1,0, No Tax, exclusive,SC-5-009,,,,,,,,,,,,,no_image.png,standard
+M0148,ប៉ុស្តិ៍ផ្សា 500 A,,C-005,12,1,1,0, No Tax, exclusive,SC-5-009,,,,,,,,,,,,,no_image.png,standard
+M0149,ស្នប់តេស្តសំពាធទឹក,,C-005,12,1,1,0, No Tax, exclusive,SC-5-009,,,,,,,,,,,,,no_image.png,standard
+M0150,ឧបករណ៍ វាស់​ (Level Laser),,C-005,12,1,1,0, No Tax, exclusive,SC-5-009,,,,,,,,,,,,,no_image.png,standard
+M0151,ឧបករណ៍ វាស់ភ្នែក 4​ (Level Laser),,C-005,12,1,1,0, No Tax, exclusive,SC-5-009,,,,,,,,,,,,,no_image.png,standard
+M0152,ឧបករណ៍ វាស់ភ្នែក 5​ (Level Laser),,C-005,12,1,1,0, No Tax, exclusive,SC-5-009,,,,,,,,,,,,,no_image.png,standard
+M0161,ម៉ាស៊ីនបង្ហាប់ដីជើងដំរី,,C-005,12,1,1,0, No Tax, exclusive,SC-5-010,,,,,,,,,,,,,no_image.png,standard
+M0162,ម៉ាស៊ីនបង្ហាប់ដីជើងរាប,,C-005,12,1,1,0, No Tax, exclusive,SC-5-010,,,,,,,,,,,,,no_image.png,standard
+M0171,ម៉ាស៊ីនក្រឡុកបេតុង​ ,,C-005,12,1,1,0, No Tax, exclusive,SC-5-011,,,,,,,,,,,,,no_image.png,standard
+M0181,ម៉ាស៊ីនញាក់បេតុងប្រើសាំង ​1.5 សេស,,C-005,12,1,1,0, No Tax, exclusive,SC-5-012,,,,,,,,,,,,,no_image.png,standard
+M0182,ម៉ាស៊ីនញាក់បេតុងប្រើសាំង ​3.5 សេស,,C-005,12,1,1,0, No Tax, exclusive,SC-5-012,,,,,,,,,,,,,no_image.png,standard
+M0183,ម៉ាស៊ីនញាក់បេតុងប្រើសាំង ​5 សេស,,C-005,12,1,1,0, No Tax, exclusive,SC-5-012,,,,,,,,,,,,,no_image.png,standard
+M0191,ម៉ាស៊ីនខាត់បេតុង​ ជប៉ុន,,C-005,12,1,1,0, No Tax, exclusive,SC-5-013,,,,,,,,,,,,,no_image.png,standard
+M0201,ម៉ាស៊ីនកាត់បេតុង​ ជប៉ុន,,C-005,12,1,1,0, No Tax, exclusive,SC-5-014,,,,,,,,,,,,,no_image.png,standard
+M0211,ម៉ាស៊ីនបូមខ្យល់ 1.5 សេស,,C-005,12,1,1,0, No Tax, exclusive,SC-5-015,,,,,,,,,,,,,no_image.png,standard
+M0221,ម៉ាស៊ីនបាញ់ថ្នាំ 3 សេស,,C-005,12,1,1,0, No Tax, exclusive,SC-5-016,,,,,,,,,,,,,no_image.png,standard
+M0231,ម៉ាស៊ីនបូមទឹក 3.5 សេស,,C-005,12,1,1,0, No Tax, exclusive,SC-5-017,,,,,,,,,,,,,no_image.png,standard
+M0232,ម៉ាស៊ីនបូមទឹក 5 សេស,,C-005,12,1,1,0, No Tax, exclusive,SC-5-017,,,,,,,,,,,,,no_image.png,standard
+M0233,ម៉ាស៊ីនបូមទឹក 8 សេស,,C-005,12,1,1,0, No Tax, exclusive,SC-5-017,,,,,,,,,,,,,no_image.png,standard
+M0234,ម៉ាស៊ីនបូមទឹក 15 សេស,,C-005,12,1,1,0, No Tax, exclusive,SC-5-017,,,,,,,,,,,,,no_image.png,standard
+M0235,ម៉ាស៊ីនបូមទឹក 18 សេស,,C-005,12,1,1,0, No Tax, exclusive,SC-5-017,,,,,,,,,,,,,no_image.png,standard
+M0236,ម៉ាស៊ីនបូមទឹក 25 សេស,,C-005,12,1,1,0, No Tax, exclusive,SC-5-017,,,,,,,,,,,,,no_image.png,standard
+M0251,ម៉ាស៊ីនភ្លើង ធំ 150 KWA,,C-005,12,1,1,0, No Tax, exclusive,SC-5-018,,,,,,,,,,,,,no_image.png,standard
+M0252,ម៉ាស៊ីនភ្លើង ធំ 250 KWA,,C-005,12,1,1,0, No Tax, exclusive,SC-5-018,,,,,,,,,,,,,no_image.png,standard
+M0253,ម៉ាស៊ីនភ្លើង ធំ 350 KWA,,C-005,12,1,1,0, No Tax, exclusive,SC-5-018,,,,,,,,,,,,,no_image.png,standard
+M0254,ម៉ាស៊ីនភ្លើង ធំ 600 KWA,,C-005,12,1,1,0, No Tax, exclusive,SC-5-018,,,,,,,,,,,,,no_image.png,standard

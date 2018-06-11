@@ -1,0 +1,851 @@
+﻿Code,Name,Name KH,Category Code,Unit ID,Cost,Price,Alert Quantity, Tax Rate Name,Tax Method,Subcategory Code,Product Variants Separated by |,Supplier1(No),Supplier2(No),Supplier3(No),Supplier4(No),Supplier5(No),Custom Field 1,Custom Field 2,Custom Field 3,Custom Field 4,Custom Field 5,Custom Field 6,Image,Type(standard or service)
+W0001,ទុយោ PVC 21 កំរាស់ 13.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-001,,,,,,,,,,,,,no_image.png,standard
+W0002,ទុយោ PVC 27 កំរាស់ 13.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-001,,,,,,,,,,,,,no_image.png,standard
+W0003,ទុយោ PVC 34 កំរាស់ 13.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-001,,,,,,,,,,,,,no_image.png,standard
+W0004,ទុយោ PVC 42 កំរាស់ 13.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-001,,,,,,,,,,,,,no_image.png,standard
+W0005,ទុយោ PVC 49 កំរាស់ 13.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-001,,,,,,,,,,,,,no_image.png,standard
+W0006,ទុយោ PVC 60 កំរាស់ 13.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-001,,,,,,,,,,,,,no_image.png,standard
+W0007,ទុយោ PVC 90 កំរាស់ 13.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-001,,,,,,,,,,,,,no_image.png,standard
+W0008,ទុយោ PVC 114 កំរាស់ 13.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-001,,,,,,,,,,,,,no_image.png,standard
+W0009,ទុយោ PVC 125 កំរាស់ 13.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-001,,,,,,,,,,,,,no_image.png,standard
+W0010,ទុយោ PVC 165 កំរាស់ 13.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-001,,,,,,,,,,,,,no_image.png,standard
+W0011,ទុយោ PVC 200 កំរាស់ 13.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-001,,,,,,,,,,,,,no_image.png,standard
+W0021,ទុយោ PVC 21 កំរាស់ 8.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-002,,,,,,,,,,,,,no_image.png,standard
+W0022,ទុយោ PVC 27 កំរាស់ 8.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-002,,,,,,,,,,,,,no_image.png,standard
+W0023,ទុយោ PVC 34 កំរាស់ 8.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-002,,,,,,,,,,,,,no_image.png,standard
+W0024,ទុយោ PVC 42 កំរាស់ 8.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-002,,,,,,,,,,,,,no_image.png,standard
+W0025,ទុយោ PVC 49 កំរាស់ 8.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-002,,,,,,,,,,,,,no_image.png,standard
+W0026,ទុយោ PVC 60 កំរាស់ 8.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-002,,,,,,,,,,,,,no_image.png,standard
+W0027,ទុយោ PVC 90 កំរាស់ 8.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-002,,,,,,,,,,,,,no_image.png,standard
+W0028,ទុយោ PVC 114 កំរាស់ 8.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-002,,,,,,,,,,,,,no_image.png,standard
+W0029,ទុយោ PVC 125 កំរាស់ 8.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-002,,,,,,,,,,,,,no_image.png,standard
+W0030,ទុយោ PVC 165 កំរាស់ 8.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-002,,,,,,,,,,,,,no_image.png,standard
+W0031,ទុយោ PVC 200 កំរាស់ 8.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-002,,,,,,,,,,,,,no_image.png,standard
+W0032,ទុយោ PVC 225 កំរាស់ 8.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-002,,,,,,,,,,,,,no_image.png,standard
+W0033,ទុយោ PVC 250 កំរាស់ 8.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-002,,,,,,,,,,,,,no_image.png,standard
+W0034,ទុយោ PVC 300 កំរាស់ 8.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-002,,,,,,,,,,,,,no_image.png,standard
+W0041,ទុយោ PVC 21 កំរាស់ 5.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-003,,,,,,,,,,,,,no_image.png,standard
+W0042,ទុយោ PVC 27 កំរាស់ 5.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-003,,,,,,,,,,,,,no_image.png,standard
+W0043,ទុយោ PVC 34 កំរាស់ 5.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-003,,,,,,,,,,,,,no_image.png,standard
+W0044,ទុយោ PVC 42 កំរាស់ 5.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-003,,,,,,,,,,,,,no_image.png,standard
+W0045,ទុយោ PVC 49 កំរាស់ 5.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-003,,,,,,,,,,,,,no_image.png,standard
+W0046,ទុយោ PVC 60 កំរាស់ 5.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-003,,,,,,,,,,,,,no_image.png,standard
+W0047,ទុយោ PVC 90 កំរាស់ 5.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-003,,,,,,,,,,,,,no_image.png,standard
+W0048,ទុយោ PVC 114 កំរាស់ 5.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-003,,,,,,,,,,,,,no_image.png,standard
+W0049,ទុយោ PVC 125 កំរាស់ 5.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-003,,,,,,,,,,,,,no_image.png,standard
+W0050,ទុយោ PVC 165 កំរាស់ 5.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-003,,,,,,,,,,,,,no_image.png,standard
+W0051,ទុយោ PVC 200 កំរាស់ 5.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-003,,,,,,,,,,,,,no_image.png,standard
+W0052,ទុយោ PVC 250 កំរាស់ 5.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-003,,,,,,,,,,,,,no_image.png,standard
+W0053,ទុយោ PVC 300 កំរាស់ 5.5,,C-003,18,1,1,0, No Tax, exclusive,SC-3-003,,,,,,,,,,,,,no_image.png,standard
+W0061,កែង PVC 21 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-004,,,,,,,,,,,,,no_image.png,standard
+W0062,កែង PVC 27 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-004,,,,,,,,,,,,,no_image.png,standard
+W0063,កែង PVC 34 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-004,,,,,,,,,,,,,no_image.png,standard
+W0064,កែង PVC 42 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-004,,,,,,,,,,,,,no_image.png,standard
+W0065,កែង PVC 49 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-004,,,,,,,,,,,,,no_image.png,standard
+W0066,កែង PVC 60 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-004,,,,,,,,,,,,,no_image.png,standard
+W0067,កែង PVC 90 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-004,,,,,,,,,,,,,no_image.png,standard
+W0068,កែង PVC 114 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-004,,,,,,,,,,,,,no_image.png,standard
+W0069,កែង PVC 125 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-004,,,,,,,,,,,,,no_image.png,standard
+W0070,កែង PVC 165 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-004,,,,,,,,,,,,,no_image.png,standard
+W0081,កែង PVC 34 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-005,,,,,,,,,,,,,no_image.png,standard
+W0082,កែង PVC 42 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-005,,,,,,,,,,,,,no_image.png,standard
+W0083,កែង PVC 49 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-005,,,,,,,,,,,,,no_image.png,standard
+W0084,កែង PVC 60 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-005,,,,,,,,,,,,,no_image.png,standard
+W0085,កែង PVC 90 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-005,,,,,,,,,,,,,no_image.png,standard
+W0086,កែង PVC 114 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-005,,,,,,,,,,,,,no_image.png,standard
+W0087,កែង PVC 125 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-005,,,,,,,,,,,,,no_image.png,standard
+W0088,កែង PVC 165 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-005,,,,,,,,,,,,,no_image.png,standard
+W0089,កែង PVC 200 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-005,,,,,,,,,,,,,no_image.png,standard
+W0090,កែង PVC 225 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-005,,,,,,,,,,,,,no_image.png,standard
+W0091,កែង PVC 250 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-005,,,,,,,,,,,,,no_image.png,standard
+W0092,កែង PVC 300 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-005,,,,,,,,,,,,,no_image.png,standard
+W0101,កែងធ្មេញក្នុង PVC 21 ,,C-003,11,1,1,0, No Tax, exclusive,SC-3-006,,,,,,,,,,,,,no_image.png,standard
+W0102,កែងធ្មេញក្នុង PVC 27,,C-003,11,1,1,0, No Tax, exclusive,SC-3-006,,,,,,,,,,,,,no_image.png,standard
+W0103,កែងធ្មេញក្នុង PVC 34,,C-003,11,1,1,0, No Tax, exclusive,SC-3-006,,,,,,,,,,,,,no_image.png,standard
+W0104,កែងធ្មេញក្នុង PVC 42,,C-003,11,1,1,0, No Tax, exclusive,SC-3-006,,,,,,,,,,,,,no_image.png,standard
+W0105,កែងធ្មេញក្នុង PVC 49,,C-003,11,1,1,0, No Tax, exclusive,SC-3-006,,,,,,,,,,,,,no_image.png,standard
+W0106,កែងធ្មេញក្នុង PVC 60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-006,,,,,,,,,,,,,no_image.png,standard
+W0121,កែងធ្មេញក្រៅ PVC 21 ,,C-003,11,1,1,0, No Tax, exclusive,SC-3-007,,,,,,,,,,,,,no_image.png,standard
+W0122,កែងធ្មេញក្រៅ PVC 27,,C-003,11,1,1,0, No Tax, exclusive,SC-3-007,,,,,,,,,,,,,no_image.png,standard
+W0123,កែងធ្មេញក្រៅ PVC 34,,C-003,11,1,1,0, No Tax, exclusive,SC-3-007,,,,,,,,,,,,,no_image.png,standard
+W0124,កែងធ្មេញក្រៅ PVC 42,,C-003,11,1,1,0, No Tax, exclusive,SC-3-007,,,,,,,,,,,,,no_image.png,standard
+W0125,កែងធ្មេញក្រៅ PVC 49,,C-003,11,1,1,0, No Tax, exclusive,SC-3-007,,,,,,,,,,,,,no_image.png,standard
+W0141,កែងធ្មេញក្នុងស្ពាន់ 21 ,,C-003,11,1,1,0, No Tax, exclusive,SC-3-008,,,,,,,,,,,,,no_image.png,standard
+W0142,កែងធ្មេញក្នុងស្ពាន់ 27,,C-003,11,1,1,0, No Tax, exclusive,SC-3-008,,,,,,,,,,,,,no_image.png,standard
+W0143,កែងធ្មេញក្នុងស្ពាន់ 34,,C-003,11,1,1,0, No Tax, exclusive,SC-3-008,,,,,,,,,,,,,no_image.png,standard
+W0144,កែងធ្មេញក្នុងស្ពាន់ 42,,C-003,11,1,1,0, No Tax, exclusive,SC-3-008,,,,,,,,,,,,,no_image.png,standard
+W0161,កែងធ្មេញក្រៅស្ពាន់ 21 ,,C-003,11,1,1,0, No Tax, exclusive,SC-3-009,,,,,,,,,,,,,no_image.png,standard
+W0162,កែងធ្មេញក្រៅស្ពាន់ 27,,C-003,11,1,1,0, No Tax, exclusive,SC-3-009,,,,,,,,,,,,,no_image.png,standard
+W0163,កែងធ្មេញក្រៅស្ពាន់ 34,,C-003,11,1,1,0, No Tax, exclusive,SC-3-009,,,,,,,,,,,,,no_image.png,standard
+W0164,កែងធ្មេញក្រៅស្ពាន់ 42,,C-003,11,1,1,0, No Tax, exclusive,SC-3-009,,,,,,,,,,,,,no_image.png,standard
+W0181,ដឺមី PVC 21 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-010,,,,,,,,,,,,,no_image.png,standard
+W0182,ដឺមី PVC 27 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-010,,,,,,,,,,,,,no_image.png,standard
+W0183,ដឺមី PVC 34 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-010,,,,,,,,,,,,,no_image.png,standard
+W0184,ដឺមី PVC 42 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-010,,,,,,,,,,,,,no_image.png,standard
+W0185,ដឺមី PVC 49 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-010,,,,,,,,,,,,,no_image.png,standard
+W0186,ដឺមី PVC 60 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-010,,,,,,,,,,,,,no_image.png,standard
+W0187,ដឺមី PVC 90 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-010,,,,,,,,,,,,,no_image.png,standard
+W0188,ដឺមី PVC 114 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-010,,,,,,,,,,,,,no_image.png,standard
+W0201,ដឺមី PVC 42 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-011,,,,,,,,,,,,,no_image.png,standard
+W0202,ដឺមី PVC 49 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-011,,,,,,,,,,,,,no_image.png,standard
+W0203,ដឺមី PVC 60 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-011,,,,,,,,,,,,,no_image.png,standard
+W0204,ដឺមី PVC 90 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-011,,,,,,,,,,,,,no_image.png,standard
+W0205,ដឺមី PVC 114 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-011,,,,,,,,,,,,,no_image.png,standard
+W0206,ដឺមី PVC 125 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-011,,,,,,,,,,,,,no_image.png,standard
+W0207,ដឺមី PVC 165 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-011,,,,,,,,,,,,,no_image.png,standard
+W0208,ដឺមី PVC 200 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-011,,,,,,,,,,,,,no_image.png,standard
+W0209,ដឺមី PVC 250 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-011,,,,,,,,,,,,,no_image.png,standard
+W0210,ដឺមី PVC 300 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-011,,,,,,,,,,,,,no_image.png,standard
+W0221,តេ PVC 21 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-012,,,,,,,,,,,,,no_image.png,standard
+W0222,តេ PVC 27 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-012,,,,,,,,,,,,,no_image.png,standard
+W0223,តេ PVC 34 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-012,,,,,,,,,,,,,no_image.png,standard
+W0224,តេ PVC 42 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-012,,,,,,,,,,,,,no_image.png,standard
+W0225,តេ PVC 49 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-012,,,,,,,,,,,,,no_image.png,standard
+W0226,តេ PVC 60 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-012,,,,,,,,,,,,,no_image.png,standard
+W0227,តេ PVC 90 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-012,,,,,,,,,,,,,no_image.png,standard
+W0228,តេ PVC 114 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-012,,,,,,,,,,,,,no_image.png,standard
+W0229,តេ PVC 125 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-012,,,,,,,,,,,,,no_image.png,standard
+W0230,តេ PVC 165 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-012,,,,,,,,,,,,,no_image.png,standard
+W0231,តេ PVC 200 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-012,,,,,,,,,,,,,no_image.png,standard
+W0232,តេ PVC 250 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-012,,,,,,,,,,,,,no_image.png,standard
+W0233,តេ PVC 300 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-012,,,,,,,,,,,,,no_image.png,standard
+W0241,តេ PVC 42 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-013,,,,,,,,,,,,,no_image.png,standard
+W0242,តេ PVC 49 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-013,,,,,,,,,,,,,no_image.png,standard
+W0243,តេ PVC 60 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-013,,,,,,,,,,,,,no_image.png,standard
+W0244,តេ PVC 90 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-013,,,,,,,,,,,,,no_image.png,standard
+W0245,តេ PVC 114 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-013,,,,,,,,,,,,,no_image.png,standard
+W0246,តេ PVC 125 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-013,,,,,,,,,,,,,no_image.png,standard
+W0247,តេ PVC 165 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-013,,,,,,,,,,,,,no_image.png,standard
+W0248,តេ PVC 200 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-013,,,,,,,,,,,,,no_image.png,standard
+W0249,តេ PVC 250 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-013,,,,,,,,,,,,,no_image.png,standard
+W0250,តេ PVC 300 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-013,,,,,,,,,,,,,no_image.png,standard
+W0261,តេ PVC 27-21 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-014,,,,,,,,,,,,,no_image.png,standard
+W0262,តេ PVC 34-27 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-014,,,,,,,,,,,,,no_image.png,standard
+W0263,តេ PVC 42-21 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-014,,,,,,,,,,,,,no_image.png,standard
+W0264,តេ PVC 42-27 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-014,,,,,,,,,,,,,no_image.png,standard
+W0265,តេ PVC 42-34 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-014,,,,,,,,,,,,,no_image.png,standard
+W0266,តេ PVC 49-21 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-014,,,,,,,,,,,,,no_image.png,standard
+W0267,តេ PVC 49-27 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-014,,,,,,,,,,,,,no_image.png,standard
+W0268,តេ PVC 49-34 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-014,,,,,,,,,,,,,no_image.png,standard
+W0269,តេ PVC 60-34 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-014,,,,,,,,,,,,,no_image.png,standard
+W0270,តេ PVC 60-49 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-014,,,,,,,,,,,,,no_image.png,standard
+W0271,តេ PVC 90-49 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-014,,,,,,,,,,,,,no_image.png,standard
+W0272,តេ PVC 90-60 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-014,,,,,,,,,,,,,no_image.png,standard
+W0273,តេ PVC 114-60 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-014,,,,,,,,,,,,,no_image.png,standard
+W0274,តេ PVC 114-90 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-014,,,,,,,,,,,,,no_image.png,standard
+W0281,តេ PVC 42-27 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-015,,,,,,,,,,,,,no_image.png,standard
+W0282,តេ PVC 42-34 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-015,,,,,,,,,,,,,no_image.png,standard
+W0283,តេ PVC 49-27 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-015,,,,,,,,,,,,,no_image.png,standard
+W0284,តេ PVC 49-34 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-015,,,,,,,,,,,,,no_image.png,standard
+W0285,តេ PVC 60-34 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-015,,,,,,,,,,,,,no_image.png,standard
+W0286,តេ PVC 60-49 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-015,,,,,,,,,,,,,no_image.png,standard
+W0287,តេ PVC 90-49 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-015,,,,,,,,,,,,,no_image.png,standard
+W0288,តេ PVC 90-60 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-015,,,,,,,,,,,,,no_image.png,standard
+W0289,តេ PVC 114-60 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-015,,,,,,,,,,,,,no_image.png,standard
+W0290,តេ PVC 114-90 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-015,,,,,,,,,,,,,no_image.png,standard
+W0291,តេ PVC 125-90 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-015,,,,,,,,,,,,,no_image.png,standard
+W0292,តេ PVC 165-90 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-015,,,,,,,,,,,,,no_image.png,standard
+W0293,តេ PVC 165-114 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-015,,,,,,,,,,,,,no_image.png,standard
+W0294,តេ PVC 200-114 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-015,,,,,,,,,,,,,no_image.png,standard
+W0295,តេ PVC 200-165 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-015,,,,,,,,,,,,,no_image.png,standard
+W0296,តេ PVC 250-165 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-015,,,,,,,,,,,,,no_image.png,standard
+W0297,តេ PVC 300-165 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-015,,,,,,,,,,,,,no_image.png,standard
+W0298,តេ PVC 300-200 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-015,,,,,,,,,,,,,no_image.png,standard
+W0311,សុង PVC 21 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-016,,,,,,,,,,,,,no_image.png,standard
+W0312,សុង PVC 27 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-016,,,,,,,,,,,,,no_image.png,standard
+W0313,សុង PVC 34 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-016,,,,,,,,,,,,,no_image.png,standard
+W0314,សុង PVC 42 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-016,,,,,,,,,,,,,no_image.png,standard
+W0315,សុង PVC 49 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-016,,,,,,,,,,,,,no_image.png,standard
+W0316,សុង PVC 60 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-016,,,,,,,,,,,,,no_image.png,standard
+W0317,សុង PVC 90 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-016,,,,,,,,,,,,,no_image.png,standard
+W0318,សុង PVC 114 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-016,,,,,,,,,,,,,no_image.png,standard
+W0319,សុង PVC 125 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-016,,,,,,,,,,,,,no_image.png,standard
+W0320,សុង PVC 165 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-016,,,,,,,,,,,,,no_image.png,standard
+W0321,សុង PVC 200 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-016,,,,,,,,,,,,,no_image.png,standard
+W0322,សុង PVC 250 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-016,,,,,,,,,,,,,no_image.png,standard
+W0323,សុង PVC 300 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-016,,,,,,,,,,,,,no_image.png,standard
+W0331,សុង PVC 42 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-017,,,,,,,,,,,,,no_image.png,standard
+W0332,សុង PVC 49 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-017,,,,,,,,,,,,,no_image.png,standard
+W0333,សុង PVC 60 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-017,,,,,,,,,,,,,no_image.png,standard
+W0334,សុង PVC 90 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-017,,,,,,,,,,,,,no_image.png,standard
+W0335,សុង PVC 114 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-017,,,,,,,,,,,,,no_image.png,standard
+W0336,សុង PVC 125 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-017,,,,,,,,,,,,,no_image.png,standard
+W0337,សុង PVC 165 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-017,,,,,,,,,,,,,no_image.png,standard
+W0338,សុង PVC 200 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-017,,,,,,,,,,,,,no_image.png,standard
+W0339,សុង PVC 225 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-017,,,,,,,,,,,,,no_image.png,standard
+W0340,សុង PVC 250 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-017,,,,,,,,,,,,,no_image.png,standard
+W0341,សុង PVC 300 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-017,,,,,,,,,,,,,no_image.png,standard
+W0351,សុង PVC 27-21 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-018,,,,,,,,,,,,,no_image.png,standard
+W0352,សុង PVC 34-21 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-018,,,,,,,,,,,,,no_image.png,standard
+W0353,សុង PVC 34-27 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-018,,,,,,,,,,,,,no_image.png,standard
+W0354,សុង PVC 42-21 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-018,,,,,,,,,,,,,no_image.png,standard
+W0355,សុង PVC 42-27 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-018,,,,,,,,,,,,,no_image.png,standard
+W0356,សុង PVC 42-34 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-018,,,,,,,,,,,,,no_image.png,standard
+W0357,សុង PVC 49-34 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-018,,,,,,,,,,,,,no_image.png,standard
+W0358,សុង PVC 60-34 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-018,,,,,,,,,,,,,no_image.png,standard
+W0359,សុង PVC 90-60 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-018,,,,,,,,,,,,,no_image.png,standard
+W0360,សុង PVC 114-60 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-018,,,,,,,,,,,,,no_image.png,standard
+W0361,សុង PVC 114-90 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-018,,,,,,,,,,,,,no_image.png,standard
+W0362,សុង PVC 165-114 កំរាស់ 13.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-018,,,,,,,,,,,,,no_image.png,standard
+W0371,សុង PVC 42-27 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-019,,,,,,,,,,,,,no_image.png,standard
+W0372,សុង PVC 42-34 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-019,,,,,,,,,,,,,no_image.png,standard
+W0373,សុង PVC 49-34 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-019,,,,,,,,,,,,,no_image.png,standard
+W0374,សុង PVC 60-34 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-019,,,,,,,,,,,,,no_image.png,standard
+W0375,សុង PVC 90-60 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-019,,,,,,,,,,,,,no_image.png,standard
+W0376,សុង PVC 114-60 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-019,,,,,,,,,,,,,no_image.png,standard
+W0377,សុង PVC 114-90 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-019,,,,,,,,,,,,,no_image.png,standard
+W0378,សុង PVC 165-90 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-019,,,,,,,,,,,,,no_image.png,standard
+W0379,សុង PVC 165-114 កំរាស់ 8.5,,C-003,11,1,1,0, No Tax, exclusive,SC-3-019,,,,,,,,,,,,,no_image.png,standard
+W0391,សុងធ្មេញក្នុង PVC 21,,C-003,11,1,1,0, No Tax, exclusive,SC-3-020,,,,,,,,,,,,,no_image.png,standard
+W0392,សុងធ្មេញក្នុង PVC 27,,C-003,11,1,1,0, No Tax, exclusive,SC-3-020,,,,,,,,,,,,,no_image.png,standard
+W0393,សុងធ្មេញក្នុង PVC 34,,C-003,11,1,1,0, No Tax, exclusive,SC-3-020,,,,,,,,,,,,,no_image.png,standard
+W0394,សុងធ្មេញក្នុង PVC 42,,C-003,11,1,1,0, No Tax, exclusive,SC-3-020,,,,,,,,,,,,,no_image.png,standard
+W0395,សុងធ្មេញក្នុង PVC 49,,C-003,11,1,1,0, No Tax, exclusive,SC-3-020,,,,,,,,,,,,,no_image.png,standard
+W0396,សុងធ្មេញក្នុង PVC 60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-020,,,,,,,,,,,,,no_image.png,standard
+W0397,សុងធ្មេញក្នុង PVC 90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-020,,,,,,,,,,,,,no_image.png,standard
+W0398,សុងធ្មេញក្នុង PVC 114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-020,,,,,,,,,,,,,no_image.png,standard
+W0411,សុងធ្មេញក្នុងស្ពាន់  21,,C-003,11,1,1,0, No Tax, exclusive,SC-3-021,,,,,,,,,,,,,no_image.png,standard
+W0412,សុងធ្មេញក្នុងស្ពាន់  27,,C-003,11,1,1,0, No Tax, exclusive,SC-3-021,,,,,,,,,,,,,no_image.png,standard
+W0413,សុងធ្មេញក្នុងស្ពាន់  34,,C-003,11,1,1,0, No Tax, exclusive,SC-3-021,,,,,,,,,,,,,no_image.png,standard
+W0414,សុងធ្មេញក្នុងស្ពាន់  42,,C-003,11,1,1,0, No Tax, exclusive,SC-3-021,,,,,,,,,,,,,no_image.png,standard
+W0421,សុងធ្មេញក្រៅ PVC 21,,C-003,11,1,1,0, No Tax, exclusive,SC-3-022,,,,,,,,,,,,,no_image.png,standard
+W0422,សុងធ្មេញក្រៅ PVC 27,,C-003,11,1,1,0, No Tax, exclusive,SC-3-022,,,,,,,,,,,,,no_image.png,standard
+W0423,សុងធ្មេញក្រៅ PVC 34,,C-003,11,1,1,0, No Tax, exclusive,SC-3-022,,,,,,,,,,,,,no_image.png,standard
+W0424,សុងធ្មេញក្រៅ PVC 42,,C-003,11,1,1,0, No Tax, exclusive,SC-3-022,,,,,,,,,,,,,no_image.png,standard
+W0425,សុងធ្មេញក្រៅ PVC 49,,C-003,11,1,1,0, No Tax, exclusive,SC-3-022,,,,,,,,,,,,,no_image.png,standard
+W0426,សុងធ្មេញក្រៅ PVC 60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-022,,,,,,,,,,,,,no_image.png,standard
+W0427,សុងធ្មេញក្រៅ PVC 90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-022,,,,,,,,,,,,,no_image.png,standard
+W0428,សុងធ្មេញក្រៅ PVC 114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-022,,,,,,,,,,,,,no_image.png,standard
+W0441,សុងធ្មេញក្រៅស្ពាន់  21,,C-003,11,1,1,0, No Tax, exclusive,SC-3-023,,,,,,,,,,,,,no_image.png,standard
+W0442,សុងធ្មេញក្រៅស្ពាន់  27,,C-003,11,1,1,0, No Tax, exclusive,SC-3-023,,,,,,,,,,,,,no_image.png,standard
+W0443,សុងធ្មេញក្រៅស្ពាន់  34,,C-003,11,1,1,0, No Tax, exclusive,SC-3-023,,,,,,,,,,,,,no_image.png,standard
+W0444,សុងធ្មេញក្រៅស្ពាន់  42,,C-003,11,1,1,0, No Tax, exclusive,SC-3-023,,,,,,,,,,,,,no_image.png,standard
+W0451,ម៉ាប៊ូឡុងក្រៅជ័រ 21,,C-003,11,1,1,0, No Tax, exclusive,SC-3-024,,,,,,,,,,,,,no_image.png,standard
+W0452,ម៉ាប៊ូឡុងក្រៅជ័រ 27,,C-003,11,1,1,0, No Tax, exclusive,SC-3-024,,,,,,,,,,,,,no_image.png,standard
+W0453,ម៉ាប៊ូឡុងក្រៅជ័រ 34,,C-003,11,1,1,0, No Tax, exclusive,SC-3-024,,,,,,,,,,,,,no_image.png,standard
+W0454,ម៉ាប៊ូឡុងក្រៅជ័រ 42,,C-003,11,1,1,0, No Tax, exclusive,SC-3-024,,,,,,,,,,,,,no_image.png,standard
+W0455,ម៉ាប៊ូឡុងក្រៅស្ពាន់ 21,,C-003,11,1,1,0, No Tax, exclusive,SC-3-024,,,,,,,,,,,,,no_image.png,standard
+W0456,ម៉ាប៊ូឡុងក្រៅស្ពាន់ 27,,C-003,11,1,1,0, No Tax, exclusive,SC-3-024,,,,,,,,,,,,,no_image.png,standard
+W0457,ម៉ាប៊ូឡុងក្រៅស្ពាន់ 34,,C-003,11,1,1,0, No Tax, exclusive,SC-3-024,,,,,,,,,,,,,no_image.png,standard
+W0458,ម៉ាប៊ូឡុងក្រៅស្ពាន់ 42,,C-003,11,1,1,0, No Tax, exclusive,SC-3-024,,,,,,,,,,,,,no_image.png,standard
+W0459,ម៉ាប៊ូឡុងក្រៅស្ពាន់ 49,,C-003,11,1,1,0, No Tax, exclusive,SC-3-024,,,,,,,,,,,,,no_image.png,standard
+W0460,ម៉ាប៊ូឡុងក្នុង-ក្រៅស្ពាន់ 21,,C-003,11,1,1,0, No Tax, exclusive,SC-3-024,,,,,,,,,,,,,no_image.png,standard
+W0461,ម៉ាប៊ូឡុងក្នុង-ក្រៅស្ពាន់ 27,,C-003,11,1,1,0, No Tax, exclusive,SC-3-024,,,,,,,,,,,,,no_image.png,standard
+W0462,ម៉ាប៊ូឡុងក្នុង-ក្រៅស្ពាន់ 34,,C-003,11,1,1,0, No Tax, exclusive,SC-3-024,,,,,,,,,,,,,no_image.png,standard
+W0463,ម៉ាប៊ូឡុងក្នុង-ក្រៅស្ពាន់ 42,,C-003,11,1,1,0, No Tax, exclusive,SC-3-024,,,,,,,,,,,,,no_image.png,standard
+W0464,ម៉ាប៊ូឡុងក្នុង-ក្រៅស្ពាន់ 49,,C-003,11,1,1,0, No Tax, exclusive,SC-3-024,,,,,,,,,,,,,no_image.png,standard
+W0471,កែងស្ពាន់ធ្មេញក្នុង 21,,C-003,11,1,1,0, No Tax, exclusive,SC-3-025,,,,,,,,,,,,,no_image.png,standard
+W0472,កែងស្ពាន់ធ្មេញក្នុង 27,,C-003,11,1,1,0, No Tax, exclusive,SC-3-025,,,,,,,,,,,,,no_image.png,standard
+W0473,កែងស្ពាន់ធ្មេញក្នុង 34,,C-003,11,1,1,0, No Tax, exclusive,SC-3-025,,,,,,,,,,,,,no_image.png,standard
+W0474,កែងស្ពាន់ធ្មេញក្នុង 42,,C-003,11,1,1,0, No Tax, exclusive,SC-3-025,,,,,,,,,,,,,no_image.png,standard
+W0475,កែងស្ពាន់ធ្មេញក្រៅ 21,,C-003,11,1,1,0, No Tax, exclusive,SC-3-025,,,,,,,,,,,,,no_image.png,standard
+W0476,កែងស្ពាន់ធ្មេញក្រៅ 27,,C-003,11,1,1,0, No Tax, exclusive,SC-3-025,,,,,,,,,,,,,no_image.png,standard
+W0477,កែងស្ពាន់ធ្មេញក្រៅ 34,,C-003,11,1,1,0, No Tax, exclusive,SC-3-025,,,,,,,,,,,,,no_image.png,standard
+W0478,កែងស្ពាន់ធ្មេញក្រៅ 42,,C-003,11,1,1,0, No Tax, exclusive,SC-3-025,,,,,,,,,,,,,no_image.png,standard
+W0491,វ៉ាយ Y  PVC 49,,C-003,11,1,1,0, No Tax, exclusive,SC-3-026,,,,,,,,,,,,,no_image.png,standard
+W0492,វ៉ាយ Y  PVC 60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-026,,,,,,,,,,,,,no_image.png,standard
+W0493,វ៉ាយ Y  PVC 90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-026,,,,,,,,,,,,,no_image.png,standard
+W0494,វ៉ាយ Y  PVC 114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-026,,,,,,,,,,,,,no_image.png,standard
+W0495,វ៉ាយ Y  PVC 125,,C-003,11,1,1,0, No Tax, exclusive,SC-3-026,,,,,,,,,,,,,no_image.png,standard
+W0496,វ៉ាយ Y  PVC 165,,C-003,11,1,1,0, No Tax, exclusive,SC-3-026,,,,,,,,,,,,,no_image.png,standard
+W0497,វ៉ាយ Y  PVC 200,,C-003,11,1,1,0, No Tax, exclusive,SC-3-026,,,,,,,,,,,,,no_image.png,standard
+W0498,វ៉ាយ Y  PVC 250,,C-003,11,1,1,0, No Tax, exclusive,SC-3-026,,,,,,,,,,,,,no_image.png,standard
+W0499,វ៉ាយ Y  PVC 300,,C-003,11,1,1,0, No Tax, exclusive,SC-3-026,,,,,,,,,,,,,no_image.png,standard
+W0501,វ៉ាយ Y  PVC 60-49,,C-003,11,1,1,0, No Tax, exclusive,SC-3-027,,,,,,,,,,,,,no_image.png,standard
+W0502,វ៉ាយ Y  PVC 90-60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-027,,,,,,,,,,,,,no_image.png,standard
+W0503,វ៉ាយ Y  PVC 114-60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-027,,,,,,,,,,,,,no_image.png,standard
+W0504,វ៉ាយ Y  PVC 114-90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-027,,,,,,,,,,,,,no_image.png,standard
+W0505,វ៉ាយ Y  PVC 125-114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-027,,,,,,,,,,,,,no_image.png,standard
+W0506,វ៉ាយ Y  PVC 165-90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-027,,,,,,,,,,,,,no_image.png,standard
+W0507,វ៉ាយ Y  PVC 165-114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-027,,,,,,,,,,,,,no_image.png,standard
+W0508,វ៉ាយ Y  PVC 200-114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-027,,,,,,,,,,,,,no_image.png,standard
+W0509,វ៉ាយ Y  PVC 200-125,,C-003,11,1,1,0, No Tax, exclusive,SC-3-027,,,,,,,,,,,,,no_image.png,standard
+W0510,វ៉ាយ Y  PVC 200-165,,C-003,11,1,1,0, No Tax, exclusive,SC-3-027,,,,,,,,,,,,,no_image.png,standard
+W0511,វ៉ាយ Y  PVC 250-165,,C-003,11,1,1,0, No Tax, exclusive,SC-3-027,,,,,,,,,,,,,no_image.png,standard
+W0512,វ៉ាយ Y  PVC 250-200,,C-003,11,1,1,0, No Tax, exclusive,SC-3-027,,,,,,,,,,,,,no_image.png,standard
+W0513,វ៉ាយ Y  PVC 300-165,,C-003,11,1,1,0, No Tax, exclusive,SC-3-027,,,,,,,,,,,,,no_image.png,standard
+W0514,វ៉ាយ Y  PVC 300-200,,C-003,11,1,1,0, No Tax, exclusive,SC-3-027,,,,,,,,,,,,,no_image.png,standard
+W0515,វ៉ាយ Y  PVC 300-250,,C-003,11,1,1,0, No Tax, exclusive,SC-3-027,,,,,,,,,,,,,no_image.png,standard
+W0521,តេវ៉ាយ Y  PVC 49,,C-003,11,1,1,0, No Tax, exclusive,SC-3-028,,,,,,,,,,,,,no_image.png,standard
+W0522,តេវ៉ាយ Y  PVC 60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-028,,,,,,,,,,,,,no_image.png,standard
+W0523,តេវ៉ាយ Y  PVC 90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-028,,,,,,,,,,,,,no_image.png,standard
+W0524,តេវ៉ាយ Y  PVC 114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-028,,,,,,,,,,,,,no_image.png,standard
+W0525,តេវ៉ាយ Y  PVC 125,,C-003,11,1,1,0, No Tax, exclusive,SC-3-028,,,,,,,,,,,,,no_image.png,standard
+W0526,តេវ៉ាយ Y  PVC 165,,C-003,11,1,1,0, No Tax, exclusive,SC-3-028,,,,,,,,,,,,,no_image.png,standard
+W0527,តេវ៉ាយ Y  PVC 200,,C-003,11,1,1,0, No Tax, exclusive,SC-3-028,,,,,,,,,,,,,no_image.png,standard
+W0528,តេវ៉ាយ Y  PVC 250,,C-003,11,1,1,0, No Tax, exclusive,SC-3-028,,,,,,,,,,,,,no_image.png,standard
+W0529,តេវ៉ាយ Y  PVC 300,,C-003,11,1,1,0, No Tax, exclusive,SC-3-028,,,,,,,,,,,,,no_image.png,standard
+W0541,តេវ៉ាយ Y  PVC 60-49,,C-003,11,1,1,0, No Tax, exclusive,SC-3-029,,,,,,,,,,,,,no_image.png,standard
+W0542,តេវ៉ាយ Y  PVC 90-60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-029,,,,,,,,,,,,,no_image.png,standard
+W0543,តេវ៉ាយ Y  PVC 114-60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-029,,,,,,,,,,,,,no_image.png,standard
+W0544,តេវ៉ាយ Y  PVC 114-90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-029,,,,,,,,,,,,,no_image.png,standard
+W0545,តេវ៉ាយ Y  PVC 125-114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-029,,,,,,,,,,,,,no_image.png,standard
+W0546,តេវ៉ាយ Y  PVC 165-114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-029,,,,,,,,,,,,,no_image.png,standard
+W0547,តេវ៉ាយ Y  PVC 200-114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-029,,,,,,,,,,,,,no_image.png,standard
+W0548,តេវ៉ាយ Y  PVC 200-125,,C-003,11,1,1,0, No Tax, exclusive,SC-3-029,,,,,,,,,,,,,no_image.png,standard
+W0549,តេវ៉ាយ Y  PVC 200-165,,C-003,11,1,1,0, No Tax, exclusive,SC-3-029,,,,,,,,,,,,,no_image.png,standard
+W0550,តេវ៉ាយ Y  PVC 250-200,,C-003,11,1,1,0, No Tax, exclusive,SC-3-029,,,,,,,,,,,,,no_image.png,standard
+W0551,តេវ៉ាយ Y  PVC 300-200,,C-003,11,1,1,0, No Tax, exclusive,SC-3-029,,,,,,,,,,,,,no_image.png,standard
+W0552,តេវ៉ាយ Y  PVC 300-250,,C-003,11,1,1,0, No Tax, exclusive,SC-3-029,,,,,,,,,,,,,no_image.png,standard
+W0561,តេវ៉ាយ Y  PVC 49-49,,C-003,11,1,1,0, No Tax, exclusive,SC-3-030,,,,,,,,,,,,,no_image.png,standard
+W0562,តេវ៉ាយ Y  PVC 60-60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-030,,,,,,,,,,,,,no_image.png,standard
+W0563,តេវ៉ាយ Y  PVC 90-90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-030,,,,,,,,,,,,,no_image.png,standard
+W0564,តេវ៉ាយ Y  PVC 114-114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-030,,,,,,,,,,,,,no_image.png,standard
+W0565,តេវ៉ាយ Y  PVC 125-125,,C-003,11,1,1,0, No Tax, exclusive,SC-3-030,,,,,,,,,,,,,no_image.png,standard
+W0566,តេវ៉ាយ Y  PVC 165-165,,C-003,11,1,1,0, No Tax, exclusive,SC-3-030,,,,,,,,,,,,,no_image.png,standard
+W0567,តេវ៉ាយ Y  PVC 200-200,,C-003,11,1,1,0, No Tax, exclusive,SC-3-030,,,,,,,,,,,,,no_image.png,standard
+W0568,តេវ៉ាយ Y  PVC 250-250,,C-003,11,1,1,0, No Tax, exclusive,SC-3-030,,,,,,,,,,,,,no_image.png,standard
+W0581,តេវ៉ាយ Y  PVC 60-49,,C-003,11,1,1,0, No Tax, exclusive,SC-3-031,,,,,,,,,,,,,no_image.png,standard
+W0582,តេវ៉ាយ Y  PVC 90-60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-031,,,,,,,,,,,,,no_image.png,standard
+W0583,តេវ៉ាយ Y  PVC 114-60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-031,,,,,,,,,,,,,no_image.png,standard
+W0584,តេវ៉ាយ Y  PVC 114-90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-031,,,,,,,,,,,,,no_image.png,standard
+W0585,តេវ៉ាយ Y  PVC 125-90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-031,,,,,,,,,,,,,no_image.png,standard
+W0586,តេវ៉ាយ Y  PVC 125-114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-031,,,,,,,,,,,,,no_image.png,standard
+W0587,តេវ៉ាយ Y  PVC 165-90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-031,,,,,,,,,,,,,no_image.png,standard
+W0588,តេវ៉ាយ Y  PVC 165-114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-031,,,,,,,,,,,,,no_image.png,standard
+W0589,តេវ៉ាយ Y  PVC 200-114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-031,,,,,,,,,,,,,no_image.png,standard
+W0590,តេវ៉ាយ Y  PVC 200-165,,C-003,11,1,1,0, No Tax, exclusive,SC-3-031,,,,,,,,,,,,,no_image.png,standard
+W0591,តេវ៉ាយ Y  PVC 250-200,,C-003,11,1,1,0, No Tax, exclusive,SC-3-031,,,,,,,,,,,,,no_image.png,standard
+W0592,តេវ៉ាយ Y  PVC 300-200,,C-003,11,1,1,0, No Tax, exclusive,SC-3-031,,,,,,,,,,,,,no_image.png,standard
+W0601,ឆ្នុកញ្មេញក្នុង 21,,C-003,11,1,1,0, No Tax, exclusive,SC-3-032,,,,,,,,,,,,,no_image.png,standard
+W0602,ឆ្នុកញ្មេញក្នុង 27,,C-003,11,1,1,0, No Tax, exclusive,SC-3-032,,,,,,,,,,,,,no_image.png,standard
+W0603,ឆ្នុកញ្មេញក្នុង 34,,C-003,11,1,1,0, No Tax, exclusive,SC-3-032,,,,,,,,,,,,,no_image.png,standard
+W0604,ឆ្នុកញ្មេញក្នុង 42,,C-003,11,1,1,0, No Tax, exclusive,SC-3-032,,,,,,,,,,,,,no_image.png,standard
+W0605,ឆ្នុកញ្មេញក្រៅ 21,,C-003,11,1,1,0, No Tax, exclusive,SC-3-032,,,,,,,,,,,,,no_image.png,standard
+W0606,ឆ្នុកញ្មេញក្រៅ 27,,C-003,11,1,1,0, No Tax, exclusive,SC-3-032,,,,,,,,,,,,,no_image.png,standard
+W0607,ឆ្នុកញ្មេញក្រៅ 34,,C-003,11,1,1,0, No Tax, exclusive,SC-3-032,,,,,,,,,,,,,no_image.png,standard
+W0608,ឆ្នុកញ្មេញក្រៅ 42,,C-003,11,1,1,0, No Tax, exclusive,SC-3-032,,,,,,,,,,,,,no_image.png,standard
+W0621,ឆ្នុក PVC 21,,C-003,11,1,1,0, No Tax, exclusive,SC-3-033,,,,,,,,,,,,,no_image.png,standard
+W0622,ឆ្នុក PVC 27,,C-003,11,1,1,0, No Tax, exclusive,SC-3-033,,,,,,,,,,,,,no_image.png,standard
+W0623,ឆ្នុក PVC 34,,C-003,11,1,1,0, No Tax, exclusive,SC-3-033,,,,,,,,,,,,,no_image.png,standard
+W0624,ឆ្នុក PVC 42,,C-003,11,1,1,0, No Tax, exclusive,SC-3-033,,,,,,,,,,,,,no_image.png,standard
+W0625,ឆ្នុក PVC 49,,C-003,11,1,1,0, No Tax, exclusive,SC-3-033,,,,,,,,,,,,,no_image.png,standard
+W0626,ឆ្នុក PVC 60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-033,,,,,,,,,,,,,no_image.png,standard
+W0627,ឆ្នុក PVC 90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-033,,,,,,,,,,,,,no_image.png,standard
+W0628,ឆ្នុក PVC 114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-033,,,,,,,,,,,,,no_image.png,standard
+W0629,ឆ្នុក PVC 125,,C-003,11,1,1,0, No Tax, exclusive,SC-3-033,,,,,,,,,,,,,no_image.png,standard
+W0630,ឆ្នុក PVC 165,,C-003,11,1,1,0, No Tax, exclusive,SC-3-033,,,,,,,,,,,,,no_image.png,standard
+W0631,ឆ្នុក PVC 200,,C-003,11,1,1,0, No Tax, exclusive,SC-3-033,,,,,,,,,,,,,no_image.png,standard
+W0632,ឆ្នុក PVC 250,,C-003,11,1,1,0, No Tax, exclusive,SC-3-033,,,,,,,,,,,,,no_image.png,standard
+W0633,ឆ្នុក PVC 300,,C-003,11,1,1,0, No Tax, exclusive,SC-3-033,,,,,,,,,,,,,no_image.png,standard
+W0641,កក្រែន 42,,C-003,11,1,1,0, No Tax, exclusive,SC-3-034,,,,,,,,,,,,,no_image.png,standard
+W0642,កក្រែន 49,,C-003,11,1,1,0, No Tax, exclusive,SC-3-034,,,,,,,,,,,,,no_image.png,standard
+W0643,កក្រែន 60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-034,,,,,,,,,,,,,no_image.png,standard
+W0644,កក្រែន 90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-034,,,,,,,,,,,,,no_image.png,standard
+W0645,កក្រែន 114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-034,,,,,,,,,,,,,no_image.png,standard
+W0651,គំរប PVC 49,,C-003,11,1,1,0, No Tax, exclusive,SC-3-035,,,,,,,,,,,,,no_image.png,standard
+W0652,គំរប PVC 60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-035,,,,,,,,,,,,,no_image.png,standard
+W0653,គំរប PVC 90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-035,,,,,,,,,,,,,no_image.png,standard
+W0654,គំរប PVC 114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-035,,,,,,,,,,,,,no_image.png,standard
+W0655,គំរប PVC 125,,C-003,11,1,1,0, No Tax, exclusive,SC-3-035,,,,,,,,,,,,,no_image.png,standard
+W0656,គំរប PVC 165,,C-003,11,1,1,0, No Tax, exclusive,SC-3-035,,,,,,,,,,,,,no_image.png,standard
+W0657,គំរប PVC 200,,C-003,11,1,1,0, No Tax, exclusive,SC-3-035,,,,,,,,,,,,,no_image.png,standard
+W0658,គំរប PVC 250,,C-003,11,1,1,0, No Tax, exclusive,SC-3-035,,,,,,,,,,,,,no_image.png,standard
+W0659,គំរប PVC 300,,C-003,11,1,1,0, No Tax, exclusive,SC-3-035,,,,,,,,,,,,,no_image.png,standard
+W0671,គំរប ស្ពាន់ 49,,C-003,11,1,1,0, No Tax, exclusive,SC-3-036,,,,,,,,,,,,,no_image.png,standard
+W0672,គំរប ស្ពាន់ 66,,C-003,11,1,1,0, No Tax, exclusive,SC-3-036,,,,,,,,,,,,,no_image.png,standard
+W0673,គំរប ស្ពាន់ 90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-036,,,,,,,,,,,,,no_image.png,standard
+W0674,គំរប ស្ពាន់ 114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-036,,,,,,,,,,,,,no_image.png,standard
+W0675,គំរប ស្ពាន់ 125,,C-003,11,1,1,0, No Tax, exclusive,SC-3-036,,,,,,,,,,,,,no_image.png,standard
+W0676,គំរប ស្ពាន់ 165,,C-003,11,1,1,0, No Tax, exclusive,SC-3-036,,,,,,,,,,,,,no_image.png,standard
+W0677,គំរប ស្ពាន់ 200,,C-003,11,1,1,0, No Tax, exclusive,SC-3-036,,,,,,,,,,,,,no_image.png,standard
+W0678,គំរប ស្ពាន់ 250,,C-003,11,1,1,0, No Tax, exclusive,SC-3-036,,,,,,,,,,,,,no_image.png,standard
+W0679,គំរប ស្ពាន់ 300,,C-003,11,1,1,0, No Tax, exclusive,SC-3-036,,,,,,,,,,,,,no_image.png,standard
+W0691,វ៉ាន PVC 21,,C-003,11,1,1,0, No Tax, exclusive,SC-3-037,,,,,,,,,,,,,no_image.png,standard
+W0692,វ៉ាន PVC 27,,C-003,11,1,1,0, No Tax, exclusive,SC-3-037,,,,,,,,,,,,,no_image.png,standard
+W0693,វ៉ាន PVC 34,,C-003,11,1,1,0, No Tax, exclusive,SC-3-037,,,,,,,,,,,,,no_image.png,standard
+W0694,វ៉ាន PVC 42,,C-003,11,1,1,0, No Tax, exclusive,SC-3-037,,,,,,,,,,,,,no_image.png,standard
+W0695,វ៉ាន PVC 49,,C-003,11,1,1,0, No Tax, exclusive,SC-3-037,,,,,,,,,,,,,no_image.png,standard
+W0696,វ៉ាន PVC 60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-037,,,,,,,,,,,,,no_image.png,standard
+W0697,វ៉ាន PVC 90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-037,,,,,,,,,,,,,no_image.png,standard
+W0698,វ៉ាន PVC 114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-037,,,,,,,,,,,,,no_image.png,standard
+W0699,វ៉ាន PVC 125,,C-003,11,1,1,0, No Tax, exclusive,SC-3-037,,,,,,,,,,,,,no_image.png,standard
+W0700,វ៉ាន PVC 165,,C-003,11,1,1,0, No Tax, exclusive,SC-3-037,,,,,,,,,,,,,no_image.png,standard
+W0701,វ៉ាន PVC 200,,C-003,11,1,1,0, No Tax, exclusive,SC-3-037,,,,,,,,,,,,,no_image.png,standard
+W0711,វ៉ានមេអបៅ  60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-038,,,,,,,,,,,,,no_image.png,standard
+W0712,វ៉ានមេអំបៅ  90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-038,,,,,,,,,,,,,no_image.png,standard
+W0713,វ៉ានមេអំបៅ  114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-038,,,,,,,,,,,,,no_image.png,standard
+W0714,វ៉ានមេអំបៅ 125,,C-003,11,1,1,0, No Tax, exclusive,SC-3-038,,,,,,,,,,,,,no_image.png,standard
+W0715,វ៉ានមេអំបៅ 165,,C-003,11,1,1,0, No Tax, exclusive,SC-3-038,,,,,,,,,,,,,no_image.png,standard
+W0716,វ៉ានមេអំបៅ 200,,C-003,11,1,1,0, No Tax, exclusive,SC-3-038,,,,,,,,,,,,,no_image.png,standard
+W0717,វ៉ានមេអំបៅ 250,,C-003,11,1,1,0, No Tax, exclusive,SC-3-038,,,,,,,,,,,,,no_image.png,standard
+W0721,ព្រីត PVC 60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-039,,,,,,,,,,,,,no_image.png,standard
+W0722,ព្រីត PVC 90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-039,,,,,,,,,,,,,no_image.png,standard
+W0723,ព្រីត PVC 114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-039,,,,,,,,,,,,,no_image.png,standard
+W0724,ព្រីត PVC 125,,C-003,11,1,1,0, No Tax, exclusive,SC-3-039,,,,,,,,,,,,,no_image.png,standard
+W0725,ព្រីត PVC 165,,C-003,11,1,1,0, No Tax, exclusive,SC-3-039,,,,,,,,,,,,,no_image.png,standard
+W0726,ព្រីត PVC 200,,C-003,11,1,1,0, No Tax, exclusive,SC-3-039,,,,,,,,,,,,,no_image.png,standard
+W0727,ព្រីត PVC 250,,C-003,11,1,1,0, No Tax, exclusive,SC-3-039,,,,,,,,,,,,,no_image.png,standard
+W0731,រ៉ងកៅស៊ូព្រីត PVC 60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-040,,,,,,,,,,,,,no_image.png,standard
+W0732,រ៉ងកៅស៊ូព្រីត PVC 90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-040,,,,,,,,,,,,,no_image.png,standard
+W0733,រ៉ងកៅស៊ូព្រីត PVC 114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-040,,,,,,,,,,,,,no_image.png,standard
+W0734,រ៉ងកៅស៊ូព្រីត PVC 125,,C-003,11,1,1,0, No Tax, exclusive,SC-3-040,,,,,,,,,,,,,no_image.png,standard
+W0735,រ៉ងកៅស៊ូព្រីត PVC 165,,C-003,11,1,1,0, No Tax, exclusive,SC-3-040,,,,,,,,,,,,,no_image.png,standard
+W0736,រ៉ងកៅស៊ូព្រីត PVC 200,,C-003,11,1,1,0, No Tax, exclusive,SC-3-040,,,,,,,,,,,,,no_image.png,standard
+W0737,រ៉ងកៅស៊ូព្រីត PVC 250,,C-003,11,1,1,0, No Tax, exclusive,SC-3-040,,,,,,,,,,,,,no_image.png,standard
+W0741,វ៉ានស្ពាន់ មូល 21,,C-003,11,1,1,0, No Tax, exclusive,SC-3-041,,,,,,,,,,,,,no_image.png,standard
+W0742,វ៉ានស្ពាន់ មូល 27,,C-003,11,1,1,0, No Tax, exclusive,SC-3-041,,,,,,,,,,,,,no_image.png,standard
+W0743,វ៉ានស្ពាន់ មូល 34,,C-003,11,1,1,0, No Tax, exclusive,SC-3-041,,,,,,,,,,,,,no_image.png,standard
+W0744,វ៉ានស្ពាន់ មូល 42,,C-003,11,1,1,0, No Tax, exclusive,SC-3-041,,,,,,,,,,,,,no_image.png,standard
+W0745,វ៉ានស្ពាន់ មូល 49,,C-003,11,1,1,0, No Tax, exclusive,SC-3-041,,,,,,,,,,,,,no_image.png,standard
+W0746,វ៉ានស្ពាន់ មូល 60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-041,,,,,,,,,,,,,no_image.png,standard
+W0747,វ៉ានស្ពាន់ មូល 90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-041,,,,,,,,,,,,,no_image.png,standard
+W0748,វ៉ានស្ពាន់ មូល 114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-041,,,,,,,,,,,,,no_image.png,standard
+W0749,វ៉ានស្ពាន់ មូល 125,,C-003,11,1,1,0, No Tax, exclusive,SC-3-041,,,,,,,,,,,,,no_image.png,standard
+W0750,វ៉ានស្ពាន់ មូល 165,,C-003,11,1,1,0, No Tax, exclusive,SC-3-041,,,,,,,,,,,,,no_image.png,standard
+W0761,វ៉ានស្ពាន់ កាច់ 21,,C-003,11,1,1,0, No Tax, exclusive,SC-3-042,,,,,,,,,,,,,no_image.png,standard
+W0762,វ៉ានស្ពាន់ កាច់ 27,,C-003,11,1,1,0, No Tax, exclusive,SC-3-042,,,,,,,,,,,,,no_image.png,standard
+W0763,វ៉ានស្ពាន់ កាច់ 34,,C-003,11,1,1,0, No Tax, exclusive,SC-3-042,,,,,,,,,,,,,no_image.png,standard
+W0764,វ៉ានស្ពាន់ កាច់ 42,,C-003,11,1,1,0, No Tax, exclusive,SC-3-042,,,,,,,,,,,,,no_image.png,standard
+W0765,វ៉ានស្ពាន់ កាច់ 49,,C-003,11,1,1,0, No Tax, exclusive,SC-3-042,,,,,,,,,,,,,no_image.png,standard
+W0766,វ៉ានស្ពាន់ កាច់ 60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-042,,,,,,,,,,,,,no_image.png,standard
+W0767,វ៉ានស្ពាន់ កាច់ 90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-042,,,,,,,,,,,,,no_image.png,standard
+W0768,វ៉ានស្ពាន់ កាច់ 114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-042,,,,,,,,,,,,,no_image.png,standard
+W0769,វ៉ានស្ពាន់ កាច់ 125,,C-003,11,1,1,0, No Tax, exclusive,SC-3-042,,,,,,,,,,,,,no_image.png,standard
+W0770,វ៉ានស្ពាន់ កាច់ 165,,C-003,11,1,1,0, No Tax, exclusive,SC-3-042,,,,,,,,,,,,,no_image.png,standard
+W0771,វ៉ានស្ពាន់ កាច់ 200,,C-003,11,1,1,0, No Tax, exclusive,SC-3-042,,,,,,,,,,,,,no_image.png,standard
+W0781,ក្លាបប៉េស្ពាន់ ឈរ 21,,C-003,11,1,1,0, No Tax, exclusive,SC-3-043,,,,,,,,,,,,,no_image.png,standard
+W0782,ក្លាបប៉េស្ពាន់ ឈរ 27,,C-003,11,1,1,0, No Tax, exclusive,SC-3-043,,,,,,,,,,,,,no_image.png,standard
+W0783,ក្លាបប៉េស្ពាន់ ឈរ 34,,C-003,11,1,1,0, No Tax, exclusive,SC-3-043,,,,,,,,,,,,,no_image.png,standard
+W0784,ក្លាបប៉េស្ពាន់ ឈរ 42,,C-003,11,1,1,0, No Tax, exclusive,SC-3-043,,,,,,,,,,,,,no_image.png,standard
+W0785,ក្លាបប៉េស្ពាន់ ឈរ 49,,C-003,11,1,1,0, No Tax, exclusive,SC-3-043,,,,,,,,,,,,,no_image.png,standard
+W0786,ក្លាបប៉េស្ពាន់ ឈរ 60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-043,,,,,,,,,,,,,no_image.png,standard
+W0787,ក្លាបប៉េស្ពាន់ ឈរ 90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-043,,,,,,,,,,,,,no_image.png,standard
+W0788,ក្លាបប៉េស្ពាន់ ឈរ 114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-043,,,,,,,,,,,,,no_image.png,standard
+W0789,ក្លាបប៉េស្ពាន់ ឈរ 125,,C-003,11,1,1,0, No Tax, exclusive,SC-3-043,,,,,,,,,,,,,no_image.png,standard
+W0790,ក្លាបប៉េស្ពាន់ ឈរ 165,,C-003,11,1,1,0, No Tax, exclusive,SC-3-043,,,,,,,,,,,,,no_image.png,standard
+W0801,ក្លាបប៉េស្ពាន់ ដេក 21,,C-003,11,1,1,0, No Tax, exclusive,SC-3-044,,,,,,,,,,,,,no_image.png,standard
+W0802,ក្លាបប៉េស្ពាន់ ដេក 27,,C-003,11,1,1,0, No Tax, exclusive,SC-3-044,,,,,,,,,,,,,no_image.png,standard
+W0803,ក្លាបប៉េស្ពាន់ ដេក 34,,C-003,11,1,1,0, No Tax, exclusive,SC-3-044,,,,,,,,,,,,,no_image.png,standard
+W0804,ក្លាបប៉េស្ពាន់ ដេក 42,,C-003,11,1,1,0, No Tax, exclusive,SC-3-044,,,,,,,,,,,,,no_image.png,standard
+W0805,ក្លាបប៉េស្ពាន់ ដេក 49,,C-003,11,1,1,0, No Tax, exclusive,SC-3-044,,,,,,,,,,,,,no_image.png,standard
+W0806,ក្លាបប៉េស្ពាន់ ដេក 60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-044,,,,,,,,,,,,,no_image.png,standard
+W0807,ក្លាបប៉េស្ពាន់ ដេក 90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-044,,,,,,,,,,,,,no_image.png,standard
+W0808,ក្លាបប៉េស្ពាន់ ដេក 114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-044,,,,,,,,,,,,,no_image.png,standard
+W0809,ក្លាបប៉េស្ពាន់ ដេក 125,,C-003,11,1,1,0, No Tax, exclusive,SC-3-044,,,,,,,,,,,,,no_image.png,standard
+W0810,ក្លាបប៉េស្ពាន់ ដេក 165,,C-003,11,1,1,0, No Tax, exclusive,SC-3-044,,,,,,,,,,,,,no_image.png,standard
+W0821,ក្លាបប៉េ ដែក 60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-045,,,,,,,,,,,,,no_image.png,standard
+W0822,ក្លាបប៉េ ដែក 90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-045,,,,,,,,,,,,,no_image.png,standard
+W0823,ក្លាបប៉េ ដែក 114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-045,,,,,,,,,,,,,no_image.png,standard
+W0824,ក្លាបប៉េ ដែក 125,,C-003,11,1,1,0, No Tax, exclusive,SC-3-045,,,,,,,,,,,,,no_image.png,standard
+W0825,ក្លាបប៉េ ដែក 165,,C-003,11,1,1,0, No Tax, exclusive,SC-3-045,,,,,,,,,,,,,no_image.png,standard
+W0826,ក្លាបប៉េ ដែក 200,,C-003,11,1,1,0, No Tax, exclusive,SC-3-045,,,,,,,,,,,,,no_image.png,standard
+W0827,ក្លាបប៉េ ដែក 250,,C-003,11,1,1,0, No Tax, exclusive,SC-3-045,,,,,,,,,,,,,no_image.png,standard
+W0828,ក្លាបប៉េ ដែក 300,,C-003,11,1,1,0, No Tax, exclusive,SC-3-045,,,,,,,,,,,,,no_image.png,standard
+W0841,ក្រពីនស្ពាន់ 27,,C-003,11,1,1,0, No Tax, exclusive,SC-3-046,,,,,,,,,,,,,no_image.png,standard
+W0842,ក្រពីនស្ពាន់ 34,,C-003,11,1,1,0, No Tax, exclusive,SC-3-046,,,,,,,,,,,,,no_image.png,standard
+W0843,ក្រពីនស្ពាន់ 42,,C-003,11,1,1,0, No Tax, exclusive,SC-3-046,,,,,,,,,,,,,no_image.png,standard
+W0844,ក្រពីនស្ពាន់ 49,,C-003,11,1,1,0, No Tax, exclusive,SC-3-046,,,,,,,,,,,,,no_image.png,standard
+W0845,ក្រពីនស្ពាន់ 60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-046,,,,,,,,,,,,,no_image.png,standard
+W0846,ក្រពីនស្ពាន់ 90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-046,,,,,,,,,,,,,no_image.png,standard
+W0847,ក្រពីនស្ពាន់ 114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-046,,,,,,,,,,,,,no_image.png,standard
+W0848,ក្រពីនស្ពាន់ 125,,C-003,11,1,1,0, No Tax, exclusive,SC-3-046,,,,,,,,,,,,,no_image.png,standard
+W0849,ក្រពីនស្ពាន់ 165,,C-003,11,1,1,0, No Tax, exclusive,SC-3-046,,,,,,,,,,,,,no_image.png,standard
+W0861,ក្រពីន ដែក 60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-047,,,,,,,,,,,,,no_image.png,standard
+W0862,ក្រពីន ដែក 90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-047,,,,,,,,,,,,,no_image.png,standard
+W0863,ក្រពីន ដែក 114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-047,,,,,,,,,,,,,no_image.png,standard
+W0864,ក្រពីន ដែក 125,,C-003,11,1,1,0, No Tax, exclusive,SC-3-047,,,,,,,,,,,,,no_image.png,standard
+W0865,ក្រពីន ដែក 165,,C-003,11,1,1,0, No Tax, exclusive,SC-3-047,,,,,,,,,,,,,no_image.png,standard
+W0866,ក្រពីន ដែក 200,,C-003,11,1,1,0, No Tax, exclusive,SC-3-047,,,,,,,,,,,,,no_image.png,standard
+W0867,ក្រពីន ដែក 250,,C-003,11,1,1,0, No Tax, exclusive,SC-3-047,,,,,,,,,,,,,no_image.png,standard
+W0881,អ៊ីការិចស្ត្រែននើស្ពាន់ 27,,C-003,14,1,1,0, No Tax, exclusive,SC-3-048,,,,,,,,,,,,,no_image.png,standard
+W0882,អ៊ីការិចស្ត្រែននើស្ពាន់ 34,,C-003,14,1,1,0, No Tax, exclusive,SC-3-048,,,,,,,,,,,,,no_image.png,standard
+W0883,អ៊ីការិចស្ត្រែននើស្ពាន់ 42,,C-003,14,1,1,0, No Tax, exclusive,SC-3-048,,,,,,,,,,,,,no_image.png,standard
+W0884,អ៊ីការិចស្ត្រែននើស្ពាន់ 49,,C-003,14,1,1,0, No Tax, exclusive,SC-3-048,,,,,,,,,,,,,no_image.png,standard
+W0885,អ៊ីការិចស្ត្រែននើស្ពាន់ 60,,C-003,14,1,1,0, No Tax, exclusive,SC-3-048,,,,,,,,,,,,,no_image.png,standard
+W0886,អ៊ីការិចស្ត្រែននើស្ពាន់ 90,,C-003,14,1,1,0, No Tax, exclusive,SC-3-048,,,,,,,,,,,,,no_image.png,standard
+W0887,អ៊ីការិចស្ត្រែននើស្ពាន់ 114,,C-003,14,1,1,0, No Tax, exclusive,SC-3-048,,,,,,,,,,,,,no_image.png,standard
+W0888,អ៊ីការិចស្ត្រែននើស្ពាន់ 125,,C-003,14,1,1,0, No Tax, exclusive,SC-3-048,,,,,,,,,,,,,no_image.png,standard
+W0889,អ៊ីការិចស្ត្រែននើស្ពាន់ 165,,C-003,14,1,1,0, No Tax, exclusive,SC-3-048,,,,,,,,,,,,,no_image.png,standard
+W0901,អ៊ីការិចស្ត្រែននើដែក 60,,C-003,14,1,1,0, No Tax, exclusive,SC-3-049,,,,,,,,,,,,,no_image.png,standard
+W0902,អ៊ីការិចស្ត្រែននើដែក 90,,C-003,14,1,1,0, No Tax, exclusive,SC-3-049,,,,,,,,,,,,,no_image.png,standard
+W0903,អ៊ីការិចស្ត្រែននើដែក 114,,C-003,14,1,1,0, No Tax, exclusive,SC-3-049,,,,,,,,,,,,,no_image.png,standard
+W0904,អ៊ីការិចស្ត្រែននើដែក 125,,C-003,14,1,1,0, No Tax, exclusive,SC-3-049,,,,,,,,,,,,,no_image.png,standard
+W0905,អ៊ីការិចស្ត្រែននើដែក 165,,C-003,14,1,1,0, No Tax, exclusive,SC-3-049,,,,,,,,,,,,,no_image.png,standard
+W0906,អ៊ីការិចស្ត្រែននើដែក 200,,C-003,14,1,1,0, No Tax, exclusive,SC-3-049,,,,,,,,,,,,,no_image.png,standard
+W0907,អ៊ីការិចស្ត្រែននើដែក 250,,C-003,14,1,1,0, No Tax, exclusive,SC-3-049,,,,,,,,,,,,,no_image.png,standard
+W0911,កុងទ័រទឹក 21,,C-003,12,1,1,0, No Tax, exclusive,SC-3-050,,,,,,,,,,,,,no_image.png,standard
+W0912,កុងទ័រទឹក 27,,C-003,12,1,1,0, No Tax, exclusive,SC-3-050,,,,,,,,,,,,,no_image.png,standard
+W0913,កុងទ័រទឹក 34,,C-003,12,1,1,0, No Tax, exclusive,SC-3-050,,,,,,,,,,,,,no_image.png,standard
+W0914,កុងទ័រទឹក 42,,C-003,12,1,1,0, No Tax, exclusive,SC-3-050,,,,,,,,,,,,,no_image.png,standard
+W0915,កុងទ័រទឹក 49,,C-003,12,1,1,0, No Tax, exclusive,SC-3-050,,,,,,,,,,,,,no_image.png,standard
+W0916,កុងទ័រទឹក 60,,C-003,12,1,1,0, No Tax, exclusive,SC-3-050,,,,,,,,,,,,,no_image.png,standard
+W0917,កុងទ័រទឹក 90,,C-003,12,1,1,0, No Tax, exclusive,SC-3-050,,,,,,,,,,,,,no_image.png,standard
+W0918,កុងទ័រទឹក 125,,C-003,12,1,1,0, No Tax, exclusive,SC-3-050,,,,,,,,,,,,,no_image.png,standard
+W0919,កុងទ័រទឹក 165,,C-003,12,1,1,0, No Tax, exclusive,SC-3-050,,,,,,,,,,,,,no_image.png,standard
+W0920,កុងទ័រទឹក 200,,C-003,12,1,1,0, No Tax, exclusive,SC-3-050,,,,,,,,,,,,,no_image.png,standard
+W0931,ស៊ីហ្វុងជ័រ 34 ( ទាប ខ្ពស់ ),,C-003,14,1,1,0, No Tax, exclusive,SC-3-051,,,,,,,,,,,,,no_image.png,standard
+W0932,ស៊ីហ្វុងជ័រ 42,,C-003,14,1,1,0, No Tax, exclusive,SC-3-051,,,,,,,,,,,,,no_image.png,standard
+W0933,ស៊ីហ្វុងជ័រ 49,,C-003,14,1,1,0, No Tax, exclusive,SC-3-051,,,,,,,,,,,,,no_image.png,standard
+W0934,ស៊ីហ្វុងជ័រ 60,,C-003,14,1,1,0, No Tax, exclusive,SC-3-051,,,,,,,,,,,,,no_image.png,standard
+W0935,ស៊ីហ្វុងជ័រ 90,,C-003,14,1,1,0, No Tax, exclusive,SC-3-051,,,,,,,,,,,,,no_image.png,standard
+W0936,ស៊ីហ្វុងជ័រ 114,,C-003,14,1,1,0, No Tax, exclusive,SC-3-051,,,,,,,,,,,,,no_image.png,standard
+W0937,ស៊ីហ្វុងជ័រ 125,,C-003,14,1,1,0, No Tax, exclusive,SC-3-051,,,,,,,,,,,,,no_image.png,standard
+W0938,ស៊ីហ្វុងជ័រ 165,,C-003,14,1,1,0, No Tax, exclusive,SC-3-051,,,,,,,,,,,,,no_image.png,standard
+W0941,ស៊ីហ្វុងអ៊ីណុក 34 (ទាប ខ្ពស់),,C-003,14,1,1,0, No Tax, exclusive,SC-3-052,,,,,,,,,,,,,no_image.png,standard
+W0942,ស៊ីហ្វុងអ៊ីណុក 42,,C-003,14,1,1,0, No Tax, exclusive,SC-3-052,,,,,,,,,,,,,no_image.png,standard
+W0943,ស៊ីហ្វុងអ៊ីណុក 49,,C-003,14,1,1,0, No Tax, exclusive,SC-3-052,,,,,,,,,,,,,no_image.png,standard
+W0944,ស៊ីហ្វុងអ៊ីណុក 60,,C-003,14,1,1,0, No Tax, exclusive,SC-3-052,,,,,,,,,,,,,no_image.png,standard
+W0945,ស៊ីហ្វុងអ៊ីណុក 90,,C-003,14,1,1,0, No Tax, exclusive,SC-3-052,,,,,,,,,,,,,no_image.png,standard
+W0946,ស៊ីហ្វុងអ៊ីណុក 114,,C-003,14,1,1,0, No Tax, exclusive,SC-3-052,,,,,,,,,,,,,no_image.png,standard
+W0951,ស៊ីហ្វុង ដែក 60 (លើដំបូល),,C-003,14,1,1,0, No Tax, exclusive,SC-3-053,,,,,,,,,,,,,no_image.png,standard
+W0952,ស៊ីហ្វុង ដែក 90,,C-003,14,1,1,0, No Tax, exclusive,SC-3-053,,,,,,,,,,,,,no_image.png,standard
+W0953,ស៊ីហ្វុង ដែក 114,,C-003,14,1,1,0, No Tax, exclusive,SC-3-053,,,,,,,,,,,,,no_image.png,standard
+W0954,ស៊ីហ្វុង ដែក 125,,C-003,14,1,1,0, No Tax, exclusive,SC-3-053,,,,,,,,,,,,,no_image.png,standard
+W0955,ស៊ីហ្វុង ដែក 165,,C-003,14,1,1,0, No Tax, exclusive,SC-3-053,,,,,,,,,,,,,no_image.png,standard
+W0956,ស៊ីហ្វុង ដែក 200,,C-003,14,1,1,0, No Tax, exclusive,SC-3-053,,,,,,,,,,,,,no_image.png,standard
+W0961,ពោងជ័រ 21,,C-003,14,1,1,0, No Tax, exclusive,SC-3-054,,,,,,,,,,,,,no_image.png,standard
+W0962,ពោងជ័រ 27,,C-003,14,1,1,0, No Tax, exclusive,SC-3-054,,,,,,,,,,,,,no_image.png,standard
+W0963,ពោងជ័រ 34,,C-003,14,1,1,0, No Tax, exclusive,SC-3-054,,,,,,,,,,,,,no_image.png,standard
+W0964,ពោងជ័រ 42,,C-003,14,1,1,0, No Tax, exclusive,SC-3-054,,,,,,,,,,,,,no_image.png,standard
+W0965,ពោងជ័រ 49,,C-003,14,1,1,0, No Tax, exclusive,SC-3-054,,,,,,,,,,,,,no_image.png,standard
+W0966,ពោងជ័រ 60,,C-003,14,1,1,0, No Tax, exclusive,SC-3-054,,,,,,,,,,,,,no_image.png,standard
+W0967,ពោងជ័រ 90,,C-003,14,1,1,0, No Tax, exclusive,SC-3-054,,,,,,,,,,,,,no_image.png,standard
+W0968,ពោងជ័រ 114,,C-003,14,1,1,0, No Tax, exclusive,SC-3-054,,,,,,,,,,,,,no_image.png,standard
+W0971,ពោងអ៊ីណុក 21,,C-003,14,1,1,0, No Tax, exclusive,SC-3-055,,,,,,,,,,,,,no_image.png,standard
+W0972,ពោងអ៊ីណុក 27,,C-003,14,1,1,0, No Tax, exclusive,SC-3-055,,,,,,,,,,,,,no_image.png,standard
+W0973,ពោងអ៊ីណុក 34,,C-003,14,1,1,0, No Tax, exclusive,SC-3-055,,,,,,,,,,,,,no_image.png,standard
+W0974,ពោងអ៊ីណុក 42,,C-003,14,1,1,0, No Tax, exclusive,SC-3-055,,,,,,,,,,,,,no_image.png,standard
+W0975,ពោងអ៊ីណុក 49,,C-003,14,1,1,0, No Tax, exclusive,SC-3-055,,,,,,,,,,,,,no_image.png,standard
+W0976,ពោងអ៊ីណុក 60,,C-003,14,1,1,0, No Tax, exclusive,SC-3-055,,,,,,,,,,,,,no_image.png,standard
+W0977,ពោងអ៊ីណុក 90,,C-003,14,1,1,0, No Tax, exclusive,SC-3-055,,,,,,,,,,,,,no_image.png,standard
+W0978,ពោងអ៊ីណុក 114,,C-003,14,1,1,0, No Tax, exclusive,SC-3-055,,,,,,,,,,,,,no_image.png,standard
+W0979,ពោងអ៊ីណុក 125,,C-003,14,1,1,0, No Tax, exclusive,SC-3-055,,,,,,,,,,,,,no_image.png,standard
+W0980,ពោងអ៊ីណុក 165,,C-003,14,1,1,0, No Tax, exclusive,SC-3-055,,,,,,,,,,,,,no_image.png,standard
+W0991,ក្បាលរ៉ូមីណេអ៊ីណុក,,C-003,11,1,1,0, No Tax, exclusive,SC-3-056,,,,,,,,,,,,,no_image.png,standard
+W0992,ក្បាលរ៉ូមីណេផ្កាឈួកអ៊ីណុក,,C-003,11,1,1,0, No Tax, exclusive,SC-3-056,,,,,,,,,,,,,no_image.png,standard
+W1001,ប្រអប់ដាក់ក្រដាសអ៊ីណុក,,C-003,14,1,1,0, No Tax, exclusive,SC-3-057,,,,,,,,,,,,,no_image.png,standard
+W1010,ខ្សែអន 2 តឹក ,,C-003,8,1,1,0, No Tax, exclusive,SC-3-058,,,,,,,,,,,,,no_image.png,standard
+W1011,ខ្សែអន 3 តឹក,,C-003,8,1,1,0, No Tax, exclusive,SC-3-058,,,,,,,,,,,,,no_image.png,standard
+W1012,ខ្សែអន 4 តឹក,,C-003,8,1,1,0, No Tax, exclusive,SC-3-058,,,,,,,,,,,,,no_image.png,standard
+W1013,ខ្សែអន 5 តឹក,,C-003,8,1,1,0, No Tax, exclusive,SC-3-058,,,,,,,,,,,,,no_image.png,standard
+W1014,ខ្សែអន 6 តឹក,,C-003,8,1,1,0, No Tax, exclusive,SC-3-058,,,,,,,,,,,,,no_image.png,standard
+W1015,រ៉ងទ្រនាប់ជ័រ,,C-003,11,1,1,0, No Tax, exclusive,SC-3-058,,,,,,,,,,,,,no_image.png,standard
+W1021,ខ្សែឡាបូល 3 តឹក,,C-003,8,1,1,0, No Tax, exclusive,SC-3-059,,,,,,,,,,,,,no_image.png,standard
+W1022,ខ្សែឡាបូល 4 តឹក,,C-003,8,1,1,0, No Tax, exclusive,SC-3-059,,,,,,,,,,,,,no_image.png,standard
+W1023,ខ្សែឡាបូល 5 តឹក,,C-003,8,1,1,0, No Tax, exclusive,SC-3-059,,,,,,,,,,,,,no_image.png,standard
+W1024,ខ្សែឡាបូល 6 តឹក,,C-003,8,1,1,0, No Tax, exclusive,SC-3-059,,,,,,,,,,,,,no_image.png,standard
+W1025,ខ្សែឡាបូល 8 តឹក,,C-003,8,1,1,0, No Tax, exclusive,SC-3-059,,,,,,,,,,,,,no_image.png,standard
+W1031,ខ្សែអនាម័យជ័រ,,C-003,8,1,1,0, No Tax, exclusive,SC-3-060,,,,,,,,,,,,,no_image.png,standard
+W1032,ក្បាលបាញ់អនាម័យជ័រ,,C-003,11,1,1,0, No Tax, exclusive,SC-3-060,,,,,,,,,,,,,no_image.png,standard
+W1033,ខ្សែអនាម័យជ័រ + ក្បាលបាញ់,,C-003,14,1,1,0, No Tax, exclusive,SC-3-060,,,,,,,,,,,,,no_image.png,standard
+W1034,ខ្សែអនាម័យអ៊ីណុក,,C-003,8,1,1,0, No Tax, exclusive,SC-3-060,,,,,,,,,,,,,no_image.png,standard
+W1035,ក្បាលបាញ់អនាម័យអ៊ីណុក,,C-003,11,1,1,0, No Tax, exclusive,SC-3-060,,,,,,,,,,,,,no_image.png,standard
+W1036,ខ្សែអនាម័យអ៊ីណុក + ក្បាលបាញ់,,C-003,14,1,1,0, No Tax, exclusive,SC-3-060,,,,,,,,,,,,,no_image.png,standard
+W1046,ផ្ការឈួក ជ័រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-061,,,,,,,,,,,,,no_image.png,standard
+W1047,ផ្ការឈួក អ៊ីណុក,,C-003,14,1,1,0, No Tax, exclusive,SC-3-061,,,,,,,,,,,,,no_image.png,standard
+W1061,កាវលាបទុយោ 0.5 លីត្រ,,C-003,7,1,1,0, No Tax, exclusive,SC-3-062,,,,,,,,,,,,,no_image.png,standard
+W1062,កាវលាបទុយោ 1 លីត្រ,,C-003,7,1,1,0, No Tax, exclusive,SC-3-062,,,,,,,,,,,,,no_image.png,standard
+W1063,បង់រុំ/ ស្គុតទឹក,,C-003,33,1,1,0, No Tax, exclusive,SC-3-063,,,,,,,,,,,,,no_image.png,standard
+W1071,កន្ត្រៃកាត់ទុយោ PVC,,C-003,12,1,1,0, No Tax, exclusive,SC-3-064,,,,,,,,,,,,,no_image.png,standard
+W1081,ក្រចាប់ជាប់ជញ្ជាំងជ័រ 21,,C-003,11,1,1,0, No Tax, exclusive,SC-3-065,,,,,,,,,,,,,no_image.png,standard
+W1082,ក្រចាប់ជាប់ជញ្ជាំងជ័រ 27,,C-003,11,1,1,0, No Tax, exclusive,SC-3-065,,,,,,,,,,,,,no_image.png,standard
+W1083,ក្រចាប់ជាប់ជញ្ជាំងជ័រ 34,,C-003,11,1,1,0, No Tax, exclusive,SC-3-065,,,,,,,,,,,,,no_image.png,standard
+W1084,ក្រចាប់ជាប់ជញ្ជាំងជ័រ 42,,C-003,11,1,1,0, No Tax, exclusive,SC-3-065,,,,,,,,,,,,,no_image.png,standard
+W1085,ក្រចាប់ជាប់ជញ្ជាំងជ័រ 49,,C-003,11,1,1,0, No Tax, exclusive,SC-3-065,,,,,,,,,,,,,no_image.png,standard
+W1086,ក្រចាប់ជាប់ជញ្ជាំងជ័រ 60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-065,,,,,,,,,,,,,no_image.png,standard
+W1096,ក្រចាប់ជាប់ជញ្ជាំងដែក 21,,C-003,11,1,1,0, No Tax, exclusive,SC-3-066,,,,,,,,,,,,,no_image.png,standard
+W1097,ក្រចាប់ជាប់ជញ្ជាំងដែក 27,,C-003,11,1,1,0, No Tax, exclusive,SC-3-066,,,,,,,,,,,,,no_image.png,standard
+W1098,ក្រចាប់ជាប់ជញ្ជាំងដែក 34,,C-003,11,1,1,0, No Tax, exclusive,SC-3-066,,,,,,,,,,,,,no_image.png,standard
+W1099,ក្រចាប់ជាប់ជញ្ជាំងដែក 42,,C-003,11,1,1,0, No Tax, exclusive,SC-3-066,,,,,,,,,,,,,no_image.png,standard
+W1100,ក្រចាប់ជាប់ជញ្ជាំងដែក 49,,C-003,11,1,1,0, No Tax, exclusive,SC-3-066,,,,,,,,,,,,,no_image.png,standard
+W1101,ក្រចាប់ជាប់ជញ្ជាំងដែក 60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-066,,,,,,,,,,,,,no_image.png,standard
+W1102,ក្រចាប់ជាប់ជញ្ជាំងដែក 90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-066,,,,,,,,,,,,,no_image.png,standard
+W1103,ក្រចាប់ជាប់ជញ្ជាំងដែក 114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-066,,,,,,,,,,,,,no_image.png,standard
+W1104,ក្រចាប់ជាប់ជញ្ជាំងដែក 125,,C-003,11,1,1,0, No Tax, exclusive,SC-3-066,,,,,,,,,,,,,no_image.png,standard
+W1105,ក្រចាប់ជាប់ជញ្ជាំងដែក 165,,C-003,11,1,1,0, No Tax, exclusive,SC-3-066,,,,,,,,,,,,,no_image.png,standard
+W1106,ក្រចាប់ជាប់ជញ្ជាំងដែក 200,,C-003,11,1,1,0, No Tax, exclusive,SC-3-066,,,,,,,,,,,,,no_image.png,standard
+W1116,ក្រចាប់ព្យូរដែក 21,,C-003,11,1,1,0, No Tax, exclusive,SC-3-067,,,,,,,,,,,,,no_image.png,standard
+W1117,ក្រចាប់ព្យូរដែក 27,,C-003,11,1,1,0, No Tax, exclusive,SC-3-067,,,,,,,,,,,,,no_image.png,standard
+W1118,ក្រចាប់ព្យូរដែក 34,,C-003,11,1,1,0, No Tax, exclusive,SC-3-067,,,,,,,,,,,,,no_image.png,standard
+W1119,ក្រចាប់ព្យូរដែក 42,,C-003,11,1,1,0, No Tax, exclusive,SC-3-067,,,,,,,,,,,,,no_image.png,standard
+W1120,ក្រចាប់ព្យូរដែក 49,,C-003,11,1,1,0, No Tax, exclusive,SC-3-067,,,,,,,,,,,,,no_image.png,standard
+W1121,ក្រចាប់ព្យូរដែក 60,,C-003,11,1,1,0, No Tax, exclusive,SC-3-067,,,,,,,,,,,,,no_image.png,standard
+W1122,ក្រចាប់ព្យូរដែក 90,,C-003,11,1,1,0, No Tax, exclusive,SC-3-067,,,,,,,,,,,,,no_image.png,standard
+W1123,ក្រចាប់ព្យូរដែក 114,,C-003,11,1,1,0, No Tax, exclusive,SC-3-067,,,,,,,,,,,,,no_image.png,standard
+W1124,ក្រចាប់ព្យូរដែក 125,,C-003,11,1,1,0, No Tax, exclusive,SC-3-067,,,,,,,,,,,,,no_image.png,standard
+W1125,ក្រចាប់ព្យូរដែក 165,,C-003,11,1,1,0, No Tax, exclusive,SC-3-067,,,,,,,,,,,,,no_image.png,standard
+W1126,ក្រចាប់ព្យូរដែក 200,,C-003,11,1,1,0, No Tax, exclusive,SC-3-067,,,,,,,,,,,,,no_image.png,standard
+W1127,ក្រចាប់ព្យូរដែក 250,,C-003,11,1,1,0, No Tax, exclusive,SC-3-067,,,,,,,,,,,,,no_image.png,standard
+W1128,ក្រចាប់ព្យូរដែក 300,,C-003,11,1,1,0, No Tax, exclusive,SC-3-067,,,,,,,,,,,,,no_image.png,standard
+W1141,បង្គន់ចោងហោងទឹក,,C-003,14,1,1,0, No Tax, exclusive,SC-3-068,,,,,,,,,,,,,no_image.png,standard
+W1142,បង្គន់ចាក់ទឹក,,C-003,14,1,1,0, No Tax, exclusive,SC-3-068,,,,,,,,,,,,,no_image.png,standard
+W1143,បង្គន់កាច់ទឹក,,C-003,14,1,1,0, No Tax, exclusive,SC-3-068,,,,,,,,,,,,,no_image.png,standard
+W1144,បង្គន់ចុចទឹក,,C-003,14,1,1,0, No Tax, exclusive,SC-3-068,,,,,,,,,,,,,no_image.png,standard
+W1145,បង្គន់នោមធម្មតា បុរស ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-068,,,,,,,,,,,,,no_image.png,standard
+W1146,បង្គន់នោមអូតូ បុរស,,C-003,14,1,1,0, No Tax, exclusive,SC-3-068,,,,,,,,,,,,,no_image.png,standard
+W1161,ឡាបូល លាងដៃ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-069,,,,,,,,,,,,,no_image.png,standard
+W1162,ឡាបូល លាងចាន 1 ថត,,C-003,14,1,1,0, No Tax, exclusive,SC-3-069,,,,,,,,,,,,,no_image.png,standard
+W1163,ឡាបូល លាងចាន 2 ថត,,C-003,14,1,1,0, No Tax, exclusive,SC-3-069,,,,,,,,,,,,,no_image.png,standard
+W1164,ឡាបូល លាងចាន 3 ថត,,C-003,14,1,1,0, No Tax, exclusive,SC-3-069,,,,,,,,,,,,,no_image.png,standard
+W1176,បាញ់ញ័រ 1.6ម,,C-003,14,1,1,0, No Tax, exclusive,SC-3-070,,,,,,,,,,,,,no_image.png,standard
+W1177,បាញ់ញ័រ 1.7ម,,C-003,14,1,1,0, No Tax, exclusive,SC-3-070,,,,,,,,,,,,,no_image.png,standard
+W1186,ធុងទឹកជ័រ ឈរ 60 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-071,,,,,,,,,,,,,no_image.png,standard
+W1187,ធុងទឹកជ័រ ឈរ 100 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-071,,,,,,,,,,,,,no_image.png,standard
+W1188,ធុងទឹកជ័រ ឈរ 200 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-071,,,,,,,,,,,,,no_image.png,standard
+W1189,ធុងទឹកជ័រ ឈរ 500 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-071,,,,,,,,,,,,,no_image.png,standard
+W1190,ធុងទឹកជ័រ ឈរ 1000 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-071,,,,,,,,,,,,,no_image.png,standard
+W1191,ធុងទឹកជ័រ ឈរ 1500 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-071,,,,,,,,,,,,,no_image.png,standard
+W1192,ធុងទឹកជ័រ ឈរ 2000 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-071,,,,,,,,,,,,,no_image.png,standard
+W1193,ធុងទឹកជ័រ ឈរ 3000 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-071,,,,,,,,,,,,,no_image.png,standard
+W1194,ធុងទឹកជ័រ ឈរ 5000 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-071,,,,,,,,,,,,,no_image.png,standard
+W1195,ធុងទឹកជ័រ ផ្តេក 500 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-071,,,,,,,,,,,,,no_image.png,standard
+W1196,ធុងទឹកជ័រ​ ផ្តេក 1000 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-071,,,,,,,,,,,,,no_image.png,standard
+W1197,ធុងទឹកជ័រ ផ្តេក 1500 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-071,,,,,,,,,,,,,no_image.png,standard
+W1198,ធុងទឹកជ័រ ផ្តេក 2000 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-071,,,,,,,,,,,,,no_image.png,standard
+W1199,ធុងទឹកជ័រ ផ្តេក 2500 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-071,,,,,,,,,,,,,no_image.png,standard
+W1200,ធុងទឹកជ័រ ផ្តេក 3000 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-071,,,,,,,,,,,,,no_image.png,standard
+W1201,ធុងទឹកជ័រ ផ្តេក 3500 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-071,,,,,,,,,,,,,no_image.png,standard
+W1202,ធុងទឹកជ័រ ផ្តេក 4000 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-071,,,,,,,,,,,,,no_image.png,standard
+W1203,ធុងទឹកជ័រ ផ្តេក 5000 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-071,,,,,,,,,,,,,no_image.png,standard
+W1216,ធុងទឹកអ៊ីណុក ឈរ 500 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-072,,,,,,,,,,,,,no_image.png,standard
+W1217,ធុងទឹកអ៊ីណុក ឈរ 1000 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-072,,,,,,,,,,,,,no_image.png,standard
+W1218,ធុងទឹកអ៊ីណុក ឈរ 1500 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-072,,,,,,,,,,,,,no_image.png,standard
+W1219,ធុងទឹកអ៊ីណុក ឈរ 2000 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-072,,,,,,,,,,,,,no_image.png,standard
+W1220,ធុងទឹកអ៊ីណុក ឈរ 2500 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-072,,,,,,,,,,,,,no_image.png,standard
+W1221,ធុងទឹកអ៊ីណុក ឈរ 3000 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-072,,,,,,,,,,,,,no_image.png,standard
+W1222,ធុងទឹកអ៊ីណុក ឈរ 3500 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-072,,,,,,,,,,,,,no_image.png,standard
+W1223,ធុងទឹកអ៊ីណុក ឈរ 4000 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-072,,,,,,,,,,,,,no_image.png,standard
+W1224,ធុងទឹកអ៊ីណុក ឈរ 5000 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-072,,,,,,,,,,,,,no_image.png,standard
+W1225,ធុងទឹកអ៊ីណុក ផ្តេក 500 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-072,,,,,,,,,,,,,no_image.png,standard
+W1226,ធុងទឹកអ៊ីណុក ផ្តេក 1000 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-072,,,,,,,,,,,,,no_image.png,standard
+W1227,ធុងទឹកអ៊ីណុក ផ្តេក 1500 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-072,,,,,,,,,,,,,no_image.png,standard
+W1228,ធុងទឹកអ៊ីណុក ផ្តេក 2000 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-072,,,,,,,,,,,,,no_image.png,standard
+W1229,ធុងទឹកអ៊ីណុក ផ្តេក 2500 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-072,,,,,,,,,,,,,no_image.png,standard
+W1230,ធុងទឹកអ៊ីណុក ផ្តេក 3000 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-072,,,,,,,,,,,,,no_image.png,standard
+W1231,ធុងទឹកអ៊ីណុក ផ្តេក 3500 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-072,,,,,,,,,,,,,no_image.png,standard
+W1232,ធុងទឹកអ៊ីណុក ផ្តេក 4000 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-072,,,,,,,,,,,,,no_image.png,standard
+W1233,ធុងទឹកអ៊ីណុក ផ្តេក 5000 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-072,,,,,,,,,,,,,no_image.png,standard
+W1251,ធុងស្តុកលាមក 800 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-073,,,,,,,,,,,,,no_image.png,standard
+W1252,ធុងស្តុកលាមក 1000 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-073,,,,,,,,,,,,,no_image.png,standard
+W1253,ធុងស្តុកលាមក 1200 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-073,,,,,,,,,,,,,no_image.png,standard
+W1254,ធុងស្តុកលាមក 1600 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-073,,,,,,,,,,,,,no_image.png,standard
+W1255,ធុងស្តុកលាមក 1800 លីត្រ,,C-003,14,1,1,0, No Tax, exclusive,SC-3-073,,,,,,,,,,,,,no_image.png,standard
+W2000,ទុយោ PP-R 20,,C-003,18,1,1,0, No Tax, exclusive,SC-3-074,,,,,,,,,,,,,no_image.png,standard
+W2001,ទុយោ PP-R 25,,C-003,18,1,1,0, No Tax, exclusive,SC-3-074,,,,,,,,,,,,,no_image.png,standard
+W2002,ទុយោ PP-R 32,,C-003,18,1,1,0, No Tax, exclusive,SC-3-074,,,,,,,,,,,,,no_image.png,standard
+W2003,ទុយោ PP-R 40,,C-003,18,1,1,0, No Tax, exclusive,SC-3-074,,,,,,,,,,,,,no_image.png,standard
+W2004,ទុយោ PP-R 50,,C-003,18,1,1,0, No Tax, exclusive,SC-3-074,,,,,,,,,,,,,no_image.png,standard
+W2005,ទុយោ PP-R 63,,C-003,18,1,1,0, No Tax, exclusive,SC-3-074,,,,,,,,,,,,,no_image.png,standard
+W2006,ទុយោ PP-R 75,,C-003,18,1,1,0, No Tax, exclusive,SC-3-074,,,,,,,,,,,,,no_image.png,standard
+W2007,ទុយោ PP-R 110,,C-003,18,1,1,0, No Tax, exclusive,SC-3-074,,,,,,,,,,,,,no_image.png,standard
+W2008,ទុយោ PP-R 160,,C-003,18,1,1,0, No Tax, exclusive,SC-3-074,,,,,,,,,,,,,no_image.png,standard
+W2009,កែង PP-R 20,,C-003,11,1,1,0, No Tax, exclusive,SC-3-075,,,,,,,,,,,,,no_image.png,standard
+W2010,កែង PP-R 25,,C-003,11,1,1,0, No Tax, exclusive,SC-3-075,,,,,,,,,,,,,no_image.png,standard
+W2011,កែង PP-R 32,,C-003,11,1,1,0, No Tax, exclusive,SC-3-075,,,,,,,,,,,,,no_image.png,standard
+W2012,កែង PP-R 40,,C-003,11,1,1,0, No Tax, exclusive,SC-3-075,,,,,,,,,,,,,no_image.png,standard
+W2013,កែង PP-R 50,,C-003,11,1,1,0, No Tax, exclusive,SC-3-075,,,,,,,,,,,,,no_image.png,standard
+W2014,កែង PP-R 63,,C-003,11,1,1,0, No Tax, exclusive,SC-3-075,,,,,,,,,,,,,no_image.png,standard
+W2015,កែង PP-R 75,,C-003,11,1,1,0, No Tax, exclusive,SC-3-075,,,,,,,,,,,,,no_image.png,standard
+W2016,កែង PP-R 110,,C-003,11,1,1,0, No Tax, exclusive,SC-3-075,,,,,,,,,,,,,no_image.png,standard
+W2017,កែង PP-R 160,,C-003,11,1,1,0, No Tax, exclusive,SC-3-075,,,,,,,,,,,,,no_image.png,standard
+W2018,កែងធ្មេញក្នុង PP-R 20x1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-076,,,,,,,,,,,,,no_image.png,standard
+W2019,កែងធ្មេញក្នុង PP-R 25x1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-076,,,,,,,,,,,,,no_image.png,standard
+W2020,កែងធ្មេញក្នុង PP-R 25x3/4",,C-003,11,1,1,0, No Tax, exclusive,SC-3-076,,,,,,,,,,,,,no_image.png,standard
+W2021,កែងធ្មេញក្នុង PP-R 32x3/4",,C-003,11,1,1,0, No Tax, exclusive,SC-3-076,,,,,,,,,,,,,no_image.png,standard
+W2022,កែងធ្មេញក្នុង PP-R 32x 1",,C-003,11,1,1,0, No Tax, exclusive,SC-3-076,,,,,,,,,,,,,no_image.png,standard
+W2023,កែងធ្មេញក្នុង PP-R 40x 1",,C-003,11,1,1,0, No Tax, exclusive,SC-3-076,,,,,,,,,,,,,no_image.png,standard
+W2024,កែងធ្មេញក្នុង PP-R 40x 1.1/4",,C-003,11,1,1,0, No Tax, exclusive,SC-3-076,,,,,,,,,,,,,no_image.png,standard
+W2025,កែងភ្លោះធ្មេញក្នុង PP-R 20x1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-076,,,,,,,,,,,,,no_image.png,standard
+W2026,កែងធ្មេញក្រៅ PP-R 20x1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-077,,,,,,,,,,,,,no_image.png,standard
+W2027,កែងធ្មេញក្រៅ PP-R 25x1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-077,,,,,,,,,,,,,no_image.png,standard
+W2028,កែងធ្មេញក្រៅ PP-R 25x3/4",,C-003,11,1,1,0, No Tax, exclusive,SC-3-077,,,,,,,,,,,,,no_image.png,standard
+W2029,កែងធ្មេញក្រៅ PP-R 32x3/4",,C-003,11,1,1,0, No Tax, exclusive,SC-3-077,,,,,,,,,,,,,no_image.png,standard
+W2030,កែងធ្មេញក្រៅ PP-R 32x1",,C-003,11,1,1,0, No Tax, exclusive,SC-3-077,,,,,,,,,,,,,no_image.png,standard
+W2031,កែងធ្មេញក្រៅ PP-R 40x 1",,C-003,11,1,1,0, No Tax, exclusive,SC-3-077,,,,,,,,,,,,,no_image.png,standard
+W2032,កែងធ្មេញក្រៅ PP-R 40x 1.1/4",,C-003,11,1,1,0, No Tax, exclusive,SC-3-077,,,,,,,,,,,,,no_image.png,standard
+W2033,កែងភ្លោះធ្មេញក្រៅ PP-R 20x1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-077,,,,,,,,,,,,,no_image.png,standard
+W2034,ដឺមី PP-R 20,,C-003,11,1,1,0, No Tax, exclusive,SC-3-078,,,,,,,,,,,,,no_image.png,standard
+W2035,ដឺមី PP-R 25,,C-003,11,1,1,0, No Tax, exclusive,SC-3-078,,,,,,,,,,,,,no_image.png,standard
+W2036,ដឺមី PP-R 32,,C-003,11,1,1,0, No Tax, exclusive,SC-3-078,,,,,,,,,,,,,no_image.png,standard
+W2037,ដឺមី PP-R 40,,C-003,11,1,1,0, No Tax, exclusive,SC-3-078,,,,,,,,,,,,,no_image.png,standard
+W2038,ដឺមី PP-R 50,,C-003,11,1,1,0, No Tax, exclusive,SC-3-078,,,,,,,,,,,,,no_image.png,standard
+W2039,ដឺមី PP-R 63,,C-003,11,1,1,0, No Tax, exclusive,SC-3-078,,,,,,,,,,,,,no_image.png,standard
+W2040,ដឺមី PP-R 75,,C-003,11,1,1,0, No Tax, exclusive,SC-3-078,,,,,,,,,,,,,no_image.png,standard
+W2041,ដឺមី PP-R 110,,C-003,11,1,1,0, No Tax, exclusive,SC-3-078,,,,,,,,,,,,,no_image.png,standard
+W2042,ដឺមី PP-R 160,,C-003,11,1,1,0, No Tax, exclusive,SC-3-078,,,,,,,,,,,,,no_image.png,standard
+W2043,សុង PP-R 20,,C-003,11,1,1,0, No Tax, exclusive,SC-3-079,,,,,,,,,,,,,no_image.png,standard
+W2044,សុង PP-R 25,,C-003,11,1,1,0, No Tax, exclusive,SC-3-079,,,,,,,,,,,,,no_image.png,standard
+W2045,សុង PP-R 32,,C-003,11,1,1,0, No Tax, exclusive,SC-3-079,,,,,,,,,,,,,no_image.png,standard
+W2046,សុង PP-R 40,,C-003,11,1,1,0, No Tax, exclusive,SC-3-079,,,,,,,,,,,,,no_image.png,standard
+W2047,សុង PP-R 50,,C-003,11,1,1,0, No Tax, exclusive,SC-3-079,,,,,,,,,,,,,no_image.png,standard
+W2048,សុង PP-R 63,,C-003,11,1,1,0, No Tax, exclusive,SC-3-079,,,,,,,,,,,,,no_image.png,standard
+W2049,សុង PP-R 75,,C-003,11,1,1,0, No Tax, exclusive,SC-3-079,,,,,,,,,,,,,no_image.png,standard
+W2050,សុង PP-R 110,,C-003,11,1,1,0, No Tax, exclusive,SC-3-079,,,,,,,,,,,,,no_image.png,standard
+W2051,សុង PP-R 160,,C-003,11,1,1,0, No Tax, exclusive,SC-3-079,,,,,,,,,,,,,no_image.png,standard
+W2052,សុង PP-R 25-20,,C-003,11,1,1,0, No Tax, exclusive,SC-3-080,,,,,,,,,,,,,no_image.png,standard
+W2053,សុង PP-R 32-20,,C-003,11,1,1,0, No Tax, exclusive,SC-3-080,,,,,,,,,,,,,no_image.png,standard
+W2054,សុង PP-R 32-25,,C-003,11,1,1,0, No Tax, exclusive,SC-3-080,,,,,,,,,,,,,no_image.png,standard
+W2055,សុង PP-R 40-25,,C-003,11,1,1,0, No Tax, exclusive,SC-3-080,,,,,,,,,,,,,no_image.png,standard
+W2056,សុង PP-R 40-32,,C-003,11,1,1,0, No Tax, exclusive,SC-3-080,,,,,,,,,,,,,no_image.png,standard
+W2057,សុង PP-R 50-25,,C-003,11,1,1,0, No Tax, exclusive,SC-3-080,,,,,,,,,,,,,no_image.png,standard
+W2058,សុង PP-R 50-32,,C-003,11,1,1,0, No Tax, exclusive,SC-3-080,,,,,,,,,,,,,no_image.png,standard
+W2059,សុង PP-R 63-20,,C-003,11,1,1,0, No Tax, exclusive,SC-3-080,,,,,,,,,,,,,no_image.png,standard
+W2060,សុង PP-R 63-25,,C-003,11,1,1,0, No Tax, exclusive,SC-3-080,,,,,,,,,,,,,no_image.png,standard
+W2061,សុង PP-R 63-32,,C-003,11,1,1,0, No Tax, exclusive,SC-3-080,,,,,,,,,,,,,no_image.png,standard
+W2062,សុង PP-R 63-50,,C-003,11,1,1,0, No Tax, exclusive,SC-3-080,,,,,,,,,,,,,no_image.png,standard
+W2063,សុង PP-R 75-25,,C-003,11,1,1,0, No Tax, exclusive,SC-3-080,,,,,,,,,,,,,no_image.png,standard
+W2064,សុង PP-R 75-32,,C-003,11,1,1,0, No Tax, exclusive,SC-3-080,,,,,,,,,,,,,no_image.png,standard
+W2065,សុង PP-R 75-50,,C-003,11,1,1,0, No Tax, exclusive,SC-3-080,,,,,,,,,,,,,no_image.png,standard
+W2066,សុង PP-R 75-63,,C-003,11,1,1,0, No Tax, exclusive,SC-3-080,,,,,,,,,,,,,no_image.png,standard
+W2067,សុង PP-110-50,,C-003,11,1,1,0, No Tax, exclusive,SC-3-080,,,,,,,,,,,,,no_image.png,standard
+W2068,សុង PP-110-63,,C-003,11,1,1,0, No Tax, exclusive,SC-3-080,,,,,,,,,,,,,no_image.png,standard
+W2069,សុង PP-110-75,,C-003,11,1,1,0, No Tax, exclusive,SC-3-080,,,,,,,,,,,,,no_image.png,standard
+W2070,សុង PP-160-75,,C-003,11,1,1,0, No Tax, exclusive,SC-3-080,,,,,,,,,,,,,no_image.png,standard
+W2071,សុង PP-160-110,,C-003,11,1,1,0, No Tax, exclusive,SC-3-080,,,,,,,,,,,,,no_image.png,standard
+W2072,សុងធ្មេញក្នុង PP-R 20x1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-081,,,,,,,,,,,,,no_image.png,standard
+W2073,សុងធ្មេញក្នុង PP-R 25x1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-081,,,,,,,,,,,,,no_image.png,standard
+W2074,សុងធ្មេញក្នុង PP-R 25x3/4",,C-003,11,1,1,0, No Tax, exclusive,SC-3-081,,,,,,,,,,,,,no_image.png,standard
+W2075,សុងធ្មេញក្នុង PP-R 32x3/4",,C-003,11,1,1,0, No Tax, exclusive,SC-3-081,,,,,,,,,,,,,no_image.png,standard
+W2076,សុងធ្មេញក្នុង PP-R 32x1",,C-003,11,1,1,0, No Tax, exclusive,SC-3-081,,,,,,,,,,,,,no_image.png,standard
+W2077,សុងធ្មេញក្នុង PP-R 40x1",,C-003,11,1,1,0, No Tax, exclusive,SC-3-081,,,,,,,,,,,,,no_image.png,standard
+W2078,សុងធ្មេញក្នុង PP-R 40x 1.1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-081,,,,,,,,,,,,,no_image.png,standard
+W2079,សុងធ្មេញក្នុង PP-R 50x1",,C-003,11,1,1,0, No Tax, exclusive,SC-3-081,,,,,,,,,,,,,no_image.png,standard
+W2080,សុងធ្មេញក្នុង PP-R 50x 1.1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-081,,,,,,,,,,,,,no_image.png,standard
+W2081,សុងធ្មេញក្នុង PP-R 75x1.1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-081,,,,,,,,,,,,,no_image.png,standard
+W2082,សុងធ្មេញក្នុង PP-R 75x2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-081,,,,,,,,,,,,,no_image.png,standard
+W2083,សុងធ្មេញក្រៅ PP-R 20x1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-082,,,,,,,,,,,,,no_image.png,standard
+W2084,សុងធ្មេញក្រៅ PP-R 25x1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-082,,,,,,,,,,,,,no_image.png,standard
+W2085,សុងធ្មេញក្រៅ PP-R 25x3/4",,C-003,11,1,1,0, No Tax, exclusive,SC-3-082,,,,,,,,,,,,,no_image.png,standard
+W2086,សុងធ្មេញក្រៅ PP-R 32x3/4",,C-003,11,1,1,0, No Tax, exclusive,SC-3-082,,,,,,,,,,,,,no_image.png,standard
+W2087,សុងធ្មេញក្រៅ PP-R 32x1",,C-003,11,1,1,0, No Tax, exclusive,SC-3-082,,,,,,,,,,,,,no_image.png,standard
+W2088,សុងធ្មេញក្រៅ PP-R 40x1",,C-003,11,1,1,0, No Tax, exclusive,SC-3-082,,,,,,,,,,,,,no_image.png,standard
+W2089,សុងធ្មេញក្រៅ PP-R 40x 1.1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-082,,,,,,,,,,,,,no_image.png,standard
+W2090,សុងធ្មេញក្រៅ PP-R 50x1",,C-003,11,1,1,0, No Tax, exclusive,SC-3-082,,,,,,,,,,,,,no_image.png,standard
+W2091,សុងធ្មេញក្រៅ PP-R 50x 1.1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-082,,,,,,,,,,,,,no_image.png,standard
+W2092,សុងធ្មេញក្រៅ PP-R 75x1.1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-082,,,,,,,,,,,,,no_image.png,standard
+W2093,សុងធ្មេញក្រៅ PP-R 75x2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-082,,,,,,,,,,,,,no_image.png,standard
+W2094,តេ​ PP-R 20,,C-003,11,1,1,0, No Tax, exclusive,SC-3-083,,,,,,,,,,,,,no_image.png,standard
+W2095,តេ​ PP-R 25,,C-003,11,1,1,0, No Tax, exclusive,SC-3-083,,,,,,,,,,,,,no_image.png,standard
+W2096,តេ​ PP-R 32,,C-003,11,1,1,0, No Tax, exclusive,SC-3-083,,,,,,,,,,,,,no_image.png,standard
+W2097,តេ​ PP-R 40,,C-003,11,1,1,0, No Tax, exclusive,SC-3-083,,,,,,,,,,,,,no_image.png,standard
+W2098,តេ​ PP-R 50,,C-003,11,1,1,0, No Tax, exclusive,SC-3-083,,,,,,,,,,,,,no_image.png,standard
+W2099,តេ​ PP-R 63,,C-003,11,1,1,0, No Tax, exclusive,SC-3-083,,,,,,,,,,,,,no_image.png,standard
+W2100,តេ​ PP-R 75,,C-003,11,1,1,0, No Tax, exclusive,SC-3-083,,,,,,,,,,,,,no_image.png,standard
+W2101,តេ​ PP-R 110,,C-003,11,1,1,0, No Tax, exclusive,SC-3-083,,,,,,,,,,,,,no_image.png,standard
+W2102,តេ​ PP-R 160,,C-003,11,1,1,0, No Tax, exclusive,SC-3-083,,,,,,,,,,,,,no_image.png,standard
+W2103,តេ​ PP-R 25-20,,C-003,11,1,1,0, No Tax, exclusive,SC-3-084,,,,,,,,,,,,,no_image.png,standard
+W2104,តេ​ PP-R 32-20,,C-003,11,1,1,0, No Tax, exclusive,SC-3-084,,,,,,,,,,,,,no_image.png,standard
+W2105,តេ​ PP-R 32-25,,C-003,11,1,1,0, No Tax, exclusive,SC-3-084,,,,,,,,,,,,,no_image.png,standard
+W2106,តេ​ PP-R 40-25,,C-003,11,1,1,0, No Tax, exclusive,SC-3-084,,,,,,,,,,,,,no_image.png,standard
+W2107,តេ​ PP-R 40-32,,C-003,11,1,1,0, No Tax, exclusive,SC-3-084,,,,,,,,,,,,,no_image.png,standard
+W2108,តេ​ PP-R 50-20,,C-003,11,1,1,0, No Tax, exclusive,SC-3-084,,,,,,,,,,,,,no_image.png,standard
+W2109,តេ​ PP-R 50-25,,C-003,11,1,1,0, No Tax, exclusive,SC-3-084,,,,,,,,,,,,,no_image.png,standard
+W2110,តេ​ PP-R 50-32,,C-003,11,1,1,0, No Tax, exclusive,SC-3-084,,,,,,,,,,,,,no_image.png,standard
+W2111,តេ​ PP-R 63-25,,C-003,11,1,1,0, No Tax, exclusive,SC-3-084,,,,,,,,,,,,,no_image.png,standard
+W2112,តេ​ PP-R 63-32,,C-003,11,1,1,0, No Tax, exclusive,SC-3-084,,,,,,,,,,,,,no_image.png,standard
+W2113,តេ​ PP-R 63-50,,C-003,11,1,1,0, No Tax, exclusive,SC-3-084,,,,,,,,,,,,,no_image.png,standard
+W2114,តេ​ PP-R 75-25,,C-003,11,1,1,0, No Tax, exclusive,SC-3-084,,,,,,,,,,,,,no_image.png,standard
+W2115,តេ​ PP-R 75-32,,C-003,11,1,1,0, No Tax, exclusive,SC-3-084,,,,,,,,,,,,,no_image.png,standard
+W2116,តេ​ PP-R 75-50,,C-003,11,1,1,0, No Tax, exclusive,SC-3-084,,,,,,,,,,,,,no_image.png,standard
+W2117,តេ​ PP-R 110-32,,C-003,11,1,1,0, No Tax, exclusive,SC-3-084,,,,,,,,,,,,,no_image.png,standard
+W2118,តេ​ PP-R 110-50,,C-003,11,1,1,0, No Tax, exclusive,SC-3-084,,,,,,,,,,,,,no_image.png,standard
+W2119,តេ​ PP-R 110-63,,C-003,11,1,1,0, No Tax, exclusive,SC-3-084,,,,,,,,,,,,,no_image.png,standard
+W2120,តេ​ PP-R 110-75,,C-003,11,1,1,0, No Tax, exclusive,SC-3-084,,,,,,,,,,,,,no_image.png,standard
+W2121,តេ​ PP-R 160-63,,C-003,11,1,1,0, No Tax, exclusive,SC-3-084,,,,,,,,,,,,,no_image.png,standard
+W2122,តេ​ PP-R 160-75,,C-003,11,1,1,0, No Tax, exclusive,SC-3-084,,,,,,,,,,,,,no_image.png,standard
+W2123,តេ​ PP-R 160-110,,C-003,11,1,1,0, No Tax, exclusive,SC-3-084,,,,,,,,,,,,,no_image.png,standard
+W2124,តេធ្មេញក្នុង PP-R 20x1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-085,,,,,,,,,,,,,no_image.png,standard
+W2125,តេធ្មេញក្នុង PP-R 25x1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-085,,,,,,,,,,,,,no_image.png,standard
+W2126,តេធ្មេញក្នុង PP-R 25x3/4",,C-003,11,1,1,0, No Tax, exclusive,SC-3-085,,,,,,,,,,,,,no_image.png,standard
+W2127,តេធ្មេញក្នុង PP-R 32x3/4",,C-003,11,1,1,0, No Tax, exclusive,SC-3-085,,,,,,,,,,,,,no_image.png,standard
+W2128,តេធ្មេញក្នុង PP-R 32x1",,C-003,11,1,1,0, No Tax, exclusive,SC-3-085,,,,,,,,,,,,,no_image.png,standard
+W2129,តេធ្មេញក្នុង PP-R 40x1",,C-003,11,1,1,0, No Tax, exclusive,SC-3-085,,,,,,,,,,,,,no_image.png,standard
+W2130,តេធ្មេញក្នុង PP-R 40x1.1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-085,,,,,,,,,,,,,no_image.png,standard
+W2131,តេធ្មេញក្នុង PP-R 50x1",,C-003,11,1,1,0, No Tax, exclusive,SC-3-085,,,,,,,,,,,,,no_image.png,standard
+W2132,តេធ្មេញក្នុង PP-R 50x1.1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-085,,,,,,,,,,,,,no_image.png,standard
+W2133,តេធ្មេញក្រៅ PP-R 20x1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-086,,,,,,,,,,,,,no_image.png,standard
+W2134,តេធ្មេញក្រៅ PP-R 25x1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-086,,,,,,,,,,,,,no_image.png,standard
+W2135,តេធ្មេញក្រៅ PP-R 25x3/4",,C-003,11,1,1,0, No Tax, exclusive,SC-3-086,,,,,,,,,,,,,no_image.png,standard
+W2136,តេធ្មេញក្រៅ PP-R 32x3/4",,C-003,11,1,1,0, No Tax, exclusive,SC-3-086,,,,,,,,,,,,,no_image.png,standard
+W2137,តេធ្មេញក្រៅ PP-R 32x1",,C-003,11,1,1,0, No Tax, exclusive,SC-3-086,,,,,,,,,,,,,no_image.png,standard
+W2138,តេធ្មេញក្រៅ PP-R 40x1",,C-003,11,1,1,0, No Tax, exclusive,SC-3-086,,,,,,,,,,,,,no_image.png,standard
+W2139,តេធ្មេញក្រៅ PP-R 40x1.1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-086,,,,,,,,,,,,,no_image.png,standard
+W2140,តេធ្មេញក្រៅ PP-R 50x1",,C-003,11,1,1,0, No Tax, exclusive,SC-3-086,,,,,,,,,,,,,no_image.png,standard
+W2141,តេធ្មេញក្រៅ PP-R 50x1.1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-086,,,,,,,,,,,,,no_image.png,standard
+W2142,ឆ្នុក PP-R 20,,C-003,11,1,1,0, No Tax, exclusive,SC-3-087,,,,,,,,,,,,,no_image.png,standard
+W2143,ឆ្នុក PP-R 25,,C-003,11,1,1,0, No Tax, exclusive,SC-3-087,,,,,,,,,,,,,no_image.png,standard
+W2144,ឆ្នុក PP-R 32,,C-003,11,1,1,0, No Tax, exclusive,SC-3-087,,,,,,,,,,,,,no_image.png,standard
+W2145,ឆ្នុក PP-R 40,,C-003,11,1,1,0, No Tax, exclusive,SC-3-087,,,,,,,,,,,,,no_image.png,standard
+W2146,ឆ្នុក PP-R 50,,C-003,11,1,1,0, No Tax, exclusive,SC-3-087,,,,,,,,,,,,,no_image.png,standard
+W2147,ឆ្នុក PP-R 63,,C-003,11,1,1,0, No Tax, exclusive,SC-3-087,,,,,,,,,,,,,no_image.png,standard
+W2148,ឆ្នុក PP-R 75,,C-003,11,1,1,0, No Tax, exclusive,SC-3-087,,,,,,,,,,,,,no_image.png,standard
+W2149,ឆ្នុក PP-R 110,,C-003,11,1,1,0, No Tax, exclusive,SC-3-087,,,,,,,,,,,,,no_image.png,standard
+W2150,ឆ្នុក PP-R 160,,C-003,11,1,1,0, No Tax, exclusive,SC-3-087,,,,,,,,,,,,,no_image.png,standard
+W2151,ឆ្នុកធ្មេញក្នុង PP-R 20,,C-003,11,1,1,0, No Tax, exclusive,SC-3-088,,,,,,,,,,,,,no_image.png,standard
+W2152,ឆ្នុកធ្មេញក្នុង PP-R 25,,C-003,11,1,1,0, No Tax, exclusive,SC-3-088,,,,,,,,,,,,,no_image.png,standard
+W2153,ឆ្នុកធ្មេញក្នុង PP-R 32,,C-003,11,1,1,0, No Tax, exclusive,SC-3-088,,,,,,,,,,,,,no_image.png,standard
+W2154,ឆ្នុកធ្មេញក្នុង PP-R 40,,C-003,11,1,1,0, No Tax, exclusive,SC-3-088,,,,,,,,,,,,,no_image.png,standard
+W2155,ឆ្នុកធ្មេញក្រៅ PP-R 20,,C-003,11,1,1,0, No Tax, exclusive,SC-3-089,,,,,,,,,,,,,no_image.png,standard
+W2156,ឆ្នុកធ្មេញក្រៅ PP-R 25,,C-003,11,1,1,0, No Tax, exclusive,SC-3-089,,,,,,,,,,,,,no_image.png,standard
+W2157,ឆ្នុកធ្មេញក្រៅ PP-R 32,,C-003,11,1,1,0, No Tax, exclusive,SC-3-089,,,,,,,,,,,,,no_image.png,standard
+W2158,ឆ្នុកធ្មេញក្រៅ PP-R 40,,C-003,11,1,1,0, No Tax, exclusive,SC-3-089,,,,,,,,,,,,,no_image.png,standard
+W2159,រ៉ាក់គ័រ PP-R 20,,C-003,11,1,1,0, No Tax, exclusive,SC-3-090,,,,,,,,,,,,,no_image.png,standard
+W2160,រ៉ាក់គ័រ PP-R 25,,C-003,11,1,1,0, No Tax, exclusive,SC-3-090,,,,,,,,,,,,,no_image.png,standard
+W2161,រ៉ាក់គ័រ PP-R 32,,C-003,11,1,1,0, No Tax, exclusive,SC-3-090,,,,,,,,,,,,,no_image.png,standard
+W2162,រ៉ាក់គ័រ PP-R 40,,C-003,11,1,1,0, No Tax, exclusive,SC-3-090,,,,,,,,,,,,,no_image.png,standard
+W2163,រ៉ាក់គ័រ PP-R 50,,C-003,11,1,1,0, No Tax, exclusive,SC-3-090,,,,,,,,,,,,,no_image.png,standard
+W2164,រ៉ាក់គ័រ PP-R 63,,C-003,11,1,1,0, No Tax, exclusive,SC-3-090,,,,,,,,,,,,,no_image.png,standard
+W2165,រ៉ាក់គ័រ PP-R 75,,C-003,11,1,1,0, No Tax, exclusive,SC-3-090,,,,,,,,,,,,,no_image.png,standard
+W2166,រ៉ាក់គ័រធ្មេញក្នុង PP-R 20x1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-091,,,,,,,,,,,,,no_image.png,standard
+W2167,រ៉ាក់គ័រធ្មេញក្នុង PP-R 25x1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-091,,,,,,,,,,,,,no_image.png,standard
+W2168,រ៉ាក់គ័រធ្មេញក្នុង PP-R 25x3/4",,C-003,11,1,1,0, No Tax, exclusive,SC-3-091,,,,,,,,,,,,,no_image.png,standard
+W2169,រ៉ាក់គ័រធ្មេញក្នុង PP-R 32x1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-091,,,,,,,,,,,,,no_image.png,standard
+W2170,រ៉ាក់គ័រធ្មេញក្នុង PP-R 32x3/4",,C-003,11,1,1,0, No Tax, exclusive,SC-3-091,,,,,,,,,,,,,no_image.png,standard
+W2171,រ៉ាក់គ័រធ្មេញក្នុង PP-R 32x1",,C-003,11,1,1,0, No Tax, exclusive,SC-3-091,,,,,,,,,,,,,no_image.png,standard
+W2172,រ៉ាក់គ័រធ្មេញក្នុង PP-R 40x3/4",,C-003,11,1,1,0, No Tax, exclusive,SC-3-091,,,,,,,,,,,,,no_image.png,standard
+W2173,រ៉ាក់គ័រធ្មេញក្នុង PP-R 40x1",,C-003,11,1,1,0, No Tax, exclusive,SC-3-091,,,,,,,,,,,,,no_image.png,standard
+W2174,រ៉ាក់គ័រធ្មេញក្នុង PP-R 40x1.1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-091,,,,,,,,,,,,,no_image.png,standard
+W2175,រ៉ាក់គ័រធ្មេញក្នុង PP-R 50x1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-091,,,,,,,,,,,,,no_image.png,standard
+W2176,រ៉ាក់គ័រធ្មេញក្នុង PP-R 50x3/4",,C-003,11,1,1,0, No Tax, exclusive,SC-3-091,,,,,,,,,,,,,no_image.png,standard
+W2177,រ៉ាក់គ័រធ្មេញក្នុង PP-R 50x1",,C-003,11,1,1,0, No Tax, exclusive,SC-3-091,,,,,,,,,,,,,no_image.png,standard
+W2178,រ៉ាក់គ័រធ្មេញក្នុង PP-R 50x1.1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-091,,,,,,,,,,,,,no_image.png,standard
+W2179,រ៉ាក់គ័រធ្មេញក្នុង PP-R 50x2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-091,,,,,,,,,,,,,no_image.png,standard
+W2180,រ៉ាក់គ័រធ្មេញក្រៅ PP-R 20x1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-092,,,,,,,,,,,,,no_image.png,standard
+W2181,រ៉ាក់គ័រធ្មេញក្រៅ PP-R 25x1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-092,,,,,,,,,,,,,no_image.png,standard
+W2182,រ៉ាក់គ័រធ្មេញក្រៅ PP-R 25x3/4",,C-003,11,1,1,0, No Tax, exclusive,SC-3-092,,,,,,,,,,,,,no_image.png,standard
+W2183,រ៉ាក់គ័រធ្មេញក្រៅ PP-R 32x1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-092,,,,,,,,,,,,,no_image.png,standard
+W2184,រ៉ាក់គ័រធ្មេញក្រៅ PP-R 32x3/4",,C-003,11,1,1,0, No Tax, exclusive,SC-3-092,,,,,,,,,,,,,no_image.png,standard
+W2185,រ៉ាក់គ័រធ្មេញក្រៅ PP-R 32x1",,C-003,11,1,1,0, No Tax, exclusive,SC-3-092,,,,,,,,,,,,,no_image.png,standard
+W2186,រ៉ាក់គ័រធ្មេញក្រៅ PP-R 40x3/4",,C-003,11,1,1,0, No Tax, exclusive,SC-3-092,,,,,,,,,,,,,no_image.png,standard
+W2187,រ៉ាក់គ័រធ្មេញក្រៅ PP-R 40x1",,C-003,11,1,1,0, No Tax, exclusive,SC-3-092,,,,,,,,,,,,,no_image.png,standard
+W2188,រ៉ាក់គ័រធ្មេញក្រៅ PP-R 40x1.1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-092,,,,,,,,,,,,,no_image.png,standard
+W2189,រ៉ាក់គ័រធ្មេញក្រៅ PP-R 50x1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-092,,,,,,,,,,,,,no_image.png,standard
+W2190,រ៉ាក់គ័រធ្មេញក្រៅ PP-R 50x3/4",,C-003,11,1,1,0, No Tax, exclusive,SC-3-092,,,,,,,,,,,,,no_image.png,standard
+W2191,រ៉ាក់គ័រធ្មេញក្រៅ PP-R 50x1",,C-003,11,1,1,0, No Tax, exclusive,SC-3-092,,,,,,,,,,,,,no_image.png,standard
+W2192,រ៉ាក់គ័រធ្មេញក្រៅ PP-R 50x1.1/2",,C-003,11,1,1,0, No Tax, exclusive,SC-3-092,,,,,,,,,,,,,no_image.png,standard
+W2193,វ៉ានមូល PP-R 20,,C-003,11,1,1,0, No Tax, exclusive,SC-3-093,,,,,,,,,,,,,no_image.png,standard
+W2194,វ៉ានមូល PP-R 25,,C-003,11,1,1,0, No Tax, exclusive,SC-3-093,,,,,,,,,,,,,no_image.png,standard
+W2195,វ៉ានមូល PP-R 32,,C-003,11,1,1,0, No Tax, exclusive,SC-3-093,,,,,,,,,,,,,no_image.png,standard
+W2196,វ៉ានមូល PP-R 40,,C-003,11,1,1,0, No Tax, exclusive,SC-3-093,,,,,,,,,,,,,no_image.png,standard
+W2197,វ៉ានមូល PP-R 50,,C-003,11,1,1,0, No Tax, exclusive,SC-3-093,,,,,,,,,,,,,no_image.png,standard
+W2198,វ៉ានមូល PP-R 63,,C-003,11,1,1,0, No Tax, exclusive,SC-3-093,,,,,,,,,,,,,no_image.png,standard
+W2199,វ៉ានមូល PP-R 75,,C-003,11,1,1,0, No Tax, exclusive,SC-3-093,,,,,,,,,,,,,no_image.png,standard
+W2200,វ៉ាន ដែក 40,,C-003,11,1,1,0, No Tax, exclusive,SC-3-094,,,,,,,,,,,,,no_image.png,standard
+W2201,វ៉ាន ដែក 50,,C-003,11,1,1,0, No Tax, exclusive,SC-3-094,,,,,,,,,,,,,no_image.png,standard
+W2202,វ៉ាន ដែក 63,,C-003,11,1,1,0, No Tax, exclusive,SC-3-094,,,,,,,,,,,,,no_image.png,standard
+W2203,វ៉ាន ដែក 75,,C-003,11,1,1,0, No Tax, exclusive,SC-3-094,,,,,,,,,,,,,no_image.png,standard
+W2204,វ៉ាន ដែក 110,,C-003,11,1,1,0, No Tax, exclusive,SC-3-094,,,,,,,,,,,,,no_image.png,standard
+W2205,វ៉ាន ដែក 160,,C-003,11,1,1,0, No Tax, exclusive,SC-3-094,,,,,,,,,,,,,no_image.png,standard
+W2206,ព្រីត PP-R 40,,C-003,11,1,1,0, No Tax, exclusive,SC-3-095,,,,,,,,,,,,,no_image.png,standard
+W2207,ព្រីត PP-R 50,,C-003,11,1,1,0, No Tax, exclusive,SC-3-095,,,,,,,,,,,,,no_image.png,standard
+W2208,ព្រីត PP-R 63,,C-003,11,1,1,0, No Tax, exclusive,SC-3-095,,,,,,,,,,,,,no_image.png,standard
+W2209,ព្រីត PP-R 75,,C-003,11,1,1,0, No Tax, exclusive,SC-3-095,,,,,,,,,,,,,no_image.png,standard
+W2210,ព្រីត PP-R 110,,C-003,11,1,1,0, No Tax, exclusive,SC-3-095,,,,,,,,,,,,,no_image.png,standard
+W2211,ព្រីត PP-R 160,,C-003,11,1,1,0, No Tax, exclusive,SC-3-095,,,,,,,,,,,,,no_image.png,standard
+W2212,ព្រីត ដែក 40,,C-003,11,1,1,0, No Tax, exclusive,SC-3-096,,,,,,,,,,,,,no_image.png,standard
+W2213,ព្រីត ដែក 50,,C-003,11,1,1,0, No Tax, exclusive,SC-3-096,,,,,,,,,,,,,no_image.png,standard
+W2214,ព្រីត ដែក 63,,C-003,11,1,1,0, No Tax, exclusive,SC-3-096,,,,,,,,,,,,,no_image.png,standard
+W2215,ព្រីត ដែក 75,,C-003,11,1,1,0, No Tax, exclusive,SC-3-096,,,,,,,,,,,,,no_image.png,standard
+W2216,ព្រីត ដែក 110,,C-003,11,1,1,0, No Tax, exclusive,SC-3-096,,,,,,,,,,,,,no_image.png,standard
+W2217,ព្រីត ដែក 160,,C-003,11,1,1,0, No Tax, exclusive,SC-3-096,,,,,,,,,,,,,no_image.png,standard
+W2218,រ៉ងព្រីត  40,,C-003,11,1,1,0, No Tax, exclusive,SC-3-097,,,,,,,,,,,,,no_image.png,standard
+W2219,រ៉ងព្រីត  50,,C-003,11,1,1,0, No Tax, exclusive,SC-3-097,,,,,,,,,,,,,no_image.png,standard
+W2220,រ៉ងព្រីត  63,,C-003,11,1,1,0, No Tax, exclusive,SC-3-097,,,,,,,,,,,,,no_image.png,standard
+W2221,រ៉ងព្រីត  75,,C-003,11,1,1,0, No Tax, exclusive,SC-3-097,,,,,,,,,,,,,no_image.png,standard
+W2222,រ៉ងព្រីត  110,,C-003,11,1,1,0, No Tax, exclusive,SC-3-097,,,,,,,,,,,,,no_image.png,standard
+W2223,រ៉ងព្រីត  160,,C-003,11,1,1,0, No Tax, exclusive,SC-3-097,,,,,,,,,,,,,no_image.png,standard
+W2224,កន្រ្តៃកាត់ទុយោ PP-R 20-75,,C-003,12,1,1,0, No Tax, exclusive,SC-3-098,,,,,,,,,,,,,no_image.png,standard
+W2225,កន្រ្តៃកាត់ទុយោ PP-R 50-160,,C-003,12,1,1,0, No Tax, exclusive,SC-3-098,,,,,,,,,,,,,no_image.png,standard
+W2226,ម៉ាស៊ីនអ៊ុតទុយោ PP-R 20-75,,C-003,12,1,1,0, No Tax, exclusive,SC-3-099,,,,,,,,,,,,,no_image.png,standard
+W2227,ម៉ាស៊ីនអ៊ុតទុយោ PP-R 50-160,,C-003,12,1,1,0, No Tax, exclusive,SC-3-099,,,,,,,,,,,,,no_image.png,standard

@@ -1,0 +1,285 @@
+﻿Code,Name,Name KH,Category Code,Unit ID,Cost,Price,Alert Quantity, Tax Rate Name,Tax Method,Subcategory Code,Product Variants Separated by |,Supplier1(No),Supplier2(No),Supplier3(No),Supplier4(No),Supplier5(No),Custom Field 1,Custom Field 2,Custom Field 3,Custom Field 4,Custom Field 5,Custom Field 6,Image,Type(standard or service)
+S0631,ដែកវ៉េ 75 X 3 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-017,,,,,,,,,,,,,no_image.png,standard
+S0632,ដែកវ៉េ 75 X 4 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-017,,,,,,,,,,,,,no_image.png,standard
+S0633,ដែកវ៉េ 75 X 5 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-017,,,,,,,,,,,,,no_image.png,standard
+S0634,ដែកវ៉េ 75 X 8 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-017,,,,,,,,,,,,,no_image.png,standard
+S0651,ដែកអ៊ុយ 20 x 40 x 2 លី x 6ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+S0652,ដែកអ៊ុយ 20 x 40 x 2.5 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+S0653,ដែកអ៊ុយ 20 x 40 x 3 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+S0671,ដែកអ៊ុយ 40 x 75 x 3 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+S0672,ដែកអ៊ុយ 40 x 75 x 4 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+S0673,ដែកអ៊ុយ 40 x 75 x 5 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+S0681,ដែកអ៊ុយ 40 x 80 x 3 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+S0682,ដែកអ៊ុយ 40 x 80 x 4 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+S0683,ដែកអ៊ុយ 40 x 80 x 5 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+S0691,ដែកអ៊ុយ 50 x 100 x 4 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+S0692,ដែកអ៊ុយ 50 x 100 x 5 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+S0693,ដែកអ៊ុយ 50 x 100 x 6 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+S0701,ដែកអ៊ុយ 75 x 150 x 5 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+S0702,ដែកអ៊ុយ 75 x 150 x 6 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+S0703,ដែកអ៊ុយ 75 x 150 x 8 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+S0711,ដែកអ៊ុយ 80 x 300 x 5 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+S0712,ដែកអ៊ុយ 80 x 300 x 6 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+S0713,ដែកអ៊ុយ 80 x 300 x 8 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+S0714,ដែកអ៊ុយ 80 x 300 x 10 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+S0721,ដែកសេ 40 X 75  X 1.5 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+S0722,ដែកសេ 40 X 75  X 1.8 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+S0723,ដែកសេ 40 X 75  X 2 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+S0731,ដែកសេ 45 X 100  X 1.5 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+S0732,ដែកសេ 45 X 100  X 1.8 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+S0733,ដែកសេ 45 X 100  X 2 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+S0734,ដែកសេ 45 X 100  X 2.5 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+S0735,ដែកសេ 45 X 100  X 3 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+S0741,ដែកសេ 50 X 150  X 1.5 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+S0742,ដែកសេ 50 X 150  X 1.8 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+S0743,ដែកសេ 50 X 150  X 2 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+S0744,ដែកសេ 50 X 150  X 2.5 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+S0745,ដែកសេ 50 X 150  X 3 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+S0751,ដែកសេ 65 X 200  X 1.8 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+S0752,ដែកសេ 65 X 200  X 2 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+S0753,ដែកសេ 65 X 200  X 2.5 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+S0754,ដែកសេ 65 X 200  X 3 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+S0755,ដែកសេ 65 X 200  X 3.5 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+S0756,ដែកសេ 65 X 200  X 4 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+S0761,ដែកសេ 75 X 200  X 1.8 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+S0762,ដែកសេ 75 X 200  X 2 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+S0763,ដែកសេ 75 X 200  X 2.5 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+S0764,ដែកសេ 75 X 200  X 3 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+S0765,ដែកសេ 75 X 200  X 3.5 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+S0766,ដែកសេ 75 X 200  X 4 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+S0767,ដែកសេ 75 X 200  X 5 លី,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+S0771,ដែកសេ 40 X 75  X 1.5 លី (ស),,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+S0772,ដែកសេ 40 X 75  X 1.8 លី (ស),,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+S0773,ដែកសេ 40 X 75  X 2 លី (ស),,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+S0774,ដែកសេ 40 X 75  X 2.5 លី (ស),,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+S0791,ដែកសេ 50 X 150  X 1.5 លី (ស),,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+S0792,ដែកសេ 50 X 150  X 1.8 លី (ស),,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+S0793,ដែកសេ 50 X 150  X 2 លី (ស),,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+S0794,ដែកសេ 50 X 150  X 2.5 លី (ស),,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+S0795,ដែកសេ 50 X 150  X 3 លី (ស),,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+S0801,ដែកសេ 65 X 200  X 2 លី (ស),,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+S0802,ដែកសេ 65 X 200  X 2.5 លី (ស),,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+S0803,ដែកសេ 65 X 200  X 3 លី (ស),,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+S0804,ដែកសេ 65 X 200  X 3.5 លី (ស),,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+S0805,ដែកសេ 65 X 200  X 4 លី (ស),,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+S0811,ដែកសេ 75 X 200  X 1.8 លី (ស),,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+S0812,ដែកសេ 75 X 200  X 2 លី (ស),,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+S0813,ដែកសេ 75 X 200  X 2.5 លី (ស),,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+S0814,ដែកសេ 75 X 200  X 3 លី (ស),,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+S0815,ដែកសេ 75 X 200  X 3.5 លី (ស),,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+S0816,ដែកសេ 75 X 200  X 4 លី (ស),,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+S0821,ដែកហាស់ 100 X 100 x 4លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0822,ដែកហាស់ 100 X 100 x 5លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0823,ដែកហាស់ 100 X 100 x 6លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0824,ដែកហាស់ 100 X 100 x 8លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0831,ដែកហាស់ 125 X 125 x 5លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0832,ដែកហាស់ 125 X 125 x 6លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0833,ដែកហាស់ 125 X 125 x 7លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0834,ដែកហាស់ 125 X 125 x 8លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0841,ដែកហាស់ 150 X 150 x 6លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0842,ដែកហាស់ 150 X 150 x 7លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0843,ដែកហាស់ 150 X 150 x 8លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0851,ដែកហាស់ 200 X 200 x 6លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0852,ដែកហាស់ 200 X 200 x 8លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0853,ដែកហាស់ 200 X 200 x 10លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0854,ដែកហាស់ 200 X 200 x 12លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0861,ដែកហាស់ 250 X 250 x 7លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0862,ដែកហាស់ 250 X 250 x 8លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0863,ដែកហាស់ 250 X 250 x 9លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0864,ដែកហាស់ 250 X 250 x 10លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0871,ដែកហាស់ 300 X 300 x 8លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0872,ដែកហាស់ 300 X 300 x 10លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0873,ដែកហាស់ 300 X 300 x 12លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0874,ដែកហាស់ 300 X 300 x 14លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0875,ដែកហាស់ 300 X 300 x 16លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0876,ដែកហាស់ 300 X 300 x 18លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0881,ដែកហាស់ 400 X 400 x 10លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0882,ដែកហាស់ 400 X 400 x 12លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0883,ដែកហាស់ 400 X 400 x 14លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0884,ដែកហាស់ 400 X 400 x 16លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0885,ដែកហាស់ 400 X 400 x 18លី X 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+S0891,ដែកអ៊ី 50 x 100 x 4​ លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0892,ដែកអ៊ី 50 x 100 x 5​ លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0893,ដែកអ៊ី 50 x 100 x 6 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0901,ដែកអ៊ី 75 x 150 x 6​ លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0902,ដែកអ៊ី 75 x 150 x 8​ លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0903,ដែកអ៊ី 75 x 150 x 10 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0904,ដែកអ៊ី 75 x 150 x 12 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0911,ដែកអ៊ី 125 x 250 x 7 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0912,ដែកអ៊ី 125 x 250 x 8 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0913,ដែកអ៊ី 125 x 250 x 9 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0914,ដែកអ៊ី 125 x 250 x 10 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0915,ដែកអ៊ី 125 x 250 x 12 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0921,ដែកអ៊ី 150 x 300 x 8 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0922,ដែកអ៊ី 150 x 300 x 9 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0923,ដែកអ៊ី 150 x 300 x 10 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0924,ដែកអ៊ី 150 x 300 x 12 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0925,ដែកអ៊ី 150 x 300 x 14 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0926,ដែកអ៊ី 150 x 300 x 16 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0931,ដែកអ៊ី 175 x 350 x 9 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0932,ដែកអ៊ី 175 x 350 x 12 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0933,ដែកអ៊ី 175 x 350 x 14 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0934,ដែកអ៊ី 175 x 350 x 16 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0935,ដែកអ៊ី 175 x 350 x 18 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0941,ដែកអ៊ី 200 x 400 x 12 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0942,ដែកអ៊ី 200 x 400 x 13 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0943,ដែកអ៊ី 200 x 400 x 16 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0944,ដែកអ៊ី 200 x 400 x 18 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0945,ដែកអ៊ី 200 x 400 x 20 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0951,ដែកអ៊ី 200 x 500 x 14 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0952,ដែកអ៊ី 200 x 500 x 16 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0953,ដែកអ៊ី 200 x 500 x 18 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0954,ដែកអ៊ី 200 x 500 x 20 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0961,ដែកអ៊ី 250 x 600 x 14 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0962,ដែកអ៊ី 250 x 600 x 18 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0963,ដែកអ៊ី 250 x 600 x 20 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0964,ដែកអ៊ី 250 x 600 x 22 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0971,ដែកអ៊ី 300 x 700 x 14 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0972,ដែកអ៊ី 300 x 700 x 16 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0973,ដែកអ៊ី 300 x 700 x 18 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0974,ដែកអ៊ី 300 x 700 x 20 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0975,ដែកអ៊ី 300 x 700 x 25 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0976,ដែកអ៊ី 300 x 700 x 30 លី x 12ម,,C-002,U-018,0,0,0, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+S0981,ដែកសន្លឹក 1220 x 2440 x 2លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-023,,,,,,,,,,,,,no_image.png,standard
+S0982,ដែកសន្លឹក 1220 x 2440 x 3លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-023,,,,,,,,,,,,,no_image.png,standard
+S0983,ដែកសន្លឹក 1220 x 2440 x 4លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-023,,,,,,,,,,,,,no_image.png,standard
+S0991,ដែកសន្លឹក 1500 x 6000 x 4លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-023,,,,,,,,,,,,,no_image.png,standard
+S0992,ដែកសន្លឹក 1500 x 6000 x 5លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-023,,,,,,,,,,,,,no_image.png,standard
+S0993,ដែកសន្លឹក 1500 x 6000 x 8លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-023,,,,,,,,,,,,,no_image.png,standard
+S0994,ដែកសន្លឹក 1500 x 6000 x 10 លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-023,,,,,,,,,,,,,no_image.png,standard
+S0995,ដែកសន្លឹក 1500 x 6000 x 12 លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-023,,,,,,,,,,,,,no_image.png,standard
+S0996,ដែកសន្លឹក 1500 x 6000 x 15 លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-023,,,,,,,,,,,,,no_image.png,standard
+S0997,ដែកសន្លឹក 1500 x 6000 x 20 លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-023,,,,,,,,,,,,,no_image.png,standard
+S1001,ដែកសន្លឹក 2000 x 6000 x 10 លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-023,,,,,,,,,,,,,no_image.png,standard
+S1002,ដែកសន្លឹក 2000 x 6000  x 15 លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-023,,,,,,,,,,,,,no_image.png,standard
+S1003,ដែកសន្លឹក 2000 x 6000  x 18 លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-023,,,,,,,,,,,,,no_image.png,standard
+S1004,ដែកសន្លឹក 2000 x 6000 x 20 លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-023,,,,,,,,,,,,,no_image.png,standard
+S1005,ដែកសន្លឹក 2000 x 6000 x  25 លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-023,,,,,,,,,,,,,no_image.png,standard
+S1006,ដែកសន្លឹក 2000 x 6000  x 30 លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-023,,,,,,,,,,,,,no_image.png,standard
+S1011,ដែកសន្លឹកផ្កា 1220 x 2440 x 2លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-024,,,,,,,,,,,,,no_image.png,standard
+S1012,ដែកសន្លឹកផ្កា 1220 x 2440 x 3លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-024,,,,,,,,,,,,,no_image.png,standard
+S1013,ដែកសន្លឹកផ្កា 1220 x 2440 x 4លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-024,,,,,,,,,,,,,no_image.png,standard
+S1021,ដែកសន្លឹកផ្កា 1500 x 6000 x 4លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-024,,,,,,,,,,,,,no_image.png,standard
+S1022,ដែកសន្លឹកផ្កា 1500 x 6000 x 5លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-024,,,,,,,,,,,,,no_image.png,standard
+S1023,ដែកសន្លឹកផ្កា 1500 x 6000 x 8លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-024,,,,,,,,,,,,,no_image.png,standard
+S1024,ដែកសន្លឹកផ្កា 1500 x 6000 x 10 លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-024,,,,,,,,,,,,,no_image.png,standard
+S1025,ដែកសន្លឹកផ្កា 1500 x 6000 x 12 លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-024,,,,,,,,,,,,,no_image.png,standard
+S1026,ដែកសន្លឹកផ្កា 1500 x 6000 x 15 លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-024,,,,,,,,,,,,,no_image.png,standard
+S1027,ដែកសន្លឹកផ្កា 1500 x 6000 x 18 លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-024,,,,,,,,,,,,,no_image.png,standard
+S1028,ដែកសន្លឹកផ្កា 1500 x 6000 x 20 លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-024,,,,,,,,,,,,,no_image.png,standard
+S1031,ដែកសន្លឹកផ្កា 2000 x 6000 x 10 លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-024,,,,,,,,,,,,,no_image.png,standard
+S1032,ដែកសន្លឹកផ្កា 2000 x 6000 x 12 លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-024,,,,,,,,,,,,,no_image.png,standard
+S1033,ដែកសន្លឹកផ្កា 2000 x 6000 x 15 លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-024,,,,,,,,,,,,,no_image.png,standard
+S1034,ដែកសន្លឹកផ្កា 2000 x 6000 x 18 លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-024,,,,,,,,,,,,,no_image.png,standard
+S1035,ដែកសន្លឹកផ្កា 2000 x 6000 x 20 លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-024,,,,,,,,,,,,,no_image.png,standard
+S1036,ដែកសន្លឹកផ្កា 2000 x 6000 x 25 លី,,C-002,U-030,0,0,0, No Tax, exclusive,SC-2-024,,,,,,,,,,,,,no_image.png,standard
+S1041,ស័ង្កសីលាត 1.2ម៉​ x 2.5​ស៊ី,,C-002,U-027,0,0,0, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+S1042,ស័ង្កសីលាត 1.2ម៉ x 3​ស៊ី,,C-002,U-027,0,0,0, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+S1043,ស័ង្កសីលាត 1.2ម៉ x 3​.5ស៊ី,,C-002,U-027,0,0,0, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+S1044,ស័ង្កសីលាត 1.2ម៉ x 4ស៊ី,,C-002,U-027,0,0,0, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+S1045,ស័ង្កសីលាត 1.2ម៉ x 5ស៊ី,,C-002,U-027,0,0,0, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+S1046,ស័ង្កសីលាត 1.2ម៉ x 6ស៊ី,,C-002,U-027,0,0,0, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+S1047,ស័ង្កសីលាត 1.2ម៉ x 8​ស៊ី,,C-002,U-027,0,0,0, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+S1048,ស័ង្កសីលាត 1.2ម៉ x 1 លី,,C-002,U-027,0,0,0, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+S1051,ស័ង្កសី ភ្លី 1ម៉ x 2.5 ស៊ី,,C-002,U-027,0,0,0, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+S1052,ស័ង្កសី ភ្លី 1ម៉ x 3 ស៊ី,,C-002,U-027,0,0,0, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+S1053,ស័ង្កសី ភ្លី 1ម៉ x 3.5 ស៊ី,,C-002,U-027,0,0,0, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+S1054,ស័ង្កសី ភ្លី 1ម៉ x 4 ស៊ី,,C-002,U-027,0,0,0, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+S1055,ស័ង្កសី ភ្លី 1ម៉ x 4.5 ស៊ី,,C-002,U-027,0,0,0, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+S1056,ស័ង្កសី ភ្លី 1ម៉ x 5 ស៊ី,,C-002,U-027,0,0,0, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+S1061,ស័ង្កសី ភ្លី ពត់កោង 1ម៉ x 2.5 ស៊ី,,C-002,U-027,0,0,0, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+S1062,ស័ង្កសី ភ្លី ពត់កោង 1ម៉ x 3 ស៊ី,,C-002,U-027,0,0,0, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+S1063,ស័ង្កសី ភ្លី ពត់កោង 1ម៉ x 3.5 ស៊ី,,C-002,U-027,0,0,0, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+S1064,ស័ង្កសី ភ្លី ពត់កោង 1ម៉ x 4 ស៊ី,,C-002,U-027,0,0,0, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+S1065,ស័ង្កសី ភ្លី ពត់កោង 1ម៉ x 4.5 ស៊ី,,C-002,U-027,0,0,0, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+S1066,ស័ង្កសី ភ្លី ពត់កោង 1ម៉ x 5 ស៊ី,,C-002,U-027,0,0,0, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+S1071,ស័ង្កសី ទរទឹក 4 ស៊ី,,C-002,U-027,0,0,0, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+S1072,ស័ង្កសី ទរទឹក 5 ស៊ី,,C-002,U-027,0,0,0, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+S2000,កាបទ្ររ ស្លេប ,,C-002,U-009,0,0,0, No Tax, exclusive,SC-2-026,,,,,,,,,,,,,no_image.png,standard
+S2001,ដែកផលិតបំពង់ កាប,,C-002,U-016,0,0,0, No Tax, exclusive,SC-2-026,,,,,,,,,,,,,no_image.png,standard
+S2002,បំពង់កាបលេខ 39,,C-002,U-008,0,0,0, No Tax, exclusive,SC-2-027,,,,,,,,,,,,,no_image.png,standard
+S2003,បំពងកាបលេខ 52,,C-002,U-008,0,0,0, No Tax, exclusive,SC-2-027,,,,,,,,,,,,,no_image.png,standard
+S2004,សុងត កាបលេខ 39,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-028,,,,,,,,,,,,,no_image.png,standard
+S2005,សុងត កាបលេខ 52,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-028,,,,,,,,,,,,,no_image.png,standard
+S2006,ក្បាល កាបរន្ធ 2,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-029,,,,,,,,,,,,,no_image.png,standard
+S2007,ក្បាល កាបរន្ធ 3,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-029,,,,,,,,,,,,,no_image.png,standard
+S2008,ក្បាល កាបរន្ធ 4,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-029,,,,,,,,,,,,,no_image.png,standard
+S2009,ក្បាល កាបរន្ធ 5,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-029,,,,,,,,,,,,,no_image.png,standard
+S2010,រន្ធ ក្បាល កាបរន្ធ 2,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-030,,,,,,,,,,,,,no_image.png,standard
+S2011,រន្ធ ក្បាល កាបរន្ធ 3,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-030,,,,,,,,,,,,,no_image.png,standard
+S2012,រន្ធ ក្បាល កាបរន្ធ 4,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-030,,,,,,,,,,,,,no_image.png,standard
+S2013,រន្ធ ក្បាល កាបរន្ធ 5,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-030,,,,,,,,,,,,,no_image.png,standard
+S2014,ឃ្នៀប ក្បាល កាបរន្ធ 2,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-030,,,,,,,,,,,,,no_image.png,standard
+S2015,ឃ្នៀប ក្បាល កាបរន្ធ 3,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-030,,,,,,,,,,,,,no_image.png,standard
+S2016,ឃ្នៀប ក្បាល កាបរន្ធ 4,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-030,,,,,,,,,,,,,no_image.png,standard
+S2017,ឃ្នៀប ក្បាល កាបរន្ធ 5,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-030,,,,,,,,,,,,,no_image.png,standard
+S2018,ដែកច្រកក្បាលកាប,,C-002,U-010,0,0,0, No Tax, exclusive,SC-2-031,,,,,,,,,,,,,no_image.png,standard
+S2019,ស្នោកាប 3,,C-002,U-016,0,0,0, No Tax, exclusive,SC-2-032,,,,,,,,,,,,,no_image.png,standard
+S2020,ស្នោកាប 4,,C-002,U-016,0,0,0, No Tax, exclusive,SC-2-032,,,,,,,,,,,,,no_image.png,standard
+S2021,ស្នោកាប 5,,C-002,U-016,0,0,0, No Tax, exclusive,SC-2-032,,,,,,,,,,,,,no_image.png,standard
+S2022,ខ្លាញ កាប,,C-002,U-003,0,0,0, No Tax, exclusive,SC-2-033,,,,,,,,,,,,,no_image.png,standard
+S2023,ដែកបាញ់ឆែរ លេខ 1,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2024,ដែកបាញ់ឆែរ លេខ 2,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2025,ដែកបាញ់ឆែរ លេខ 3,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2026,ដែកបាញ់ឆែរ លេខ 4,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2027,ដែកបាញ់ឆែរ លេខ 5,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2028,ដែកបាញ់ឆែរ លេខ 6,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2029,ដែកបាញ់ឆែរ លេខ 7,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2030,ដែកបាញ់ឆែរ លេខ 8,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2031,ដែកបាញ់ឆែរ លេខ 9,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2032,ដែកបាញ់ឆែរ លេខ 10,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2033,ដែកបាញ់ឆែរ លេខ 11,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2034,ដែកបាញ់ឆែរ លេខ 12,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2035,ដែកបាញ់ឆែរ លេខ 13,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2036,ដែកបាញ់ឆែរ លេខ 14,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2037,ដែកបាញ់ឆែរ លេខ 15,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2038,ដែកបាញ់ឆែរ លេខ 16,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2039,ដែកបាញ់ឆែរ លេខ 17,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2040,ដែកបាញ់ឆែរ លេខ 18,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2041,ដែកបាញ់ឆែរ លេខ 19,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2042,ដែកបាញ់ឆែរ លេខ 20,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2043,ដែកបាញ់ឆែរ លេខ 21,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2044,ដែកបាញ់ឆែរ លេខ 22,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2045,ដែកបាញ់ឆែរ លេខ 23,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2046,ដែកបាញ់ឆែរ លេខ 24,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2047,ដែកបាញ់ឆែរ លេខ 25,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2048,ដែកបាញ់ឆែរ លេខ 26,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2049,ដែកបាញ់ឆែរ លេខ 27,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2050,ដែកបាញ់ឆែរ លេខ 28,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2051,ដែកបាញ់ឆែរ លេខ 29,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2052,ដែកបាញ់ឆែរ លេខ 30,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2053,ដែកបាញ់ឆែរ លេខ 31,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2054,ដែកបាញ់ឆែរ លេខ 32,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2055,ដែកបាញ់ឆែរ លេខ 33,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2056,ដែកបាញ់ឆែរ លេខ 34,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2057,ដែកបាញ់ឆែរ លេខ 35,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2058,ដែកបាញ់ឆែរ លេខ 36,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2059,ដែកបាញ់ឆែរ លេខ 37,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2060,ដែកបាញ់ឆែរ លេខ 38,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2061,ដែកបាញ់ឆែរ លេខ 39,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2062,ដែកបាញ់ឆែរ លេខ 40,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2063,ដែកបាញ់ឆែរ លេខ 41,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2064,ដែកបាញ់ឆែរ លេខ 42,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2065,ដែកបាញ់ឆែរ លេខ 43,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2066,ដែកបាញ់ឆែរ លេខ 44,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2067,ដែកបាញ់ឆែរ លេខ 45,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2068,ដែកបាញ់ឆែរ លេខ 46,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2069,ដែកបាញ់ឆែរ លេខ 47,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2070,ដែកបាញ់ឆែរ លេខ 48,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2071,ដែកបាញ់ឆែរ លេខ 49,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2072,ដែកបាញ់ឆែរ លេខ 50,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2073,ដែកបាញ់ឆែរ លេខ 51,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2074,ដែកបាញ់ឆែរ លេខ 52,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2075,ដែកបាញ់ឆែរ លេខ 53,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2076,ដែកបាញ់ឆែរ លេខ 54,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2077,ដែកបាញ់ឆែរ លេខ 55,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2078,ដែកបាញ់ឆែរ លេខ 56,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2079,ដែកបាញ់ឆែរ លេខ 57,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2080,ដែកបាញ់ឆែរ លេខ 58,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2081,ដែកបាញ់ឆែរ លេខ 59,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2082,ដែកបាញ់ឆែរ លេខ 60,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2083,ដែកបាញ់ឆែរ លេខ 61,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2084,ដែកបាញ់ឆែរ លេខ 62,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2085,ដែកបាញ់ឆែរ លេខ 63,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2086,ដែកបាញ់ឆែរ លេខ 64,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+S2087,ដែកបាញ់ឆែរ លេខ 65,,C-002,U-011,0,0,0, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard

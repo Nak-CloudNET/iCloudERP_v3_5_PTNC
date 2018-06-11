@@ -1,0 +1,14 @@
+﻿Code,Name,Name KH,Category Code,Unit ID,Cost,Price,Alert Quantity, Tax Rate Name,Tax Method,Subcategory Code,Product Variants Separated by |,Supplier1(No),Supplier2(No),Supplier3(No),Supplier4(No),Supplier5(No),Custom Field 1,Custom Field 2,Custom Field 3,Custom Field 4,Custom Field 5,Custom Field 6,Image,Type(standard or service)
+F0001,ប្រេងសាំង,,C-006,30,1,1,0, No Tax, exclusive,SC-6-001,,,,,,,,,,,,,no_image.png,standard
+F0002,ប្រេងម៉ាស៊ូត,,C-006,30,1,1,0, No Tax, exclusive,SC-6-001,,,,,,,,,,,,,no_image.png,standard
+F0003,ប្រេងកាត,,C-006,30,1,1,0, No Tax, exclusive,SC-6-001,,,,,,,,,,,,,no_image.png,standard
+O-0001,ប្រេងម៉ាស៊ីន 40,,C-006,30,1,1,0, No Tax, exclusive,SC-6-001,,,,,,,,,,,,,no_image.png,standard
+O-0002,ប្រេងម៉ាស៊ីន 50,,C-006,30,1,1,0, No Tax, exclusive,SC-6-001,,,,,,,,,,,,,no_image.png,standard
+O-0003,ប្រេងម៉ាស៊ីន 68,,C-006,30,1,1,0, No Tax, exclusive,SC-6-001,,,,,,,,,,,,,no_image.png,standard
+O-0004,ប្រេងម៉ាស៊ីន 90,,C-006,30,1,1,0, No Tax, exclusive,SC-6-001,,,,,,,,,,,,,no_image.png,standard
+O-0005,ប្រេងម៉ាស៊ីន 40  1 លីត្រ,,C-006,7,1,1,0, No Tax, exclusive,SC-6-001,,,,,,,,,,,,,no_image.png,standard
+O-0006,ប្រេងម៉ាស៊ីន 50  1 លីត្រ,,C-006,7,1,1,0, No Tax, exclusive,SC-6-001,,,,,,,,,,,,,no_image.png,standard
+O-0007,ប្រេងម៉ាស៊ីន 40  4 លីត្រ,,C-006,20,1,1,0, No Tax, exclusive,SC-6-001,,,,,,,,,,,,,no_image.png,standard
+O-0008,ប្រេងម៉ាស៊ីន 50  4 លីត្រ,,C-006,20,1,1,0, No Tax, exclusive,SC-6-001,,,,,,,,,,,,,no_image.png,standard
+O-0009,ប្រេងម៉ាស៊ីន 40  6 លីត្រ,,C-006,20,1,1,0, No Tax, exclusive,SC-6-001,,,,,,,,,,,,,no_image.png,standard
+O-0010,ប្រេងម៉ាស៊ីន 50  6 លីត្រ,,C-006,20,1,1,0, No Tax, exclusive,SC-6-001,,,,,,,,,,,,,no_image.png,standard

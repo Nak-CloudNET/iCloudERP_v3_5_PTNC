@@ -1,0 +1,1016 @@
+﻿Code,Name,Name KH,Category Code,Unit ID,Cost,Price,Alert Quantity, Tax Rate Name,Tax Method,Subcategory Code,Product Variants Separated by |,Supplier1(No),Supplier2(No),Supplier3(No),Supplier4(No),Supplier5(No),Custom Field 1,Custom Field 2,Custom Field 3,Custom Field 4,Custom Field 5,Custom Field 6,Image,Type(standard or service)
+G0001,ផ្លែកាត់ដែក ​1 តិក,,C-001,27,1,1,1, No Tax, exclusive,SC-1-001,,,,,,,,,,,,,no_image.png,standard
+G0002,ផ្លែកាត់ដែក ​1.2 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-001,,,,,,,,,,,,,no_image.png,standard
+G0003,ផ្លែកាត់ដែក​ 1.5 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-001,,,,,,,,,,,,,no_image.png,standard
+G0004,ផ្លែកាត់ដែក​ 1.8 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-001,,,,,,,,,,,,,no_image.png,standard
+G0005,ផ្លែកាត់ដែក​ 2.3 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-001,,,,,,,,,,,,,no_image.png,standard
+G0006,ផ្លែកាត់ដែក​ 2.5 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-001,,,,,,,,,,,,,no_image.png,standard
+G0007,ផ្លែកាត់ដែក​ 3 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-001,,,,,,,,,,,,,no_image.png,standard
+G0008,ផ្លែកាត់ដែក ​3.5 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-001,,,,,,,,,,,,,no_image.png,standard
+G0009,ផ្លែកាត់ដែក ​4 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-001,,,,,,,,,,,,,no_image.png,standard
+G0021,ផ្លែកាំបិទកាត់ដែក 32 លី,,C-001,10,1,1,1, No Tax, exclusive,SC-1-002,,,,,,,,,,,,,no_image.png,standard
+G0022,ផ្លែកាំបិទកាត់ដែក 35 លី,,C-001,10,1,1,1, No Tax, exclusive,SC-1-002,,,,,,,,,,,,,no_image.png,standard
+G0023,ផ្លែកាំបិទកាត់ដែក 40 លី,,C-001,10,1,1,1, No Tax, exclusive,SC-1-002,,,,,,,,,,,,,no_image.png,standard
+G0031,ផ្លែតារ៉ូដែក ឈ្មោល 4-30 លី,,C-001,14,1,1,1, No Tax, exclusive,SC-1-003,,,,,,,,,,,,,no_image.png,standard
+G0032,ផ្លែតារ៉ូដែក ញី 4-30 លី,,C-001,14,1,1,1, No Tax, exclusive,SC-1-003,,,,,,,,,,,,,no_image.png,standard
+G0033,ដងតារ៉ូដែក ញី+ឈ្មោល 4-30 លី,,C-001,14,1,1,1, No Tax, exclusive,SC-1-003,,,,,,,,,,,,,no_image.png,standard
+G0034,ផ្លែតារ៉ូដែក ឈ្មោល 21-65 លី,,C-001,14,1,1,1, No Tax, exclusive,SC-1-003,,,,,,,,,,,,,no_image.png,standard
+G0035,ផ្លែតារ៉ូដែក ឈ្មោល 65-114 លី,,C-001,14,1,1,1, No Tax, exclusive,SC-1-003,,,,,,,,,,,,,no_image.png,standard
+G0041,ផ្លែឆាបដែក​ 1 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-004,,,,,,,,,,,,,no_image.png,standard
+G0042,ផ្លែឆាបដែក​ 1.2 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-004,,,,,,,,,,,,,no_image.png,standard
+G0043,ផ្លែឆាបដែក ​1.5 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-004,,,,,,,,,,,,,no_image.png,standard
+G0044,ផ្លែឆាបដែក​ 1.8 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-004,,,,,,,,,,,,,no_image.png,standard
+G0049,ផ្លែច្រាស់ឆាបដែក​ 3" KT,,C-001,26,1,1,1, No Tax, exclusive,SC-1-005,,,,,,,,,,,,,no_image.png,standard
+G0051,ផ្លែស្វានដែក 2.5 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-006,,,,,,,,,,,,,no_image.png,standard
+G0052,ផ្លែស្វានដែក 3 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-006,,,,,,,,,,,,,no_image.png,standard
+G0053,ផ្លែកស្វានដែក 3.5 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-006,,,,,,,,,,,,,no_image.png,standard
+G0054,ផ្លែស្វានដែក 4 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-006,,,,,,,,,,,,,no_image.png,standard
+G0055,ផ្លែស្វានដែក 5 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-006,,,,,,,,,,,,,no_image.png,standard
+G0056,ផ្លែស្វានដែក 6 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-006,,,,,,,,,,,,,no_image.png,standard
+G0057,ផ្លែស្វានដែក 8 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-006,,,,,,,,,,,,,no_image.png,standard
+G0058,ផ្លែស្វានដែក 10 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-006,,,,,,,,,,,,,no_image.png,standard
+G0059,ផ្លែស្វានដែក 12 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-006,,,,,,,,,,,,,no_image.png,standard
+G0060,ផ្លែស្វានដែក 14 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-006,,,,,,,,,,,,,no_image.png,standard
+G0061,ផ្លែស្វានដែក 16 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-006,,,,,,,,,,,,,no_image.png,standard
+G0062,ផ្លែស្វានដែក 18 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-006,,,,,,,,,,,,,no_image.png,standard
+G0063,ផ្លែស្វានដែក 20 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-006,,,,,,,,,,,,,no_image.png,standard
+G0064,ផ្លែស្វានដែក 22 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-006,,,,,,,,,,,,,no_image.png,standard
+G0065,ផ្លែស្វានដែក 25 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-006,,,,,,,,,,,,,no_image.png,standard
+G0066,ផ្លែស្វានដែក 28 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-006,,,,,,,,,,,,,no_image.png,standard
+G0067,ផ្លែស្វានដែក 32 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-006,,,,,,,,,,,,,no_image.png,standard
+G0068,ផ្លែស្វានដែក 35 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-006,,,,,,,,,,,,,no_image.png,standard
+G0073,ផ្លែស្វានដែក 1-13 លី,,C-001,14,1,1,1, No Tax, exclusive,SC-1-007,,,,,,,,,,,,,no_image.png,standard
+G0074,ផ្លែស្វានដែក 3-14 លី,,C-001,14,1,1,1, No Tax, exclusive,SC-1-007,,,,,,,,,,,,,no_image.png,standard
+G0075,ផ្លែស្វានដែក 15-35 លី,,C-001,14,1,1,1, No Tax, exclusive,SC-1-007,,,,,,,,,,,,,no_image.png,standard
+G0081,ផ្លែកាត់បេតុង​ 1 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-008,,,,,,,,,,,,,no_image.png,standard
+G0082,ផ្លែកាត់បេតុង​ 1.2 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-008,,,,,,,,,,,,,no_image.png,standard
+G0083,ផ្លែកាត់បេតុង ​1.5 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-008,,,,,,,,,,,,,no_image.png,standard
+G0084,ផ្លែកាត់បេតុង​ 1.8 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-008,,,,,,,,,,,,,no_image.png,standard
+G0085,ផ្លែកាត់បេតុង​ 2.3 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-008,,,,,,,,,,,,,no_image.png,standard
+G0086,ផ្លែកាត់បេតុង ​3 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-008,,,,,,,,,,,,,no_image.png,standard
+G0087,ផ្លែកាត់បេតុង​ 3.5 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-008,,,,,,,,,,,,,no_image.png,standard
+G0088,ផ្លែកាត់បេតុង​ 4 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-008,,,,,,,,,,,,,no_image.png,standard
+G0091,ផ្លែឆាបបេតុង​ 1 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-009,,,,,,,,,,,,,no_image.png,standard
+G0092,ផ្លែឆាបបេតុង​ 1.2 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-009,,,,,,,,,,,,,no_image.png,standard
+G0093,ផ្លែឆាបបេតុង​ 1.5 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-009,,,,,,,,,,,,,no_image.png,standard
+G0094,ផ្លែឆាបបេតុង​ 1.8 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-009,,,,,,,,,,,,,no_image.png,standard
+G0095,ផ្លែឆាបបេតុង​ 2.3 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-009,,,,,,,,,,,,,no_image.png,standard
+G0101,ផ្លែស្វានបេតុង​ 6 លី x 160,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0102,ផ្លែស្វានបេតុង​ 8 លី x 160,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0103,ផ្លែស្វានបេតុង​ 10 លី x 160,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0104,ផ្លែស្វានបេតុង​ 12 លី x 160,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0105,ផ្លែស្វានបេតុង​ 14​ លី x 160,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0106,ផ្លែស្វានបេតុង​ 16 លី x 160,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0107,ផ្លែស្វានបេតុង​ 18 លី x 160,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0108,ផ្លែស្វានបេតុង​ 20 លី x 160,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0109,ផ្លែស្វានបេតុង​ 22 លី x 160,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0110,ផ្លែស្វានបេតុង​ 25 លី x 160,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0111,ផ្លែស្វានបេតុង​ 6 លី x 210,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0112,ផ្លែស្វានបេតុង​ 8 លី x 210,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0113,ផ្លែស្វានបេតុង​ 10 លី x 210,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0114,ផ្លែស្វានបេតុង​ 12 លី x 210,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0115,ផ្លែស្វានបេតុង​ 14​ លី x 210,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0116,ផ្លែស្វានបេតុង​ 16 លី x 210,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0117,ផ្លែស្វានបេតុង​ 18 លី x 210,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0118,ផ្លែស្វានបេតុង​ 20 លី x 210,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0119,ផ្លែស្វានបេតុង​ 22 លី x 210,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0120,ផ្លែស្វានបេតុង​ 25 លី x 210,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0121,ផ្លែស្វានបេតុង​ 10 លី x 260,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0122,ផ្លែស្វានបេតុង​ 12 លី x 260,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0123,ផ្លែស្វានបេតុង​ 14​ លី x 260,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0124,ផ្លែស្វានបេតុង​ 16 លី x 260,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0125,ផ្លែស្វានបេតុង​ 18 លី x 260,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0126,ផ្លែស្វានបេតុង​ 20 លី x 260,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0127,ផ្លែស្វានបេតុង​ 22 លី x 260,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0128,ផ្លែស្វានបេតុង​ 25 លី x 260,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0129,ផ្លែស្វានបេតុង​ 10 លី x 310,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0130,ផ្លែស្វានបេតុង​ 12 លី x 310,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0131,ផ្លែស្វានបេតុង​ 14​ លី x 310,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0132,ផ្លែស្វានបេតុង​ 16 លី x 310,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0133,ផ្លែស្វានបេតុង​ 18 លី x 310,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0134,ផ្លែស្វានបេតុង​ 20 លី x 310,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0135,ផ្លែស្វានបេតុង​ 22 លី x 310,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0136,ផ្លែស្វានបេតុង​ 25 លី x 310,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0137,ផ្លែស្វានបេតុង​ 16 លី x 350,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0138,ផ្លែស្វានបេតុង​ 18 លី x 350,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0139,ផ្លែស្វានបេតុង​ 20 លី x 350,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0140,ផ្លែស្វានបេតុង​ 22 លី x 350,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0141,ផ្លែស្វានបេតុង​ 25 លី x 350,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0142,ផ្លែស្វានបេតុង​ 28 លី x 350,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0143,ផ្លែស្វានបេតុង​ 30 លី x 350,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0144,ផ្លែស្វានបេតុង​ 35 លី x 350,,C-001,26,1,1,1, No Tax, exclusive,SC-1-010,,,,,,,,,,,,,no_image.png,standard
+G0151,ផ្លែបុកបំបែក​ 17 លី x 400,,C-001,26,1,1,1, No Tax, exclusive,SC-1-011,,,,,,,,,,,,,no_image.png,standard
+G0152,ផ្លែបុកបំបែក​ 18 លី x 400,,C-001,26,1,1,1, No Tax, exclusive,SC-1-011,,,,,,,,,,,,,no_image.png,standard
+G0153,ផ្លែបុកបំបែក​ 20 លី x 400,,C-001,26,1,1,1, No Tax, exclusive,SC-1-011,,,,,,,,,,,,,no_image.png,standard
+G0154,ផ្លែបុកបំបែក​ 22 លី x 400,,C-001,26,1,1,1, No Tax, exclusive,SC-1-011,,,,,,,,,,,,,no_image.png,standard
+G0155,ផ្លែបុកបំបែក​ 25 លី x 400,,C-001,26,1,1,1, No Tax, exclusive,SC-1-011,,,,,,,,,,,,,no_image.png,standard
+G0156,ផ្លែបុកបំបែក​ 30 លី x 400,,C-001,26,1,1,1, No Tax, exclusive,SC-1-011,,,,,,,,,,,,,no_image.png,standard
+G0157,ផ្លែបុកបំបែក​ 32 លី x 400,,C-001,26,1,1,1, No Tax, exclusive,SC-1-011,,,,,,,,,,,,,no_image.png,standard
+G0158,ផ្លែបុកបំបែក​ 35 លី x 400,,C-001,26,1,1,1, No Tax, exclusive,SC-1-011,,,,,,,,,,,,,no_image.png,standard
+G0159,ផ្លែបុកបំបែក​ 40 លី x 400,,C-001,26,1,1,1, No Tax, exclusive,SC-1-011,,,,,,,,,,,,,no_image.png,standard
+G0171,ផ្លែចោះបេតុង 65 ,,C-001,26,1,1,1, No Tax, exclusive,SC-1-012,,,,,,,,,,,,,no_image.png,standard
+G0172,ផ្លែចោះបេតុង 90,,C-001,26,1,1,1, No Tax, exclusive,SC-1-012,,,,,,,,,,,,,no_image.png,standard
+G0173,ផ្លែចោះបេតុង 114,,C-001,26,1,1,1, No Tax, exclusive,SC-1-012,,,,,,,,,,,,,no_image.png,standard
+G0174,ផ្លែចោះបេតុង 165,,C-001,26,1,1,1, No Tax, exclusive,SC-1-012,,,,,,,,,,,,,no_image.png,standard
+G0175,ផ្លែចោះបេតុង 200,,C-001,26,1,1,1, No Tax, exclusive,SC-1-012,,,,,,,,,,,,,no_image.png,standard
+G0176,ផ្លែចោះបេតុង 250,,C-001,26,1,1,1, No Tax, exclusive,SC-1-012,,,,,,,,,,,,,no_image.png,standard
+G0179,ផ្លែចោះពិដានគ្រប់ខ្នាត 10-300,,C-001,14,1,1,1, No Tax, exclusive,SC-1-013,,,,,,,,,,,,,no_image.png,standard
+G0181,ផ្លែកាត់ឈើ​ 1 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-014,,,,,,,,,,,,,no_image.png,standard
+G0182,ផ្លែកាត់ឈើ​ 1.2 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-014,,,,,,,,,,,,,no_image.png,standard
+G0183,ផ្លែកាត់ឈើ​ 1.5 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-014,,,,,,,,,,,,,no_image.png,standard
+G0184,ផ្លែកាត់ឈើ​ 1.8 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-014,,,,,,,,,,,,,no_image.png,standard
+G0185,ផ្លែកាត់ឈើ​ 2.3 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-014,,,,,,,,,,,,,no_image.png,standard
+G0186,ផ្លែកាត់ឈើ​ 2.5 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-014,,,,,,,,,,,,,no_image.png,standard
+G0187,ផ្លែកាត់ឈើ​ 3 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-014,,,,,,,,,,,,,no_image.png,standard
+G0188,ផ្លែកាត់ឈើ​ 3.5 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-014,,,,,,,,,,,,,no_image.png,standard
+G0191,ផ្លែឆាបឈើ​ 1 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-015,,,,,,,,,,,,,no_image.png,standard
+G0192,ផ្លែឆាបឈើ​ 1.2 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-015,,,,,,,,,,,,,no_image.png,standard
+G0193,ផ្លែឆាបឈើ​ 1.5 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-015,,,,,,,,,,,,,no_image.png,standard
+G0194,ផ្លែឆាបឈើ​ 1.8 តិក,,C-001,26,1,1,1, No Tax, exclusive,SC-1-015,,,,,,,,,,,,,no_image.png,standard
+G0201,ផ្លែស្វានឈើ 3 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-016,,,,,,,,,,,,,no_image.png,standard
+G0202,ផ្លែស្វានឈើ 5 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-016,,,,,,,,,,,,,no_image.png,standard
+G0203,ផ្លែស្វានឈើ 6 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-016,,,,,,,,,,,,,no_image.png,standard
+G0204,ផ្លែស្វានឈើ 8 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-016,,,,,,,,,,,,,no_image.png,standard
+G0205,ផ្លែស្វានឈើ 10 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-016,,,,,,,,,,,,,no_image.png,standard
+G0206,ផ្លែស្វានឈើ 12 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-016,,,,,,,,,,,,,no_image.png,standard
+G0207,ផ្លែស្វានឈើ 14 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-016,,,,,,,,,,,,,no_image.png,standard
+G0208,ផ្លែស្វានឈើ 16 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-016,,,,,,,,,,,,,no_image.png,standard
+G0209,ផ្លែស្វានឈើ 18 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-016,,,,,,,,,,,,,no_image.png,standard
+G0210,ផ្លែស្វានឈើ 20 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-016,,,,,,,,,,,,,no_image.png,standard
+G0211,ផ្លែស្វានឈើ 25 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-016,,,,,,,,,,,,,no_image.png,standard
+G0212,ផ្លែស្វានឈើ 30 លី,,C-001,26,1,1,1, No Tax, exclusive,SC-1-016,,,,,,,,,,,,,no_image.png,standard
+G0221,ផ្លែរណាមុខ 1,,C-001,18,1,1,1, No Tax, exclusive,SC-1-017,,,,,,,,,,,,,no_image.png,standard
+G0222,ផ្លែរណាមុខ 2,,C-001,18,1,1,1, No Tax, exclusive,SC-1-017,,,,,,,,,,,,,no_image.png,standard
+G0223,ដងរណា,,C-001,18,1,1,1, No Tax, exclusive,SC-1-017,,,,,,,,,,,,,no_image.png,standard
+G0224,រណាអាឈើ 6 តឹក,,C-001,18,1,1,1, No Tax, exclusive,SC-1-017,,,,,,,,,,,,,no_image.png,standard
+G0225,ផ្លែរណាឃ្វៀលឈើ ,,C-001,26,1,1,1, No Tax, exclusive,SC-1-017,,,,,,,,,,,,,no_image.png,standard
+G0226,ផ្លែរចោះឈើ 22-54 លី ,,C-001,14,1,1,1, No Tax, exclusive,SC-1-017,,,,,,,,,,,,,no_image.png,standard
+G0227,ផ្លែរចោះឈើ 60 លី ,,C-001,26,1,1,1, No Tax, exclusive,SC-1-017,,,,,,,,,,,,,no_image.png,standard
+G0241,ដែកគោលពុម្ព 2 ហ៊ុន,,C-001,33,1,1,1, No Tax, exclusive,SC-1-018,,,,,,,,,,,,,no_image.png,standard
+G0242,ដែកគោលពុម្ព 2.5 ហ៊ុន,,C-001,33,1,1,1, No Tax, exclusive,SC-1-018,,,,,,,,,,,,,no_image.png,standard
+G0243,ដែកគោលពុម្ព 3 ហ៊ុន,,C-001,33,1,1,1, No Tax, exclusive,SC-1-018,,,,,,,,,,,,,no_image.png,standard
+G0244,ដែកគោលពុម្ព 4 ហ៊ុន,,C-001,33,1,1,1, No Tax, exclusive,SC-1-018,,,,,,,,,,,,,no_image.png,standard
+G0245,ដែកគោលពុម្ព 5 ហ៊ុន,,C-001,33,1,1,1, No Tax, exclusive,SC-1-018,,,,,,,,,,,,,no_image.png,standard
+G0246,ដែកគោលពុម្ព 6 ហ៊ុន,,C-001,33,1,1,1, No Tax, exclusive,SC-1-018,,,,,,,,,,,,,no_image.png,standard
+G0247,ដែកគោលពុម្ព 7 ហ៊ុន,,C-001,33,1,1,1, No Tax, exclusive,SC-1-018,,,,,,,,,,,,,no_image.png,standard
+G0248,ដែកគោលពុម្ព 8 ហ៊ុន,,C-001,33,1,1,1, No Tax, exclusive,SC-1-018,,,,,,,,,,,,,no_image.png,standard
+G0249,ដែកគោលពុម្ព 1 ​តឹក,,C-001,33,1,1,1, No Tax, exclusive,SC-1-018,,,,,,,,,,,,,no_image.png,standard
+G0250,ដែកគោលពុម្ព 1.2​តឹក,,C-001,33,1,1,1, No Tax, exclusive,SC-1-018,,,,,,,,,,,,,no_image.png,standard
+G0261,ដែកគោលបេតុង 2 ហ៊ុន,,C-001,24,1,1,1, No Tax, exclusive,SC-1-019,,,,,,,,,,,,,no_image.png,standard
+G0262,ដែកគោលបេតុង 2.5 ហ៊ុន,,C-001,24,1,1,1, No Tax, exclusive,SC-1-019,,,,,,,,,,,,,no_image.png,standard
+G0263,ដែកគោលបេតុង 3 ហ៊ុន,,C-001,24,1,1,1, No Tax, exclusive,SC-1-019,,,,,,,,,,,,,no_image.png,standard
+G0264,ដែកគោលបេតុង 4 ហ៊ុន,,C-001,24,1,1,1, No Tax, exclusive,SC-1-019,,,,,,,,,,,,,no_image.png,standard
+G0265,ដែកគោលបេតុង 5 ហ៊ុន,,C-001,24,1,1,1, No Tax, exclusive,SC-1-019,,,,,,,,,,,,,no_image.png,standard
+G0266,ដែកគោលបេតុង 6 ហ៊ុន,,C-001,24,1,1,1, No Tax, exclusive,SC-1-019,,,,,,,,,,,,,no_image.png,standard
+G0267,ដែកគោលបេតុង 7 ហ៊ុន,,C-001,24,1,1,1, No Tax, exclusive,SC-1-019,,,,,,,,,,,,,no_image.png,standard
+G0268,ដែកគោលបេតុង 8 ហ៊ុន,,C-001,24,1,1,1, No Tax, exclusive,SC-1-019,,,,,,,,,,,,,no_image.png,standard
+G0269,ដែកគោលបេតុង 9 ហ៊ុន,,C-001,24,1,1,1, No Tax, exclusive,SC-1-019,,,,,,,,,,,,,no_image.png,standard
+G0281,ដែកគោលបាញ់ឈើ 1 ហ៊ុន,,C-001,24,1,1,1, No Tax, exclusive,SC-1-020,,,,,,,,,,,,,no_image.png,standard
+G0282,ដែកគោលបាញ់ឈើ 2 ហ៊ុន,,C-001,24,1,1,1, No Tax, exclusive,SC-1-020,,,,,,,,,,,,,no_image.png,standard
+G0283,ដែកគោលបាញ់ឈើ 2.5 ហ៊ុន,,C-001,24,1,1,1, No Tax, exclusive,SC-1-020,,,,,,,,,,,,,no_image.png,standard
+G0284,ដែកគោលបាញ់ឈើ 3 ហ៊ុន,,C-001,24,1,1,1, No Tax, exclusive,SC-1-020,,,,,,,,,,,,,no_image.png,standard
+G0285,ដែកគោលបាញ់ឈើ 4 ហ៊ុន,,C-001,24,1,1,1, No Tax, exclusive,SC-1-020,,,,,,,,,,,,,no_image.png,standard
+G0291,ញញូរដែក 0.5 Kg,,C-001,18,1,1,1, No Tax, exclusive,SC-1-021,,,,,,,,,,,,,no_image.png,standard
+G0292,ញញូរដែក 1 Kg,,C-001,18,1,1,1, No Tax, exclusive,SC-1-021,,,,,,,,,,,,,no_image.png,standard
+G0293,ញញូរដែក 1.5 Kg,,C-001,18,1,1,1, No Tax, exclusive,SC-1-021,,,,,,,,,,,,,no_image.png,standard
+G0294,ញញូរដែក 1.8 Kg,,C-001,18,1,1,1, No Tax, exclusive,SC-1-021,,,,,,,,,,,,,no_image.png,standard
+G0295,ញញូរដែក 2 Kg,,C-001,18,1,1,1, No Tax, exclusive,SC-1-021,,,,,,,,,,,,,no_image.png,standard
+G0296,ញញូរដែក 2.5 Kg,,C-001,18,1,1,1, No Tax, exclusive,SC-1-021,,,,,,,,,,,,,no_image.png,standard
+G0297,ញញូរដែក 3 Kg,,C-001,18,1,1,1, No Tax, exclusive,SC-1-021,,,,,,,,,,,,,no_image.png,standard
+G0298,ញញូរដែក 5 Kg,,C-001,18,1,1,1, No Tax, exclusive,SC-1-021,,,,,,,,,,,,,no_image.png,standard
+G0299,ញញូរជ័រ 0.5 Kg,,C-001,18,1,1,1, No Tax, exclusive,SC-1-021,,,,,,,,,,,,,no_image.png,standard
+G0300,ញញូរជ័រ 0.8 Kg,,C-001,18,1,1,1, No Tax, exclusive,SC-1-021,,,,,,,,,,,,,no_image.png,standard
+G0301,ញញូរជ័រ 1 Kg,,C-001,18,1,1,1, No Tax, exclusive,SC-1-021,,,,,,,,,,,,,no_image.png,standard
+G0302,ញញូរជ័រ 1.5 Kg,,C-001,18,1,1,1, No Tax, exclusive,SC-1-021,,,,,,,,,,,,,no_image.png,standard
+G0303,ញញូរមានក្បាលគាស់ តូច,,C-001,18,1,1,1, No Tax, exclusive,SC-1-021,,,,,,,,,,,,,no_image.png,standard
+G0304,ញញូរមានក្បាលគាស់ ធំ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-021,,,,,,,,,,,,,no_image.png,standard
+G0311,ពូថៅ តូច,,C-001,18,1,1,1, No Tax, exclusive,SC-1-022,,,,,,,,,,,,,no_image.png,standard
+G0312,ពូថៅ ធំ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-022,,,,,,,,,,,,,no_image.png,standard
+G0321,កាំបិតផ្គាក់,,C-001,18,1,1,1, No Tax, exclusive,SC-1-023,,,,,,,,,,,,,no_image.png,standard
+G0322,កាំបិតឆូត តូច,,C-001,18,1,1,1, No Tax, exclusive,SC-1-023,,,,,,,,,,,,,no_image.png,standard
+G0323,កាំបិតឆូត ធំ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-023,,,,,,,,,,,,,no_image.png,standard
+G0324,ផ្លែ កាំបិតឆូត តូច,,C-001,26,1,1,1, No Tax, exclusive,SC-1-023,,,,,,,,,,,,,no_image.png,standard
+G0325,ផ្លែ កាំបិតឆូត ធំ,,C-001,26,1,1,1, No Tax, exclusive,SC-1-023,,,,,,,,,,,,,no_image.png,standard
+G0331,បង្គី,,C-001,21,1,1,1, No Tax, exclusive,SC-1-024,,,,,,,,,,,,,no_image.png,standard
+G0332,សំបកធុងស្ពេត្រូ,,C-001,20,1,1,1, No Tax, exclusive,SC-1-024,,,,,,,,,,,,,no_image.png,standard
+G0333,សំបកកានជ័រ 10 លីត្រ,,C-001,4,1,1,1, No Tax, exclusive,SC-1-024,,,,,,,,,,,,,no_image.png,standard
+G0334,សំបកកានជ័រ 30 លីត្រ,,C-001,4,1,1,1, No Tax, exclusive,SC-1-024,,,,,,,,,,,,,no_image.png,standard
+G0341,ចប,,C-001,14,1,1,1, No Tax, exclusive,SC-1-025,,,,,,,,,,,,,no_image.png,standard
+G0342,ដងចប/ ផ្លែចប,,C-001,18,1,1,1, No Tax, exclusive,SC-1-025,,,,,,,,,,,,,no_image.png,standard
+G0343,ប៉ែល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-025,,,,,,,,,,,,,no_image.png,standard
+G0344,ដងប៉ែល,,C-001,18,1,1,1, No Tax, exclusive,SC-1-025,,,,,,,,,,,,,no_image.png,standard
+G0345,ត្រសេះ,,C-001,14,1,1,1, No Tax, exclusive,SC-1-025,,,,,,,,,,,,,no_image.png,standard
+G0346,ដងត្រសេះ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-025,,,,,,,,,,,,,no_image.png,standard
+G0347,ដែកគាស់ 6 តឹក - 1.2 ម,,C-001,18,1,1,1, No Tax, exclusive,SC-1-025,,,,,,,,,,,,,no_image.png,standard
+G0348,ដែកកុងគូរ 25 លី,,C-001,18,1,1,1, No Tax, exclusive,SC-1-025,,,,,,,,,,,,,no_image.png,standard
+G0349,ដែក ដង្កូវទឹក,,C-001,11,1,1,1, No Tax, exclusive,SC-1-025,,,,,,,,,,,,,no_image.png,standard
+G0361,ស្លាបព្រាកំបោរ មូល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-026,,,,,,,,,,,,,no_image.png,standard
+G0362,ស្លាបព្រាកំបោរ ជ្រុង,,C-001,14,1,1,1, No Tax, exclusive,SC-1-026,,,,,,,,,,,,,no_image.png,standard
+G0363,ស្លាបព្រាឈួសកំបោរ ,,C-001,14,1,1,1, No Tax, exclusive,SC-1-026,,,,,,,,,,,,,no_image.png,standard
+G0364,ធុងកំបោរ,,C-001,20,1,1,1, No Tax, exclusive,SC-1-026,,,,,,,,,,,,,no_image.png,standard
+G0371,ខ្សែនីឡុង 1 លី,,C-001,17,1,1,1, No Tax, exclusive,SC-1-027,,,,,,,,,,,,,no_image.png,standard
+G0372,ខ្សែនីឡុង 2 លី,,C-001,17,1,1,1, No Tax, exclusive,SC-1-027,,,,,,,,,,,,,no_image.png,standard
+G0373,ខ្សែនីឡុង 3 លី,,C-001,17,1,1,1, No Tax, exclusive,SC-1-027,,,,,,,,,,,,,no_image.png,standard
+G0381,សំណាញ់ភ្នែកក្រួច រៀបឥដ្ឋ 1 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-028,,,,,,,,,,,,,no_image.png,standard
+G0382,សំណាញ់ភ្នែកក្រួច រៀបឥដ្ឋ 1.2 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-028,,,,,,,,,,,,,no_image.png,standard
+G0383,សំណាញ់ភ្នែកក្រួច រៀបឥដ្ឋ 1.5 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-028,,,,,,,,,,,,,no_image.png,standard
+G0384,សំណាញ់ភ្នែកក្រួច រៀបឥដ្ឋ 2 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-028,,,,,,,,,,,,,no_image.png,standard
+G0391,លួសបន្លារ​,,C-001,16,1,1,1, No Tax, exclusive,SC-1-029,,,,,,,,,,,,,no_image.png,standard
+G0392,លួសបន្លារ​ ឡាម,,C-001,16,1,1,1, No Tax, exclusive,SC-1-029,,,,,,,,,,,,,no_image.png,standard
+G0393,លួស ស 1.5 លី,,C-001,9,1,1,1, No Tax, exclusive,SC-1-029,,,,,,,,,,,,,no_image.png,standard
+G0394,លួស ស 2 លី,,C-001,9,1,1,1, No Tax, exclusive,SC-1-029,,,,,,,,,,,,,no_image.png,standard
+G0395,លួស ស 3 លី,,C-001,9,1,1,1, No Tax, exclusive,SC-1-029,,,,,,,,,,,,,no_image.png,standard
+G0396,លួស ស 4 លី,,C-001,9,1,1,1, No Tax, exclusive,SC-1-029,,,,,,,,,,,,,no_image.png,standard
+G0397,សំណាញ់លួស មុខកាត់ 1ម៉,,C-001,9,1,1,1, No Tax, exclusive,SC-1-029,,,,,,,,,,,,,no_image.png,standard
+G0398,សំណាញ់លួស មុខកាត់ 1.5ម៉,,C-001,9,1,1,1, No Tax, exclusive,SC-1-029,,,,,,,,,,,,,no_image.png,standard
+G0399,សំណាញ់លួស មុខកាត់ 1.7ម៉,,C-001,9,1,1,1, No Tax, exclusive,SC-1-029,,,,,,,,,,,,,no_image.png,standard
+G0400,សំណាញ់លួស មុខកាត់ 2ម៉,,C-001,9,1,1,1, No Tax, exclusive,SC-1-029,,,,,,,,,,,,,no_image.png,standard
+G0411,ទុយោថ្លឹងទឹក 8 លី,,C-001,16,1,1,1, No Tax, exclusive,SC-1-030,,,,,,,,,,,,,no_image.png,standard
+G0412,ទុយោថ្លឹងទឹក 10 លី,,C-001,16,1,1,1, No Tax, exclusive,SC-1-030,,,,,,,,,,,,,no_image.png,standard
+G0413,ទុយោថ្លឹងទឹក 12 លី,,C-001,16,1,1,1, No Tax, exclusive,SC-1-030,,,,,,,,,,,,,no_image.png,standard
+G0421,ទុយោក្រឡាពស់ 16 មម,,C-001,16,1,1,1, No Tax, exclusive,SC-1-031,,,,,,,,,,,,,no_image.png,standard
+G0422,ទុយោក្រឡាពស់ 20/21 មម,,C-001,16,1,1,1, No Tax, exclusive,SC-1-031,,,,,,,,,,,,,no_image.png,standard
+G0423,ទុយោក្រឡាពស់ 25 មម,,C-001,16,1,1,1, No Tax, exclusive,SC-1-031,,,,,,,,,,,,,no_image.png,standard
+G0424,ទុយោក្រឡាពស់ 27 មម,,C-001,16,1,1,1, No Tax, exclusive,SC-1-031,,,,,,,,,,,,,no_image.png,standard
+G0425,ទុយោក្រឡាពស់ 32 មម,,C-001,16,1,1,1, No Tax, exclusive,SC-1-031,,,,,,,,,,,,,no_image.png,standard
+G0426,ទុយោ សថ្លា 16 មម,,C-001,16,1,1,1, No Tax, exclusive,SC-1-031,,,,,,,,,,,,,no_image.png,standard
+G0427,ទុយោ សថ្លា 20 មម,,C-001,16,1,1,1, No Tax, exclusive,SC-1-031,,,,,,,,,,,,,no_image.png,standard
+G0428,ទុយោ សថ្លា 25 មម,,C-001,16,1,1,1, No Tax, exclusive,SC-1-031,,,,,,,,,,,,,no_image.png,standard
+G0429,ទុយោ សថ្លា 27 មម,,C-001,16,1,1,1, No Tax, exclusive,SC-1-031,,,,,,,,,,,,,no_image.png,standard
+G0441,ទុយោខ្យល់,,C-001,28,1,1,1, No Tax, exclusive,SC-1-032,,,,,,,,,,,,,no_image.png,standard
+G0442,ទុយោហ្គាស,,C-001,28,1,1,1, No Tax, exclusive,SC-1-032,,,,,,,,,,,,,no_image.png,standard
+G0443,ទុយោខ្យល់បាញ់បេតុង,,C-001,28,1,1,1, No Tax, exclusive,SC-1-032,,,,,,,,,,,,,no_image.png,standard
+G0444,ទុយោបាញ់ថ្នាំ,,C-001,28,1,1,1, No Tax, exclusive,SC-1-032,,,,,,,,,,,,,no_image.png,standard
+G0445,ទុយោ ប្រេង,,C-001,28,1,1,1, No Tax, exclusive,SC-1-032,,,,,,,,,,,,,no_image.png,standard
+G0451,ទុយោបូមទឹកក្រណាត់ 80 mm,,C-001,16,1,1,1, No Tax, exclusive,SC-1-033,,,,,,,,,,,,,no_image.png,standard
+G0452,ទុយោបូមទឹកក្រណាត់ 100 mm,,C-001,16,1,1,1, No Tax, exclusive,SC-1-033,,,,,,,,,,,,,no_image.png,standard
+G0453,ទុយោបូមទឹកក្រណាត់ 120 mm,,C-001,16,1,1,1, No Tax, exclusive,SC-1-033,,,,,,,,,,,,,no_image.png,standard
+G0454,ទុយោបូមទឹកក្រណាត់ 150 mm,,C-001,16,1,1,1, No Tax, exclusive,SC-1-033,,,,,,,,,,,,,no_image.png,standard
+G0455,ទុយោប្រម៉ោយដំរី 80 mm,,C-001,28,1,1,1, No Tax, exclusive,SC-1-033,,,,,,,,,,,,,no_image.png,standard
+G0456,ទុយោប្រម៉ោយដំរី 100 mm,,C-001,28,1,1,1, No Tax, exclusive,SC-1-033,,,,,,,,,,,,,no_image.png,standard
+G0457,ទុយោប្រម៉ោយដំរី 120 mm,,C-001,28,1,1,1, No Tax, exclusive,SC-1-033,,,,,,,,,,,,,no_image.png,standard
+G0458,ទុយោប្រម៉ោយដំរី 150 mm,,C-001,28,1,1,1, No Tax, exclusive,SC-1-033,,,,,,,,,,,,,no_image.png,standard
+G0459,ទុយោ ខ្មៅ 60,,C-001,18,1,1,1, No Tax, exclusive,SC-1-033,,,,,,,,,,,,,no_image.png,standard
+G0460,ទុយោ ខ្មៅ 90,,C-001,18,1,1,1, No Tax, exclusive,SC-1-033,,,,,,,,,,,,,no_image.png,standard
+G0461,ទុយោ ខ្មៅ 114,,C-001,18,1,1,1, No Tax, exclusive,SC-1-033,,,,,,,,,,,,,no_image.png,standard
+G0462,ទុយោ ខ្មៅ 165,,C-001,18,1,1,1, No Tax, exclusive,SC-1-033,,,,,,,,,,,,,no_image.png,standard
+W0466,ក្បាលបូមទឹក 90,,C-001,14,1,1,1, No Tax, exclusive,SC-1-034,,,,,,,,,,,,,no_image.png,standard
+W0467,ក្បាលបូមទឹក 114,,C-001,14,1,1,1, No Tax, exclusive,SC-1-034,,,,,,,,,,,,,no_image.png,standard
+W0468,ក្បាលបូមទឹក 165,,C-001,14,1,1,1, No Tax, exclusive,SC-1-034,,,,,,,,,,,,,no_image.png,standard
+G0471,ខ្សែបន្ទាត់,,C-001,8,1,1,1, No Tax, exclusive,SC-1-035,,,,,,,,,,,,,no_image.png,standard
+G0472,ទឹកថ្នាំខ្សែបន្ទាត់ខ្មៅ,,C-001,15,1,1,1, No Tax, exclusive,SC-1-035,,,,,,,,,,,,,no_image.png,standard
+G0473,ខ្សែបន្ទាត់អូតូ + ទឹក,,C-001,14,1,1,1, No Tax, exclusive,SC-1-035,,,,,,,,,,,,,no_image.png,standard
+G0481,កូនប្រយោល 0.15 Kg,,C-001,11,1,1,1, No Tax, exclusive,SC-1-036,,,,,,,,,,,,,no_image.png,standard
+G0482,កូនប្រយោល 0.30 Kg,,C-001,11,1,1,1, No Tax, exclusive,SC-1-036,,,,,,,,,,,,,no_image.png,standard
+G0483,កូនប្រយោល 0.50 Kg,,C-001,11,1,1,1, No Tax, exclusive,SC-1-036,,,,,,,,,,,,,no_image.png,standard
+G0484,កូនប្រយោល 1 Kg,,C-001,11,1,1,1, No Tax, exclusive,SC-1-036,,,,,,,,,,,,,no_image.png,standard
+G0485,កូនប្រយោល 1.5 Kg,,C-001,11,1,1,1, No Tax, exclusive,SC-1-036,,,,,,,,,,,,,no_image.png,standard
+G0486,កូនប្រយោលមានដែកឆក់ 0.30 Kg,,C-001,14,1,1,1, No Tax, exclusive,SC-1-036,,,,,,,,,,,,,no_image.png,standard
+G0487,កូនប្រយោលមានដែកឆក់ 0.50 Kg,,C-001,14,1,1,1, No Tax, exclusive,SC-1-036,,,,,,,,,,,,,no_image.png,standard
+G0501,ដី ស គូសដែក,,C-001,24,1,1,1, No Tax, exclusive,SC-1-037,,,,,,,,,,,,,no_image.png,standard
+G0502,កែវស្ទង់ 2 តឹក,,C-001,18,1,1,1, No Tax, exclusive,SC-1-038,,,,,,,,,,,,,no_image.png,standard
+G0503,កែវស្ទង់ 3 តឹក,,C-001,18,1,1,1, No Tax, exclusive,SC-1-038,,,,,,,,,,,,,no_image.png,standard
+G0504,កែវស្ទង់ 4 តឹក,,C-001,18,1,1,1, No Tax, exclusive,SC-1-038,,,,,,,,,,,,,no_image.png,standard
+G0505,កែវស្ទង់ 5 តឹក,,C-001,18,1,1,1, No Tax, exclusive,SC-1-038,,,,,,,,,,,,,no_image.png,standard
+G0506,កែវស្ទង់ 6 តឹក,,C-001,18,1,1,1, No Tax, exclusive,SC-1-038,,,,,,,,,,,,,no_image.png,standard
+G0507,កែវស្ទង់ 1 ម៉ែត្រ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-038,,,,,,,,,,,,,no_image.png,standard
+G0508,កែវស្ទង់ 1.2 ម៉ែត្រ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-038,,,,,,,,,,,,,no_image.png,standard
+G0511,ស្រ្ពាយ ក្រហម,,C-001,7,1,1,1, No Tax, exclusive,SC-1-039,,,,,,,,,,,,,no_image.png,standard
+G0512,ស្រ្ពាយ លឿង,,C-001,7,1,1,1, No Tax, exclusive,SC-1-039,,,,,,,,,,,,,no_image.png,standard
+G0513,ស្រ្ពាយ ស,,C-001,7,1,1,1, No Tax, exclusive,SC-1-039,,,,,,,,,,,,,no_image.png,standard
+G0514,ស្រ្ពាយ ខ្មៅ,,C-001,7,1,1,1, No Tax, exclusive,SC-1-039,,,,,,,,,,,,,no_image.png,standard
+G0515,ស្រ្ពាយ ខៀវ,,C-001,7,1,1,1, No Tax, exclusive,SC-1-039,,,,,,,,,,,,,no_image.png,standard
+G0516,ស្រ្ពាយ បៃតង,,C-001,7,1,1,1, No Tax, exclusive,SC-1-039,,,,,,,,,,,,,no_image.png,standard
+G0517,ស្រ្ពាយ ទឹកប្រាក់,,C-001,7,1,1,1, No Tax, exclusive,SC-1-039,,,,,,,,,,,,,no_image.png,standard
+G0518,ស្រ្ពាយ រលោង,,C-001,7,1,1,1, No Tax, exclusive,SC-1-039,,,,,,,,,,,,,no_image.png,standard
+G0519,ស្រ្ពាយ ច្រេះ,,C-001,7,1,1,1, No Tax, exclusive,SC-1-039,,,,,,,,,,,,,no_image.png,standard
+G0521,ថ្នាំច្រេះពណ៏ទឹកប្រាក់ 1 Kg,,C-001,7,1,1,1, No Tax, exclusive,SC-1-040,,,,,,,,,,,,,no_image.png,standard
+G0522,ថ្នាំច្រេះពណ៏ទឹកក្រហម 1 Kg,,C-001,7,1,1,1, No Tax, exclusive,SC-1-040,,,,,,,,,,,,,no_image.png,standard
+G0523,ថ្នាំច្រេះពណ៏ទឹកខ្មៅ 1 Kg,,C-001,7,1,1,1, No Tax, exclusive,SC-1-040,,,,,,,,,,,,,no_image.png,standard
+G0524,ថ្នាំច្រេះពណ៏ទឹកប្រាក់ 4 Kg,,C-001,20,1,1,1, No Tax, exclusive,SC-1-040,,,,,,,,,,,,,no_image.png,standard
+G0525,ថ្នាំច្រេះពណ៏ទឹកក្រហម 4 Kg,,C-001,20,1,1,1, No Tax, exclusive,SC-1-040,,,,,,,,,,,,,no_image.png,standard
+G0526,ថ្នាំច្រេះពណ៏ទឹកខ្មៅ 4 Kg,,C-001,20,1,1,1, No Tax, exclusive,SC-1-040,,,,,,,,,,,,,no_image.png,standard
+G0527,ថ្នាំច្រេះពណ៏ទឹកប្រាក់ 8 Kg,,C-001,20,1,1,1, No Tax, exclusive,SC-1-040,,,,,,,,,,,,,no_image.png,standard
+G0528,ថ្នាំច្រេះពណ៏ទឹកក្រហម 8 Kg,,C-001,20,1,1,1, No Tax, exclusive,SC-1-040,,,,,,,,,,,,,no_image.png,standard
+G0529,ថ្នាំច្រេះពណ៏ទឹកខ្មៅ 8 Kg,,C-001,20,1,1,1, No Tax, exclusive,SC-1-040,,,,,,,,,,,,,no_image.png,standard
+G0530,ថ្នាំច្រេះពណ៏ទឹកប្រាក់ 12 Kg,,C-001,20,1,1,1, No Tax, exclusive,SC-1-040,,,,,,,,,,,,,no_image.png,standard
+G0531,ថ្នាំច្រេះពណ៏ទឹកក្រហម 12 Kg,,C-001,20,1,1,1, No Tax, exclusive,SC-1-040,,,,,,,,,,,,,no_image.png,standard
+G0532,ថ្នាំច្រេះពណ៏ទឹកខ្មៅ 12 Kg,,C-001,20,1,1,1, No Tax, exclusive,SC-1-040,,,,,,,,,,,,,no_image.png,standard
+G0541,ក្តារទ្រជ័រ,,C-001,31,1,1,1, No Tax, exclusive,SC-1-041,,,,,,,,,,,,,no_image.png,standard
+G0542,ក្តារទ្រដែក,,C-001,31,1,1,1, No Tax, exclusive,SC-1-041,,,,,,,,,,,,,no_image.png,standard
+G0543,ក្តារវី ជ័រ,,C-001,31,1,1,1, No Tax, exclusive,SC-1-041,,,,,,,,,,,,,no_image.png,standard
+G0544,កា្តរវី ដែក,,C-001,31,1,1,1, No Tax, exclusive,SC-1-041,,,,,,,,,,,,,no_image.png,standard
+G0545,ថាសវីបេតុង,,C-001,31,1,1,1, No Tax, exclusive,SC-1-041,,,,,,,,,,,,,no_image.png,standard
+G0546,ក្តារបៀករ៉ង,,C-001,22,1,1,1, No Tax, exclusive,SC-1-041,,,,,,,,,,,,,no_image.png,standard
+G0547,ក្តារបៀកថ្នាំ,,C-001,14,1,1,1, No Tax, exclusive,SC-1-041,,,,,,,,,,,,,no_image.png,standard
+G0551,ក្តារកុងផ្លាកេ 8 លី 1.22ម x 2.44ម,,C-001,31,1,1,1, No Tax, exclusive,SC-1-042,,,,,,,,,,,,,no_image.png,standard
+G0552,ក្តារកុងផ្លាកេ 10 លី 1.22ម x 2.44ម,,C-001,31,1,1,1, No Tax, exclusive,SC-1-042,,,,,,,,,,,,,no_image.png,standard
+G0553,ក្តារកុងផ្លាកេ 12 លី 1.22ម x 2.44ម,,C-001,31,1,1,1, No Tax, exclusive,SC-1-042,,,,,,,,,,,,,no_image.png,standard
+G0554,ក្តារកុងផ្លាកេ 15 លី 1.22ម x 2.44ម,,C-001,31,1,1,1, No Tax, exclusive,SC-1-042,,,,,,,,,,,,,no_image.png,standard
+G0555,ក្តារកុងផ្លាកេ 18 លី 1.22ម x 2.44ម,,C-001,31,1,1,1, No Tax, exclusive,SC-1-042,,,,,,,,,,,,,no_image.png,standard
+G0556,ក្តារកុងផ្លាកេ 20 លី 1.22ម x 2.44ម,,C-001,31,1,1,1, No Tax, exclusive,SC-1-042,,,,,,,,,,,,,no_image.png,standard
+G0571,ម្នាងសិលា 9 លី 1.22ម x 2.44ម,,C-001,31,1,1,1, No Tax, exclusive,SC-1-043,,,,,,,,,,,,,no_image.png,standard
+G0572,ម្នាងសិលាការពារសំនើម 9 លី ,,C-001,31,1,1,1, No Tax, exclusive,SC-1-043,,,,,,,,,,,,,no_image.png,standard
+G0573,ជ្រី ម្នាងសិលា ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-043,,,,,,,,,,,,,no_image.png,standard
+G0574,សសៃរចាក់ជ្រី,,C-001,9,1,1,1, No Tax, exclusive,SC-1-043,,,,,,,,,,,,,no_image.png,standard
+G0581,ឆ្អឹងស៊ីឡាយ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-044,,,,,,,,,,,,,no_image.png,standard
+G0582,តេស៊ីឡាយ 6 តឹក -00,,C-001,18,1,1,1, No Tax, exclusive,SC-1-044,,,,,,,,,,,,,no_image.png,standard
+G0583,Sky Light,,C-001,31,1,1,1, No Tax, exclusive,SC-1-045,,,,,,,,,,,,,no_image.png,standard
+G0584,តំណរ Sky Light,,C-001,18,1,1,1, No Tax, exclusive,SC-1-045,,,,,,,,,,,,,no_image.png,standard
+G0591,ម៉ែត្រ 3ម,,C-001,12,1,1,1, No Tax, exclusive,SC-1-046,,,,,,,,,,,,,no_image.png,standard
+G0592,ម៉ែត្រ 5ម,,C-001,12,1,1,1, No Tax, exclusive,SC-1-046,,,,,,,,,,,,,no_image.png,standard
+G0593,ម៉ែត្រ 7.5ម,,C-001,12,1,1,1, No Tax, exclusive,SC-1-046,,,,,,,,,,,,,no_image.png,standard
+G0594,ម៉ែត្រខ្សែ 30ម,,C-001,12,1,1,1, No Tax, exclusive,SC-1-046,,,,,,,,,,,,,no_image.png,standard
+G0595,ម៉ែត្រខ្សែ 50ម,,C-001,12,1,1,1, No Tax, exclusive,SC-1-046,,,,,,,,,,,,,no_image.png,standard
+G0596,ម៉ែត្រ កៀរ 1ម,,C-001,18,1,1,1, No Tax, exclusive,SC-1-046,,,,,,,,,,,,,no_image.png,standard
+G0597,ម៉ែត្រ កៀរ 1.5ម,,C-001,18,1,1,1, No Tax, exclusive,SC-1-046,,,,,,,,,,,,,no_image.png,standard
+G0598,ម៉ែត្រ កៀរ 2ម,,C-001,18,1,1,1, No Tax, exclusive,SC-1-046,,,,,,,,,,,,,no_image.png,standard
+G0599,ម៉ែត្រ កៀរ 3ម,,C-001,18,1,1,1, No Tax, exclusive,SC-1-046,,,,,,,,,,,,,no_image.png,standard
+G0600,ម៉ែត្រកែង 2 តឹក,,C-001,18,1,1,1, No Tax, exclusive,SC-1-046,,,,,,,,,,,,,no_image.png,standard
+G0601,ម៉ែត្រកែង 3 តឹក,,C-001,18,1,1,1, No Tax, exclusive,SC-1-046,,,,,,,,,,,,,no_image.png,standard
+G0602,ម៉ែត្រកែង 4 តឹក,,C-001,18,1,1,1, No Tax, exclusive,SC-1-046,,,,,,,,,,,,,no_image.png,standard
+G0603,ម៉ែត្រកែង 5 តឹក,,C-001,18,1,1,1, No Tax, exclusive,SC-1-046,,,,,,,,,,,,,no_image.png,standard
+G0604,ម៉ែត្រកែង 1ម,,C-001,18,1,1,1, No Tax, exclusive,SC-1-046,,,,,,,,,,,,,no_image.png,standard
+G0605,ម៉ែត្រគៀប,,C-001,12,1,1,1, No Tax, exclusive,SC-1-046,,,,,,,,,,,,,no_image.png,standard
+G0611,វ៉ែនតា ស,,C-001,12,1,1,1, No Tax, exclusive,SC-1-047,,,,,,,,,,,,,no_image.png,standard
+G0612,វ៉ែនតា ខ្មៅ,,C-001,12,1,1,1, No Tax, exclusive,SC-1-047,,,,,,,,,,,,,no_image.png,standard
+G0613,វ៉ែនតា ផ្សាដែក,,C-001,12,1,1,1, No Tax, exclusive,SC-1-047,,,,,,,,,,,,,no_image.png,standard
+G0621,មូក ស,,C-001,29,1,1,1, No Tax, exclusive,SC-1-048,,,,,,,,,,,,,no_image.png,standard
+G0622,មូក លឿង,,C-001,29,1,1,1, No Tax, exclusive,SC-1-048,,,,,,,,,,,,,no_image.png,standard
+G0623,មូក ក្រហម,,C-001,29,1,1,1, No Tax, exclusive,SC-1-048,,,,,,,,,,,,,no_image.png,standard
+G0624,មូក ស្លាទុំ,,C-001,29,1,1,1, No Tax, exclusive,SC-1-048,,,,,,,,,,,,,no_image.png,standard
+G0625,មូក ខៀវ,,C-001,29,1,1,1, No Tax, exclusive,SC-1-048,,,,,,,,,,,,,no_image.png,standard
+G0626,មូក បៃតង,,C-001,29,1,1,1, No Tax, exclusive,SC-1-048,,,,,,,,,,,,,no_image.png,standard
+G0631,អាវចរាចរណ៍ ក្រហម,,C-001,34,1,1,1, No Tax, exclusive,SC-1-049,,,,,,,,,,,,,no_image.png,standard
+G0632,អាវចរាចរណ៍ លឿង,,C-001,34,1,1,1, No Tax, exclusive,SC-1-049,,,,,,,,,,,,,no_image.png,standard
+G0633,អាវចរាចរណ៍ បៃតង,,C-001,34,1,1,1, No Tax, exclusive,SC-1-049,,,,,,,,,,,,,no_image.png,standard
+G0634,អាវចរាចរណ៍ ប្រផេះ,,C-001,34,1,1,1, No Tax, exclusive,SC-1-049,,,,,,,,,,,,,no_image.png,standard
+G0635,អាវពាក់ផ្សាដែក,,C-001,34,1,1,1, No Tax, exclusive,SC-1-049,,,,,,,,,,,,,no_image.png,standard
+G0641,អាវភ្លៀងស៊កតាមក្បាល (កៅស៊ូ),,C-001,34,1,1,1, No Tax, exclusive,SC-1-050,,,,,,,,,,,,,no_image.png,standard
+G0642,អាវភ្លៀងស៊កតាមក្បាល ល្អ,,C-001,34,1,1,1, No Tax, exclusive,SC-1-050,,,,,,,,,,,,,no_image.png,standard
+G0643,អាវភ្លៀង(ខោ+អាវ),,C-001,34,1,1,1, No Tax, exclusive,SC-1-050,,,,,,,,,,,,,no_image.png,standard
+G0651,ឆ័ត្រទទូរ តូច,,C-001,13,1,1,1, No Tax, exclusive,SC-1-051,,,,,,,,,,,,,no_image.png,standard
+G0652,ឆ័ត្រទទូរ ធំ,,C-001,13,1,1,1, No Tax, exclusive,SC-1-051,,,,,,,,,,,,,no_image.png,standard
+G0661,ស្រោមដៃចាក់,,C-001,10,1,1,1, No Tax, exclusive,SC-1-052,,,,,,,,,,,,,no_image.png,standard
+G0662,ស្រោមដៃជ័រ,,C-001,10,1,1,1, No Tax, exclusive,SC-1-052,,,,,,,,,,,,,no_image.png,standard
+G0663,ស្រោមដៃស្បែក,,C-001,10,1,1,1, No Tax, exclusive,SC-1-052,,,,,,,,,,,,,no_image.png,standard
+G0671,ម៉ាស ពេទ្យ,,C-001,16,1,1,1, No Tax, exclusive,SC-1-053,,,,,,,,,,,,,no_image.png,standard
+G0672,ម៉ាស ក្រណាត់,,C-001,27,1,1,1, No Tax, exclusive,SC-1-053,,,,,,,,,,,,,no_image.png,standard
+G0681,ស្បែកជើងកវែង,,C-001,10,1,1,1, No Tax, exclusive,SC-1-054,,,,,,,,,,,,,no_image.png,standard
+G0682,ស្បែកជើងសុវត្ថិភាព,,C-001,10,1,1,1, No Tax, exclusive,SC-1-054,,,,,,,,,,,,,no_image.png,standard
+G0683,ខ្សែក្រវាត់ ការពារ,,C-001,14,1,1,1, No Tax, exclusive,SC-1-054,,,,,,,,,,,,,no_image.png,standard
+G0691,បំពង់ពន្លត់អគ្គីភ័យ 4 Kg,,C-001,15,1,1,1, No Tax, exclusive,SC-1-055,,,,,,,,,,,,,no_image.png,standard
+G0692,បំពង់ពន្លត់អគ្គីភ័យ 6 Kg,,C-001,15,1,1,1, No Tax, exclusive,SC-1-055,,,,,,,,,,,,,no_image.png,standard
+G0693,បំពង់ពន្លត់អគ្គីភ័យ 8 Kg,,C-001,15,1,1,1, No Tax, exclusive,SC-1-055,,,,,,,,,,,,,no_image.png,standard
+G0694,បំពង់ពន្លត់អគ្គីភ័យ 12 Kg,,C-001,15,1,1,1, No Tax, exclusive,SC-1-055,,,,,,,,,,,,,no_image.png,standard
+G0701,ខ្សែពូ 8 លី,,C-001,28,1,1,1, No Tax, exclusive,SC-1-056,,,,,,,,,,,,,no_image.png,standard
+G0702,ខ្សែពូ 10 លី,,C-001,28,1,1,1, No Tax, exclusive,SC-1-056,,,,,,,,,,,,,no_image.png,standard
+G0703,ខ្សែពូ 12 លី,,C-001,28,1,1,1, No Tax, exclusive,SC-1-056,,,,,,,,,,,,,no_image.png,standard
+G0704,ខ្សែពូ 14 លី,,C-001,28,1,1,1, No Tax, exclusive,SC-1-056,,,,,,,,,,,,,no_image.png,standard
+G0705,ខ្សែពូ 16 លី,,C-001,28,1,1,1, No Tax, exclusive,SC-1-056,,,,,,,,,,,,,no_image.png,standard
+G0706,ខ្សែពូ 18 លី,,C-001,28,1,1,1, No Tax, exclusive,SC-1-056,,,,,,,,,,,,,no_image.png,standard
+G0707,ខ្សែពូ 20 លី,,C-001,28,1,1,1, No Tax, exclusive,SC-1-056,,,,,,,,,,,,,no_image.png,standard
+G0708,ខ្សែពូ 22 លី,,C-001,28,1,1,1, No Tax, exclusive,SC-1-056,,,,,,,,,,,,,no_image.png,standard
+G0709,ខ្សែពូ 25 លី,,C-001,28,1,1,1, No Tax, exclusive,SC-1-056,,,,,,,,,,,,,no_image.png,standard
+G0710,ខ្សែពូ 30 លី,,C-001,28,1,1,1, No Tax, exclusive,SC-1-056,,,,,,,,,,,,,no_image.png,standard
+G0721,ខ្សែកាប 6 លី,,C-001,28,1,1,1, No Tax, exclusive,SC-1-057,,,,,,,,,,,,,no_image.png,standard
+G0722,ខ្សែកាប 8 លី,,C-001,28,1,1,1, No Tax, exclusive,SC-1-057,,,,,,,,,,,,,no_image.png,standard
+G0723,ខ្សែកាប 10 លី,,C-001,28,1,1,1, No Tax, exclusive,SC-1-057,,,,,,,,,,,,,no_image.png,standard
+G0724,ខ្សែកាប 12 លី,,C-001,28,1,1,1, No Tax, exclusive,SC-1-057,,,,,,,,,,,,,no_image.png,standard
+G0725,ខ្សែកាប 14 លី,,C-001,28,1,1,1, No Tax, exclusive,SC-1-057,,,,,,,,,,,,,no_image.png,standard
+G0726,ខ្សែកាប 16 លី,,C-001,28,1,1,1, No Tax, exclusive,SC-1-057,,,,,,,,,,,,,no_image.png,standard
+G0727,ខ្សែកាប 18 លី,,C-001,28,1,1,1, No Tax, exclusive,SC-1-057,,,,,,,,,,,,,no_image.png,standard
+G0728,ខ្សែកាប 20 លី,,C-001,28,1,1,1, No Tax, exclusive,SC-1-057,,,,,,,,,,,,,no_image.png,standard
+G0729,ខ្សែកាប 22 លី,,C-001,28,1,1,1, No Tax, exclusive,SC-1-057,,,,,,,,,,,,,no_image.png,standard
+G0730,ខ្សែកាប 25 លី,,C-001,28,1,1,1, No Tax, exclusive,SC-1-057,,,,,,,,,,,,,no_image.png,standard
+G0741,ខ្សែកាបក្រណាត់ 2 ហ៊ុន,,C-001,8,1,1,1, No Tax, exclusive,SC-1-058,,,,,,,,,,,,,no_image.png,standard
+G0742,ខ្សែកាបក្រណាត់ 3 ហ៊ុន,,C-001,8,1,1,1, No Tax, exclusive,SC-1-058,,,,,,,,,,,,,no_image.png,standard
+G0743,ខ្សែកាបក្រណាត់ 4 ហ៊ុន,,C-001,8,1,1,1, No Tax, exclusive,SC-1-058,,,,,,,,,,,,,no_image.png,standard
+G0744,ខ្សែកាបក្រណាត់ 5 ហ៊ុន,,C-001,8,1,1,1, No Tax, exclusive,SC-1-058,,,,,,,,,,,,,no_image.png,standard
+G0745,ខ្សែកាបក្រណាត់ 6 ហ៊ុន,,C-001,8,1,1,1, No Tax, exclusive,SC-1-058,,,,,,,,,,,,,no_image.png,standard
+G0751,ខ្សែកាបចាក់ក្បាល 8 លី,,C-001,32,1,1,1, No Tax, exclusive,SC-1-058,,,,,,,,,,,,,no_image.png,standard
+G0752,ខ្សែកាបចាក់ក្បាល 10 លី,,C-001,32,1,1,1, No Tax, exclusive,SC-1-059,,,,,,,,,,,,,no_image.png,standard
+G0753,ខ្សែកាបចាក់ក្បាល 12 លី,,C-001,32,1,1,1, No Tax, exclusive,SC-1-059,,,,,,,,,,,,,no_image.png,standard
+G0754,ខ្សែកាបចាក់ក្បាល 14 លី,,C-001,32,1,1,1, No Tax, exclusive,SC-1-059,,,,,,,,,,,,,no_image.png,standard
+G0755,ខ្សែកាបចាក់ក្បាល 16 លី,,C-001,32,1,1,1, No Tax, exclusive,SC-1-059,,,,,,,,,,,,,no_image.png,standard
+G0756,ខ្សែកាបចាក់ក្បាល 18 លី,,C-001,32,1,1,1, No Tax, exclusive,SC-1-059,,,,,,,,,,,,,no_image.png,standard
+G0757,ខ្សែកាបចាក់ក្បាល 20 លី,,C-001,32,1,1,1, No Tax, exclusive,SC-1-059,,,,,,,,,,,,,no_image.png,standard
+G0758,ខ្សែកាបចាក់ក្បាល 22 លី,,C-001,32,1,1,1, No Tax, exclusive,SC-1-059,,,,,,,,,,,,,no_image.png,standard
+G0759,ខ្សែកាបចាក់ក្បាល 25 លី,,C-001,32,1,1,1, No Tax, exclusive,SC-1-059,,,,,,,,,,,,,no_image.png,standard
+G0763,ខ្សែញាក់បេតុង 1.5 ម៉ែត្រ,,C-001,8,1,1,1, No Tax, exclusive,SC-1-060,,,,,,,,,,,,,no_image.png,standard
+G0764,ខ្សែញាក់បេតុង 3 ម៉ែត្រ,,C-001,8,1,1,1, No Tax, exclusive,SC-1-060,,,,,,,,,,,,,no_image.png,standard
+G0765,ខ្សែញាក់បេតុង 5 ម៉ែត្រ,,C-001,8,1,1,1, No Tax, exclusive,SC-1-060,,,,,,,,,,,,,no_image.png,standard
+G0766,ខ្សែញាក់បេតុង 6 ម៉ែត្រ,,C-001,8,1,1,1, No Tax, exclusive,SC-1-060,,,,,,,,,,,,,no_image.png,standard
+G0771,ខ្សែពាន A 22,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0772,ខ្សែពាន A 25,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0773,ខ្សែពាន A 26,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0774,ខ្សែពាន A 27,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0775,ខ្សែពាន A 28,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0776,ខ្សែពាន A 29,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0777,ខ្សែពាន A 31,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0778,ខ្សែពាន A 32,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0779,ខ្សែពាន A 33,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0780,ខ្សែពាន A 35,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0781,ខ្សែពាន A 36,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0782,ខ្សែពាន A 37,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0783,ខ្សែពាន A 38,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0784,ខ្សែពាន A 39,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0785,ខ្សែពាន A 42,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0786,ខ្សែពាន A 48,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0787,ខ្សែពាន A 50,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0788,ខ្សែពាន B 48,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0789,ខ្សែពាន B 50,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0790,ខ្សែពាន B 52,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0791,ខ្សែពាន B 53,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0792,ខ្សែពាន B 54,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0793,ខ្សែពាន B 58,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0794,ខ្សែពាន B 60,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0795,ខ្សែពាន B 64,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0796,ខ្សែពាន B 73,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0797,ខ្សែពាន B 76,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0798,ខ្សែពាន B 83,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0799,ខ្សែពាន B 90,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0800,ខ្សែពាន B 95,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0801,ខ្សែពាន C 105,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0802,ខ្សែពាន C 121,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0803,ខ្សែពាន MF 22,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0804,ខ្សែពាន MF 23,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0805,ខ្សែពាន MF 24,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0806,ខ្សែពាន MF 25,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0807,ខ្សែពាន MF 26,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0808,ខ្សែពាន MF 35,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0809,ខ្សែពាន MF 36,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0810,ខ្សែពាន MF 45,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0811,ខ្សែពាន RECMF 1370,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0812,ខ្សែពាន RECMF 1410,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0813,ខ្សែពាន RECMF 6490,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0814,ខ្សែពាន RECMF 6500,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0815,ខ្សែពាន RECMF 8320,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0816,ខ្សែពាន RECMF 8430,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0817,ខ្សែពាន RECMF 8580,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0818,ខ្សែពាន RECMF 8600,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0819,ខ្សែពាន 308,,C-001,8,1,1,1, No Tax, exclusive,SC-1-061,,,,,,,,,,,,,no_image.png,standard
+G0841,ក្រចាប់កាប 6 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-062,,,,,,,,,,,,,no_image.png,standard
+G0842,ក្រចាប់កាប 8 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-062,,,,,,,,,,,,,no_image.png,standard
+G0843,ក្រចាប់កាប 10 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-062,,,,,,,,,,,,,no_image.png,standard
+G0844,ក្រចាប់កាប 12 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-062,,,,,,,,,,,,,no_image.png,standard
+G0845,ក្រចាប់កាប 14 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-062,,,,,,,,,,,,,no_image.png,standard
+G0846,ក្រចាប់កាប 16 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-062,,,,,,,,,,,,,no_image.png,standard
+G0847,ក្រចាប់កាប 18 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-062,,,,,,,,,,,,,no_image.png,standard
+G0848,ក្រចាប់កាប 20 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-062,,,,,,,,,,,,,no_image.png,standard
+G0849,ក្រចាប់កាប 22 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-062,,,,,,,,,,,,,no_image.png,standard
+G0850,ក្រចាប់កាប 25 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-062,,,,,,,,,,,,,no_image.png,standard
+G0861,មុន្នី 8 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-063,,,,,,,,,,,,,no_image.png,standard
+G0862,មុន្នី 10 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-063,,,,,,,,,,,,,no_image.png,standard
+G0863,មុន្នី 12 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-063,,,,,,,,,,,,,no_image.png,standard
+G0864,មុន្នី 14 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-063,,,,,,,,,,,,,no_image.png,standard
+G0865,មុន្នី 16 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-063,,,,,,,,,,,,,no_image.png,standard
+G0866,មុន្នី 18 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-063,,,,,,,,,,,,,no_image.png,standard
+G0867,មុន្នី 20 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-063,,,,,,,,,,,,,no_image.png,standard
+G0868,មុន្នី 22 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-063,,,,,,,,,,,,,no_image.png,standard
+G0869,មុន្នី 25 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-063,,,,,,,,,,,,,no_image.png,standard
+G0881,តង់ដឺ 8 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-064,,,,,,,,,,,,,no_image.png,standard
+G0882,តង់ដឺ 10 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-064,,,,,,,,,,,,,no_image.png,standard
+G0883,តង់ដឺ 12 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-064,,,,,,,,,,,,,no_image.png,standard
+G0884,តង់ដឺ 14 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-064,,,,,,,,,,,,,no_image.png,standard
+G0885,តង់ដឺ 16 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-064,,,,,,,,,,,,,no_image.png,standard
+G0886,តង់ដឺ 18 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-064,,,,,,,,,,,,,no_image.png,standard
+G0887,តង់ដឺ 20 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-064,,,,,,,,,,,,,no_image.png,standard
+G0888,តង់ដឺ 22 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-064,,,,,,,,,,,,,no_image.png,standard
+G0889,តង់ដឺ 25 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-064,,,,,,,,,,,,,no_image.png,standard
+G0901,កៅឡាក់ 500 គ.ក,,C-001,11,1,1,1, No Tax, exclusive,SC-1-065,,,,,,,,,,,,,no_image.png,standard
+G0902,កៅឡាក់ 1 តោន,,C-001,11,1,1,1, No Tax, exclusive,SC-1-065,,,,,,,,,,,,,no_image.png,standard
+G0903,កៅឡាក់ 1.5 តោន,,C-001,11,1,1,1, No Tax, exclusive,SC-1-065,,,,,,,,,,,,,no_image.png,standard
+G0904,កៅឡាក់ 3 តោន,,C-001,11,1,1,1, No Tax, exclusive,SC-1-065,,,,,,,,,,,,,no_image.png,standard
+G0905,កៅឡាក់ 5 តោន,,C-001,11,1,1,1, No Tax, exclusive,SC-1-065,,,,,,,,,,,,,no_image.png,standard
+G0906,កៅឡាក់ 10 តោន,,C-001,11,1,1,1, No Tax, exclusive,SC-1-065,,,,,,,,,,,,,no_image.png,standard
+G0907,កៅឡាក់ 15 តោន,,C-001,11,1,1,1, No Tax, exclusive,SC-1-065,,,,,,,,,,,,,no_image.png,standard
+G0916,សំណាញ់បៃតង,,C-001,16,1,1,1, No Tax, exclusive,SC-1-066,,,,,,,,,,,,,no_image.png,standard
+G0921,តង់ 3 x 4,,C-001,25,1,1,1, No Tax, exclusive,SC-1-067,,,,,,,,,,,,,no_image.png,standard
+G0922,តង់ 4 x 4,,C-001,25,1,1,1, No Tax, exclusive,SC-1-067,,,,,,,,,,,,,no_image.png,standard
+G0923,តង់ 4 x 6,,C-001,25,1,1,1, No Tax, exclusive,SC-1-067,,,,,,,,,,,,,no_image.png,standard
+G0924,តង់ 4 x 8,,C-001,25,1,1,1, No Tax, exclusive,SC-1-067,,,,,,,,,,,,,no_image.png,standard
+G0925,តង់ 4 x 15,,C-001,25,1,1,1, No Tax, exclusive,SC-1-067,,,,,,,,,,,,,no_image.png,standard
+G0926,តង់ 5 x 8,,C-001,25,1,1,1, No Tax, exclusive,SC-1-067,,,,,,,,,,,,,no_image.png,standard
+G0927,តង់ 5 x 15,,C-001,25,1,1,1, No Tax, exclusive,SC-1-067,,,,,,,,,,,,,no_image.png,standard
+G0928,តង់ 6​ x 8,,C-001,25,1,1,1, No Tax, exclusive,SC-1-067,,,,,,,,,,,,,no_image.png,standard
+G0929,តង់ 6​ x 15,,C-001,25,1,1,1, No Tax, exclusive,SC-1-067,,,,,,,,,,,,,no_image.png,standard
+G0930,តង់ 8 x 10,,C-001,25,1,1,1, No Tax, exclusive,SC-1-067,,,,,,,,,,,,,no_image.png,standard
+G0931,តង់ 8 x 15,,C-001,25,1,1,1, No Tax, exclusive,SC-1-067,,,,,,,,,,,,,no_image.png,standard
+G0932,តង់ 10​ x 10,,C-001,25,1,1,1, No Tax, exclusive,SC-1-067,,,,,,,,,,,,,no_image.png,standard
+G0938,កៅស៊ូ ស មុខ 2ម,,C-001,28,1,1,1, No Tax, exclusive,SC-1-068,,,,,,,,,,,,,no_image.png,standard
+G0941,អេប៉ុង 100 x 200,,C-001,16,1,1,1, No Tax, exclusive,SC-1-069,,,,,,,,,,,,,no_image.png,standard
+G0942,អេប៉ុង 1 ហ៊ុន 1.6 ម x 2ម,,C-001,22,1,1,1, No Tax, exclusive,SC-1-069,,,,,,,,,,,,,no_image.png,standard
+G0943,អេប៉ុង 3 ហ៊ុន 0.6 ម x 1.2ម,,C-001,22,1,1,1, No Tax, exclusive,SC-1-069,,,,,,,,,,,,,no_image.png,standard
+G0944,អេប៉ុង 5 ហ៊ុន 1 ម x 2ម,,C-001,22,1,1,1, No Tax, exclusive,SC-1-069,,,,,,,,,,,,,no_image.png,standard
+G0951,ស្នោ 2.5 ហ៊ុន 0.5 ម x 1 ម,,C-001,22,1,1,1, No Tax, exclusive,SC-1-070,,,,,,,,,,,,,no_image.png,standard
+G0952,ស្នោ 3 ហ៊ុន 0.5 ម x 1 ម,,C-001,22,1,1,1, No Tax, exclusive,SC-1-070,,,,,,,,,,,,,no_image.png,standard
+G0953,ស្នោ 5 ហ៊ុន 0.5 ម x 1 ម,,C-001,22,1,1,1, No Tax, exclusive,SC-1-070,,,,,,,,,,,,,no_image.png,standard
+G0954,ស្នោ 5 ហ៊ុន 1 ម x 1 ម,,C-001,22,1,1,1, No Tax, exclusive,SC-1-070,,,,,,,,,,,,,no_image.png,standard
+G0961,ធូបផ្សា 2.4 លី,,C-001,33,1,1,1, No Tax, exclusive,SC-1-071,,,,,,,,,,,,,no_image.png,standard
+G0962,ធូបផ្សា 2.5 លី,,C-001,33,1,1,1, No Tax, exclusive,SC-1-071,,,,,,,,,,,,,no_image.png,standard
+G0963,ធូបផ្សា 2.6 លី,,C-001,33,1,1,1, No Tax, exclusive,SC-1-071,,,,,,,,,,,,,no_image.png,standard
+G0964,ធូបផ្សា 3 លី,,C-001,33,1,1,1, No Tax, exclusive,SC-1-071,,,,,,,,,,,,,no_image.png,standard
+G0965,ធូបផ្សា 3.2 លី,,C-001,33,1,1,1, No Tax, exclusive,SC-1-071,,,,,,,,,,,,,no_image.png,standard
+G0966,ធូបផ្សា 3.5 លី,,C-001,33,1,1,1, No Tax, exclusive,SC-1-071,,,,,,,,,,,,,no_image.png,standard
+G0967,ធូបផ្សា 4 លី,,C-001,33,1,1,1, No Tax, exclusive,SC-1-071,,,,,,,,,,,,,no_image.png,standard
+G0976,សាប៊ូ ម៉្សៅ 350-800 g,,C-001,3,1,1,1, No Tax, exclusive,SC-1-072,,,,,,,,,,,,,no_image.png,standard
+G0977,សាប៊ូ រូបទា,,C-001,15,1,1,1, No Tax, exclusive,SC-1-072,,,,,,,,,,,,,no_image.png,standard
+G0978,សាប៊ូ OK,,C-001,15,1,1,1, No Tax, exclusive,SC-1-072,,,,,,,,,,,,,no_image.png,standard
+G0979,ទឹកសាប៊ូសំអាតការ៉ូ,,C-001,20,1,1,1, No Tax, exclusive,SC-1-072,,,,,,,,,,,,,no_image.png,standard
+G0986,សាំងក្រអូប,,C-001,30,1,1,1, No Tax, exclusive,SC-1-073,,,,,,,,,,,,,no_image.png,standard
+G0987,ប្រេងតារ៉ូដែក,,C-001,30,1,1,1, No Tax, exclusive,SC-1-073,,,,,,,,,,,,,no_image.png,standard
+G0991,អាចម៍ដែកដុសឆ្នាំង ខៀវ,,C-001,31,1,1,1, No Tax, exclusive,SC-1-074,,,,,,,,,,,,,no_image.png,standard
+G0992,អាចម៍ដែកដុសឆ្នាំង ស,,C-001,16,1,1,1, No Tax, exclusive,SC-1-074,,,,,,,,,,,,,no_image.png,standard
+G0993,អាចម៍ដែក+អេប៉ុង,,C-001,16,1,1,1, No Tax, exclusive,SC-1-074,,,,,,,,,,,,,no_image.png,standard
+G1001,សំបកបាវក្រចៅ,,C-001,31,1,1,1, No Tax, exclusive,SC-1-075,,,,,,,,,,,,,no_image.png,standard
+G1002,ភួយជជុះ,,C-001,16,1,1,1, No Tax, exclusive,SC-1-075,,,,,,,,,,,,,no_image.png,standard
+G1003,ក្រណាត់ជជុះ,,C-001,9,1,1,1, No Tax, exclusive,SC-1-075,,,,,,,,,,,,,no_image.png,standard
+G1011,អំបោះជ័រដង ខ្លី,,C-001,18,1,1,1, No Tax, exclusive,SC-1-076,,,,,,,,,,,,,no_image.png,standard
+G1012,អំបោះជ័រដង វែង,,C-001,18,1,1,1, No Tax, exclusive,SC-1-076,,,,,,,,,,,,,no_image.png,standard
+G1013,អំបោសផ្ការស្មៅ ដងជ័រ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-076,,,,,,,,,,,,,no_image.png,standard
+G1014,អំបោសផ្ការស្មៅ ដងដែក,,C-001,18,1,1,1, No Tax, exclusive,SC-1-076,,,,,,,,,,,,,no_image.png,standard
+G1015,អំបោសធាងដូង,,C-001,18,1,1,1, No Tax, exclusive,SC-1-076,,,,,,,,,,,,,no_image.png,standard
+G1021,ប្រដាប់ចូកសំរាមជ័រ ខ្លី,,C-001,18,1,1,1, No Tax, exclusive,SC-1-077,,,,,,,,,,,,,no_image.png,standard
+G1022,ប្រដាប់ចូកសំរាមជ័រ មានដង,,C-001,18,1,1,1, No Tax, exclusive,SC-1-077,,,,,,,,,,,,,no_image.png,standard
+G1023,ប្រដាប់ចូកសំរាមដែក ខ្លី,,C-001,18,1,1,1, No Tax, exclusive,SC-1-077,,,,,,,,,,,,,no_image.png,standard
+G1024,ប្រដាប់ចូកសំរាមដែក មានដង,,C-001,18,1,1,1, No Tax, exclusive,SC-1-077,,,,,,,,,,,,,no_image.png,standard
+G1025,ប្រដាប់ជូតការ៉ូ មានដង,,C-001,18,1,1,1, No Tax, exclusive,SC-1-077,,,,,,,,,,,,,no_image.png,standard
+G1031,ច្រាស់ជ័រ ធម្មតា,,C-001,18,1,1,1, No Tax, exclusive,SC-1-078,,,,,,,,,,,,,no_image.png,standard
+G1032,ច្រាស់ជ័រ មានដៃឆ្នាំងអ៊ុត,,C-001,18,1,1,1, No Tax, exclusive,SC-1-078,,,,,,,,,,,,,no_image.png,standard
+G1033,ច្រាស់ដែក,,C-001,18,1,1,1, No Tax, exclusive,SC-1-078,,,,,,,,,,,,,no_image.png,standard
+G1034,ច្រាស់ដែកមានដៃកាន់,,C-001,18,1,1,1, No Tax, exclusive,SC-1-078,,,,,,,,,,,,,no_image.png,standard
+G1035,ច្រាសបង្គន់ក្បាលមូល,,C-001,18,1,1,1, No Tax, exclusive,SC-1-078,,,,,,,,,,,,,no_image.png,standard
+G1041,ថង់ខ្មៅ 12 x 28,,C-001,9,1,1,1, No Tax, exclusive,SC-1-079,,,,,,,,,,,,,no_image.png,standard
+G1042,ថង់ខ្មៅ 15 x 30,,C-001,9,1,1,1, No Tax, exclusive,SC-1-079,,,,,,,,,,,,,no_image.png,standard
+G1043,ថង់ខ្មៅ 50 x 60,,C-001,9,1,1,1, No Tax, exclusive,SC-1-079,,,,,,,,,,,,,no_image.png,standard
+G1044,ថង់ខ្មៅ 70 x 120,,C-001,9,1,1,1, No Tax, exclusive,SC-1-079,,,,,,,,,,,,,no_image.png,standard
+G1051,ធុងសំរាម ជ័រ ទូច,,C-001,20,1,1,1, No Tax, exclusive,SC-1-080,,,,,,,,,,,,,no_image.png,standard
+G1052,ធុងសំរាម ការិយាល័យ,,C-001,20,1,1,1, No Tax, exclusive,SC-1-080,,,,,,,,,,,,,no_image.png,standard
+G1053,ធុងសំរាម ជ័រ ធំ,,C-001,20,1,1,1, No Tax, exclusive,SC-1-080,,,,,,,,,,,,,no_image.png,standard
+G1061,ជក់លាបថ្នាំលេខ 1,,C-001,18,1,1,1, No Tax, exclusive,SC-1-081,,,,,,,,,,,,,no_image.png,standard
+G1062,ជក់លាបថ្នាំលេខ 2,,C-001,18,1,1,1, No Tax, exclusive,SC-1-081,,,,,,,,,,,,,no_image.png,standard
+G1063,ជក់លាបថ្នាំលេខ 3,,C-001,18,1,1,1, No Tax, exclusive,SC-1-081,,,,,,,,,,,,,no_image.png,standard
+G1064,ជក់លាបថ្នាំលេខ 4,,C-001,18,1,1,1, No Tax, exclusive,SC-1-081,,,,,,,,,,,,,no_image.png,standard
+G1071,រឡូលាបថ្នាំ 1.5 តឹក,,C-001,18,1,1,1, No Tax, exclusive,SC-1-082,,,,,,,,,,,,,no_image.png,standard
+G1072,រឡូលាបថ្នាំ 2 តឹក,,C-001,18,1,1,1, No Tax, exclusive,SC-1-082,,,,,,,,,,,,,no_image.png,standard
+G1073,រឡូលាបថ្នាំ 2.5 តឹក,,C-001,18,1,1,1, No Tax, exclusive,SC-1-082,,,,,,,,,,,,,no_image.png,standard
+G1074,រឡូលាបថ្នាំ 3 តឹក,,C-001,18,1,1,1, No Tax, exclusive,SC-1-082,,,,,,,,,,,,,no_image.png,standard
+G1075,ដង  រឡូលាបថ្នាំ ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-082,,,,,,,,,,,,,no_image.png,standard
+G1081,ឥដ្ឋតាន់,,C-001,16,1,1,1, No Tax, exclusive,SC-1-083,,,,,,,,,,,,,no_image.png,standard
+G1082,ឥដ្ឋប្រហោង,,C-001,16,1,1,1, No Tax, exclusive,SC-1-083,,,,,,,,,,,,,no_image.png,standard
+G1083,ឥដ្ឋ្ ស្រាល,,C-001,16,1,1,1, No Tax, exclusive,SC-1-083,,,,,,,,,,,,,no_image.png,standard
+G1084,ឥដ្ឋ ខ្យល់,,C-001,16,1,1,1, No Tax, exclusive,SC-1-083,,,,,,,,,,,,,no_image.png,standard
+G1085,ឥដ្ឋម៉ាត់ចាប,,C-001,16,1,1,1, No Tax, exclusive,SC-1-083,,,,,,,,,,,,,no_image.png,standard
+G1086,ឥដ្ឋ កញ្ចក់,,C-001,5,1,1,1, No Tax, exclusive,SC-1-083,,,,,,,,,,,,,no_image.png,standard
+G1087,ឥដ្ឋ កន្សែង,,C-001,5,1,1,1, No Tax, exclusive,SC-1-083,,,,,,,,,,,,,no_image.png,standard
+G1096,ការ៉ូ 100 x 100 (កូដជាក់ស្តែង...),,C-001,5,1,1,1, No Tax, exclusive,SC-1-084,,,,,,,,,,,,,no_image.png,standard
+G1097,ការ៉ូ 100 x 200 (កូដជាក់ស្តែង...),,C-001,5,1,1,1, No Tax, exclusive,SC-1-084,,,,,,,,,,,,,no_image.png,standard
+G1098,ការ៉ូ 250 x 400,,C-001,5,1,1,1, No Tax, exclusive,SC-1-084,,,,,,,,,,,,,no_image.png,standard
+G1099,ការ៉ូ 300 x 450,,C-001,5,1,1,1, No Tax, exclusive,SC-1-084,,,,,,,,,,,,,no_image.png,standard
+G1100,ការ៉ូ 100 x 600,,C-001,5,1,1,1, No Tax, exclusive,SC-1-084,,,,,,,,,,,,,no_image.png,standard
+G1101,ការ៉ូ 200 x 600,,C-001,5,1,1,1, No Tax, exclusive,SC-1-084,,,,,,,,,,,,,no_image.png,standard
+G1102,ការ៉ូ 300 x 600,,C-001,5,1,1,1, No Tax, exclusive,SC-1-084,,,,,,,,,,,,,no_image.png,standard
+G1111,ការ៉ូ 200 x 200,,C-001,5,1,1,1, No Tax, exclusive,SC-1-085,,,,,,,,,,,,,no_image.png,standard
+G1112,ការ៉ូ 300 x 300,,C-001,5,1,1,1, No Tax, exclusive,SC-1-085,,,,,,,,,,,,,no_image.png,standard
+G1113,ការ៉ូ 400 x 400,,C-001,5,1,1,1, No Tax, exclusive,SC-1-085,,,,,,,,,,,,,no_image.png,standard
+G1114,ការ៉ូ 600 x 600,,C-001,5,1,1,1, No Tax, exclusive,SC-1-085,,,,,,,,,,,,,no_image.png,standard
+G1115,ការ៉ូ 800 x 800,,C-001,5,1,1,1, No Tax, exclusive,SC-1-085,,,,,,,,,,,,,no_image.png,standard
+G1116,ការ៉ូ 1000 x 1000,,C-001,5,1,1,1, No Tax, exclusive,SC-1-085,,,,,,,,,,,,,no_image.png,standard
+G1117,ជ្រី ការ៉ូ,,C-001,5,1,1,1, No Tax, exclusive,SC-1-085,,,,,,,,,,,,,no_image.png,standard
+G1118,ថ្ម ដូស 2 x 2,,C-001,23,1,1,1, No Tax, exclusive,SC-1-085,,,,,,,,,,,,,no_image.png,standard
+G1126,ខ្សាច់ ស្ទឹងលេខ 1,,C-001,2,1,1,1, No Tax, exclusive,SC-1-086,,,,,,,,,,,,,no_image.png,standard
+G1127,ខ្សាច់ ស្ទឹងលេខ 2,,C-001,1,1,1,1, No Tax, exclusive,SC-1-086,,,,,,,,,,,,,no_image.png,standard
+G1128,ខ្សាច់ ទន្លេរ 1,,C-001,1,1,1,1, No Tax, exclusive,SC-1-086,,,,,,,,,,,,,no_image.png,standard
+G1129,ខ្សាច់ ទន្លេរ 2,,C-001,1,1,1,1, No Tax, exclusive,SC-1-086,,,,,,,,,,,,,no_image.png,standard
+G1130,ខ្សាច់ លេខ 3,,C-001,1,1,1,1, No Tax, exclusive,SC-1-086,,,,,,,,,,,,,no_image.png,standard
+G1136,ថ្មមិច 1 X 1,,C-001,1,1,1,1, No Tax, exclusive,SC-1-087,,,,,,,,,,,,,no_image.png,standard
+G1137,ថ្មមិច 1 X 2,,C-001,1,1,1,1, No Tax, exclusive,SC-1-087,,,,,,,,,,,,,no_image.png,standard
+G1138,ថ្មមិច 4 X 6,,C-001,1,1,1,1, No Tax, exclusive,SC-1-087,,,,,,,,,,,,,no_image.png,standard
+G1139,ថ្ម M30,,C-001,1,1,1,1, No Tax, exclusive,SC-1-087,,,,,,,,,,,,,no_image.png,standard
+G1140,ថ្ម ធំ,,C-001,1,1,1,1, No Tax, exclusive,SC-1-087,,,,,,,,,,,,,no_image.png,standard
+G1146,ស៊ីម៉ង់ត៍ 50 Kg រៀបឥដ្ឋ,,C-001,23,1,1,1, No Tax, exclusive,SC-1-088,,,,,,,,,,,,,no_image.png,standard
+G1147,ស៊ីម៉ង់ត៍ 50 Kg បូក,,C-001,23,1,1,1, No Tax, exclusive,SC-1-088,,,,,,,,,,,,,no_image.png,standard
+G1148,ស៊ីម៉ងត៍ ស,,C-001,23,1,1,1, No Tax, exclusive,SC-1-088,,,,,,,,,,,,,no_image.png,standard
+G1149,ស៊ីម៉ងត៍ កាវ,,C-001,23,1,1,1, No Tax, exclusive,SC-1-088,,,,,,,,,,,,,no_image.png,standard
+G1150,ស៊ីម៉ង់ត៍ Sika Groude,,C-001,23,1,1,1, No Tax, exclusive,SC-1-088,,,,,,,,,,,,,no_image.png,standard
+G1158,បេតុង,,C-001,1,1,1,1, No Tax, exclusive,SC-1-089,,,,,,,,,,,,,no_image.png,standard
+G1160,ម៉្សៅបៀក ជញ្ជាំង,,C-001,23,1,1,1, No Tax, exclusive,SC-1-090,,,,,,,,,,,,,no_image.png,standard
+G1161,ម៉្សៅបៀក ការ៉ូ,,C-001,3,1,1,1, No Tax, exclusive,SC-1-090,,,,,,,,,,,,,no_image.png,standard
+G1171,ការូឡា 4 ជ្រុង,,C-001,16,1,1,1, No Tax, exclusive,SC-1-091,,,,,,,,,,,,,no_image.png,standard
+G1172,ការូឡា 6 ជ្រុង,,C-001,16,1,1,1, No Tax, exclusive,SC-1-091,,,,,,,,,,,,,no_image.png,standard
+G1173,ប៉ុកឌៀរ ចិញ្ចើមផ្លូវ,,C-001,16,1,1,1, No Tax, exclusive,SC-1-091,,,,,,,,,,,,,no_image.png,standard
+G1181,លូ 4 តឹក,,C-001,2,1,1,1, No Tax, exclusive,SC-1-092,,,,,,,,,,,,,no_image.png,standard
+G1182,លូ 6តឹក,,C-001,2,1,1,1, No Tax, exclusive,SC-1-092,,,,,,,,,,,,,no_image.png,standard
+G1183,លូ 8 តឹក,,C-001,2,1,1,1, No Tax, exclusive,SC-1-092,,,,,,,,,,,,,no_image.png,standard
+G1184,លូ 1 ម៉ែត្រ,,C-001,2,1,1,1, No Tax, exclusive,SC-1-092,,,,,,,,,,,,,no_image.png,standard
+G1185,លូ 1.2 ម៉ែត្រ,,C-001,2,1,1,1, No Tax, exclusive,SC-1-092,,,,,,,,,,,,,no_image.png,standard
+G1186,លូ 1.5 ម៉ែត្រ,,C-001,2,1,1,1, No Tax, exclusive,SC-1-092,,,,,,,,,,,,,no_image.png,standard
+G1191,រ៉េហ្គែរលូ + គំរប 4 តិក,,C-001,14,1,1,1, No Tax, exclusive,SC-1-093,,,,,,,,,,,,,no_image.png,standard
+G1192,រ៉េហ្គែរលូ + គំរប 6 តិក,,C-001,14,1,1,1, No Tax, exclusive,SC-1-093,,,,,,,,,,,,,no_image.png,standard
+G1193,រ៉េហ្គែរលូ + គំរប 8 តិក,,C-001,14,1,1,1, No Tax, exclusive,SC-1-093,,,,,,,,,,,,,no_image.png,standard
+G1194,រ៉េហ្គែរលូ + គំរប 1 ម៉ែត្រ,,C-001,14,1,1,1, No Tax, exclusive,SC-1-093,,,,,,,,,,,,,no_image.png,standard
+G1195,រ៉េហ្គែរលូ + គំរប 1.2 ម៉ែត្រ,,C-001,14,1,1,1, No Tax, exclusive,SC-1-093,,,,,,,,,,,,,no_image.png,standard
+G1196,រ៉េហ្គែរលូ + គំរប 1.5 ម៉ែត្រ,,C-001,14,1,1,1, No Tax, exclusive,SC-1-093,,,,,,,,,,,,,no_image.png,standard
+G1211,រទេះរុញ កំបោរកង់ពីរ,,C-001,12,1,1,1, No Tax, exclusive,SC-1-094,,,,,,,,,,,,,no_image.png,standard
+G1212,រទេះអូស សំភារ:,,C-001,12,1,1,1, No Tax, exclusive,SC-1-094,,,,,,,,,,,,,no_image.png,standard
+G1213,ភ្លៅរទេះ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-094,,,,,,,,,,,,,no_image.png,standard
+G1214,ភ្លៅរទេះ + មានកង់,,C-001,14,1,1,1, No Tax, exclusive,SC-1-094,,,,,,,,,,,,,no_image.png,standard
+G1221,កង់អន្ទារ ជ័រ 1 -1.8 តឹក,,C-001,11,1,1,1, No Tax, exclusive,SC-1-095,,,,,,,,,,,,,no_image.png,standard
+G1222,កង់អន្ទារ ជ័រ 1 -1.8 តឹក ហ្វ្រាំង,,C-001,11,1,1,1, No Tax, exclusive,SC-1-095,,,,,,,,,,,,,no_image.png,standard
+G1223,កង់រ៉ៃដែក 1 -1.8 តឹក ,,C-001,11,1,1,1, No Tax, exclusive,SC-1-095,,,,,,,,,,,,,no_image.png,standard
+G1224,កង់រ៉ៃភ្លោះដែក 1 -1.8 តឹក ,,C-001,10,1,1,1, No Tax, exclusive,SC-1-095,,,,,,,,,,,,,no_image.png,standard
+G1225,កង់រ៉ៃ ក្រែន 1 តឹក  x 4ហ៊ុន,,C-001,11,1,1,1, No Tax, exclusive,SC-1-095,,,,,,,,,,,,,no_image.png,standard
+G1231,សំបក 17-300,,C-001,32,1,1,1, No Tax, exclusive,SC-1-096,,,,,,,,,,,,,no_image.png,standard
+G1232,សំបក 18-300,,C-001,32,1,1,1, No Tax, exclusive,SC-1-096,,,,,,,,,,,,,no_image.png,standard
+G1233,ពោះវៀន 17-300,,C-001,32,1,1,1, No Tax, exclusive,SC-1-096,,,,,,,,,,,,,no_image.png,standard
+G1234,ពោះវៀន 18-300,,C-001,32,1,1,1, No Tax, exclusive,SC-1-096,,,,,,,,,,,,,no_image.png,standard
+G1241,ឈើ 4 x 8 x 3ម,,C-001,18,1,1,1, No Tax, exclusive,SC-1-097,,,,,,,,,,,,,no_image.png,standard
+G1242,ឈើ 4 x 8 x 4ម,,C-001,18,1,1,1, No Tax, exclusive,SC-1-097,,,,,,,,,,,,,no_image.png,standard
+G1251,ខ្យល់,,C-001,15,1,1,1, No Tax, exclusive,SC-1-098,,,,,,,,,,,,,no_image.png,standard
+G1252,ហ្គាស,,C-001,20,1,1,1, No Tax, exclusive,SC-1-098,,,,,,,,,,,,,no_image.png,standard
+G1253,ហ្គាស តូច,,C-001,7,1,1,1, No Tax, exclusive,SC-1-098,,,,,,,,,,,,,no_image.png,standard
+G1254,នាឡិកាខ្យល់,,C-001,12,1,1,1, No Tax, exclusive,SC-1-098,,,,,,,,,,,,,no_image.png,standard
+G1255,នាឡិកាហ្គាស,,C-001,12,1,1,1, No Tax, exclusive,SC-1-098,,,,,,,,,,,,,no_image.png,standard
+G1261,តំណរទុយោខ្យល់/ហ្គាស ញី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-099,,,,,,,,,,,,,no_image.png,standard
+G1262,តំណរទុយោខ្យល់/ហ្គាស ឈ្មោល,,C-001,11,1,1,1, No Tax, exclusive,SC-1-099,,,,,,,,,,,,,no_image.png,standard
+G1263,តំណរទុយោខ្យល់/ហ្គាស ញី-ឈ្មោល,,C-001,11,1,1,1, No Tax, exclusive,SC-1-099,,,,,,,,,,,,,no_image.png,standard
+G1271,វ៉ានខ្យល់,,C-001,11,1,1,1, No Tax, exclusive,SC-1-100,,,,,,,,,,,,,no_image.png,standard
+G1272,វ៉ានហ្គាស,,C-001,11,1,1,1, No Tax, exclusive,SC-1-100,,,,,,,,,,,,,no_image.png,standard
+G1281,ក្បាលផ្សា 350A-400A- 500A- 800A,,C-001,18,1,1,1, No Tax, exclusive,SC-1-101,,,,,,,,,,,,,no_image.png,standard
+G1282,ក្បាលមាន់ផ្សា 70-120W,,C-001,18,1,1,1, No Tax, exclusive,SC-1-101,,,,,,,,,,,,,no_image.png,standard
+G1283,ក្បាលបាញ់ខ្យល់,,C-001,12,1,1,1, No Tax, exclusive,SC-1-101,,,,,,,,,,,,,no_image.png,standard
+G1284,ក្បាលមាន់កាត់ខ្យល់/ហ្គាស,,C-001,14,1,1,1, No Tax, exclusive,SC-1-101,,,,,,,,,,,,,no_image.png,standard
+G1285,កំប៉ុងបាញ់ថ្នាំ,,C-001,12,1,1,1, No Tax, exclusive,SC-1-101,,,,,,,,,,,,,no_image.png,standard
+G1286,ក្បាលបាញ់ហ្គាសកំប៉ុងតូច,,C-001,18,1,1,1, No Tax, exclusive,SC-1-101,,,,,,,,,,,,,no_image.png,standard
+G1291,កំបាំងផ្សាមានដៃកាន់,,C-001,25,1,1,1, No Tax, exclusive,SC-1-102,,,,,,,,,,,,,no_image.png,standard
+G1292,កំបាំងផ្សាពាក់ការពារមុខ,,C-001,25,1,1,1, No Tax, exclusive,SC-1-102,,,,,,,,,,,,,no_image.png,standard
+G1293,កញ្ចក់បាំងផ្សា ស,,C-001,31,1,1,1, No Tax, exclusive,SC-1-102,,,,,,,,,,,,,no_image.png,standard
+G1294,កញ្ចក់បាំងផ្សា ខ្មៅ,,C-001,31,1,1,1, No Tax, exclusive,SC-1-102,,,,,,,,,,,,,no_image.png,standard
+G1301,ខ្សែផ្សាលេខ 35,,C-001,28,1,1,1, No Tax, exclusive,SC-1-103,,,,,,,,,,,,,no_image.png,standard
+G1302,ខ្សែផ្សាលេខ 70,,C-001,28,1,1,1, No Tax, exclusive,SC-1-103,,,,,,,,,,,,,no_image.png,standard
+G1303,ខ្សែផ្សាលេខ 70 ខៀវ KUVET,,C-001,28,1,1,1, No Tax, exclusive,SC-1-103,,,,,,,,,,,,,no_image.png,standard
+G1311,ធុងផ្សាថ្មស្អុយ,,C-001,14,1,1,1, No Tax, exclusive,SC-1-104,,,,,,,,,,,,,no_image.png,standard
+G1312,ថ្មស្អុយ,,C-001,9,1,1,1, No Tax, exclusive,SC-1-104,,,,,,,,,,,,,no_image.png,standard
+G1313,ក្បាលផ្សាថ្មស្អុយ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-104,,,,,,,,,,,,,no_image.png,standard
+G1321,គូរីយេ 10 (13-19),,C-001,11,1,1,1, No Tax, exclusive,SC-1-105,,,,,,,,,,,,,no_image.png,standard
+G1322,គូរីយេ 20 (16-22),,C-001,11,1,1,1, No Tax, exclusive,SC-1-105,,,,,,,,,,,,,no_image.png,standard
+G1323,គូរីយេ 30 (25-35),,C-001,11,1,1,1, No Tax, exclusive,SC-1-105,,,,,,,,,,,,,no_image.png,standard
+G1324,គូរីយេ 40 (32-42),,C-001,11,1,1,1, No Tax, exclusive,SC-1-105,,,,,,,,,,,,,no_image.png,standard
+G1325,គូរីយេ 50 (38-54),,C-001,11,1,1,1, No Tax, exclusive,SC-1-105,,,,,,,,,,,,,no_image.png,standard
+G1326,គូរីយេ 60 (60-80),,C-001,11,1,1,1, No Tax, exclusive,SC-1-105,,,,,,,,,,,,,no_image.png,standard
+G1327,គូរីយេ 70,,C-001,11,1,1,1, No Tax, exclusive,SC-1-105,,,,,,,,,,,,,no_image.png,standard
+G1328,គូរីយេ 80,,C-001,11,1,1,1, No Tax, exclusive,SC-1-105,,,,,,,,,,,,,no_image.png,standard
+G1329,គូរីយេ 90,,C-001,11,1,1,1, No Tax, exclusive,SC-1-105,,,,,,,,,,,,,no_image.png,standard
+G1330,គូរីយេ 100 (95-115),,C-001,11,1,1,1, No Tax, exclusive,SC-1-105,,,,,,,,,,,,,no_image.png,standard
+G1331,គូរីយេ 125,,C-001,11,1,1,1, No Tax, exclusive,SC-1-105,,,,,,,,,,,,,no_image.png,standard
+G1332,គូរីយេ 150 (159-178),,C-001,11,1,1,1, No Tax, exclusive,SC-1-105,,,,,,,,,,,,,no_image.png,standard
+G1333,គូរីយេ 200,,C-001,11,1,1,1, No Tax, exclusive,SC-1-105,,,,,,,,,,,,,no_image.png,standard
+G1341,ក្បាលវីសបាញ់ដែក,,C-001,11,1,1,1, No Tax, exclusive,SC-1-106,,,,,,,,,,,,,no_image.png,standard
+G1342,ក្បាលវីសបាញ់ស័ង្កសី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-106,,,,,,,,,,,,,no_image.png,standard
+G1351,វីសបាញ់ដែកក្បាលមូក 1 ហ៊ុន,,C-001,3,1,1,1, No Tax, exclusive,SC-1-107,,,,,,,,,,,,,no_image.png,standard
+G1352,វីសបាញ់ដែកក្បាលមូក 1.5 ហ៊ុន,,C-001,3,1,1,1, No Tax, exclusive,SC-1-107,,,,,,,,,,,,,no_image.png,standard
+G1353,វីសបាញ់ដែកក្បាលមូក 2 ហ៊ុន,,C-001,3,1,1,1, No Tax, exclusive,SC-1-107,,,,,,,,,,,,,no_image.png,standard
+G1354,វីសបាញ់ដែកក្បាលមូក 2.5 ហ៊ុន,,C-001,3,1,1,1, No Tax, exclusive,SC-1-107,,,,,,,,,,,,,no_image.png,standard
+G1355,វីសបាញ់ដែកក្បាលមូក 3 ហ៊ុន,,C-001,3,1,1,1, No Tax, exclusive,SC-1-107,,,,,,,,,,,,,no_image.png,standard
+G1356,វីសបាញ់ស័ង្កសី 2.5 ហ៊ុន,,C-001,3,1,1,1, No Tax, exclusive,SC-1-107,,,,,,,,,,,,,no_image.png,standard
+G1357,វីសបាញ់ស័ង្កសី 3 ហ៊ុន,,C-001,3,1,1,1, No Tax, exclusive,SC-1-107,,,,,,,,,,,,,no_image.png,standard
+G1358,វីសបាញ់ស័ង្កសី 4 ហ៊ុន,,C-001,3,1,1,1, No Tax, exclusive,SC-1-107,,,,,,,,,,,,,no_image.png,standard
+G1359,វីសបាញ់ស័ង្កសី 5 ហ៊ុន,,C-001,3,1,1,1, No Tax, exclusive,SC-1-107,,,,,,,,,,,,,no_image.png,standard
+G1360,វីសបាញ់ស័ង្កសី 6 ហ៊ុន,,C-001,3,1,1,1, No Tax, exclusive,SC-1-107,,,,,,,,,,,,,no_image.png,standard
+G1361,វីស ស 1.5 ហ៊ុន,,C-001,3,1,1,1, No Tax, exclusive,SC-1-107,,,,,,,,,,,,,no_image.png,standard
+G1362,វីស ស 2 ហ៊ុន,,C-001,3,1,1,1, No Tax, exclusive,SC-1-107,,,,,,,,,,,,,no_image.png,standard
+G1363,វីស ស 2.5 ហ៊ុន,,C-001,3,1,1,1, No Tax, exclusive,SC-1-107,,,,,,,,,,,,,no_image.png,standard
+G1364,វីស ស 3 ហ៊ុន,,C-001,3,1,1,1, No Tax, exclusive,SC-1-107,,,,,,,,,,,,,no_image.png,standard
+G1365,វីស ស 4 ហ៊ុន,,C-001,3,1,1,1, No Tax, exclusive,SC-1-107,,,,,,,,,,,,,no_image.png,standard
+G1366,វីស ស 5 ហ៊ុន,,C-001,3,1,1,1, No Tax, exclusive,SC-1-107,,,,,,,,,,,,,no_image.png,standard
+G1367,វីស ស 6 ហ៊ុន,,C-001,3,1,1,1, No Tax, exclusive,SC-1-107,,,,,,,,,,,,,no_image.png,standard
+G1368,វីស ស 8 ហ៊ុន,,C-001,3,1,1,1, No Tax, exclusive,SC-1-107,,,,,,,,,,,,,no_image.png,standard
+G1376,គ្រាប់មិន 4 x 2,,C-001,24,1,1,1, No Tax, exclusive,SC-1-108,,,,,,,,,,,,,no_image.png,standard
+G1377,គ្រាប់មិន 4 x 4,,C-001,24,1,1,1, No Tax, exclusive,SC-1-108,,,,,,,,,,,,,no_image.png,standard
+G1378,គ្រាប់មិន 4 x 6,,C-001,24,1,1,1, No Tax, exclusive,SC-1-108,,,,,,,,,,,,,no_image.png,standard
+G1379,គ្រាប់មិន 4 x 8,,C-001,24,1,1,1, No Tax, exclusive,SC-1-108,,,,,,,,,,,,,no_image.png,standard
+G1380,គ្រាប់មិន 6 x 6,,C-001,24,1,1,1, No Tax, exclusive,SC-1-108,,,,,,,,,,,,,no_image.png,standard
+G1381,គ្រាប់មិន 6 x 8,,C-001,24,1,1,1, No Tax, exclusive,SC-1-108,,,,,,,,,,,,,no_image.png,standard
+G1391,តាកេដែក 6 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-109,,,,,,,,,,,,,no_image.png,standard
+G1392,តាកេដែក 8 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-109,,,,,,,,,,,,,no_image.png,standard
+G1393,តាកេដែក 10 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-109,,,,,,,,,,,,,no_image.png,standard
+G1394,តាកេដែក 12 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-109,,,,,,,,,,,,,no_image.png,standard
+G1395,តាកេដែក 14 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-109,,,,,,,,,,,,,no_image.png,standard
+G1396,តាកេដែក 16 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-109,,,,,,,,,,,,,no_image.png,standard
+G1397,តាកេដែក 18 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-109,,,,,,,,,,,,,no_image.png,standard
+G1398,តាកេដែក 20 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-109,,,,,,,,,,,,,no_image.png,standard
+G1399,តាកេដែក 22 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-109,,,,,,,,,,,,,no_image.png,standard
+G1400,តាកេដែក 25 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-109,,,,,,,,,,,,,no_image.png,standard
+G1401,តាកេដែក 32 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-109,,,,,,,,,,,,,no_image.png,standard
+G1411,តាកេដែក ញី 8 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-110,,,,,,,,,,,,,no_image.png,standard
+G1412,តាកេដែក ញី 10 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-110,,,,,,,,,,,,,no_image.png,standard
+G1413,តាកេដែក ញី 12 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-110,,,,,,,,,,,,,no_image.png,standard
+G1414,តាកេដែក ញី 14 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-110,,,,,,,,,,,,,no_image.png,standard
+G1415,តាកេដែក ញី 16 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-110,,,,,,,,,,,,,no_image.png,standard
+G1416,តាកេដែក ញី 18 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-110,,,,,,,,,,,,,no_image.png,standard
+G1417,តាកេដែក ញី 20 លី,,C-001,11,1,1,1, No Tax, exclusive,SC-1-110,,,,,,,,,,,,,no_image.png,standard
+G1426,ប៊ូឡុង 10 លី x 50 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1427,ប៊ូឡុង 10 លី x 100 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1428,ប៊ូឡុង 10 លី x 150 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1429,ប៊ូឡុង 10 លី x 200 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1430,ប៊ូឡុង 12 លី x 50 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1431,ប៊ូឡុង 12 លី x 100 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1432,ប៊ូឡុង 12 លី x 150 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1433,ប៊ូឡុង 12 លី x 200 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1434,ប៊ូឡុង 14 លី x 50 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1435,ប៊ូឡុង 14 លី x 100 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1436,ប៊ូឡុង 14 លី x 120 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1437,ប៊ូឡុង 14 លី x 150 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1438,ប៊ូឡុង 14 លី x 200 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1439,ប៊ូឡុង 16 លី x 50 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1440,ប៊ូឡុង 16 លី x 100 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1441,ប៊ូឡុង 16 លី x 120 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1442,ប៊ូឡុង 16 លី x 150 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1443,ប៊ូឡុង 16 លី x 200 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1444,ប៊ូឡុង 18 លី x 50 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1445,ប៊ូឡុង 18 លី x 100 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1446,ប៊ូឡុង 18 លី x 120 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1447,ប៊ូឡុង 18 លី x 150 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1448,ប៊ូឡុង 18 លី x 200 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1449,ប៊ូឡុង 20 លី x 50 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1450,ប៊ូឡុង 20 លី x 100 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1451,ប៊ូឡុង 20 លី x 120 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1452,ប៊ូឡុង 20 លី x 150 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1453,ប៊ូឡុង 20 លី x 200 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1454,ប៊ូឡុង 22 លី x 50 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1455,ប៊ូឡុង 22 លី x 100 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1456,ប៊ូឡុង 22 លី x 120 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1457,ប៊ូឡុង 22 លី x 150 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1458,ប៊ូឡុង 22 លី x 200 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1459,ប៊ូឡុង 25 លី x 50 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1460,ប៊ូឡុង 25 លី x 100 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1461,ប៊ូឡុង 25 លី x 120 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1462,ប៊ូឡុង 25 លី x 150 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1463,ប៊ូឡុង 25 លី x 200 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1464,ប៊ូឡុង 25 លី x 250 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1465,ប៊ូឡុង 25 លី x 300 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1466,ប៊ូឡុង 25 លី x 350 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1467,ប៊ូឡុង 25 លី x 400 + រ៉ង + ក្បាល,,C-001,14,1,1,1, No Tax, exclusive,SC-1-111,,,,,,,,,,,,,no_image.png,standard
+G1491,ប៊ូឡុងក្រែន 20 លី x 100,,C-001,11,1,1,1, No Tax, exclusive,SC-1-112,,,,,,,,,,,,,no_image.png,standard
+G1492,ប៊ូឡុងក្រែន 22 លី x 200,,C-001,11,1,1,1, No Tax, exclusive,SC-1-112,,,,,,,,,,,,,no_image.png,standard
+G1493,ប៊ូឡុងក្រែន 28 លី x 100,,C-001,11,1,1,1, No Tax, exclusive,SC-1-112,,,,,,,,,,,,,no_image.png,standard
+G1501,ប៊ូឡុងអ៊ុយ 8 លី x 50-200,,C-001,14,1,1,1, No Tax, exclusive,SC-1-113,,,,,,,,,,,,,no_image.png,standard
+G1502,ប៊ូឡុងអ៊ុយ 10 លី x 50-201,,C-001,14,1,1,1, No Tax, exclusive,SC-1-113,,,,,,,,,,,,,no_image.png,standard
+G1503,ប៊ូឡុងអ៊ុយ 12 លី x 50-202,,C-001,14,1,1,1, No Tax, exclusive,SC-1-113,,,,,,,,,,,,,no_image.png,standard
+G1504,ប៊ូឡុងអ៊ុយ 14 លី x 50-203,,C-001,14,1,1,1, No Tax, exclusive,SC-1-113,,,,,,,,,,,,,no_image.png,standard
+G1505,ប៊ូឡុងអ៊ុយ 16 លី x 50-204,,C-001,14,1,1,1, No Tax, exclusive,SC-1-113,,,,,,,,,,,,,no_image.png,standard
+G1506,ប៊ូឡុងអ៊ុយ 18 លី x 50-205,,C-001,14,1,1,1, No Tax, exclusive,SC-1-113,,,,,,,,,,,,,no_image.png,standard
+G1507,ប៊ូឡុងអ៊ុយ 20 លី x 50-206,,C-001,14,1,1,1, No Tax, exclusive,SC-1-113,,,,,,,,,,,,,no_image.png,standard
+G1508,ប៊ូឡុងអ៊ុយ 22 លី x 50-207,,C-001,14,1,1,1, No Tax, exclusive,SC-1-113,,,,,,,,,,,,,no_image.png,standard
+G1509,ប៊ូឡុងអ៊ុយ 25 លី x 50-208,,C-001,14,1,1,1, No Tax, exclusive,SC-1-113,,,,,,,,,,,,,no_image.png,standard
+G1521,ប៊ូឡុងកែង 12 លី x 50-200,,C-001,14,1,1,1, No Tax, exclusive,SC-1-114,,,,,,,,,,,,,no_image.png,standard
+G1522,ប៊ូឡុងកែង 14 លី x 50-220,,C-001,14,1,1,1, No Tax, exclusive,SC-1-114,,,,,,,,,,,,,no_image.png,standard
+G1523,ប៊ូឡុងកែង 16 លី x 50-250,,C-001,14,1,1,1, No Tax, exclusive,SC-1-114,,,,,,,,,,,,,no_image.png,standard
+G1524,ប៊ូឡុងកែង 18 លី x 50-300,,C-001,14,1,1,1, No Tax, exclusive,SC-1-114,,,,,,,,,,,,,no_image.png,standard
+G1525,ប៊ូឡុងកែង 20 លី x 50-350,,C-001,14,1,1,1, No Tax, exclusive,SC-1-114,,,,,,,,,,,,,no_image.png,standard
+G1526,ប៊ូឡុងកែង 22 លី x 50-400,,C-001,14,1,1,1, No Tax, exclusive,SC-1-114,,,,,,,,,,,,,no_image.png,standard
+G1536,ដែករ៉ាត់ 10 លី x 1.2ម - 00,,C-001,18,1,1,1, No Tax, exclusive,SC-1-115,,,,,,,,,,,,,no_image.png,standard
+G1537,ដែករ៉ាត់ 12 លី x 1.2ម - 00,,C-001,18,1,1,1, No Tax, exclusive,SC-1-115,,,,,,,,,,,,,no_image.png,standard
+G1538,ដែករ៉ាត់ 14 លី x 1.2ម - 01,,C-001,18,1,1,1, No Tax, exclusive,SC-1-115,,,,,,,,,,,,,no_image.png,standard
+G1539,ដែករ៉ាត់ 16 លី x 1.2ម - 02,,C-001,18,1,1,1, No Tax, exclusive,SC-1-115,,,,,,,,,,,,,no_image.png,standard
+G1540,ដែករ៉ាត់ 18 លី x 1.2ម - 03,,C-001,18,1,1,1, No Tax, exclusive,SC-1-115,,,,,,,,,,,,,no_image.png,standard
+G1546,កាវ 502,,C-001,15,1,1,1, No Tax, exclusive,SC-1-116,,,,,,,,,,,,,no_image.png,standard
+G1547,កាវស៊ីលីកូន ថ្លា,,C-001,15,1,1,1, No Tax, exclusive,SC-1-116,,,,,,,,,,,,,no_image.png,standard
+G1548,កាវស៊ីលីកូន ខ្មៅ,,C-001,15,1,1,1, No Tax, exclusive,SC-1-116,,,,,,,,,,,,,no_image.png,standard
+G1549,កាវស៊ីលីកូន កំបោរ,,C-001,15,1,1,1, No Tax, exclusive,SC-1-116,,,,,,,,,,,,,no_image.png,standard
+G1550,កាវសាច់ក្រក Sikawell​ S2,,C-001,18,1,1,1, No Tax, exclusive,SC-1-116,,,,,,,,,,,,,no_image.png,standard
+G1551,កាវក្បាលឆ្កែ,,C-001,7,1,1,1, No Tax, exclusive,SC-1-116,,,,,,,,,,,,,no_image.png,standard
+G1552,កាវ Sikadur,,C-001,14,1,1,1, No Tax, exclusive,SC-1-116,,,,,,,,,,,,,no_image.png,standard
+G1553,កាវ Sikaflex,,C-001,18,1,1,1, No Tax, exclusive,SC-1-116,,,,,,,,,,,,,no_image.png,standard
+G1561,កាវ Sika Anchorfix,,C-001,20,1,1,1, No Tax, exclusive,SC-1-117,,,,,,,,,,,,,no_image.png,standard
+G1562,ទឹកថ្នាំការពារជំរាបទឹក 20 លីត្រ -00,,C-001,20,1,1,1, No Tax, exclusive,SC-1-117,,,,,,,,,,,,,no_image.png,standard
+G1563,កៅស៊ូអ៊ុត កាពារជំរាបទឹក,,C-001,16,1,1,1, No Tax, exclusive,SC-1-117,,,,,,,,,,,,,no_image.png,standard
+G1564,Water Stop Proofex Tourchseal 4P,,C-001,28,1,1,1, No Tax, exclusive,SC-1-117,,,,,,,,,,,,,no_image.png,standard
+G1565,Water Stop Supercast Hyrofiol 250mm,,C-001,28,1,1,1, No Tax, exclusive,SC-1-117,,,,,,,,,,,,,no_image.png,standard
+G1566,Water Stop Watafiol 250mm,,C-001,28,1,1,1, No Tax, exclusive,SC-1-117,,,,,,,,,,,,,no_image.png,standard
+G1581,ដងបាញ់កាវ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-118,,,,,,,,,,,,,no_image.png,standard
+G1582,ដងបាញ់គ្រាប់កឹប,,C-001,18,1,1,1, No Tax, exclusive,SC-1-118,,,,,,,,,,,,,no_image.png,standard
+G1583,ដងបាញ់គ្រាប់មិន,,C-001,18,1,1,1, No Tax, exclusive,SC-1-118,,,,,,,,,,,,,no_image.png,standard
+G1584,ដងបាញ់ដែកគោល,,C-001,18,1,1,1, No Tax, exclusive,SC-1-118,,,,,,,,,,,,,no_image.png,standard
+G1591,កន្ត្រៃកាត់ ក្រដាស តូច,,C-001,18,1,1,1, No Tax, exclusive,SC-1-119,,,,,,,,,,,,,no_image.png,standard
+G1592,កន្ត្រៃកាត់ ក្រដាស ធំ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-119,,,,,,,,,,,,,no_image.png,standard
+G1593,កន្ត្រៃកាត់ ផ្ការ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-119,,,,,,,,,,,,,no_image.png,standard
+G1594,កន្ត្រៃកាត់ ស័ង្កសី,,C-001,18,1,1,1, No Tax, exclusive,SC-1-119,,,,,,,,,,,,,no_image.png,standard
+G1595,កន្ត្រៃកាត់ ដែក,,C-001,18,1,1,1, No Tax, exclusive,SC-1-119,,,,,,,,,,,,,no_image.png,standard
+G1596,ផ្លែ កន្រ្តៃកាត់ ដែក,,C-001,10,1,1,1, No Tax, exclusive,SC-1-119,,,,,,,,,,,,,no_image.png,standard
+G1606,ស្គុត សថ្លា 2 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-120,,,,,,,,,,,,,no_image.png,standard
+G1607,ស្គុត សថ្លា 2.5 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-120,,,,,,,,,,,,,no_image.png,standard
+G1608,ស្គុត សថ្លា 3 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-120,,,,,,,,,,,,,no_image.png,standard
+G1609,ស្គុត សថ្លា 4 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-120,,,,,,,,,,,,,no_image.png,standard
+G1610,ស្គុត សថ្លា 5 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-120,,,,,,,,,,,,,no_image.png,standard
+G1616,ស្គុត ពណ៏ស្ក 2 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-121,,,,,,,,,,,,,no_image.png,standard
+G1617,ស្គុត ពណ៏ស្ក 2.5 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-121,,,,,,,,,,,,,no_image.png,standard
+G1618,ស្គុត ពណ៏ស្ក 3 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-121,,,,,,,,,,,,,no_image.png,standard
+G1619,ស្គុត ពណ៏ស្ក 4 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-121,,,,,,,,,,,,,no_image.png,standard
+G1620,ស្គុត ពណ៏ស្ក 5 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-121,,,,,,,,,,,,,no_image.png,standard
+G1626,ស្គុត ក្រណាត់ 2 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-122,,,,,,,,,,,,,no_image.png,standard
+G1627,ស្គុត ក្រណាត់ 2.5 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-122,,,,,,,,,,,,,no_image.png,standard
+G1628,ស្គុត ក្រណាត់ 3 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-122,,,,,,,,,,,,,no_image.png,standard
+G1629,ស្គុត ក្រណាត់ 4 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-122,,,,,,,,,,,,,no_image.png,standard
+G1630,ស្គុត ក្រណាត់ 5 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-122,,,,,,,,,,,,,no_image.png,standard
+G1636,ស្គុត មុខពីរ 1 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-123,,,,,,,,,,,,,no_image.png,standard
+G1637,ស្គុត មុខពីរ 1.5 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-123,,,,,,,,,,,,,no_image.png,standard
+G1638,ស្គុត មុខពីរ 2 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-123,,,,,,,,,,,,,no_image.png,standard
+G1639,ស្គុត មុខពីរ 2.5 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-123,,,,,,,,,,,,,no_image.png,standard
+G1640,ស្គុត មុខពីរ 3 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-123,,,,,,,,,,,,,no_image.png,standard
+G1641,ស្គុត មុខពីរ 4 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-123,,,,,,,,,,,,,no_image.png,standard
+G1642,ស្គុត មុខពីរ 5 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-123,,,,,,,,,,,,,no_image.png,standard
+G1651,ក្រណាត់បិទពិដាន 2 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-124,,,,,,,,,,,,,no_image.png,standard
+G1652,ក្រណាត់បិទពិដាន 3 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-123,,,,,,,,,,,,,no_image.png,standard
+G1653,ក្រណាត់បិទពិដាន 4 ហ៊ុន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-124,,,,,,,,,,,,,no_image.png,standard
+G1661,ក្រដាសខាត់ ម៉ត់ 120,,C-001,31,1,1,1, No Tax, exclusive,SC-1-125,,,,,,,,,,,,,no_image.png,standard
+G1662,ក្រដាសខាត់ ម៉ត់ 150,,C-001,31,1,1,1, No Tax, exclusive,SC-1-125,,,,,,,,,,,,,no_image.png,standard
+G1663,ក្រដាសខាត់ ម៉ត់ 180,,C-001,31,1,1,1, No Tax, exclusive,SC-1-125,,,,,,,,,,,,,no_image.png,standard
+G1664,ក្រដាសខាត់ ម៉ត់ 220,,C-001,31,1,1,1, No Tax, exclusive,SC-1-125,,,,,,,,,,,,,no_image.png,standard
+G1665,ក្រដាសខាត់ ម៉ត់ 240,,C-001,31,1,1,1, No Tax, exclusive,SC-1-125,,,,,,,,,,,,,no_image.png,standard
+G1666,ក្រដាសខាត់ ម៉ត់ 280,,C-001,31,1,1,1, No Tax, exclusive,SC-1-125,,,,,,,,,,,,,no_image.png,standard
+G1667,ក្រដាសខាត់ ម៉ត់ 320,,C-001,31,1,1,1, No Tax, exclusive,SC-1-125,,,,,,,,,,,,,no_image.png,standard
+G1668,ក្រដាសខាត់ ម៉ត់ 40,,C-001,31,1,1,1, No Tax, exclusive,SC-1-125,,,,,,,,,,,,,no_image.png,standard
+G1669,ក្រដាសខាត់ ម៉ត់ 600,,C-001,31,1,1,1, No Tax, exclusive,SC-1-125,,,,,,,,,,,,,no_image.png,standard
+G1670,ក្រដាសខាត់ ម៉ត់ 800,,C-001,31,1,1,1, No Tax, exclusive,SC-1-125,,,,,,,,,,,,,no_image.png,standard
+G1671,ក្រដាសខាត់ ម៉ត់ 1200,,C-001,31,1,1,1, No Tax, exclusive,SC-1-125,,,,,,,,,,,,,no_image.png,standard
+G1672,ក្រដាសខាត់ គ្រើម 40,,C-001,28,1,1,1, No Tax, exclusive,SC-1-125,,,,,,,,,,,,,no_image.png,standard
+G1673,ក្រដាសខាត់ គ្រើម 60,,C-001,28,1,1,1, No Tax, exclusive,SC-1-125,,,,,,,,,,,,,no_image.png,standard
+G1674,ក្រដាសខាត់ គ្រើម 80,,C-001,28,1,1,1, No Tax, exclusive,SC-1-125,,,,,,,,,,,,,no_image.png,standard
+G1675,ក្រដាសខាត់ គ្រើម 100,,C-001,28,1,1,1, No Tax, exclusive,SC-1-125,,,,,,,,,,,,,no_image.png,standard
+G1676,ក្រដាសខាត់ គ្រើម 120,,C-001,28,1,1,1, No Tax, exclusive,SC-1-125,,,,,,,,,,,,,no_image.png,standard
+G1686,ជញ្ជីង 15 Kg,,C-001,12,1,1,1, No Tax, exclusive,SC-1-126,,,,,,,,,,,,,no_image.png,standard
+G1687,ជញ្ជីង 30 Kg,,C-001,12,1,1,1, No Tax, exclusive,SC-1-126,,,,,,,,,,,,,no_image.png,standard
+G1688,ជញ្ជីង 50 Kg,,C-001,12,1,1,1, No Tax, exclusive,SC-1-126,,,,,,,,,,,,,no_image.png,standard
+G1689,ជញ្ជីង 100 Kg,,C-001,12,1,1,1, No Tax, exclusive,SC-1-126,,,,,,,,,,,,,no_image.png,standard
+G1690,ជញ្ជីង 150 Kg,,C-001,12,1,1,1, No Tax, exclusive,SC-1-126,,,,,,,,,,,,,no_image.png,standard
+G1691,ជញ្ជីង 5 តោន,,C-001,12,1,1,1, No Tax, exclusive,SC-1-126,,,,,,,,,,,,,no_image.png,standard
+G1701,ទុល្វីស 3 លី មុខសំប៉ែត,,C-001,18,1,1,1, No Tax, exclusive,SC-1-127,,,,,,,,,,,,,no_image.png,standard
+G1702,ទុល្វីស 3 លី មុខបួនជ្រុង,,C-001,18,1,1,1, No Tax, exclusive,SC-1-127,,,,,,,,,,,,,no_image.png,standard
+G1703,ទុល្វីស 4 លី មុខសំប៉ែត,,C-001,18,1,1,1, No Tax, exclusive,SC-1-127,,,,,,,,,,,,,no_image.png,standard
+G1704,ទុល្វីស 4 លី មុខបួនជ្រុង,,C-001,18,1,1,1, No Tax, exclusive,SC-1-127,,,,,,,,,,,,,no_image.png,standard
+G1705,ទុល្វីស 6 លី មុខសំប៉ែត,,C-001,18,1,1,1, No Tax, exclusive,SC-1-127,,,,,,,,,,,,,no_image.png,standard
+G1706,ទុល្វីស 6 លី មុខបួនជ្រុង,,C-001,18,1,1,1, No Tax, exclusive,SC-1-127,,,,,,,,,,,,,no_image.png,standard
+G1707,ទុល្វីសហូតបាន,,C-001,18,1,1,1, No Tax, exclusive,SC-1-127,,,,,,,,,,,,,no_image.png,standard
+G1708,ទុល្វីសដងជ័រ ក្បាលដែក,,C-001,18,1,1,1, No Tax, exclusive,SC-1-127,,,,,,,,,,,,,no_image.png,standard
+G1709,ទុល្វីស អូតូ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-127,,,,,,,,,,,,,no_image.png,standard
+G1721,ដង្កាប់ មាត់ក្រពើ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-128,,,,,,,,,,,,,no_image.png,standard
+G1722,ដង្កាប់ មាត់ខ្លា,,C-001,18,1,1,1, No Tax, exclusive,SC-1-128,,,,,,,,,,,,,no_image.png,standard
+G1723,ដង្កាប់ មាត់ស្រួច,,C-001,18,1,1,1, No Tax, exclusive,SC-1-128,,,,,,,,,,,,,no_image.png,standard
+G1724,ដង្កាប់ ចំពុះសេក,,C-001,18,1,1,1, No Tax, exclusive,SC-1-128,,,,,,,,,,,,,no_image.png,standard
+G1725,ដង្កាប់ ចាប់ព្រែកចេញ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-128,,,,,,,,,,,,,no_image.png,standard
+G1726,ដង្កាប់ ចាប់ព្រែកចូល,,C-001,18,1,1,1, No Tax, exclusive,SC-1-128,,,,,,,,,,,,,no_image.png,standard
+G1727,ដង្កាប់ អូតូ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-128,,,,,,,,,,,,,no_image.png,standard
+G1728,ដង្កាប់ ច្រវ៉ាក់ អូតូម៉ាទិច,,C-001,18,1,1,1, No Tax, exclusive,SC-1-128,,,,,,,,,,,,,no_image.png,standard
+G1729,ដង្កាប់ កាត់ខ្សែភ្លើង,,C-001,18,1,1,1, No Tax, exclusive,SC-1-128,,,,,,,,,,,,,no_image.png,standard
+G1730,ដង្កាប់ ហូតខ្សែភ្លើង,,C-001,18,1,1,1, No Tax, exclusive,SC-1-128,,,,,,,,,,,,,no_image.png,standard
+G1731,ដង្កាត់ ដោះតំរ៉ងប្រេង,,C-001,18,1,1,1, No Tax, exclusive,SC-1-128,,,,,,,,,,,,,no_image.png,standard
+G1741,ដែកដាប់ មុខស្រួច 2 តឹក,,C-001,18,1,1,1, No Tax, exclusive,SC-1-129,,,,,,,,,,,,,no_image.png,standard
+G1742,ដែកដាប់ មុខស្រួច 3 តឹក,,C-001,18,1,1,1, No Tax, exclusive,SC-1-129,,,,,,,,,,,,,no_image.png,standard
+G1743,ដែកដាប់ មុខសំប៉ែត 2 តឹក,,C-001,18,1,1,1, No Tax, exclusive,SC-1-129,,,,,,,,,,,,,no_image.png,standard
+G1744,ដែកដាប់ មុខសំប៉ែត 2.5 តឹក,,C-001,18,1,1,1, No Tax, exclusive,SC-1-129,,,,,,,,,,,,,no_image.png,standard
+G1745,ដែកដាប់ មុខសំប៉ែត 3 តឹក,,C-001,18,1,1,1, No Tax, exclusive,SC-1-129,,,,,,,,,,,,,no_image.png,standard
+G1751,ម៉ាឡេតធ្មញលេខ 6 អីញ ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-130,,,,,,,,,,,,,no_image.png,standard
+G1752,ម៉ាឡេតធ្មញលេខ 12 អីញ ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-130,,,,,,,,,,,,,no_image.png,standard
+G1753,ម៉ាឡេតធ្មញលេខ 14 អីញ ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-130,,,,,,,,,,,,,no_image.png,standard
+G1754,ម៉ាឡេតធ្មញលេខ 16 អីញ ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-130,,,,,,,,,,,,,no_image.png,standard
+G1755,ម៉ាឡេតធ្មញលេខ 18 អីញ ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-130,,,,,,,,,,,,,no_image.png,standard
+G1756,ម៉ាឡេតធ្មញលេខ 20 អីញ ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-130,,,,,,,,,,,,,no_image.png,standard
+G1757,ម៉ាឡេតធ្មញលេខ 24 អីញ ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-130,,,,,,,,,,,,,no_image.png,standard
+G1758,ម៉ាឡេតធ្មញលេខ 36 អីញ ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-130,,,,,,,,,,,,,no_image.png,standard
+G1759,ម៉ាឡេតធ្មញលេខ 48 អីញ ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-130,,,,,,,,,,,,,no_image.png,standard
+G1760,ម៉ាឡេត ច្រវ៉ាក់ 3 តឹក ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-130,,,,,,,,,,,,,no_image.png,standard
+G1761,ម៉ាឡេត ច្រវ៉ាក់ 3.5 តឹក ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-130,,,,,,,,,,,,,no_image.png,standard
+G1762,ម៉ាឡេត ច្រវ៉ាក់ 6 តឹក ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-130,,,,,,,,,,,,,no_image.png,standard
+G1776,សោចិនខ្មៅ 38,,C-001,11,1,1,1, No Tax, exclusive,SC-1-131,,,,,,,,,,,,,no_image.png,standard
+G1777,សោចិនខ្មៅ 50,,C-001,11,1,1,1, No Tax, exclusive,SC-1-131,,,,,,,,,,,,,no_image.png,standard
+G1778,សោចិនខ្មៅ 60-63,,C-001,11,1,1,1, No Tax, exclusive,SC-1-131,,,,,,,,,,,,,no_image.png,standard
+G1779,សោ​Solex លេខ 50,,C-001,11,1,1,1, No Tax, exclusive,SC-1-131,,,,,,,,,,,,,no_image.png,standard
+G1780,សោ​Solex លេខ 63,,C-001,11,1,1,1, No Tax, exclusive,SC-1-131,,,,,,,,,,,,,no_image.png,standard
+G1781,សោ​Solex លេខ 50 កវែង,,C-001,11,1,1,1, No Tax, exclusive,SC-1-131,,,,,,,,,,,,,no_image.png,standard
+G1782,សោ​Solo លេខ 50,,C-001,11,1,1,1, No Tax, exclusive,SC-1-131,,,,,,,,,,,,,no_image.png,standard
+G1783,សោ​Solo លេខ 63,,C-001,11,1,1,1, No Tax, exclusive,SC-1-131,,,,,,,,,,,,,no_image.png,standard
+G1784,សោ​Solo លេខ 50 កវែង,,C-001,11,1,1,1, No Tax, exclusive,SC-1-131,,,,,,,,,,,,,no_image.png,standard
+G1785,សោ​Solo លេខ 63 កវែង,,C-001,11,1,1,1, No Tax, exclusive,SC-1-131,,,,,,,,,,,,,no_image.png,standard
+G1796,សោខ្សៀ លេខ 8,,C-001,18,1,1,1, No Tax, exclusive,SC-1-132,,,,,,,,,,,,,no_image.png,standard
+G1797,សោខ្សៀ លេខ 10,,C-001,18,1,1,1, No Tax, exclusive,SC-1-132,,,,,,,,,,,,,no_image.png,standard
+G1798,សោខ្សៀ លេខ 12,,C-001,18,1,1,1, No Tax, exclusive,SC-1-132,,,,,,,,,,,,,no_image.png,standard
+G1799,សោខ្សៀ លេខ 14,,C-001,18,1,1,1, No Tax, exclusive,SC-1-132,,,,,,,,,,,,,no_image.png,standard
+G1800,សោខ្សៀ លេខ 17,,C-001,18,1,1,1, No Tax, exclusive,SC-1-132,,,,,,,,,,,,,no_image.png,standard
+G1801,សោខ្សៀ លេខ 20,,C-001,18,1,1,1, No Tax, exclusive,SC-1-132,,,,,,,,,,,,,no_image.png,standard
+G1802,សោខ្សៀ លេខ 24,,C-001,18,1,1,1, No Tax, exclusive,SC-1-132,,,,,,,,,,,,,no_image.png,standard
+G1811,សោម៉ាត់ចិញ្ជៀនលេខ 8-24,,C-001,14,1,1,1, No Tax, exclusive,SC-1-133,,,,,,,,,,,,,no_image.png,standard
+G1812,សោម៉ាត់ចិញ្ជៀនលេខ 8-32,,C-001,14,1,1,1, No Tax, exclusive,SC-1-132,,,,,,,,,,,,,no_image.png,standard
+G1813,សោម៉ាត់ចិញ្ជៀនសងខាងលេខ 8-32,,C-001,14,1,1,1, No Tax, exclusive,SC-1-133,,,,,,,,,,,,,no_image.png,standard
+G1814,សោម៉ាត់ចិញ្ជៀនលេខ 12,,C-001,18,1,1,1, No Tax, exclusive,SC-1-132,,,,,,,,,,,,,no_image.png,standard
+G1815,សោម៉ាត់ចិញ្ជៀនលេខ 14,,C-001,18,1,1,1, No Tax, exclusive,SC-1-133,,,,,,,,,,,,,no_image.png,standard
+G1816,សោម៉ាត់ចិញ្ជៀនលេខ 16,,C-001,18,1,1,1, No Tax, exclusive,SC-1-132,,,,,,,,,,,,,no_image.png,standard
+G1817,សោម៉ាត់ចិញ្ជៀនលេខ 17,,C-001,18,1,1,1, No Tax, exclusive,SC-1-133,,,,,,,,,,,,,no_image.png,standard
+G1818,សោម៉ាត់ចិញ្ជៀនលេខ 18,,C-001,18,1,1,1, No Tax, exclusive,SC-1-132,,,,,,,,,,,,,no_image.png,standard
+G1819,សោម៉ាត់ចិញ្ជៀនលេខ 21,,C-001,18,1,1,1, No Tax, exclusive,SC-1-133,,,,,,,,,,,,,no_image.png,standard
+G1820,សោម៉ាត់ចិញ្ជៀនលេខ 22,,C-001,18,1,1,1, No Tax, exclusive,SC-1-132,,,,,,,,,,,,,no_image.png,standard
+G1821,សោម៉ាត់ចិញ្ជៀនលេខ 24,,C-001,18,1,1,1, No Tax, exclusive,SC-1-133,,,,,,,,,,,,,no_image.png,standard
+G1822,សោម៉ាត់ចិញ្ជៀនលេខ 27,,C-001,18,1,1,1, No Tax, exclusive,SC-1-132,,,,,,,,,,,,,no_image.png,standard
+G1823,សោម៉ាត់ចិញ្ជៀនលេខ 32,,C-001,18,1,1,1, No Tax, exclusive,SC-1-133,,,,,,,,,,,,,no_image.png,standard
+G1824,សោម៉ាត់ចិញ្ជៀនលេខ 34,,C-001,18,1,1,1, No Tax, exclusive,SC-1-132,,,,,,,,,,,,,no_image.png,standard
+G1825,សោម៉ាត់ចិញ្ជៀនលេខ 36,,C-001,18,1,1,1, No Tax, exclusive,SC-1-133,,,,,,,,,,,,,no_image.png,standard
+G1826,សោម៉ាត់ចិញ្ជៀនលេខ 38,,C-001,18,1,1,1, No Tax, exclusive,SC-1-132,,,,,,,,,,,,,no_image.png,standard
+G1827,សោម៉ាត់ចិញ្ជៀនលេខ 41,,C-001,18,1,1,1, No Tax, exclusive,SC-1-133,,,,,,,,,,,,,no_image.png,standard
+G1828,សោម៉ាត់ចិញ្ជៀនលេខ 46,,C-001,18,1,1,1, No Tax, exclusive,SC-1-132,,,,,,,,,,,,,no_image.png,standard
+G1829,សោម៉ាត់ចិញ្ជៀនលេខ 50,,C-001,18,1,1,1, No Tax, exclusive,SC-1-133,,,,,,,,,,,,,no_image.png,standard
+G1841,សោគ្រាប់លេខ 8-32 លី,,C-001,14,1,1,1, No Tax, exclusive,SC-1-134,,,,,,,,,,,,,no_image.png,standard
+G1842,សោគ្រាប់លេខ 32-55 លី,,C-001,14,1,1,1, No Tax, exclusive,SC-1-134,,,,,,,,,,,,,no_image.png,standard
+G1843,សោគ្រាប់ ដងអូតូ,,C-001,14,1,1,1, No Tax, exclusive,SC-1-134,,,,,,,,,,,,,no_image.png,standard
+G1844,សោគ្រាប់ ឃីងតូនី,,C-001,14,1,1,1, No Tax, exclusive,SC-1-134,,,,,,,,,,,,,no_image.png,standard
+G1851,សោតេលេខ 8,,C-001,18,1,1,1, No Tax, exclusive,SC-1-135,,,,,,,,,,,,,no_image.png,standard
+G1852,សោតេលេខ 9,,C-001,18,1,1,1, No Tax, exclusive,SC-1-135,,,,,,,,,,,,,no_image.png,standard
+G1853,សោតេលេខ 10,,C-001,18,1,1,1, No Tax, exclusive,SC-1-135,,,,,,,,,,,,,no_image.png,standard
+G1854,សោតេលេខ 11,,C-001,18,1,1,1, No Tax, exclusive,SC-1-135,,,,,,,,,,,,,no_image.png,standard
+G1855,សោតេលេខ 12,,C-001,18,1,1,1, No Tax, exclusive,SC-1-135,,,,,,,,,,,,,no_image.png,standard
+G1856,សោតេលេខ 13,,C-001,18,1,1,1, No Tax, exclusive,SC-1-135,,,,,,,,,,,,,no_image.png,standard
+G1857,សោតេលេខ 14,,C-001,18,1,1,1, No Tax, exclusive,SC-1-135,,,,,,,,,,,,,no_image.png,standard
+G1858,សោតេលេខ 16,,C-001,18,1,1,1, No Tax, exclusive,SC-1-135,,,,,,,,,,,,,no_image.png,standard
+G1871,សោខ្វែងលខ 18,,C-001,18,1,1,1, No Tax, exclusive,SC-1-136,,,,,,,,,,,,,no_image.png,standard
+G1872,សោខ្វែងលខ 20,,C-001,18,1,1,1, No Tax, exclusive,SC-1-136,,,,,,,,,,,,,no_image.png,standard
+G1873,សោខ្វែងលខ 23,,C-001,18,1,1,1, No Tax, exclusive,SC-1-136,,,,,,,,,,,,,no_image.png,standard
+G1874,សោខ្វែងលខ 28,,C-001,18,1,1,1, No Tax, exclusive,SC-1-136,,,,,,,,,,,,,no_image.png,standard
+G1881,សោតាន់លេខ 3-17,,C-001,14,1,1,1, No Tax, exclusive,SC-1-137,,,,,,,,,,,,,no_image.png,standard
+G1882,សោតាន់លេខ 8-24,,C-001,14,1,1,1, No Tax, exclusive,SC-1-137,,,,,,,,,,,,,no_image.png,standard
+G1883,សោតាន់លេខ 20-52,,C-001,14,1,1,1, No Tax, exclusive,SC-1-137,,,,,,,,,,,,,no_image.png,standard
+G1891,ប៊ិច ខៀវ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-138,,,,,,,,,,,,,no_image.png,standard
+G1892,ប៊ិច ក្រហម,,C-001,18,1,1,1, No Tax, exclusive,SC-1-138,,,,,,,,,,,,,no_image.png,standard
+G1893,ប៊ិច ខ្មៅ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-138,,,,,,,,,,,,,no_image.png,standard
+G1894,ខ្មៅដៃ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-138,,,,,,,,,,,,,no_image.png,standard
+G1895,ទឹកលុប,,C-001,18,1,1,1, No Tax, exclusive,SC-1-138,,,,,,,,,,,,,no_image.png,standard
+G1896,ជ័រលុប,,C-001,16,1,1,1, No Tax, exclusive,SC-1-138,,,,,,,,,,,,,no_image.png,standard
+G1897,បន្ទាត់ ជ័រ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-138,,,,,,,,,,,,,no_image.png,standard
+G1898,បន្ទាត់ ដែក,,C-001,18,1,1,1, No Tax, exclusive,SC-1-138,,,,,,,,,,,,,no_image.png,standard
+G1899,កាវទឹក បិទរូបថត,,C-001,15,1,1,1, No Tax, exclusive,SC-1-138,,,,,,,,,,,,,no_image.png,standard
+G1900,កាវស្ងួត បិទរូបថត,,C-001,15,1,1,1, No Tax, exclusive,SC-1-138,,,,,,,,,,,,,no_image.png,standard
+G1901,កំបុងដាក់សំភារ: 100x100,,C-001,11,1,1,1, No Tax, exclusive,SC-1-138,,,,,,,,,,,,,no_image.png,standard
+G1911,ហ្វឹត ខៀវ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-139,,,,,,,,,,,,,no_image.png,standard
+G1912,ហ្វឹត ក្រហម,,C-001,18,1,1,1, No Tax, exclusive,SC-1-139,,,,,,,,,,,,,no_image.png,standard
+G1913,ហ្វឹត ខ្មៅ,,C-001,18,1,1,1, No Tax, exclusive,SC-1-139,,,,,,,,,,,,,no_image.png,standard
+G1914,ហ្វឹតសសេរជាប់ ខៀវ/ខ្មៅ/ក្រហម,,C-001,18,1,1,1, No Tax, exclusive,SC-1-139,,,,,,,,,,,,,no_image.png,standard
+G1915,ប្រដាប់លុបក្តាខៀន,,C-001,16,1,1,1, No Tax, exclusive,SC-1-139,,,,,,,,,,,,,no_image.png,standard
+G1916,ក្តាខៀន,,C-001,31,1,1,1, No Tax, exclusive,SC-1-139,,,,,,,,,,,,,no_image.png,standard
+G1926,ក្រដាស A4,,C-001,16,1,1,1, No Tax, exclusive,SC-1-140,,,,,,,,,,,,,no_image.png,standard
+G1927,ក្រដាស A4 ពណ៍ទន់,,C-001,16,1,1,1, No Tax, exclusive,SC-1-140,,,,,,,,,,,,,no_image.png,standard
+G1928,ក្រដាស A4 ពណ៍រឹង,,C-001,16,1,1,1, No Tax, exclusive,SC-1-140,,,,,,,,,,,,,no_image.png,standard
+G1929,ក្រដាស A3,,C-001,16,1,1,1, No Tax, exclusive,SC-1-140,,,,,,,,,,,,,no_image.png,standard
+G1936,ទឹកថ្នាំម៉ាស៊ីនព្រីន (ទឹក),,C-001,14,1,1,1, No Tax, exclusive,SC-1-141,,,,,,,,,,,,,no_image.png,standard
+G1937,ទឹកថ្នាំម៉ាស៊ីនព្រីន (ស្ងួត),,C-001,14,1,1,1, No Tax, exclusive,SC-1-141,,,,,,,,,,,,,no_image.png,standard
+G1938,ទឹកថ្នាំម៉ាស៊ីនហ្វូតូកូពី ,,C-001,14,1,1,1, No Tax, exclusive,SC-1-141,,,,,,,,,,,,,no_image.png,standard
+G1951,មេកឹបលេខ10 តូច,,C-001,12,1,1,1, No Tax, exclusive,SC-1-142,,,,,,,,,,,,,no_image.png,standard
+G1952,មេកឹប ធំ,,C-001,12,1,1,1, No Tax, exclusive,SC-1-142,,,,,,,,,,,,,no_image.png,standard
+G1953,គ្រាប់កឹបលេខ10 តូច,,C-001,24,1,1,1, No Tax, exclusive,SC-1-142,,,,,,,,,,,,,no_image.png,standard
+G1954,គ្រាប់កឹប ធំ,,C-001,24,1,1,1, No Tax, exclusive,SC-1-142,,,,,,,,,,,,,no_image.png,standard
+G1955,ប្រដាប់ចោះក្រដាស 480 តូច,,C-001,12,1,1,1, No Tax, exclusive,SC-1-142,,,,,,,,,,,,,no_image.png,standard
+G1956,ប្រដាប់ចោះក្រដាស 720 ធំ,,C-001,12,1,1,1, No Tax, exclusive,SC-1-142,,,,,,,,,,,,,no_image.png,standard
+G1957,គ្រាប់ស៊កក្រដាស,,C-001,24,1,1,1, No Tax, exclusive,SC-1-142,,,,,,,,,,,,,no_image.png,standard
+G1958,គ្រាប់គាបក្រដាស តូច,,C-001,24,1,1,1, No Tax, exclusive,SC-1-142,,,,,,,,,,,,,no_image.png,standard
+G1959,គ្រាប់គាបក្រដាស កណ្តាល,,C-001,24,1,1,1, No Tax, exclusive,SC-1-142,,,,,,,,,,,,,no_image.png,standard
+G1960,គ្រាប់គាបក្រដាស ធំ,,C-001,24,1,1,1, No Tax, exclusive,SC-1-142,,,,,,,,,,,,,no_image.png,standard
+G1961,ប្រដាប់គាស់គ្រាប់កិប,,C-001,12,1,1,1, No Tax, exclusive,SC-1-142,,,,,,,,,,,,,no_image.png,standard
+G1971,សឺមី ក្រដាសទន់,,C-001,31,1,1,1, No Tax, exclusive,SC-1-143,,,,,,,,,,,,,no_image.png,standard
+G1972,សឺមី ក្រដាសរឹង,,C-001,31,1,1,1, No Tax, exclusive,SC-1-143,,,,,,,,,,,,,no_image.png,standard
+G1973,សឺមី ជ័រ ស៊ក,,C-001,31,1,1,1, No Tax, exclusive,SC-1-143,,,,,,,,,,,,,no_image.png,standard
+G1974,សឺមី ជ័រ កឹប,,C-001,31,1,1,1, No Tax, exclusive,SC-1-143,,,,,,,,,,,,,no_image.png,standard
+G1975,សឺមី ពូក ,,C-001,31,1,1,1, No Tax, exclusive,SC-1-143,,,,,,,,,,,,,no_image.png,standard
+G1976,សឺមី ទំពក់,,C-001,31,1,1,1, No Tax, exclusive,SC-1-143,,,,,,,,,,,,,no_image.png,standard
+G1986,ស្រោមសំបុត្រគគី A4 ,,C-001,31,1,1,1, No Tax, exclusive,SC-1-144,,,,,,,,,,,,,no_image.png,standard
+G1987,ស្រោមសំបុត្រ តូច,,C-001,16,1,1,1, No Tax, exclusive,SC-1-144,,,,,,,,,,,,,no_image.png,standard
+G1991,Post it 3x3 ,,C-001,16,1,1,1, No Tax, exclusive,SC-1-145,,,,,,,,,,,,,no_image.png,standard
+G1992,Post it 3x4,,C-001,16,1,1,1, No Tax, exclusive,SC-1-145,,,,,,,,,,,,,no_image.png,standard
+G1993,Post it 3x5,,C-001,16,1,1,1, No Tax, exclusive,SC-1-145,,,,,,,,,,,,,no_image.png,standard
+G1994,Post it A35,,C-001,16,1,1,1, No Tax, exclusive,SC-1-145,,,,,,,,,,,,,no_image.png,standard
+G1995,Post it 2"x3",,C-001,16,1,1,1, No Tax, exclusive,SC-1-145,,,,,,,,,,,,,no_image.png,standard
+G1996,Post it 3"x5",,C-001,16,1,1,1, No Tax, exclusive,SC-1-145,,,,,,,,,,,,,no_image.png,standard
+G2011,ត្រេបីជាន់ ជ័រ,,C-001,14,1,1,1, No Tax, exclusive,SC-1-146,,,,,,,,,,,,,no_image.png,standard
+G2012,ត្រេពីរជាន់ ដែក,,C-001,14,1,1,1, No Tax, exclusive,SC-1-146,,,,,,,,,,,,,no_image.png,standard
+G2013,ត្រេបីជាន់ ដែក,,C-001,14,1,1,1, No Tax, exclusive,SC-1-146,,,,,,,,,,,,,no_image.png,standard
+G2021,ក្រូណូ តូច,,C-001,14,1,1,1, No Tax, exclusive,SC-1-147,,,,,,,,,,,,,no_image.png,standard
+G2022,ក្រូណូ ធំ,,C-001,14,1,1,1, No Tax, exclusive,SC-1-147,,,,,,,,,,,,,no_image.png,standard
+G2030,កៅស៊ូ កង,,C-001,9,1,1,1, No Tax, exclusive,SC-1-147,,,,,,,,,,,,,no_image.png,standard
+G2031,សៀវភៅ សសេរ 160 ទំព័រ,,C-001,6,1,1,1, No Tax, exclusive,SC-1-148,,,,,,,,,,,,,no_image.png,standard
+G2032,សៀវភៅ សសេរ 200 ទំព័រ,,C-001,6,1,1,1, No Tax, exclusive,SC-1-148,,,,,,,,,,,,,no_image.png,standard
+G2033,សៀវភៅ សសេរ ធំ,,C-001,6,1,1,1, No Tax, exclusive,SC-1-148,,,,,,,,,,,,,no_image.png,standard
+G2034,សៀវភៅ ស្នើសុំទិញសំភារ:,,C-001,6,1,1,1, No Tax, exclusive,SC-1-148,,,,,,,,,,,,,no_image.png,standard
+G2035,ប័ណ្ណ ស្នើសុំបើកសំភារ:,,C-001,6,1,1,1, No Tax, exclusive,SC-1-148,,,,,,,,,,,,,no_image.png,standard
+G2036,ប័ណ្ណ ស្នើសុំផ្ទេរសំភារ:,,C-001,6,1,1,1, No Tax, exclusive,SC-1-148,,,,,,,,,,,,,no_image.png,standard
+G2041,ម៉ាស៊ីនវាយបុង,,C-001,12,1,1,1, No Tax, exclusive,SC-1-149,,,,,,,,,,,,,no_image.png,standard
+G2042,ក្រដាសវាយបុង,,C-001,31,1,1,1, No Tax, exclusive,SC-1-149,,,,,,,,,,,,,no_image.png,standard
+G2043,ទឹកថ្នាំ ម៉ាស៊ីនវាយបុង,,C-001,14,1,1,1, No Tax, exclusive,SC-1-149,,,,,,,,,,,,,no_image.png,standard
+G2044,ទឹកតាំប៉ុងខៀវ,,C-001,14,1,1,1, No Tax, exclusive,SC-1-149,,,,,,,,,,,,,no_image.png,standard
+G2045,ទឹកតាំប៉ុងក្រហម,,C-001,14,1,1,1, No Tax, exclusive,SC-1-149,,,,,,,,,,,,,no_image.png,standard
+G2046,ម៉ាស៊ីន អ៊ុតកាត,,C-001,12,1,1,1, No Tax, exclusive,SC-1-149,,,,,,,,,,,,,no_image.png,standard
+G2047,ខ្សែពាក់ កាត,,C-001,8,1,1,1, No Tax, exclusive,SC-1-149,,,,,,,,,,,,,no_image.png,standard
+G2048,ស្រោមដាក់ កាត,,C-001,31,1,1,1, No Tax, exclusive,SC-1-149,,,,,,,,,,,,,no_image.png,standard
+G2049,ផ្លាស្ទឹកអ៊ុតកាត,,C-001,31,1,1,1, No Tax, exclusive,SC-1-149,,,,,,,,,,,,,no_image.png,standard
+G2061,ត្រាទទួល (Received),,C-001,18,1,1,1, No Tax, exclusive,SC-1-150,,,,,,,,,,,,,no_image.png,standard
+G2062,ត្រាទូទាត់ (Paid),,C-001,18,1,1,1, No Tax, exclusive,SC-1-150,,,,,,,,,,,,,no_image.png,standard
+G2063,ត្រាឈ្មោះ (Name),,C-001,18,1,1,1, No Tax, exclusive,SC-1-150,,,,,,,,,,,,,no_image.png,standard
+G2071,វិទ្យុទាក់ទង,,C-001,12,1,1,1, No Tax, exclusive,SC-1-151,,,,,,,,,,,,,no_image.png,standard
+G2072,ថ្ម វិទ្យុទាក់ទង,,C-001,11,1,1,1, No Tax, exclusive,SC-1-151,,,,,,,,,,,,,no_image.png,standard
+G2073,ឆ្នាំង វិទ្យុទាក់ទង,,C-001,11,1,1,1, No Tax, exclusive,SC-1-151,,,,,,,,,,,,,no_image.png,standard

@@ -1,0 +1,438 @@
+﻿Code,Name,Name KH,Category Code,Unit ID,Cost,Price,Alert Quantity, Tax Rate Name,Tax Method,Subcategory Code,Product Variants Separated by |,Supplier1(No),Supplier2(No),Supplier3(No),Supplier4(No),Supplier5(No),Custom Field 1,Custom Field 2,Custom Field 3,Custom Field 4,Custom Field 5,Custom Field 6,Image,Type(standard or service)
+E0001,ខ្សែភ្លើង ក្រហម 1 x 1.5mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-001,,,,,,,,,,,,,no_image.png,standard
+E0002,ខ្សែភ្លើង ក្រហម 1 x 2.5mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-001,,,,,,,,,,,,,no_image.png,standard
+E0003,ខ្សែភ្លើង ក្រហម 1 x 4mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-001,,,,,,,,,,,,,no_image.png,standard
+E0004,ខ្សែភ្លើង ក្រហម 1 x 6mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-001,,,,,,,,,,,,,no_image.png,standard
+E0005,ខ្សែភ្លើង ក្រហម 1 x 10mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-001,,,,,,,,,,,,,no_image.png,standard
+E0006,ខ្សែភ្លើង ក្រហម 1 x 16mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-001,,,,,,,,,,,,,no_image.png,standard
+E0007,ខ្សែភ្លើង ក្រហម 1 x 25mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-001,,,,,,,,,,,,,no_image.png,standard
+E0008,ខ្សែភ្លើង ក្រហម 1 x 35mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-001,,,,,,,,,,,,,no_image.png,standard
+E0009,ខ្សែភ្លើង ក្រហម 1 x 50mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-001,,,,,,,,,,,,,no_image.png,standard
+E0021,ខ្សែភ្លើង ខ្មៅ 1 x 1.5mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-002,,,,,,,,,,,,,no_image.png,standard
+E0022,ខ្សែភ្លើង ខ្មៅ 1 x 2.5mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-002,,,,,,,,,,,,,no_image.png,standard
+E0023,ខ្សែភ្លើង ខ្មៅ 1 x 4mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-002,,,,,,,,,,,,,no_image.png,standard
+E0024,ខ្សែភ្លើង ខ្មៅ 1 x 6mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-002,,,,,,,,,,,,,no_image.png,standard
+E0025,ខ្សែភ្លើង ខ្មៅ 1 x 10mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-002,,,,,,,,,,,,,no_image.png,standard
+E0026,ខ្សែភ្លើង ខ្មៅ 1 x 16mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-002,,,,,,,,,,,,,no_image.png,standard
+E0027,ខ្សែភ្លើង ខ្មៅ 1 x 25mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-002,,,,,,,,,,,,,no_image.png,standard
+E0028,ខ្សែភ្លើង ខ្មៅ 1 x 35mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-002,,,,,,,,,,,,,no_image.png,standard
+E0029,ខ្សែភ្លើង ខ្មៅ 1 x 50mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-002,,,,,,,,,,,,,no_image.png,standard
+E0041,ខ្សែភ្លើង ខៀវ 1 x 1.5mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-003,,,,,,,,,,,,,no_image.png,standard
+E0042,ខ្សែភ្លើង ខៀវ 1 x 2.5mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-003,,,,,,,,,,,,,no_image.png,standard
+E0043,ខ្សែភ្លើង ខៀវ 1 x 4mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-003,,,,,,,,,,,,,no_image.png,standard
+E0044,ខ្សែភ្លើង ខៀវ 1 x 6mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-003,,,,,,,,,,,,,no_image.png,standard
+E0045,ខ្សែភ្លើង ខៀវ 1 x 10mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-003,,,,,,,,,,,,,no_image.png,standard
+E0046,ខ្សែភ្លើង ខៀវ 1 x 16mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-003,,,,,,,,,,,,,no_image.png,standard
+E0047,ខ្សែភ្លើង ខៀវ 1 x 25mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-003,,,,,,,,,,,,,no_image.png,standard
+E0048,ខ្សែភ្លើង ខៀវ 1 x 35mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-003,,,,,,,,,,,,,no_image.png,standard
+E0049,ខ្សែភ្លើង ខៀវ 1 x 50mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-003,,,,,,,,,,,,,no_image.png,standard
+E0061,ខ្សែភ្លើង បៃតង 1 x 1.5mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-004,,,,,,,,,,,,,no_image.png,standard
+E0062,ខ្សែភ្លើង បៃតង 1 x 2.5mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-004,,,,,,,,,,,,,no_image.png,standard
+E0063,ខ្សែភ្លើង បៃតង 1 x 4mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-004,,,,,,,,,,,,,no_image.png,standard
+E0064,ខ្សែភ្លើង បៃតង 1 x 6mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-004,,,,,,,,,,,,,no_image.png,standard
+E0065,ខ្សែភ្លើង បៃតង 1 x 10mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-004,,,,,,,,,,,,,no_image.png,standard
+E0066,ខ្សែភ្លើង បៃតង 1 x 16mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-004,,,,,,,,,,,,,no_image.png,standard
+E0067,ខ្សែភ្លើង បៃតង 1 x 25mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-004,,,,,,,,,,,,,no_image.png,standard
+E0068,ខ្សែភ្លើង បៃតង 1 x 35mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-004,,,,,,,,,,,,,no_image.png,standard
+E0069,ខ្សែភ្លើង បៃតង 1 x 50mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-004,,,,,,,,,,,,,no_image.png,standard
+E0081,ខ្សែភ្លើង លឿង 1 x 1.5mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-005,,,,,,,,,,,,,no_image.png,standard
+E0082,ខ្សែភ្លើង លឿង 1 x 2.5mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-005,,,,,,,,,,,,,no_image.png,standard
+E0083,ខ្សែភ្លើង លឿង 1 x 6mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-005,,,,,,,,,,,,,no_image.png,standard
+E0084,ខ្សែភ្លើង លឿង 1 x 10mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-005,,,,,,,,,,,,,no_image.png,standard
+E0085,ខ្សែភ្លើង លឿង 1 x 16mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-005,,,,,,,,,,,,,no_image.png,standard
+E0086,ខ្សែភ្លើង លឿង 1 x 25mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-005,,,,,,,,,,,,,no_image.png,standard
+E0087,ខ្សែភ្លើង លឿង 1 x 35mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-005,,,,,,,,,,,,,no_image.png,standard
+E0088,ខ្សែភ្លើង លឿង 1 x 50mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-005,,,,,,,,,,,,,no_image.png,standard
+E0101,ខ្សែភ្លើងទន់ 1 x 1.5mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-006,,,,,,,,,,,,,no_image.png,standard
+E0102,ខ្សែភ្លើងទន់ 1 x 10mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-006,,,,,,,,,,,,,no_image.png,standard
+E0103,ខ្សែភ្លើងទន់ 1 x 16mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-006,,,,,,,,,,,,,no_image.png,standard
+E0121,ខ្សែភ្លើងស្ពាន់ 1.5 x 10mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-007,,,,,,,,,,,,,no_image.png,standard
+E0122,ខ្សែភ្លើងស្ពាន់ 1.5 x 16mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-007,,,,,,,,,,,,,no_image.png,standard
+E0123,ខ្សែភ្លើងស្ពាន់ 1.5 x 30mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-007,,,,,,,,,,,,,no_image.png,standard
+E0124,ខ្សែភ្លើងស្ពាន់ 1c x 95mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-007,,,,,,,,,,,,,no_image.png,standard
+E0125,ខ្សែភ្លើងស្ពាន់ 1c x 120mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-007,,,,,,,,,,,,,no_image.png,standard
+E0126,ខ្សែភ្លើងស្ពាន់ 1C x 240mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-007,,,,,,,,,,,,,no_image.png,standard
+E0127,ខ្សែភ្លើងស្ពាន់ 1C x 300mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-007,,,,,,,,,,,,,no_image.png,standard
+E0141,ខ្សែភ្លើងទែរ 1 x 25mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-008,,,,,,,,,,,,,no_image.png,standard
+E0142,ខ្សែភ្លើងទែរ 1 x 35mm3,,C-002,28,1,1,1, No Tax, exclusive,SC-2-008,,,,,,,,,,,,,no_image.png,standard
+E0143,ខ្សែភ្លើងទែរ 1 x 50mm1,,C-002,28,1,1,1, No Tax, exclusive,SC-2-008,,,,,,,,,,,,,no_image.png,standard
+E0144,ខ្សែភ្លើងទែរ 1 x 70mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-008,,,,,,,,,,,,,no_image.png,standard
+E0145,ខ្សែភ្លើងទែរ 1 x 95mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-008,,,,,,,,,,,,,no_image.png,standard
+E0146,ខ្សែភ្លើងទែរ 1 x 120mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-008,,,,,,,,,,,,,no_image.png,standard
+E0147,ខ្សែភ្លើងទែរ 1 x 150mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-008,,,,,,,,,,,,,no_image.png,standard
+E0148,ខ្សែភ្លើងទែរ 1 x 185mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-008,,,,,,,,,,,,,no_image.png,standard
+E0149,ខ្សែភ្លើងទែរ 1 x 240mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-008,,,,,,,,,,,,,no_image.png,standard
+E0161,ខ្សែភ្លើងស្ពាន់ 2 x 1mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-009,,,,,,,,,,,,,no_image.png,standard
+E0162,ខ្សែភ្លើងស្ពាន់ 2 x 1.5mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-009,,,,,,,,,,,,,no_image.png,standard
+E0163,ខ្សែភ្លើងស្ពាន់ 2 x 2.5mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-009,,,,,,,,,,,,,no_image.png,standard
+E0164,ខ្សែភ្លើងស្ពាន់ 2 x 4mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-009,,,,,,,,,,,,,no_image.png,standard
+E0165,ខ្សែភ្លើងស្ពាន់ 2 x 6mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-009,,,,,,,,,,,,,no_image.png,standard
+E0166,ខ្សែភ្លើងស្ពាន់ 2 x 10mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-009,,,,,,,,,,,,,no_image.png,standard
+E0167,ខ្សែភ្លើងស្ពាន់ 2 x 16mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-009,,,,,,,,,,,,,no_image.png,standard
+E0168,ខ្សែភ្លើងស្ពាន់ 2 x 25mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-009,,,,,,,,,,,,,no_image.png,standard
+E0169,ខ្សែភ្លើងស្ពាន់ 2 x 35mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-009,,,,,,,,,,,,,no_image.png,standard
+E0170,ខ្សែភ្លើងស្ពាន់ 2 x 50mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-009,,,,,,,,,,,,,no_image.png,standard
+E0181,ខ្សែភ្លើងអាលុយមីញ៉ូម 2 x 10mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-010,,,,,,,,,,,,,no_image.png,standard
+E0182,ខ្សែភ្លើងអាលុយមីញ៉ូម 2 x 16mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-010,,,,,,,,,,,,,no_image.png,standard
+E0183,ខ្សែភ្លើងអាលុយមីញ៉ូម 2 x 25mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-010,,,,,,,,,,,,,no_image.png,standard
+E0184,ខ្សែភ្លើងអាលុយមីញ៉ូម 2 x 35mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-010,,,,,,,,,,,,,no_image.png,standard
+E0185,ខ្សែភ្លើងអាលុយមីញ៉ូម 2 x 50mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-010,,,,,,,,,,,,,no_image.png,standard
+E0186,ខ្សែភ្លើងអាលុយមីញ៉ូម 2 x 70mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-010,,,,,,,,,,,,,no_image.png,standard
+E0187,ខ្សែភ្លើងអាលុយមីញ៉ូម 2 x 95mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-010,,,,,,,,,,,,,no_image.png,standard
+E0188,ខ្សែភ្លើងអាលុយមីញ៉ូម 2 x 120mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-010,,,,,,,,,,,,,no_image.png,standard
+E0201,ខ្សែភ្លើងស្ពាន់ 3 x 1mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-011,,,,,,,,,,,,,no_image.png,standard
+E0202,ខ្សែភ្លើងស្ពាន់ 3 x 1.5mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-011,,,,,,,,,,,,,no_image.png,standard
+E0203,ខ្សែភ្លើងស្ពាន់ 3 x 2.5mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-011,,,,,,,,,,,,,no_image.png,standard
+E0204,ខ្សែភ្លើងស្ពាន់ 3 x 4mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-011,,,,,,,,,,,,,no_image.png,standard
+E0205,ខ្សែភ្លើងស្ពាន់ 3 x 6mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-011,,,,,,,,,,,,,no_image.png,standard
+E0206,ខ្សែភ្លើងស្ពាន់ 3 x 10mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-011,,,,,,,,,,,,,no_image.png,standard
+E0207,ខ្សែភ្លើងស្ពាន់ 3 x 16mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-011,,,,,,,,,,,,,no_image.png,standard
+E0208,ខ្សែភ្លើងស្ពាន់ 3 x 25mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-011,,,,,,,,,,,,,no_image.png,standard
+E0209,ខ្សែភ្លើងស្ពាន់ 3 x 35mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-011,,,,,,,,,,,,,no_image.png,standard
+E0210,ខ្សែភ្លើងស្ពាន់ 3C x 50mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-011,,,,,,,,,,,,,no_image.png,standard
+E0211,ខ្សែភ្លើងស្ពាន់ 3C x 70mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-011,,,,,,,,,,,,,no_image.png,standard
+E0212,ខ្សែភ្លើងស្ពាន់ 3C x 95mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-011,,,,,,,,,,,,,no_image.png,standard
+E0213,ខ្សែភ្លើងស្ពាន់ 3C x 120mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-011,,,,,,,,,,,,,no_image.png,standard
+E0214,ខ្សែភ្លើងស្ពាន់ 3C x 150mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-011,,,,,,,,,,,,,no_image.png,standard
+E0221,ខ្សែភ្លើងអាលុយមីញ៉ូម 3 x 35+1x10mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-012,,,,,,,,,,,,,no_image.png,standard
+E0222,ខ្សែភ្លើងអាលុយមីញ៉ូម 3 x 50+1x35mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-012,,,,,,,,,,,,,no_image.png,standard
+E0223,ខ្សែភ្លើងអាលុយមីញ៉ូម 3 x 70+1x35mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-012,,,,,,,,,,,,,no_image.png,standard
+E0224,ខ្សែភ្លើងអាលុយមីញ៉ូម 3 x 70+1x50mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-012,,,,,,,,,,,,,no_image.png,standard
+E0225,ខ្សែភ្លើងអាលុយមីញ៉ូម 3 x 95+1x35mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-012,,,,,,,,,,,,,no_image.png,standard
+E0226,ខ្សែភ្លើងអាលុយមីញ៉ូម 3 x 95+1x50mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-012,,,,,,,,,,,,,no_image.png,standard
+E0227,ខ្សែភ្លើងអាលុយមីញ៉ូម 3 x 95+1x70mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-012,,,,,,,,,,,,,no_image.png,standard
+E0228,ខ្សែភ្លើងអាលុយមីញ៉ូម 3 x 120+1x70mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-012,,,,,,,,,,,,,no_image.png,standard
+E0229,ខ្សែភ្លើងអាលុយមីញ៉ូម 3 x 120+1x95mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-012,,,,,,,,,,,,,no_image.png,standard
+E0230,ខ្សែភ្លើងអាលុយមីញ៉ូម 3 x 150+1x70mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-012,,,,,,,,,,,,,no_image.png,standard
+E0231,ខ្សែភ្លើងអាលុយមីញ៉ូម 3 x 150+1x95mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-012,,,,,,,,,,,,,no_image.png,standard
+E0232,ខ្សែភ្លើងអាលុយមីញ៉ូម 3 x 150+1x120mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-012,,,,,,,,,,,,,no_image.png,standard
+E0233,ខ្សែភ្លើងអាលុយមីញ៉ូម 3 x 185+1x70mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-012,,,,,,,,,,,,,no_image.png,standard
+E0234,ខ្សែភ្លើងអាលុយមីញ៉ូម 3 x 185+1x95mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-012,,,,,,,,,,,,,no_image.png,standard
+E0235,ខ្សែភ្លើងអាលុយមីញ៉ូម 3 x 185+1x120mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-012,,,,,,,,,,,,,no_image.png,standard
+E0236,ខ្សែភ្លើងអាលុយមីញ៉ូម 3 x 240+1x95mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-012,,,,,,,,,,,,,no_image.png,standard
+E0237,ខ្សែភ្លើងអាលុយមីញ៉ូម 3 x 240+1x120mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-012,,,,,,,,,,,,,no_image.png,standard
+E0238,ខ្សែភ្លើងអាលុយមីញ៉ូម 3 x 240+1x150mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-012,,,,,,,,,,,,,no_image.png,standard
+E0251,ខ្សែភ្លើង 4 x1mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-013,,,,,,,,,,,,,no_image.png,standard
+E0252,ខ្សែភ្លើង 4 x1.5mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-013,,,,,,,,,,,,,no_image.png,standard
+E0253,ខ្សែភ្លើង 4 x2.5mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-013,,,,,,,,,,,,,no_image.png,standard
+E0254,ខ្សែភ្លើង 4 x4mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-013,,,,,,,,,,,,,no_image.png,standard
+E0255,ខ្សែភ្លើង 4 x6mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-013,,,,,,,,,,,,,no_image.png,standard
+E0256,ខ្សែភ្លើង 4 x10mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-013,,,,,,,,,,,,,no_image.png,standard
+E0257,ខ្សែភ្លើង 4 x16mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-013,,,,,,,,,,,,,no_image.png,standard
+E0258,ខ្សែភ្លើង 4 x25mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-013,,,,,,,,,,,,,no_image.png,standard
+E0259,ខ្សែភ្លើង 4 x35mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-013,,,,,,,,,,,,,no_image.png,standard
+E0260,ខ្សែភ្លើង 4 x70mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-013,,,,,,,,,,,,,no_image.png,standard
+E0261,ខ្សែភ្លើង 4 x95mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-013,,,,,,,,,,,,,no_image.png,standard
+E0262,ខ្សែភ្លើង 4 x120mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-013,,,,,,,,,,,,,no_image.png,standard
+E0263,ខ្សែភ្លើង 4 x185mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-013,,,,,,,,,,,,,no_image.png,standard
+E0264,ខ្សែភ្លើង 4 x240mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-013,,,,,,,,,,,,,no_image.png,standard
+E0271,ខ្សែភ្លើង 5 x 4mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-014,,,,,,,,,,,,,no_image.png,standard
+E0272,ខ្សែភ្លើង 5 x 10mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-014,,,,,,,,,,,,,no_image.png,standard
+E0273,ខ្សែភ្លើង 5 x16mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-014,,,,,,,,,,,,,no_image.png,standard
+E0274,ខ្សែភ្លើង 5 x 25mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-014,,,,,,,,,,,,,no_image.png,standard
+E0291,ខ្សែភ្លើងស្ពាន់ 7 x 1.5mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-015,,,,,,,,,,,,,no_image.png,standard
+E0292,ខ្សែភ្លើងស្ពាន់ 7 x 2.5mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-015,,,,,,,,,,,,,no_image.png,standard
+E0311,ខ្សែភ្លើងស្ពាន់ 10 x 1mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-016,,,,,,,,,,,,,no_image.png,standard
+E0312,ខ្សែភ្លើងស្ពាន់ 10 x 1.5mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-016,,,,,,,,,,,,,no_image.png,standard
+E0313,ខ្សែភ្លើងស្ពាន់ 10 x 2.5mm2,,C-002,28,1,1,1, No Tax, exclusive,SC-2-016,,,,,,,,,,,,,no_image.png,standard
+E0331,ឌីសង់ទ័រ 1P 6A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-017,,,,,,,,,,,,,no_image.png,standard
+E0332,ឌីសង់ទ័រ 1P 10A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-017,,,,,,,,,,,,,no_image.png,standard
+E0333,ឌីសង់ទ័រ 1P 16A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-017,,,,,,,,,,,,,no_image.png,standard
+E0334,ឌីសង់ទ័រ 1P 20A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-017,,,,,,,,,,,,,no_image.png,standard
+E0335,ឌីសង់ទ័រ 1P 25A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-017,,,,,,,,,,,,,no_image.png,standard
+E0336,ឌីសង់ទ័រ 1P 32A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-017,,,,,,,,,,,,,no_image.png,standard
+E0337,ឌីសង់ទ័រ 1P 40A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-017,,,,,,,,,,,,,no_image.png,standard
+E0338,ឌីសង់ទ័រ 1P 50A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-017,,,,,,,,,,,,,no_image.png,standard
+E0339,ឌីសង់ទ័រ 1P 63A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-017,,,,,,,,,,,,,no_image.png,standard
+E0351,ឌីសង់ទ័រ 2P 6A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+E0352,ឌីសង់ទ័រ 2P 10A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+E0353,ឌីសង់ទ័រ 2P 16A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+E0354,ឌីសង់ទ័រ 2P 20A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+E0355,ឌីសង់ទ័រ 2P 25A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+E0356,ឌីសង់ទ័រ 2P 32A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+E0357,ឌីសង់ទ័រ 2P 40A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+E0358,ឌីសង់ទ័រ 2P 50A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+E0359,ឌីសង់ទ័រ 2P 63A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-018,,,,,,,,,,,,,no_image.png,standard
+E0371,ឌីសង់ទ័រ 3P 10A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+E0372,ឌីសង់ទ័រ 3P 16A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+E0373,ឌីសង់ទ័រ 3P 20A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+E0374,ឌីសង់ទ័រ 3P 25A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+E0375,ឌីសង់ទ័រ 3P 32A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+E0376,ឌីសង់ទ័រ 3P 40A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+E0377,ឌីសង់ទ័រ 3P 50A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+E0378,ឌីសង់ទ័រ 3P 63A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+E0379,ឌីសង់ទ័រ 3P 80A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+E0380,ឌីសង់ទ័រ 3P 100A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+E0381,ឌីសង់ទ័រ 3P 125A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+E0382,ឌីសង់ទ័រ 3P 150A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+E0383,ឌីសង់ទ័រ 3P 175A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+E0384,ឌីសង់ទ័រ 3P 200A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+E0385,ឌីសង់ទ័រ 3P 250A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+E0386,ឌីសង់ទ័រ 3P 300A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+E0387,ឌីសង់ទ័រ 3P 400A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+E0388,ឌីសង់ទ័រ 3P 630A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+E0389,ឌីសង់ទ័រ 3P 650A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+E0390,ឌីសង់ទ័រ 3P 800A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-019,,,,,,,,,,,,,no_image.png,standard
+E0401,ឌីសង់ទ័រ 4P 40A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+E0402,ឌីសង់ទ័រ 4P 50A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+E0403,ឌីសង់ទ័រ 4P 63A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+E0404,ឌីសង់ទ័រ 4P 80A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+E0405,ឌីសង់ទ័រ 4P 100A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+E0406,ឌីសង់ទ័រ 4P 200A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+E0407,ឌីសង់ទ័រ 4P 250A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+E0408,ឌីសង់ទ័រ 4P 600A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-020,,,,,,,,,,,,,no_image.png,standard
+E0421,ប្រអប់ឌីសង់ទ័រ 1 x 2,,C-002,11,1,1,1, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+E0422,ប្រអប់ឌីសង់ទ័រ 2 x 4,,C-002,11,1,1,1, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+E0423,ប្រអប់ឌីសង់ទ័រ 5 x 8,,C-002,24,1,1,1, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+E0424,ប្រអប់ឌីសង់ទ័រ 6 x 10,,C-002,24,1,1,1, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+E0425,ប្រអប់ឌីសង់ទ័រ 7 x 9,,C-002,24,1,1,1, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+E0426,ប្រអប់ឌីសង់ទ័រ 8 x 10,,C-002,24,1,1,1, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+E0427,ប្រអប់ឌីសង់ទ័រ 8 x 16,,C-002,24,1,1,1, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+E0428,ប្រអប់ឌីសង់ទ័រ 18 x 20,,C-002,24,1,1,1, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+E0429,ប្រអប់ឌីសង់ទ័រ 26 x 28,,C-002,24,1,1,1, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+E0430,ប្រអប់ឌីសង់ទ័រ 28 x 32,,C-002,24,1,1,1, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+E0431,ប្រអប់ឌីសង់ទ័រ 38 x 40,,C-002,24,1,1,1, No Tax, exclusive,SC-2-021,,,,,,,,,,,,,no_image.png,standard
+E0441,កុងកាត់ទ័រ 110V 25A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+E0442,កុងកាត់ទ័រ 110V 50A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+E0443,កុងកាត់ទ័រ 110V 125A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+E0444,កុងកាត់ទ័រ 220V 18A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+E0445,កុងកាត់ទ័រ 220V 22A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+E0446,កុងកាត់ទ័រ 220V 25A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+E0447,កុងកាត់ទ័រ 220V 32A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+E0448,កុងកាត់ទ័រ 220V 40A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+E0449,កុងកាត់ទ័រ 220V 50A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+E0450,កុងកាត់ទ័រ 220V 63A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+E0451,កុងកាត់ទ័រ 220V 65A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+E0452,កុងកាត់ទ័រ 220V 85A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+E0453,កុងកាត់ទ័រ 380V 15A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+E0454,កុងកាត់ទ័រ 380V 20A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+E0455,កុងកាត់ទ័រ 380V 25A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+E0456,កុងកាត់ទ័រ 380V 32A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+E0457,កុងកាត់ទ័រ 380V 40A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+E0458,កុងកាត់ទ័រ 380V 50A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+E0459,កុងកាត់ទ័រ 380V 63A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+E0460,កុងកាត់ទ័រ 380V 80A,,C-002,11,1,1,1, No Tax, exclusive,SC-2-022,,,,,,,,,,,,,no_image.png,standard
+E0476,ទុយោភ្លើង 16 លី,,C-002,18,1,1,1, No Tax, exclusive,SC-2-023,,,,,,,,,,,,,no_image.png,standard
+E0477,ទុយោភ្លើង 20 លី,,C-002,18,1,1,1, No Tax, exclusive,SC-2-023,,,,,,,,,,,,,no_image.png,standard
+E0478,ទុយោភ្លើង 25 លី,,C-002,18,1,1,1, No Tax, exclusive,SC-2-023,,,,,,,,,,,,,no_image.png,standard
+E0479,ទុយោភ្លើង 32 លី,,C-002,18,1,1,1, No Tax, exclusive,SC-2-023,,,,,,,,,,,,,no_image.png,standard
+E0480,ទុយោភ្លើង 40 លី,,C-002,18,1,1,1, No Tax, exclusive,SC-2-023,,,,,,,,,,,,,no_image.png,standard
+E0481,ទុយោភ្លើង 50 លី,,C-002,18,1,1,1, No Tax, exclusive,SC-2-023,,,,,,,,,,,,,no_image.png,standard
+E0491,ហ្គែនរួញ 16 លី,,C-002,16,1,1,1, No Tax, exclusive,SC-2-024,,,,,,,,,,,,,no_image.png,standard
+E0492,ហ្គែនរួញ 20 លី,,C-002,16,1,1,1, No Tax, exclusive,SC-2-024,,,,,,,,,,,,,no_image.png,standard
+E0493,ហ្គែនរួញ 25 លី,,C-002,16,1,1,1, No Tax, exclusive,SC-2-024,,,,,,,,,,,,,no_image.png,standard
+E0494,ហ្គែនរួញ 32 លី,,C-002,16,1,1,1, No Tax, exclusive,SC-2-024,,,,,,,,,,,,,no_image.png,standard
+E0495,ហ្គែនរួញ 40 លី,,C-002,16,1,1,1, No Tax, exclusive,SC-2-024,,,,,,,,,,,,,no_image.png,standard
+E0501,ក្រចាប់ទុយោភ្លើង 16 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+E0502,ក្រចាប់ទុយោភ្លើង 20 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+E0503,ក្រចាប់ទុយោភ្លើង 25 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+E0504,ក្រចាប់ទុយោភ្លើង 32 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+E0505,ក្រចាប់ទុយោភ្លើង 40 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-025,,,,,,,,,,,,,no_image.png,standard
+E0521,កែងទុយោភ្លើង 16 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-026,,,,,,,,,,,,,no_image.png,standard
+E0522,កែងទុយោភ្លើង 20 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-026,,,,,,,,,,,,,no_image.png,standard
+E0523,កែងទុយោភ្លើង 25 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-026,,,,,,,,,,,,,no_image.png,standard
+E0524,កែងទុយោភ្លើង 32 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-026,,,,,,,,,,,,,no_image.png,standard
+E0525,កែងទុយោភ្លើង 40 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-026,,,,,,,,,,,,,no_image.png,standard
+E0531,តេទុយោភ្លើង 16 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-027,,,,,,,,,,,,,no_image.png,standard
+E0532,តេទុយោភ្លើង 20 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-027,,,,,,,,,,,,,no_image.png,standard
+E0533,តេទុយោភ្លើង 25 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-027,,,,,,,,,,,,,no_image.png,standard
+E0534,តេទុយោភ្លើង 32 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-027,,,,,,,,,,,,,no_image.png,standard
+E0535,តេទុយោភ្លើង 40 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-027,,,,,,,,,,,,,no_image.png,standard
+E0541,សុងទុយោភ្លើង 16 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-028,,,,,,,,,,,,,no_image.png,standard
+E0542,សុងទុយោភ្លើង 20 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-028,,,,,,,,,,,,,no_image.png,standard
+E0543,សុងទុយោភ្លើង 25 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-028,,,,,,,,,,,,,no_image.png,standard
+E0544,សុងទុយោភ្លើង 32 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-028,,,,,,,,,,,,,no_image.png,standard
+E0545,សុងទុយោភ្លើង 40 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-028,,,,,,,,,,,,,no_image.png,standard
+E0551,សុងភ្លើង ក មូល 16 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-029,,,,,,,,,,,,,no_image.png,standard
+E0552,សុងភ្លើង ក មូល 20 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-029,,,,,,,,,,,,,no_image.png,standard
+E0553,សុងភ្លើង ក មូល 25 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-029,,,,,,,,,,,,,no_image.png,standard
+E0554,សុងភ្លើង ក មូល 32 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-029,,,,,,,,,,,,,no_image.png,standard
+E0555,សុងភ្លើង ក មូល 40 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-029,,,,,,,,,,,,,no_image.png,standard
+E0561,សុងទុយោភ្លើង 20-16 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-030,,,,,,,,,,,,,no_image.png,standard
+E0562,សុងទុយោភ្លើង 25-20 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-030,,,,,,,,,,,,,no_image.png,standard
+E0563,សុងទុយោភ្លើង 32-20 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-030,,,,,,,,,,,,,no_image.png,standard
+E0564,សុងទុយោភ្លើង 32-25 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-030,,,,,,,,,,,,,no_image.png,standard
+E0565,សុងទុយោភ្លើង 40-25 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-030,,,,,,,,,,,,,no_image.png,standard
+E0566,សុងទុយោភ្លើង 40-32 លី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-030,,,,,,,,,,,,,no_image.png,standard
+E0581,ខ្នែងបំបែក 20 មុខ 1,,C-002,11,1,1,1, No Tax, exclusive,SC-2-031,,,,,,,,,,,,,no_image.png,standard
+E0582,ខ្នែងបំបែក ត្រង់ 20 មុខ 2,,C-002,11,1,1,1, No Tax, exclusive,SC-2-031,,,,,,,,,,,,,no_image.png,standard
+E0583,ខ្នែងបំបែក កែង 20 មុខ 2,,C-002,11,1,1,1, No Tax, exclusive,SC-2-031,,,,,,,,,,,,,no_image.png,standard
+E0584,ខ្នែងបំបែក 20 មុខ 3,,C-002,11,1,1,1, No Tax, exclusive,SC-2-031,,,,,,,,,,,,,no_image.png,standard
+E0585,ខ្នែងបំបែក 20 មុខ 4,,C-002,11,1,1,1, No Tax, exclusive,SC-2-031,,,,,,,,,,,,,no_image.png,standard
+E0586,ខ្នែងបំបែក 25 មុខ 1,,C-002,11,1,1,1, No Tax, exclusive,SC-2-031,,,,,,,,,,,,,no_image.png,standard
+E0587,ខ្នែងបំបែក ត្រង់ 25 មុខ 2,,C-002,11,1,1,1, No Tax, exclusive,SC-2-031,,,,,,,,,,,,,no_image.png,standard
+E0588,ខ្នែងបំបែក កែង 25 មុខ 2,,C-002,11,1,1,1, No Tax, exclusive,SC-2-031,,,,,,,,,,,,,no_image.png,standard
+E0589,ខ្នែងបំបែក 25 មុខ 3,,C-002,11,1,1,1, No Tax, exclusive,SC-2-031,,,,,,,,,,,,,no_image.png,standard
+E0590,ខ្នែងបំបែក 25 មុខ 4,,C-002,11,1,1,1, No Tax, exclusive,SC-2-031,,,,,,,,,,,,,no_image.png,standard
+E0591,ខ្នែងបំបែក 32 មុខ 1,,C-002,11,1,1,1, No Tax, exclusive,SC-2-031,,,,,,,,,,,,,no_image.png,standard
+E0592,ខ្នែងបំបែក ត្រង់ 32 មុខ 2,,C-002,11,1,1,1, No Tax, exclusive,SC-2-031,,,,,,,,,,,,,no_image.png,standard
+E0593,ខ្នែងបំបែក កែង 32 មុខ 2,,C-002,11,1,1,1, No Tax, exclusive,SC-2-031,,,,,,,,,,,,,no_image.png,standard
+E0594,ខ្នែងបំបែក 32 មុខ 3,,C-002,11,1,1,1, No Tax, exclusive,SC-2-031,,,,,,,,,,,,,no_image.png,standard
+E0595,ខ្នែងបំបែក 32 មុខ 4,,C-002,11,1,1,1, No Tax, exclusive,SC-2-031,,,,,,,,,,,,,no_image.png,standard
+E0596,ខ្នែងបំបែក 40 មុខ 1,,C-002,11,1,1,1, No Tax, exclusive,SC-2-031,,,,,,,,,,,,,no_image.png,standard
+E0597,ខ្នែងបំបែក ត្រង់ 40 មុខ 2,,C-002,11,1,1,1, No Tax, exclusive,SC-2-031,,,,,,,,,,,,,no_image.png,standard
+E0598,ខ្នែងបំបែក កែង 40 មុខ 2,,C-002,11,1,1,1, No Tax, exclusive,SC-2-031,,,,,,,,,,,,,no_image.png,standard
+E0599,ខ្នែងបំបែក 40 មុខ 3,,C-002,11,1,1,1, No Tax, exclusive,SC-2-031,,,,,,,,,,,,,no_image.png,standard
+E0600,ខ្នែងបំបែក 40 មុខ 4,,C-002,11,1,1,1, No Tax, exclusive,SC-2-031,,,,,,,,,,,,,no_image.png,standard
+E0621,បតចែកខ្សែភ្លើង 50 x 50 (0.5 x 0.5 តឹក),,C-002,11,1,1,1, No Tax, exclusive,SC-2-032,,,,,,,,,,,,,no_image.png,standard
+E0622,បតចែកខ្សែភ្លើង 70 x 120 (0.7 x 1.2 តឹក),,C-002,11,1,1,1, No Tax, exclusive,SC-2-032,,,,,,,,,,,,,no_image.png,standard
+E0623,បតចែកខ្សែភ្លើង 100 x 100 (1 x 1 តឹក),,C-002,11,1,1,1, No Tax, exclusive,SC-2-032,,,,,,,,,,,,,no_image.png,standard
+E0624,បតចែកខ្សែភ្លើង 150 x 150 (1.5 x 1.5 តឹក),,C-002,11,1,1,1, No Tax, exclusive,SC-2-032,,,,,,,,,,,,,no_image.png,standard
+E0625,បតចែកខ្សែភ្លើង 200 x 200 (2 x 2 តឹក),,C-002,11,1,1,1, No Tax, exclusive,SC-2-032,,,,,,,,,,,,,no_image.png,standard
+E0641,ប្រអប់បំបែកជ័រ 77 x 77 x 20,,C-002,11,1,1,1, No Tax, exclusive,SC-2-033,,,,,,,,,,,,,no_image.png,standard
+E0642,ប្រអប់បំបែកជ័រ 77 x 77 x 25,,C-002,11,1,1,1, No Tax, exclusive,SC-2-033,,,,,,,,,,,,,no_image.png,standard
+E0643,ប្រអប់បំបែកជ័រ 77 x 77 x 32,,C-002,11,1,1,1, No Tax, exclusive,SC-2-033,,,,,,,,,,,,,no_image.png,standard
+E0644,ប្រអប់បំបែកជ័រ 77 x 77 x 40,,C-002,11,1,1,1, No Tax, exclusive,SC-2-033,,,,,,,,,,,,,no_image.png,standard
+E0661,ប្រអប់រត់ខ្សែភ្លើង 1,,C-002,18,1,1,1, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+E0662,ប្រអប់រត់ខ្សែភ្លើង 2,,C-002,18,1,1,1, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+E0663,ប្រអប់រត់ខ្សែភ្លើង 3,,C-002,18,1,1,1, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+E0664,ប្រអប់រត់ខ្សែភ្លើង 4,,C-002,18,1,1,1, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+E0665,ប្រអប់រត់ខ្សែភ្លើង 35 x 50,,C-002,18,1,1,1, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+E0666,ប្រអប់រត់ខ្សែភ្លើង 40 x 60,,C-002,18,1,1,1, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+E0667,ប្រអប់រត់ខ្សែភ្លើង 50 x 50,,C-002,18,1,1,1, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+E0668,ប្រអប់រត់ខ្សែភ្លើង 50 x 75,,C-002,18,1,1,1, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+E0669,ប្រអប់រត់ខ្សែភ្លើង 50 x 100,,C-002,18,1,1,1, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+E0670,ប្រអប់រត់ខ្សែភ្លើង 80 x 100,,C-002,18,1,1,1, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+E0671,ប្រអប់រត់ខ្សែភ្លើង 100 x 100,,C-002,18,1,1,1, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+E0672,ប្រអប់រត់ខ្សែភ្លើង 100 x 200,,C-002,18,1,1,1, No Tax, exclusive,SC-2-034,,,,,,,,,,,,,no_image.png,standard
+E0691,រឺស័រពត់ទុយោភ្លើង 16 លី,,C-002,18,1,1,1, No Tax, exclusive,SC-2-035,,,,,,,,,,,,,no_image.png,standard
+E0692,រឺស័រពត់ទុយោភ្លើង 20 លី,,C-002,18,1,1,1, No Tax, exclusive,SC-2-035,,,,,,,,,,,,,no_image.png,standard
+E0693,រឺស័រពត់ទុយោភ្លើង 25 លី,,C-002,18,1,1,1, No Tax, exclusive,SC-2-035,,,,,,,,,,,,,no_image.png,standard
+E0694,រឺស័រពត់ទុយោភ្លើង 32 លី,,C-002,18,1,1,1, No Tax, exclusive,SC-2-035,,,,,,,,,,,,,no_image.png,standard
+E0701,ខ្សែនាំ 10 ម៉ែត្រ,,C-002,8,1,1,1, No Tax, exclusive,SC-2-036,,,,,,,,,,,,,no_image.png,standard
+E0702,ខ្សែនាំ 15 ម៉ែត្រ,,C-002,8,1,1,1, No Tax, exclusive,SC-2-036,,,,,,,,,,,,,no_image.png,standard
+E0703,ខ្សែនាំ 20 ម៉ែត្រ,,C-002,8,1,1,1, No Tax, exclusive,SC-2-036,,,,,,,,,,,,,no_image.png,standard
+E0704,ខ្សែនាំ 25 ម៉ែត្រ,,C-002,8,1,1,1, No Tax, exclusive,SC-2-036,,,,,,,,,,,,,no_image.png,standard
+E0705,ខ្សែនាំ 30 ម៉ែត្រ,,C-002,8,1,1,1, No Tax, exclusive,SC-2-036,,,,,,,,,,,,,no_image.png,standard
+E0711,តាកេជ័រ 6 លី ,,C-002,3,1,1,1, No Tax, exclusive,SC-2-037,,,,,,,,,,,,,no_image.png,standard
+E0712,តាកេជ័រ 8 លី ,,C-002,3,1,1,1, No Tax, exclusive,SC-2-037,,,,,,,,,,,,,no_image.png,standard
+E0713,តាកេជ័រ 10 លី ,,C-002,3,1,1,1, No Tax, exclusive,SC-2-037,,,,,,,,,,,,,no_image.png,standard
+E0721,វីសខ្មៅ 1.5 ហ៊ុន,,C-002,3,1,1,1, No Tax, exclusive,SC-2-038,,,,,,,,,,,,,no_image.png,standard
+E0722,វីសខ្មៅ 2 ហ៊ុន,,C-002,3,1,1,1, No Tax, exclusive,SC-2-038,,,,,,,,,,,,,no_image.png,standard
+E0723,វីសខ្មៅ 2.5 ហ៊ុន,,C-002,3,1,1,1, No Tax, exclusive,SC-2-038,,,,,,,,,,,,,no_image.png,standard
+E0724,វីសខ្មៅ 3 ហ៊ុន,,C-002,3,1,1,1, No Tax, exclusive,SC-2-038,,,,,,,,,,,,,no_image.png,standard
+E0725,វីសខ្មៅ 4 ហ៊ុន,,C-002,3,1,1,1, No Tax, exclusive,SC-2-038,,,,,,,,,,,,,no_image.png,standard
+E0726,វីសខ្មៅ 5 ហ៊ុន,,C-002,3,1,1,1, No Tax, exclusive,SC-2-038,,,,,,,,,,,,,no_image.png,standard
+E0727,វីសខ្មៅ 6 ហ៊ុន,,C-002,3,1,1,1, No Tax, exclusive,SC-2-038,,,,,,,,,,,,,no_image.png,standard
+E0751,ដែកគោលខ្សែភ្លើង 2.5 ,,C-002,3,1,1,1, No Tax, exclusive,SC-2-039,,,,,,,,,,,,,no_image.png,standard
+E0752,ដែកគោលខ្សែភ្លើង 4,,C-002,3,1,1,1, No Tax, exclusive,SC-2-039,,,,,,,,,,,,,no_image.png,standard
+E0753,ដែកគោលខ្សែភ្លើង 6,,C-002,3,1,1,1, No Tax, exclusive,SC-2-039,,,,,,,,,,,,,no_image.png,standard
+E0754,ដែកគោលខ្សែភ្លើង 10,,C-002,3,1,1,1, No Tax, exclusive,SC-2-039,,,,,,,,,,,,,no_image.png,standard
+E0755,ដែកគោលខ្សែភ្លើង 16,,C-002,3,1,1,1, No Tax, exclusive,SC-2-039,,,,,,,,,,,,,no_image.png,standard
+E0756,ដែកគោលខ្សែភ្លើង 25,,C-002,3,1,1,1, No Tax, exclusive,SC-2-039,,,,,,,,,,,,,no_image.png,standard
+E0766,ខ្សែរិត 1 តឹក,,C-002,3,1,1,1, No Tax, exclusive,SC-2-040,,,,,,,,,,,,,no_image.png,standard
+E0767,ខ្សែរិត 2 តឹក,,C-002,3,1,1,1, No Tax, exclusive,SC-2-040,,,,,,,,,,,,,no_image.png,standard
+E0768,ខ្សែរិត 2.5 តឹក,,C-002,3,1,1,1, No Tax, exclusive,SC-2-040,,,,,,,,,,,,,no_image.png,standard
+E0769,ខ្សែរិត 3 តឹក,,C-002,3,1,1,1, No Tax, exclusive,SC-2-040,,,,,,,,,,,,,no_image.png,standard
+E0770,ខ្សែរិត 3.5 តឹក,,C-002,3,1,1,1, No Tax, exclusive,SC-2-040,,,,,,,,,,,,,no_image.png,standard
+E0771,ខ្សែរិត 4 តឹក,,C-002,3,1,1,1, No Tax, exclusive,SC-2-040,,,,,,,,,,,,,no_image.png,standard
+E0772,ខ្សែរិតខ្មៅ 4 តឹក,,C-002,3,1,1,1, No Tax, exclusive,SC-2-040,,,,,,,,,,,,,no_image.png,standard
+E0773,ខ្សែរិតខ្មៅ 5 តឹក,,C-002,3,1,1,1, No Tax, exclusive,SC-2-040,,,,,,,,,,,,,no_image.png,standard
+E0774,ខ្សែរិតខ្មៅ 5 តឹក,,C-002,3,1,1,1, No Tax, exclusive,SC-2-040,,,,,,,,,,,,,no_image.png,standard
+E0775,ខ្សែរិតខ្មៅ 6 តឹក,,C-002,3,1,1,1, No Tax, exclusive,SC-2-040,,,,,,,,,,,,,no_image.png,standard
+E0791,ស្គុតរុំ,,C-002,16,1,1,1, No Tax, exclusive,SC-2-041,,,,,,,,,,,,,no_image.png,standard
+E0792,ស្គុតរុំការពារទឹក 3M ,,C-002,16,1,1,1, No Tax, exclusive,SC-2-041,,,,,,,,,,,,,no_image.png,standard
+E0801,ក្រចាប់ប៉ុងខ្សែភ្លើង 35mm2,,C-002,11,1,1,1, No Tax, exclusive,SC-2-042,,,,,,,,,,,,,no_image.png,standard
+E0802,ក្រចាប់ប៉ុងខ្សែភ្លើង 50mm2,,C-002,11,1,1,1, No Tax, exclusive,SC-2-042,,,,,,,,,,,,,no_image.png,standard
+E0803,ក្រចាប់ប៉ុងខ្សែភ្លើង 70mm2,,C-002,11,1,1,1, No Tax, exclusive,SC-2-042,,,,,,,,,,,,,no_image.png,standard
+E0804,ក្រចាប់ប៉ុងខ្សែភ្លើង 85mm2,,C-002,11,1,1,1, No Tax, exclusive,SC-2-042,,,,,,,,,,,,,no_image.png,standard
+E0805,ក្រចាប់ប៉ុងខ្សែភ្លើង 95mm2,,C-002,11,1,1,1, No Tax, exclusive,SC-2-042,,,,,,,,,,,,,no_image.png,standard
+E0806,ក្រចាប់ប៉ុងខ្សែភ្លើង 120mm2,,C-002,11,1,1,1, No Tax, exclusive,SC-2-042,,,,,,,,,,,,,no_image.png,standard
+E0807,ក្រចាប់ប៉ុងខ្សែភ្លើង 150mm2,,C-002,11,1,1,1, No Tax, exclusive,SC-2-042,,,,,,,,,,,,,no_image.png,standard
+E0808,ក្រចាប់ប៉ុងខ្សែភ្លើង 185mm3,,C-002,11,1,1,1, No Tax, exclusive,SC-2-042,,,,,,,,,,,,,no_image.png,standard
+E0822,កង្ហារបឺតពិដាន 200 x 200,,C-002,12,1,1,1, No Tax, exclusive,SC-2-043,,,,,,,,,,,,,no_image.png,standard
+E0823,កង្ហារបឺតពិដាន 250 x 250,,C-002,12,1,1,1, No Tax, exclusive,SC-2-043,,,,,,,,,,,,,no_image.png,standard
+E0824,កង្ហារបឺតពិដាន 300 x 300,,C-002,12,1,1,1, No Tax, exclusive,SC-2-043,,,,,,,,,,,,,no_image.png,standard
+E0825,កង្ហារបឺតជញ្ជាំង 150 x 150,,C-002,12,1,1,1, No Tax, exclusive,SC-2-043,,,,,,,,,,,,,no_image.png,standard
+E0826,កង្ហារបឺតជញ្ជាំង 200 x 200,,C-002,12,1,1,1, No Tax, exclusive,SC-2-043,,,,,,,,,,,,,no_image.png,standard
+E0827,កង្ហារបឺតជញ្ជាំង 250 x 250,,C-002,12,1,1,1, No Tax, exclusive,SC-2-043,,,,,,,,,,,,,no_image.png,standard
+E0828,កង្ហារបឺតជញ្ជាំង 300 x 300,,C-002,12,1,1,1, No Tax, exclusive,SC-2-043,,,,,,,,,,,,,no_image.png,standard
+E0841,កង្ហារជាប់ជញ្ជាំង 12",,C-002,12,1,1,1, No Tax, exclusive,SC-2-044,,,,,,,,,,,,,no_image.png,standard
+E0842,កង្ហារជាប់ជញ្ជាំង 14",,C-002,12,1,1,1, No Tax, exclusive,SC-2-044,,,,,,,,,,,,,no_image.png,standard
+E0843,កង្ហារជាប់ជញ្ជាំង 16",,C-002,12,1,1,1, No Tax, exclusive,SC-2-044,,,,,,,,,,,,,no_image.png,standard
+E0844,កង្ហារជាប់ជញ្ជាំង 18",,C-002,12,1,1,1, No Tax, exclusive,SC-2-044,,,,,,,,,,,,,no_image.png,standard
+E0845,កង្ហារជាប់ជញ្ជាំង 20",,C-002,12,1,1,1, No Tax, exclusive,SC-2-044,,,,,,,,,,,,,no_image.png,standard
+E0811,កង្ហារ បញ្ឈរ 12",,C-002,12,1,1,1, No Tax, exclusive,SC-2-045,,,,,,,,,,,,,no_image.png,standard
+E0812,កង្ហារ បញ្ឈរ 14",,C-002,12,1,1,1, No Tax, exclusive,SC-2-045,,,,,,,,,,,,,no_image.png,standard
+E0813,កង្ហារ បញ្ឈរ 16",,C-002,12,1,1,1, No Tax, exclusive,SC-2-045,,,,,,,,,,,,,no_image.png,standard
+E0814,កង្ហារ បញ្ឈរ 18",,C-002,12,1,1,1, No Tax, exclusive,SC-2-045,,,,,,,,,,,,,no_image.png,standard
+E0815,កង្ហារ បញ្ឈរ 20",,C-002,12,1,1,1, No Tax, exclusive,SC-2-045,,,,,,,,,,,,,no_image.png,standard
+E0822,កណ្តឹង ក្រែន,,C-002,11,1,1,1, No Tax, exclusive,SC-2-046,,,,,,,,,,,,,no_image.png,standard
+E0831,ពោងទឹក​អូតូ,,C-002,14,1,1,1, No Tax, exclusive,SC-2-047,,,,,,,,,,,,,no_image.png,standard
+E0841,ទូដែក 3 x 4  (ហ្វីប-ធម្មតា-ការពារទឹកភ្លៀង),,C-002,19,1,1,1, No Tax, exclusive,SC-2-048,,,,,,,,,,,,,no_image.png,standard
+E0842,ទូដែក 4 x 5,,C-002,19,1,1,1, No Tax, exclusive,SC-2-048,,,,,,,,,,,,,no_image.png,standard
+E0843,ទូដែក 4 x 6,,C-002,19,1,1,1, No Tax, exclusive,SC-2-048,,,,,,,,,,,,,no_image.png,standard
+E0844,ទូដែក 5 x 8,,C-002,19,1,1,1, No Tax, exclusive,SC-2-048,,,,,,,,,,,,,no_image.png,standard
+E0845,ទូដែក 6 x 6,,C-002,19,1,1,1, No Tax, exclusive,SC-2-048,,,,,,,,,,,,,no_image.png,standard
+E0846,ទូដែក 6 x 8,,C-002,19,1,1,1, No Tax, exclusive,SC-2-048,,,,,,,,,,,,,no_image.png,standard
+E0847,ទូដែក 8 x 10,,C-002,19,1,1,1, No Tax, exclusive,SC-2-048,,,,,,,,,,,,,no_image.png,standard
+E0861,តាមជាក់ស្តែង,,C-002,14,1,1,1, No Tax, exclusive,SC-2-049,,,,,,,,,,,,,no_image.png,standard
+E0862,តាមជាក់ស្តែង,,C-002,14,1,1,1, No Tax, exclusive,SC-2-049,,,,,,,,,,,,,no_image.png,standard
+E0863,តាមជាក់ស្តែង,,C-002,14,1,1,1, No Tax, exclusive,SC-2-049,,,,,,,,,,,,,no_image.png,standard
+E0891,កុងទ័រ 220v - 6 A,,C-002,12,1,1,1, No Tax, exclusive,SC-2-050,,,,,,,,,,,,,no_image.png,standard
+E0892,កុងទ័រ 220v - 10 A,,C-002,12,1,1,1, No Tax, exclusive,SC-2-050,,,,,,,,,,,,,no_image.png,standard
+E0893,កុងទ័រ 220v - 20 A,,C-002,12,1,1,1, No Tax, exclusive,SC-2-050,,,,,,,,,,,,,no_image.png,standard
+E0894,កុងទ័រ 220v - 25 A,,C-002,12,1,1,1, No Tax, exclusive,SC-2-050,,,,,,,,,,,,,no_image.png,standard
+E0895,កុងទ័រ 220v - 32 A,,C-002,12,1,1,1, No Tax, exclusive,SC-2-050,,,,,,,,,,,,,no_image.png,standard
+E0896,កុងទ័រ 220v - 40 A,,C-002,12,1,1,1, No Tax, exclusive,SC-2-050,,,,,,,,,,,,,no_image.png,standard
+E0897,កុងទ័រ 220v - 50 A,,C-002,12,1,1,1, No Tax, exclusive,SC-2-050,,,,,,,,,,,,,no_image.png,standard
+E0898,កុងទ័រ 220v - 63 A,,C-002,12,1,1,1, No Tax, exclusive,SC-2-050,,,,,,,,,,,,,no_image.png,standard
+E0899,កុងទ័រ 220v - 85 A,,C-002,12,1,1,1, No Tax, exclusive,SC-2-050,,,,,,,,,,,,,no_image.png,standard
+E0900,កុងទ័រ 2P -5- 20 A,,C-002,12,1,1,1, No Tax, exclusive,SC-2-050,,,,,,,,,,,,,no_image.png,standard
+E0901,កុងទ័រ 2P -5- 30 A,,C-002,12,1,1,1, No Tax, exclusive,SC-2-050,,,,,,,,,,,,,no_image.png,standard
+E0902,កុងទ័រ 3P -5- 20 A,,C-002,12,1,1,1, No Tax, exclusive,SC-2-050,,,,,,,,,,,,,no_image.png,standard
+E0903,កុងទ័រ 3P -10- 20 A,,C-002,12,1,1,1, No Tax, exclusive,SC-2-050,,,,,,,,,,,,,no_image.png,standard
+E0904,កុងទ័រ 3P -15- 45 A,,C-002,12,1,1,1, No Tax, exclusive,SC-2-050,,,,,,,,,,,,,no_image.png,standard
+E0905,កុងទ័រ 3P -20- 80 A,,C-002,12,1,1,1, No Tax, exclusive,SC-2-050,,,,,,,,,,,,,no_image.png,standard
+E0906,កុងទ័រ 3P -10- 100 A,,C-002,12,1,1,1, No Tax, exclusive,SC-2-050,,,,,,,,,,,,,no_image.png,standard
+E0907,កុងទ័រ 3P -50- 100 A,,C-002,12,1,1,1, No Tax, exclusive,SC-2-050,,,,,,,,,,,,,no_image.png,standard
+E0908,កុងទ័រ 3P -30- 120 A,,C-002,12,1,1,1, No Tax, exclusive,SC-2-050,,,,,,,,,,,,,no_image.png,standard
+E0931,ឌុយភ្លើងឈ្មោល ,,C-002,11,1,1,1, No Tax, exclusive,SC-2-051,,,,,,,,,,,,,no_image.png,standard
+E0932,ឌុយភ្លើង ញី,,C-002,11,1,1,1, No Tax, exclusive,SC-2-051,,,,,,,,,,,,,no_image.png,standard
+E0951,ព្រីរន្ធ 2,,C-002,11,1,1,1, No Tax, exclusive,SC-2-052,,,,,,,,,,,,,no_image.png,standard
+E0952,ព្រីរន្ធ 3,,C-002,11,1,1,1, No Tax, exclusive,SC-2-052,,,,,,,,,,,,,no_image.png,standard
+E0953,ព្រីរន្ធ 2+3,,C-002,11,1,1,1, No Tax, exclusive,SC-2-052,,,,,,,,,,,,,no_image.png,standard
+E0954,ព្រីរន្ធ 3+4,,C-002,11,1,1,1, No Tax, exclusive,SC-2-052,,,,,,,,,,,,,no_image.png,standard
+E1021,កុងតាក់ចុច 1 រន្ធព្រី 1,,C-002,11,1,1,1, No Tax, exclusive,SC-2-053,,,,,,,,,,,,,no_image.png,standard
+E1022,កុងតាក់ចុច 1 រន្ធព្រី 2,,C-002,11,1,1,1, No Tax, exclusive,SC-2-053,,,,,,,,,,,,,no_image.png,standard
+E1023,កុងតាក់ចុច 2 រន្ធព្រី 1,,C-002,11,1,1,1, No Tax, exclusive,SC-2-053,,,,,,,,,,,,,no_image.png,standard
+E1024,កុងតាក់ចុច 2 រន្ធព្រី 2,,C-002,11,1,1,1, No Tax, exclusive,SC-2-053,,,,,,,,,,,,,no_image.png,standard
+E1025,កុងតាក់ចុច 1 ជើង 3,,C-002,11,1,1,1, No Tax, exclusive,SC-2-053,,,,,,,,,,,,,no_image.png,standard
+E1026,កុងតាក់ចុច 2 ជើង 3,,C-002,11,1,1,1, No Tax, exclusive,SC-2-053,,,,,,,,,,,,,no_image.png,standard
+E1027,កុងតាក់ចុច 3 ជើង 3,,C-002,11,1,1,1, No Tax, exclusive,SC-2-053,,,,,,,,,,,,,no_image.png,standard
+E1028,កុងតាក់ចុច 1,,C-002,11,1,1,1, No Tax, exclusive,SC-2-053,,,,,,,,,,,,,no_image.png,standard
+E1029,កុងតាក់ចុច 2,,C-002,11,1,1,1, No Tax, exclusive,SC-2-053,,,,,,,,,,,,,no_image.png,standard
+E1030,កុងតាក់ចុច 3,,C-002,11,1,1,1, No Tax, exclusive,SC-2-053,,,,,,,,,,,,,no_image.png,standard
+E1031,កុងតាក់ចុច 4,,C-002,11,1,1,1, No Tax, exclusive,SC-2-053,,,,,,,,,,,,,no_image.png,standard
+E1032,កុងតាក់ចុច 5,,C-002,11,1,1,1, No Tax, exclusive,SC-2-053,,,,,,,,,,,,,no_image.png,standard
+E1033,កុងតាក់ចុច 6,,C-002,11,1,1,1, No Tax, exclusive,SC-2-053,,,,,,,,,,,,,no_image.png,standard
+E1061,ជើងកុងតាក់ ធម្មតា,,C-002,11,1,1,1, No Tax, exclusive,SC-2-054,,,,,,,,,,,,,no_image.png,standard
+E1062,ជើងកុងតាក់ ភ្លោះ,,C-002,11,1,1,1, No Tax, exclusive,SC-2-054,,,,,,,,,,,,,no_image.png,standard
+E1071,ជើងអំពូល អ៊ុយ ខ្មៅ,,C-002,11,1,1,1, No Tax, exclusive,SC-2-055,,,,,,,,,,,,,no_image.png,standard
+E1072,ជើងអំពូល អ៊ុយមានខ្សែ,,C-002,11,1,1,1, No Tax, exclusive,SC-2-055,,,,,,,,,,,,,no_image.png,standard
+E1073,ជើងអំពូល អ៊ុយជាប់ជញ្ជាំង ស,,C-002,11,1,1,1, No Tax, exclusive,SC-2-055,,,,,,,,,,,,,no_image.png,standard
+E1081,អំពូលអ៊ុយរួញ 8 W (ពណ៍ ស ថ្ងៃ),,C-002,11,1,1,1, No Tax, exclusive,SC-2-056,,,,,,,,,,,,,no_image.png,standard
+E1082,អំពូលអ៊ុយរួញ 9W,,C-002,11,1,1,1, No Tax, exclusive,SC-2-056,,,,,,,,,,,,,no_image.png,standard
+E1083,អំពូលអ៊ុយរួញ 11 W,,C-002,11,1,1,1, No Tax, exclusive,SC-2-056,,,,,,,,,,,,,no_image.png,standard
+E1084,អំពូលអ៊ុយរួញ 13 W,,C-002,11,1,1,1, No Tax, exclusive,SC-2-056,,,,,,,,,,,,,no_image.png,standard
+E1085,អំពូលអ៊ុយរួញ 14 W,,C-002,11,1,1,1, No Tax, exclusive,SC-2-056,,,,,,,,,,,,,no_image.png,standard
+E1086,អំពូលអ៊ុយរួញ 15 W,,C-002,11,1,1,1, No Tax, exclusive,SC-2-056,,,,,,,,,,,,,no_image.png,standard
+E1087,អំពូលអ៊ុយរួញ 18 W,,C-002,11,1,1,1, No Tax, exclusive,SC-2-056,,,,,,,,,,,,,no_image.png,standard
+E1088,អំពូលអ៊ុយរួញ 20 W,,C-002,11,1,1,1, No Tax, exclusive,SC-2-056,,,,,,,,,,,,,no_image.png,standard
+E1089,អំពូលអ៊ុយរួញ 22 W,,C-002,11,1,1,1, No Tax, exclusive,SC-2-056,,,,,,,,,,,,,no_image.png,standard
+E1090,អំពូលអ៊ុយរួញ 23 W,,C-002,11,1,1,1, No Tax, exclusive,SC-2-056,,,,,,,,,,,,,no_image.png,standard
+E1091,អំពូលអ៊ុយរួញ 24 W,,C-002,11,1,1,1, No Tax, exclusive,SC-2-056,,,,,,,,,,,,,no_image.png,standard
+E1092,អំពូលអ៊ុយរួញ 25 W,,C-002,11,1,1,1, No Tax, exclusive,SC-2-056,,,,,,,,,,,,,no_image.png,standard
+E1093,អំពូលអ៊ុយរួញ 28 W,,C-002,11,1,1,1, No Tax, exclusive,SC-2-056,,,,,,,,,,,,,no_image.png,standard
+E1094,អំពូលអ៊ុយរួញ 30 W,,C-002,11,1,1,1, No Tax, exclusive,SC-2-056,,,,,,,,,,,,,no_image.png,standard
+E1095,អំពូលអ៊ុយរួញ 65 W,,C-002,11,1,1,1, No Tax, exclusive,SC-2-056,,,,,,,,,,,,,no_image.png,standard
+E1096,អំពូលអ៊ុយរួញ 75 W,,C-002,11,1,1,1, No Tax, exclusive,SC-2-056,,,,,,,,,,,,,no_image.png,standard
+E1097,អំពូលអ៊ុយរួញ 80 W,,C-002,11,1,1,1, No Tax, exclusive,SC-2-056,,,,,,,,,,,,,no_image.png,standard
+E1098,អំពូលអ៊ុយរួញ 85 W,,C-002,11,1,1,1, No Tax, exclusive,SC-2-056,,,,,,,,,,,,,no_image.png,standard
+E1131,អំពូល ហ្វា LED 100 W,,C-002,14,1,1,1, No Tax, exclusive,SC-2-057,,,,,,,,,,,,,no_image.png,standard
+E1132,អំពូល ហ្វា LED 150 W,,C-002,14,1,1,1, No Tax, exclusive,SC-2-057,,,,,,,,,,,,,no_image.png,standard
+E1133,អំពូល ហ្វា Flood Light 400 W,,C-002,14,1,1,1, No Tax, exclusive,SC-2-057,,,,,,,,,,,,,no_image.png,standard
+E1161,អំពូលម៉ែត្រ 6 តឹក,,C-002,14,1,1,1, No Tax, exclusive,SC-2-058,,,,,,,,,,,,,no_image.png,standard
+E1162,អំពូលម៉ែត្រ 1.2 ម៉ែត្រ,,C-002,14,1,1,1, No Tax, exclusive,SC-2-058,,,,,,,,,,,,,no_image.png,standard
+E0427,ហ្គែនទឹកប្រាក់ 100 លី,,C-002,3,1,1,1, No Tax, exclusive,SC-2-059,,,,,,,,,,,,,no_image.png,standard
+E0428,ហ្គែនទឹកប្រាក់ 150 លី,,C-002,3,1,1,1, No Tax, exclusive,SC-2-059,,,,,,,,,,,,,no_image.png,standard
