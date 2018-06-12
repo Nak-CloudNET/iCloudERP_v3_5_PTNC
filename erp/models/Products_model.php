@@ -615,7 +615,7 @@ class Products_model extends CI_Model
 	public function getUsingStockProducts($term, $warehouse_id, $plan = NULL, $address = NULL, $limit = 100)
     {
 		$project_plan_qty = 0;
-        $this->db->where("type = 'standard' AND (erp_products.name LIKE '%" . $term . "%' OR erp_products.code LIKE '%" . $term . "%' OR  concat(erp_products.name, ' (', erp_products.code, ')') LIKE '%" . $term . "%')");
+        $this->db->where("erp_products.type = 'standard' AND (erp_products.name LIKE '%" . $term . "%' OR erp_products.code LIKE '%" . $term . "%' OR  concat(erp_products.name, ' (', erp_products.code, ')') LIKE '%" . $term . "%')");
 		if ($plan) {
 			$project_plan_qty = "(
 				SELECT 
@@ -661,11 +661,37 @@ class Products_model extends CI_Model
 		if ($plan) {
 			$this->db->select('products.*, warehouses_products.quantity as qoh, units.name as unit_name, (COALESCE(project_plan.project_qty,0) - COALESCE(using_stock.using_qty, 0) + COALESCE(return_using_stock.using_qty, 0) ) as project_qty, project_plan.product_id as in_plan');
 		} else {
-			$this->db->select('products.*, warehouses_products.quantity as qoh, units.name as unit_name');
+			$this->db->select('products.*,
+                warehouses_products.quantity as qoh,
+                units.name as unit_name,
+                enter_using_stock_items.id as e_id,
+                enter_using_stock_items.code as code,
+                enter_using_stock_items.qty_use,
+                enter_using_stock_items.qty_by_unit,
+                enter_using_stock_items.unit,
+                enter_using_stock_items.expiry,
+                enter_using_stock_items.warehouse_id as wh_id,
+                enter_using_stock_items.option_id as option_id,
+                enter_using_stock_items.product_id as pro_id,
+                products.name as product_name,
+                products.name,
+                products.cost,
+                products.quantity,
+                products.code as product_code,
+                products.id as id,
+                warehouses_products.quantity as qoh,
+                products.unit as unit_type,
+                units.name as unit_name,
+                position.*');
 		}
 		
 		$this->db->join('warehouses_products', 'warehouses_products.product_id = products.id', 'left');
 		$this->db->join('units', 'units.id = products.unit', 'left');
+
+        $this->db->join('enter_using_stock_items', 'products.id = enter_using_stock_items.product_id', 'left');
+        $this->db->join('enter_using_stock', 'enter_using_stock_items.reference_no = enter_using_stock.reference_no', 'left');
+        $this->db->join('position', 'enter_using_stock_items.description = position.id', 'left');
+
 		if ($plan) {
 			$this->db->join($project_plan_qty, 'project_plan.product_id = products.id', 'left');
 			$this->db->join($using_qty, 'using_stock.code = products.code', 'left');
@@ -2195,8 +2221,7 @@ class Products_model extends CI_Model
 
     public function getUsingStockItemsByID($id)
 	{
-		$this->db->select('enter_using_stock_items.id as e_id,
-							enter_using_stock_items.code as code,
+		$this->db->select(' enter_using_stock_items.id as e_id,
 							enter_using_stock_items.code as code,
 							enter_using_stock_items.description,
 							enter_using_stock_items.qty_use,
@@ -2205,6 +2230,8 @@ class Products_model extends CI_Model
 							enter_using_stock_items.expiry,
 							enter_using_stock_items.warehouse_id as wh_id,
 							enter_using_stock_items.option_id as option_id,
+                            enter_using_stock_items.product_id as pro_id,
+                            products.name as product_name,
 							products.name,
 							products.cost,
 							products.quantity,
@@ -2216,11 +2243,12 @@ class Products_model extends CI_Model
                             position.*
 						');
 		$this->db->from('enter_using_stock_items');
+        $this->db->join('enter_using_stock', 'enter_using_stock_items.reference_no = enter_using_stock.reference_no', 'left');
         $this->db->join('position', 'enter_using_stock_items.description = position.id', 'left');
 		$this->db->join('products', 'enter_using_stock_items.code = products.code', 'left');
 		$this->db->join('units', 'units.id = products.unit', 'left');
 		$this->db->join('warehouses_products', 'enter_using_stock_items.warehouse_id = warehouses_products.warehouse_id and products.id = warehouses_products.product_id', 'left');
-		$this->db->where('enter_using_stock_items.reference_no', $id);
+		$this->db->where('enter_using_stock.id', $id);
 			
 		$this->db->group_by('e_id');
 		$q=$this->db->get();
@@ -2871,13 +2899,22 @@ class Products_model extends CI_Model
     }
 	
 	public function getAllPositionData() 
+    {
+        $q = $this->db->get('position');
+        if ($q->num_rows() > 0 ) {
+            $data = $q->result();
+            return $data;
+        }
+        return FALSE;
+    }
+
+    public function getAllPositionDataByUsingID($using_id) 
 	{
-		$q = $this->db->get('position');
-		if ($q->num_rows() > 0 ) {
-			$data = $q->result();
-			return $data;
-		}
-		return FALSE;
+		$q = $this->db->get_where('position', array('id' => $using_id), 1);
+        if ($q->num_rows() > 0) {
+            return $q->result();
+        }
+        return FALSE;
 	}
 	
 	public function getAdjustmentItems($adjustment_id)
