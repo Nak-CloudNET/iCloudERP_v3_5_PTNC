@@ -185,8 +185,8 @@
 								<th style="min-width:30px; width: 30px; text-align: center;">
 									<input class="checkbox checkth" type="checkbox" name="val" />
 								</th>
-                                <th style="width:100px;" class="center"><?= lang("image"); ?></th>
-                                <th style="width:200px;" class="center"><?= lang("Description"); ?></th>
+                                <th style="width:60px;" class="center"><?= lang("image"); ?></th>
+                                <th style="width:250px;" class="center"><?= lang("Description"); ?></th>
 								<th style="width:150px;"><?= lang("unit_cost"); ?></th>
                                 <th style="width:150px;"><?= lang("quantity"); ?></th>
                                 <th style="width:150px;"><?= lang("unit"); ?></th>
@@ -241,7 +241,7 @@
                                        <ul class="enlarge">
                                            <li>
                                                <img src="<?= base_url() ?>/assets/uploads/thumbs/<?= $q->image ?>"
-                                                    class="img-responsive" style="width:50px;"/>
+                                                    class="img-responsive" style="width:18px;"/>
                                                <span>
                                                       <a href="<?= base_url() ?>/assets/uploads/thumbs/<?= $q->image ?>"
                                                          data-toggle="lightbox">
