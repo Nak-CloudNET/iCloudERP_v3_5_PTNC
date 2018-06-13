@@ -175,6 +175,7 @@
                                 <th rowspan="2"><?= lang("total_out") ?></th>
 								<th rowspan="2"><?= lang("amount_total_out") ?></th>
 								<th rowspan="2"><?= lang("Quantity Balance") ?></th>
+								<th rowspan="2"><?= lang("Amount Balance") ?></th>
 							</tr>
 							<tr class="shead">
 								
@@ -205,7 +206,7 @@
 								foreach($ware as $rw){
                                     ?>
 								<tr>
-                                    <td colspan="<?= $k + $k2 + 8 ?>" style="color:green;"><span
+                                    <td colspan="<?= $k + $k2 + 9 ?>" style="color:green;"><span
                                                 style="font-size:19px;"><b>Warehouse <i class="fa fa-angle-double-right"
                                                                                         aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;<?= $rw->name; ?></b></span>
                                     </td>
@@ -225,7 +226,7 @@
 
 								?>
 									<tr>
-                                        <td colspan="<?= $k + $k2 + 8 ?>" style="color:orange;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        <td colspan="<?= $k + $k2 + 9 ?>" style="color:orange;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
                                                     style="font-size:13px;"><b>Category <i
                                                             class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;&nbsp;<?= $rc->name; ?></b></span>
                                         </td>
@@ -239,6 +240,10 @@
 									$am = 0;
 									$begin_balance = 0;
 									$btotal_qty = 0;
+									$amount_total_balance=0;
+                                    $amount_balance=0;
+									$amount_gtotal_balance=0;
+                                    $amount_gbalance=0;
 									$total_in_cate = array();
 									$total_out_cate = array();
 									$propur = $this->reports_model->getProPur($rw->id,$rc->id,$product2,$biller2,$from_date2,$to_date2);
@@ -350,6 +355,7 @@
 											}
 											//$qty_unit3 = $this->reports_model->getQtyUnitALL($rp->product_id,$rw->id,$from_date2,$to_date2);
 											$am = ($total_in-$total_out);
+                                            $amount_balance=$amount_total_in-$amount_total_out;
 											?>
                                             <td style='text-align:right;'><b><?=$this->erp->formatDecimal($total_out?$total_out:'')?></b> </td>
 											<td style='text-align:right;'><b><?=$this->erp->formatDecimal($amount_total_out?$amount_total_out:'')?></b> </td>
@@ -363,6 +369,7 @@
                                             }
 													?>
 											</td>
+                                            <td style='text-align:right;'><b><?=$this->erp->formatDecimal($amount_balance?$amount_balance:'')?></b> </td>
 										</tr>
 
                                         <?php
@@ -372,6 +379,7 @@
                                         $total_outt +=$total_out;
                                         $amount_total_inn += $amount_total_in;
 										$amount_total_outt += $amount_total_out;
+                                        $amount_total_balance+=$amount_balance;
 									}
 								?>
 								<tr>
@@ -414,6 +422,7 @@
                                     <td style='text-align:right;background:#F0F8FF;'><b><?=$this->erp->formatDecimal($total_outt?$total_outt:'')?></b></td>
 									<td style='text-align:right;background:#F0F8FF;'><b><?=$this->erp->formatDecimal($amount_total_outt?$amount_total_outt:'')?></b></td>
 									<td style='text-align:right;background:#F0F8FF;'><b><?=$this->erp->formatDecimal($balance?$balance:'')?></b></td>
+									<td style='text-align:right;background:#F0F8FF;'><b><?=$this->erp->formatDecimal($amount_total_balance?$amount_total_balance:'')?></b></td>
 								</tr>
 							<?php
 									$total_balance+=$balance;
@@ -422,6 +431,7 @@
                                     $total2_outt +=$total_outt;
                                     $amount_total2_inn +=$amount_total_inn;
 									$amount_total2_outt +=$amount_total_outt;
+									$amount_gtotal_balance+=$amount_total_balance;
 									}
 							?>		
 								<tr>
@@ -462,6 +472,7 @@
                                     <td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?=$this->erp->formatDecimal($total2_outt?$total2_outt:'')?></b></td>
 									<td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?=$this->erp->formatDecimal($amount_total2_outt?$amount_total2_outt:'')?></b></td>
 									<td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?=$this->erp->formatDecimal($total_balance?$total_balance:'')?></b></td>
+									<td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?=$this->erp->formatDecimal($amount_gtotal_balance?$amount_gtotal_balance:'')?></b></td>
 									</tr>
 							<?php
 								}
