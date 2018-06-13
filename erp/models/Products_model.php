@@ -678,7 +678,7 @@ class Products_model extends CI_Model
                 products.cost,
                 products.quantity,
                 products.code as product_code,
-                products.id as id,
+                products.id as pro_id,
                 warehouses_products.quantity as qoh,
                 products.unit as unit_type,
                 units.name as unit_name,

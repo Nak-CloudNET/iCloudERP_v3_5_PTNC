@@ -385,7 +385,7 @@ function loadItems() {
             var opt = $("<select id=\"unit\" name=\"unit\[\]\" style=\"padding-top: 2px !important;\" class=\"form-control unit\" />");
             if(item.option_unit !== false) {
                 $.each(item.option_unit, function () {
-				  if(item.row.unit == this.unit_variant){
+				  if(item.row.unit_name == this.unit_variant){
 					$("<option />", {value: this.unit_variant, text: this.unit_variant, qty: this.qty_unit, selected: 'selected'}).appendTo(opt);
 				  }else{
 					$("<option />", {value: item.row.unit, text: item.row.unit, qty: this.qty_unit}).appendTo(opt);  
