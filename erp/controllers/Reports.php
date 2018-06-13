@@ -21501,217 +21501,464 @@ class Reports extends MY_Controller
         
         $this->page_construct('reports/product_test', $meta, $this->data);
     }
-        function inventory($pdf, $excel,$reference,$wahouse_id,$product_id,$from_date,$to_date,$stockType,$cate_id,$biller){
-		$wid = $this->reports_model->getWareByUserID();
-        
+
+    function inventory($pdf, $excel, $reference, $wahouse_id, $product_id, $from_date, $to_date, $stockType, $cate_id, $biller)
+    {
+        $wid = $this->reports_model->getWareByUserID();
+
         $this->erp->checkPermissions('inventory_valuation_detail', NULL, 'product_report');
         $this->data['error'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('error');
+        $reference = str_replace('-', '/', $reference);
         $row        = null;
         if ($pdf || $excel) {
-                $this->load->library('excel');
-                $this->excel->setActiveSheetIndex(0);
-                $this->excel->getActiveSheet()->setTitle(lang('inventory'));
-                $this->excel->getActiveSheet()->SetCellValue('A1', lang(''));
-                $this->excel->getActiveSheet()->SetCellValue('B1', lang('type'));
-                $this->excel->getActiveSheet()->SetCellValue('C1', lang('date'));
-                $this->excel->getActiveSheet()->SetCellValue('D1', lang('name'));
-                $this->excel->getActiveSheet()->SetCellValue('E1', lang('reference'));
-                $this->excel->getActiveSheet()->SetCellValue('F1', lang('biller'));
-                $this->excel->getActiveSheet()->SetCellValue('G1', lang('qty'));
-                $this->excel->getActiveSheet()->SetCellValue('H1', lang('cost'));
-                $this->excel->getActiveSheet()->SetCellValue('I1', lang('on_hand'));
-                $this->excel->getActiveSheet()->SetCellValue('J1', lang('avg_cost'));
-                $this->excel->getActiveSheet()->SetCellValue('K1', lang('asset_value'));
-				$this->excel->getActiveSheet()->getStyle('A1'. $row.':K1'.$row)->getFont()->setBold(true);
-				$this->excel->getActiveSheet()->getStyle('A1' .$row.':K1'.$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
 
-                $row = 2;
-                $gtt = 0;
-                $gqty = 0;  
-                $warehouses = $this->reports_model->getWarehousesInventoryValuation($wid,$wahouse_id,$cate_id,$product_id,$stockType,$from_date,$to_date,$reference,$biller);
-                foreach($warehouses as $ware){
-                    // $total_qoh_per_warehouse = 0;
-                    // $total_assetVal_per_warehouse = 0;
-                    $this->excel->getActiveSheet()->SetCellValue('A' . $row, "Warehouse >> ".$ware->warehouse);
+            $this->load->library('excel');
+            $this->excel->setActiveSheetIndex(0);
+            $this->excel->getActiveSheet()->setTitle(lang('inventory'));
+            $this->excel->getActiveSheet()->SetCellValue('A1', lang(''));
+            $this->excel->getActiveSheet()->SetCellValue('B1', lang('type'));
+            $this->excel->getActiveSheet()->SetCellValue('C1', lang('date'));
+            $this->excel->getActiveSheet()->SetCellValue('D1', lang('name'));
+            $this->excel->getActiveSheet()->SetCellValue('E1', lang('reference'));
+            $this->excel->getActiveSheet()->SetCellValue('F1', lang('biller'));
+            $this->excel->getActiveSheet()->SetCellValue('G1', lang('qty'));
+            $this->excel->getActiveSheet()->SetCellValue('H1', lang('cost'));
+            $this->excel->getActiveSheet()->SetCellValue('I1', lang('on_hand'));
+            $this->excel->getActiveSheet()->SetCellValue('J1', lang('avg_cost'));
+            $this->excel->getActiveSheet()->SetCellValue('K1', lang('asset_value'));
+
+            $styleArrays = array(
+                'font' => array(
+                    'bold' => true,
+                    'color' => array('rgb' => 'FFFFFF'),
+                    'size' => 10,
+                    'name' => 'Verdana'
+                ),
+                'fill' => array(
+                    'type' => PHPExcel_Style_Fill::FILL_SOLID,
+                    'color' => array('rgb' => '428BCA')
+                )
+            );
+            $this->excel->getActiveSheet()->getRowDimension(1)->setRowHeight(30);
+            $this->excel->getActiveSheet()->getStyle('A1:K1')->applyFromArray($styleArrays);
+            $styleBorderArray = array(
+                'borders' => array(
+                    'allborders' => array(
+                        'style' => PHPExcel_Style_Border::BORDER_THIN,
+                        'color' => array('rgb' => '357EBD')
+                    )
+                )
+            );
+            $this->excel->getActiveSheet()->getStyle('A1:K1')->applyFromArray($styleBorderArray);
+            $this->excel->getActiveSheet()->getStyle('A1:K1')->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+            $this->excel->getActiveSheet()->getStyle('A1:K1')->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+            $this->excel->getActiveSheet()->getStyle('A1' . $row . ':K1' . $row)->getFont()->setBold(true);
+            $this->excel->getActiveSheet()->getStyle('A1' . $row . ':K1' . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+
+            $row = 2;
+            $gtt = 0;
+            $gqty = 0;
+            $warehouses = $this->reports_model->getWarehousesInventoryValuation($wid,$wahouse_id,$cate_id,$product_id,$stockType,$from_date,$to_date,$reference,$biller);
+            //$this->erp->print_arrays($warehouses);
+            foreach($warehouses as $ware){
+                // $total_qoh_per_warehouse = 0;
+                // $total_assetVal_per_warehouse = 0;
+                $this->excel->getActiveSheet()->SetCellValue('A' . $row, "Warehouse >> ".$ware->warehouse);
+                $this->excel->getActiveSheet()->mergeCells('A'.$row.':K'.$row);
+                // $categories = $this->reports_model->getCategories($ware->warehouse_id);
+                $categories = $this->reports_model->getCategoriesInventoryValuationByWarehouse($ware->warehouse_id,$cate_id,$product_id,$stockType,$from_date,$to_date,$reference,$biller);
+                $total_qoh_per_warehouse_cat = 0;
+                $total_assetVal_per_warehouse_cat = 0;
+
+                // Styles for Warehouses
+                $styleArrays = array(
+                    'font' => array(
+                        'bold' => true,
+                        'color' => array('rgb' => '009900'),
+                        'size' => 11,
+                        'name' => 'Verdana'
+                    ),
+                    'fill' => array(
+                        'type' => PHPExcel_Style_Fill::FILL_SOLID,
+                        'color' => array('rgb' => 'f9f9f9')
+                    ),
+                    'borders' => array(
+                        'allborders' => array(
+                            'style' => PHPExcel_Style_Border::BORDER_THIN,
+                            'color' => array('rgb' => 'e6e6e6')
+                        )
+                    )
+                );
+                $this->excel->getActiveSheet()->getStyle('A' . $row .':K'. $row)->applyFromArray($styleArrays);
+                $this->excel->getActiveSheet()->getRowDimension($row)->setRowHeight(30);
+                $this->excel->getActiveSheet()->getStyle('A'.$row.':K'.$row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+                $this->excel->getActiveSheet()->getStyle('A' . $row . ':K' . $row)->getFont()->setBold(true);
+                $this->excel->getActiveSheet()->getStyle('A' . $row . ':K' . $row)->getFont()->setSize(12);
+
+                $row++;
+                foreach($categories as $cat){
+                    $this->excel->getActiveSheet()->SetCellValue('A' .$row, "   "."Category >> ".$cat->category_name);
                     $this->excel->getActiveSheet()->mergeCells('A'.$row.':K'.$row);
-                    $this->excel->getActiveSheet()->getStyle('A'. $row.':K'.$row)->getFont()->setBold(true);
-                    $this->excel->getActiveSheet()->getStyle('A'. $row.':K'.$row)->getFont()->setSize(12);
-                    // $categories = $this->reports_model->getCategories($ware->warehouse_id);
-                    $categories = $this->reports_model->getCategoriesInventoryValuationByWarehouse($ware->warehouse_id,$cate_id,$product_id,$stockType,$from_date,$to_date,$reference,$biller);
-                    $total_qoh_per_warehouse_cat = 0;
-                    $total_assetVal_per_warehouse_cat = 0;
-                    $row++;   
-                    foreach($categories as $cat){
-                        $this->excel->getActiveSheet()->SetCellValue('A' .$row, "   "."Category >> ".$cat->category_name);
-                        $this->excel->getActiveSheet()->mergeCells('A'.$row.':K'.$row);
-                        $this->excel->getActiveSheet()->getStyle('A'. $row)->getFont()->setBold(true);
-                        $this->excel->getActiveSheet()->getStyle('A'. $row.':K'.$row)->getFont()->setSize(11);
-                        // $products = $this->reports_model->getProducts($ware->warehouse_id, $cat->category_id);
-						
-                        $total_qoh_per_warehouse = 0;
-                        $total_assetVal_per_warehouse = 0;
-                        $products = $this->reports_model->getProductsInventoryValuationByWhCat($ware->warehouse_id,($cate_id?$cate_id:$cat->category_id),$product_id,$stockType,$from_date,$to_date,$reference,$biller);
-                        $row++;
 
-                        foreach ($products as $pro) {
+                    $total_qoh_per_warehouse = 0;
+                    $total_assetVal_per_warehouse = 0;
+                    $products = $this->reports_model->getProductsInventoryValuationByWhCat($ware->warehouse_id,($cate_id?$cate_id:$cat->category_id),$product_id,$stockType,$from_date,$to_date,$reference,$biller);
+
+                    // Styles for categories
+                    $styleArrays = array(
+                        'font' => array(
+                            'bold' => true,
+                            'color' => array('rgb' => 'ff9900'),
+                            'size' => 11,
+                            'name' => 'Verdana'
+                        )
+                    );
+                    $this->excel->getActiveSheet()->getStyle('A' . $row)->applyFromArray($styleArrays);
+                    $styleBorderArray = array(
+                        'borders' => array(
+                            'allborders' => array(
+                                'style' => PHPExcel_Style_Border::BORDER_THIN,
+                                'color' => array('rgb' => 'e6e6e6')
+                            )
+                        )
+                    );
+                    $this->excel->getActiveSheet()->getStyle('A' . $row . ':K' . $row)->applyFromArray($styleBorderArray);
+                    $this->excel->getActiveSheet()->getRowDimension($row)->setRowHeight(30);
+                    $this->excel->getActiveSheet()->getStyle('A'.$row.':K'.$row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+                    $this->excel->getActiveSheet()->getStyle('A' . $row)->getFont()->setBold(true);
+                    $this->excel->getActiveSheet()->getStyle('A' . $row . ':K' . $row)->getFont()->setSize(11);
+
+                    $row++;
+
+                    foreach ($products as $pro) {
 
                         if(!empty($pro->product_id)){
-                           $this->excel->getActiveSheet()->SetCellValue('A' .$row, $pro->product_code?"     ".$pro->product_code.' >> '.$pro->product_name:"     ".$pro->product_id.' >> '.$pro->product_name.'('.$pro->un.')');
-                           $this->excel->getActiveSheet()->mergeCells('A'.$row.':K'.$row);
-                           $this->excel->getActiveSheet()->getStyle('A'. $row)->getFont()->setBold(true);
-                           // $this->excel->getActiveSheet()->SetCellValue('B'. $row.':K'. $row);
-                            }
-                            $qty_on_hand = 0;
-                            $total_on_hand = 0;
-                            $total_asset_val = 0;
-                           // $prod = $this->reports_model->getByProduct($ware->warehouse_id,$cat->category_id,$pro->product_id);
-                           $prod = $this->reports_model->getProductsInventoryValuationByProduct($ware->warehouse_id,($cate_id?$cate_id:$cat->category_id),($product_id?$product_id:$pro->product_id),$stockType,$from_date,$to_date,$reference,$biller);
-                           $row++;
-                           foreach ($prod as $getpro) {
-                                
-                                $p_cost = 0;
-                                $p_qty = 0;
+                            $this->excel->getActiveSheet()->SetCellValue('A' .$row, $pro->product_code?"               ".$pro->product_code.' >> '.$pro->product_name:"     ".$pro->product_id.' >> '.$pro->product_name.'('.$pro->un.')');
+                            $this->excel->getActiveSheet()->mergeCells('A'.$row.':K'.$row);
 
-                                if ($getpro->type == 'PURCHASE' ||
-                                        $getpro->type == 'SALE RETURN' ||
-                                        $getpro->type == 'ADJUSTMENTS' ||
-                                        $getpro->type == 'OPENING QTY') {                              
-                                        $p_qty = abs($getpro->quantity);
-                                }else if($getpro->type == 'TRANSFER' || $getpro->type == 'ADJUSTMENT' ){	
-									$p_qty = $getpro->quantity;
-								}
-                                else
-                                {
-                                    $p_qty = (-1) * $getpro->quantity;
+                        }
+                        $qty_on_hand = 0;
+                        $total_on_hand = 0;
+                        $total_asset_val = 0;
+                        // $prod = $this->reports_model->getByProduct($ware->warehouse_id,$cat->category_id,$pro->product_id);
+                        $prod = $this->reports_model->getProductsInventoryValuationByProduct($ware->warehouse_id,($cate_id?$cate_id:$cat->category_id),($product_id?$product_id:$pro->product_id),$stockType,$from_date,$to_date,$reference,$biller);
+
+                        // Styles for Products
+                        $styleArrays = array(
+                            'fill' => array(
+                                'type' => PHPExcel_Style_Fill::FILL_SOLID,
+                                'color' => array('rgb' => 'f9f9f9')
+                            )
+                        );
+                        $this->excel->getActiveSheet()->getStyle('A' . $row)->applyFromArray($styleArrays);
+                        $styleBorderArray = array(
+                            'borders' => array(
+                                'allborders' => array(
+                                    'style' => PHPExcel_Style_Border::BORDER_THIN,
+                                    'color' => array('rgb' => 'e6e6e6')
+                                )
+                            )
+                        );
+                        $this->excel->getActiveSheet()->getStyle('A' . $row . ':K' . $row)->applyFromArray($styleBorderArray);
+                        $this->excel->getActiveSheet()->getRowDimension($row)->setRowHeight(25);
+                        $this->excel->getActiveSheet()->getStyle('A'.$row.':K'.$row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+                        $this->excel->getActiveSheet()->getStyle('A' . $row)->getFont()->setBold(true);
+
+                        $row++;
+                        //$this->erp->print_arrays($prod);
+                        foreach ($prod as $getpro) {
+
+                            $p_cost = 0;
+                            $p_qty = 0;
+
+                            if ($getpro->type == 'PURCHASE'
+                                || $getpro->type == 'SALE RETURN'
+                                || $getpro->type == 'OPENING QUANTITY') {
+                                $p_qty = $getpro->quantity_balance_unit;
+                            } else if ($getpro->type == 'TRANSFER') {
+                                $p_qty = $getpro->quantity_balance_unit;
+                            } else if ($getpro->type == 'ADJUSTMENT') {
+                                $p_qty = $getpro->quantity_balance_unit;
+                            } else if ($getpro->type == 'USING STOCK') {
+                                $p_qty = $getpro->quantity_balance_unit;
+                            } else if ($getpro->type == 'RETURN USING STOCK') {
+                                $p_qty = $getpro->quantity_balance_unit;
+                            } else if ($getpro->type == 'CONVERT') {
+                                $p_qty = $getpro->quantity_balance_unit;
+                            } else if ($getpro->type == 'SALE' || $getpro->type == 'DELIVERY')
+                            {
+                                if ($getpro->quantity > 0) {
+                                    $p_qty = (-1) * $getpro->quantity_balance_unit;
+                                } else {
+                                    $p_qty = $getpro->quantity_balance_unit;
                                 }
-
-                               $unit_name = $this->erp->convert_unit_2_string($getpro->product_id,$p_qty);
-                                
-                                $qty_on_hand += $p_qty ;// $pr->qty_on_hand;
-                                
-                                $p_cost = $this->erp->formatDecimal($getpro->cost);
-                                $avg_cost = $getpro->avg_cost;
-                                $this->db->select("cost")->where("erp_products.id",$getpro->product_id);
-                                $cost = $this->erp->formatDecimal($this->db->get_where("erp_products",array("id"=>$pro->product_id),1)->row()->cost);
-                                $asset_value = $cost * $qty_on_hand;
-
-                                $this->excel->getActiveSheet()->SetCellValue('B' .$row, $getpro->type);
-                                $this->excel->getActiveSheet()->SetCellValue('C' .$row, $this->erp->hrsd($getpro->date));
-                                $this->excel->getActiveSheet()->SetCellValue('D' .$row, $getpro->name);
-                                $this->excel->getActiveSheet()->SetCellValue('E' .$row, $getpro->reference_no." ");
-                                $this->excel->getActiveSheet()->SetCellValue('F' .$row, $getpro->biller_name);
-                                $this->excel->getActiveSheet()->SetCellValue('G' .$row, $p_qty.' '.$unit_name);
-                                $this->excel->getActiveSheet()->SetCellValue('H' .$row, $p_cost);
-                                $this->excel->getActiveSheet()->SetCellValue('I' .$row, $qty_on_hand);
-                                $this->excel->getActiveSheet()->SetCellValue('J' .$row, $cost);
-                                $this->excel->getActiveSheet()->SetCellValue('K' .$row, $asset_value);
-                                // $a = $i+1;
-                                $total_on_hand = $qty_on_hand;
-                                $total_asset_val = $asset_value;
-                                
-                                $row++;                   
+                            } else {
+                                $p_qty = $getpro->quantity_balance_unit;
                             }
 
-                            // $total_qoh_per_warehouse += $total_on_hand;
-                            // $total_assetVal_per_warehouse += $total_asset_val;
-                            $this->excel->getActiveSheet()->mergeCells('A'.$row.':H'.$row);
-                            $this->excel->getActiveSheet()->SetCellValue('A' .$row, lang('total').">>");
-                            $this->excel->getActiveSheet()->getStyle('A' .$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
-                            $this->excel->getActiveSheet()->getStyle('A'. $row.':K'. $row)->getFont()->setBold(true);
-                            $this->excel->getActiveSheet()->SetCellValue('I' .$row, $total_on_hand);
-                            $this->excel->getActiveSheet()->SetCellValue('K' .$row, $total_asset_val);
-							$this->excel->getActiveSheet()->getStyle('I'.$row. ':K'.$row)->getBorders()->getTop()->setBorderStyle(PHPExcel_Style_Border::BORDER_THIN);
+                            $unit_name = $this->erp->convert_unit_2_string($getpro->product_id,$p_qty);
 
-                            $total_qoh_per_warehouse += $total_on_hand;
-                            $total_assetVal_per_warehouse += $total_asset_val;
-                            $row++;                          
-                            // $this->excel->getActiveSheet()->SetCellValue('I' .$i, $total_on_hand);
-                            // $this->excel->getActiveSheet()->SetCellValue('J' .$i, $total_asset_val);
-                            
+                            $qty_on_hand += $p_qty ;// $pr->qty_on_hand;
+
+                            $p_cost = $this->erp->formatDecimal($getpro->total_cost);
+                            $avg_cost = $getpro->avg_cost;
+                            $this->db->select("cost")->where("erp_products.id",$getpro->product_id);
+                            $cost = $this->erp->formatDecimal($this->db->get_where("erp_products",array("id"=>$pro->product_id),1)->row()->cost, 4);
+                            $asset_value = $cost * $qty_on_hand;
+
+                            $this->excel->getActiveSheet()->SetCellValue('B' . $row, $getpro->tran_type);
+                            $this->excel->getActiveSheet()->SetCellValue('C' . $row, $this->erp->hrsd($getpro->tran_date));
+                            $this->excel->getActiveSheet()->SetCellValue('D' . $row, $getpro->product_name);
+                            $this->excel->getActiveSheet()->SetCellValue('E' .$row, $getpro->reference_no." ");
+                            $this->excel->getActiveSheet()->SetCellValue('F' . $row, $getpro->biller_company ? $getpro->biller_company : $getpro->biller_name);
+                            $this->excel->getActiveSheet()->SetCellValue('G' . $row, $this->erp->formatQuantity($p_qty) .' '. strip_tags($unit_name));
+                            $this->excel->getActiveSheet()->SetCellValue('H' .$row, $p_cost);
+                            $this->excel->getActiveSheet()->SetCellValue('I' .$row, $qty_on_hand);
+                            $this->excel->getActiveSheet()->SetCellValue('J' .$row, $cost);
+                            $this->excel->getActiveSheet()->SetCellValue('K' .$row, $this->erp->formatMoney($asset_value));
+                            // $a = $i+1;
+                            $total_on_hand = $qty_on_hand;
+                            $total_asset_val += $asset_value;
+
+                            // Styles for loop data
+                            $this->excel->getActiveSheet()->getRowDimension($row)->setRowHeight(40);
+                            $this->excel->getActiveSheet()->getStyle('F' .$row .':K'. $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                            $this->excel->getActiveSheet()->getStyle('B' . $row . ':K' . $row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+                            $styleBorderArray = array(
+                                'borders' => array(
+                                    'allborders' => array(
+                                        'style' => PHPExcel_Style_Border::BORDER_THIN,
+                                        'color' => array('rgb' => 'e6e6e6')
+                                    )
+                                )
+                            );
+                            $this->excel->getActiveSheet()->getStyle('A' . $row . ':K' . $row)->applyFromArray($styleBorderArray);
+                            if ($pdf) {
+                                $styleBorderArray = array(
+                                    'borders' => array(
+                                        'allborders' => array('style' => PHPExcel_Style_Border::BORDER_THIN)
+                                    )
+                                );
+                                $this->excel->getActiveSheet()->getStyle('B' . $row . ':K' . $row)->applyFromArray($styleBorderArray);
+                            }
+
+                            $row++;
                         }
 
+                        // $total_qoh_per_warehouse += $total_on_hand;
+                        // $total_assetVal_per_warehouse += $total_asset_val;
                         $this->excel->getActiveSheet()->mergeCells('A'.$row.':H'.$row);
-                        $this->excel->getActiveSheet()->SetCellValue('A' .$row, lang('total').">>".$cat->category_name);
+                        $this->excel->getActiveSheet()->SetCellValue('A' .$row, lang('total').">>");
                         $this->excel->getActiveSheet()->getStyle('A' .$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
                         $this->excel->getActiveSheet()->getStyle('A'. $row.':K'. $row)->getFont()->setBold(true);
-                        $this->excel->getActiveSheet()->SetCellValue('I' .$row, $total_qoh_per_warehouse);
-                        $this->excel->getActiveSheet()->SetCellValue('K' .$row, $total_assetVal_per_warehouse);
+                        $this->excel->getActiveSheet()->SetCellValue('I' .$row, $total_on_hand);
+                        $this->excel->getActiveSheet()->SetCellValue('K' .$row, $this->erp->formatMoney($total_asset_val));
                         $this->excel->getActiveSheet()->getStyle('I'.$row. ':K'.$row)->getBorders()->getTop()->setBorderStyle(PHPExcel_Style_Border::BORDER_THIN);
 
-                            $total_qoh_per_warehouse_cat +=$total_qoh_per_warehouse;
-                            $total_assetVal_per_warehouse_cat +=$total_assetVal_per_warehouse;
-                            $row++; 
+                        $total_qoh_per_warehouse += $total_on_hand;
+                        $total_assetVal_per_warehouse += $total_asset_val;
+
+                        // Styles for Total
+                        $styleArrays = array(
+                            'fill' => array(
+                                'type' => PHPExcel_Style_Fill::FILL_SOLID,
+                                'color' => array('rgb' => 'f9f9f9')
+                            )
+                        );
+                        $this->excel->getActiveSheet()->getStyle('A' . $row . ':K' . $row)->applyFromArray($styleArrays);
+                        $styleBorderArray = array(
+                            'borders' => array(
+                                'allborders' => array(
+                                    'style' => PHPExcel_Style_Border::BORDER_THIN,
+                                    'color' => array('rgb' => 'e6e6e6')
+                                )
+                            )
+                        );
+                        $this->excel->getActiveSheet()->getStyle('A' . $row . ':K' . $row)->applyFromArray($styleBorderArray);
+                        $this->excel->getActiveSheet()->getRowDimension($row)->setRowHeight(28);
+                        $this->excel->getActiveSheet()->getStyle('A' . $row . ':K' . $row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+                        $this->excel->getActiveSheet()->getStyle('I' . $row . ':K' . $row)->getBorders()->getTop()->setBorderStyle(PHPExcel_Style_Border::BORDER_THIN);
+                        $this->excel->getActiveSheet()->getStyle('K' . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                        $this->excel->getActiveSheet()->getStyle('A' . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                        $this->excel->getActiveSheet()->getStyle('A' . $row . ':K' . $row)->getFont()->setBold(true);
+
+                        $row++;
+                        // $this->excel->getActiveSheet()->SetCellValue('I' .$i, $total_on_hand);
+                        // $this->excel->getActiveSheet()->SetCellValue('J' .$i, $total_asset_val);
+
                     }
+
                     $this->excel->getActiveSheet()->mergeCells('A'.$row.':H'.$row);
-                    $this->excel->getActiveSheet()->SetCellValue('A' .$row, lang('total').">>".$ware->warehouse);
+                    $this->excel->getActiveSheet()->SetCellValue('A' .$row, lang('total').">>".$cat->category_name);
                     $this->excel->getActiveSheet()->getStyle('A' .$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
                     $this->excel->getActiveSheet()->getStyle('A'. $row.':K'. $row)->getFont()->setBold(true);
-                    $this->excel->getActiveSheet()->SetCellValue('I' .$row, $total_qoh_per_warehouse_cat);
-                    $this->excel->getActiveSheet()->SetCellValue('K' .$row, $total_assetVal_per_warehouse_cat);
-					$this->excel->getActiveSheet()->getStyle('I'.$row. ':K'.$row)->getBorders()->getTop()->setBorderStyle(PHPExcel_Style_Border::BORDER_THIN);
-                    $gtt +=$total_qoh_per_warehouse_cat;
-                    $gqty +=$total_assetVal_per_warehouse_cat;
+                    $this->excel->getActiveSheet()->SetCellValue('I' .$row, $total_qoh_per_warehouse);
+                    $this->excel->getActiveSheet()->SetCellValue('K' .$row, $this->erp->formatMoney($total_assetVal_per_warehouse));
+                    $this->excel->getActiveSheet()->getStyle('I'.$row. ':K'.$row)->getBorders()->getTop()->setBorderStyle(PHPExcel_Style_Border::BORDER_THIN);
+
+                    $total_qoh_per_warehouse_cat +=$total_qoh_per_warehouse;
+                    $total_assetVal_per_warehouse_cat +=$total_assetVal_per_warehouse;
+
+                    // Styles for Total-Category
+                    $styleArrays = array(
+                        'font' => array(
+                            'bold' => true,
+                            'color' => array('rgb' => 'ff9900'),
+                            'size' => 11,
+                            'name' => 'Verdana'
+                        )
+                    );
+                    $this->excel->getActiveSheet()->getStyle('A' . $row)->applyFromArray($styleArrays);
+                    $styleBorderArray = array(
+                        'borders' => array(
+                            'allborders' => array(
+                                'style' => PHPExcel_Style_Border::BORDER_THIN,
+                                'color' => array('rgb' => 'e6e6e6')
+                            )
+                        )
+                    );
+                    $this->excel->getActiveSheet()->getStyle('A' . $row . ':K' . $row)->applyFromArray($styleBorderArray);
+                    $this->excel->getActiveSheet()->getRowDimension($row)->setRowHeight(28);
+                    $this->excel->getActiveSheet()->getStyle('A' . $row . ':K' . $row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+                    $this->excel->getActiveSheet()->getStyle('I' . $row . ':K' . $row)->getBorders()->getTop()->setBorderStyle(PHPExcel_Style_Border::BORDER_THIN);
+                    $this->excel->getActiveSheet()->getStyle('K' . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                    $this->excel->getActiveSheet()->getStyle('A' . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                    $this->excel->getActiveSheet()->getStyle('A' . $row . ':K' . $row)->getFont()->setBold(true);
 
                     $row++;
                 }
-
                 $this->excel->getActiveSheet()->mergeCells('A'.$row.':H'.$row);
-                $this->excel->getActiveSheet()->SetCellValue('A' .$row, lang('grand_total'));
+                $this->excel->getActiveSheet()->SetCellValue('A' .$row, lang('total').">>".$ware->warehouse);
                 $this->excel->getActiveSheet()->getStyle('A' .$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
                 $this->excel->getActiveSheet()->getStyle('A'. $row.':K'. $row)->getFont()->setBold(true);
-                $this->excel->getActiveSheet()->SetCellValue('I' .$row, $this->erp->formatDecimal($gtt));
-                $this->excel->getActiveSheet()->SetCellValue('K' .$row, $this->erp->formatDecimal($gqty));
+                $this->excel->getActiveSheet()->SetCellValue('I' .$row, $total_qoh_per_warehouse_cat);
+                $this->excel->getActiveSheet()->SetCellValue('K' .$row, $this->erp->formatMoney($total_assetVal_per_warehouse_cat));
                 $this->excel->getActiveSheet()->getStyle('I'.$row. ':K'.$row)->getBorders()->getTop()->setBorderStyle(PHPExcel_Style_Border::BORDER_THIN);
-     
+                $this->excel->getActiveSheet()->getStyle('K' . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                $gtt +=$total_qoh_per_warehouse_cat;
+                $gqty +=$total_assetVal_per_warehouse_cat;
 
-                $this->excel->getActiveSheet()->getColumnDimension('A')->setWidth(10);
-                $this->excel->getActiveSheet()->getColumnDimension('B')->setWidth(15);
-                $this->excel->getActiveSheet()->getColumnDimension('C')->setWidth(15);
-                $this->excel->getActiveSheet()->getColumnDimension('D')->setWidth(20);
-                $this->excel->getActiveSheet()->getColumnDimension('E')->setWidth(15);
-                $this->excel->getActiveSheet()->getColumnDimension('F')->setWidth(15);
-                $this->excel->getActiveSheet()->getColumnDimension('G')->setWidth(15);
-                $this->excel->getActiveSheet()->getColumnDimension('H')->setWidth(15);
-                $this->excel->getActiveSheet()->getColumnDimension('I')->setWidth(15);
-                $this->excel->getActiveSheet()->getColumnDimension('J')->setWidth(15);
-                $this->excel->getActiveSheet()->getColumnDimension('K')->setWidth(15);
-                $filename = lang('Inventory Valuation Detail '). date('Y_m_d_H_i_s');
-                $this->excel->getDefaultStyle()->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
-                if ($pdf) {
-                    $styleArray = array(
-                        'borders' => array('allborders' => array('style' => PHPExcel_Style_Border::BORDER_THIN))
-                    );
-                    $this->excel->getDefaultStyle()->applyFromArray($styleArray);
-                    $this->excel->getActiveSheet()->getPageSetup()->setOrientation(PHPExcel_Worksheet_PageSetup::ORIENTATION_LANDSCAPE);
-                    require_once(APPPATH . "third_party" . DIRECTORY_SEPARATOR . "MPDF" . DIRECTORY_SEPARATOR . "mpdf.php");
-                    $rendererName = PHPExcel_Settings::PDF_RENDERER_MPDF;
-                    $rendererLibrary = 'MPDF';
-                    $rendererLibraryPath = APPPATH . 'third_party' . DIRECTORY_SEPARATOR . $rendererLibrary;
-                    if (!PHPExcel_Settings::setPdfRenderer($rendererName, $rendererLibraryPath)) {
-                        die('Please set the $rendererName: ' . $rendererName . ' and $rendererLibraryPath: ' . $rendererLibraryPath . ' values' .
-                            PHP_EOL . ' as appropriate for your directory structure');
-                    }
+                // Styles for Total-Warehouses
+                $styleArrays = array(
+                    'font' => array(
+                        'bold' => true,
+                        'color' => array('rgb' => '009900'),
+                        'size' => 12,
+                        'name' => 'Verdana'
+                    ),
+                    'fill' => array(
+                        'type' => PHPExcel_Style_Fill::FILL_SOLID,
+                        'color' => array('rgb' => 'f9f9f9')
+                    )
+                );
+                $styleArrays2 = array(
+                    'fill' => array(
+                        'type' => PHPExcel_Style_Fill::FILL_SOLID,
+                        'color' => array('rgb' => 'f9f9f9')
+                    )
+                );
+                $this->excel->getActiveSheet()->getStyle('A' . $row)->applyFromArray($styleArrays);
+                $this->excel->getActiveSheet()->getStyle('H' . $row . ':K' . $row)->applyFromArray($styleArrays2);
+                $styleBorderArray = array(
+                    'borders' => array(
+                        'allborders' => array(
+                            'style' => PHPExcel_Style_Border::BORDER_THIN,
+                            'color' => array('rgb' => 'e6e6e6')
+                        )
+                    )
+                );
+                $this->excel->getActiveSheet()->getStyle('A' . $row . ':K' . $row)->applyFromArray($styleBorderArray);
+                $this->excel->getActiveSheet()->getRowDimension($row)->setRowHeight(30);
+                $this->excel->getActiveSheet()->getStyle('A' . $row . ':K' . $row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+                $this->excel->getActiveSheet()->getStyle('I' . $row . ':K' . $row)->getBorders()->getTop()->setBorderStyle(PHPExcel_Style_Border::BORDER_THIN);
+                $this->excel->getActiveSheet()->getStyle('A' . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                $this->excel->getActiveSheet()->getStyle('A' . $row . ':K' . $row)->getFont()->setBold(true);
 
-                    header('Content-Type: application/pdf');
-                    header('Content-Disposition: attachment;filename="' . $filename . '.pdf"');
-                    header('Cache-Control: max-age=0');
+                $row++;
+            }
 
-                    $objWriter = PHPExcel_IOFactory::createWriter($this->excel, 'PDF');
-                    $objWriter->save('php://output');
-                    exit();
+            $this->excel->getActiveSheet()->mergeCells('A'.$row.':H'.$row);
+            $this->excel->getActiveSheet()->SetCellValue('A' .$row, lang('grand_total'));
+            $this->excel->getActiveSheet()->SetCellValue('I' .$row, $this->erp->formatQuantity($gtt));
+            $this->excel->getActiveSheet()->SetCellValue('K' .$row, $this->erp->formatMoney($gqty));
+
+            // Styles for Grand Total
+            $styleArrays = array(
+                'font' => array(
+                    'bold' => true,
+                    'color' => array('rgb' => 'FFFFFF'),
+                    'size' => 13,
+                    'name' => 'Verdana'
+                ),
+                'fill' => array(
+                    'type' => PHPExcel_Style_Fill::FILL_SOLID,
+                    'color' => array('rgb' => '428BCA')
+                )
+            );
+            $this->excel->getActiveSheet()->getStyle('A' . $row . ':K' . $row)->applyFromArray($styleArrays);
+            $styleBorderArray = array(
+                'borders' => array(
+                    'allborders' => array(
+                        'style' => PHPExcel_Style_Border::BORDER_THIN,
+                        'color' => array('rgb' => '357EBD')
+                    )
+                )
+            );
+            $this->excel->getActiveSheet()->getStyle('A' . $row . ':K' . $row)->applyFromArray($styleBorderArray);
+            $this->excel->getActiveSheet()->getRowDimension($row)->setRowHeight(30);
+            $this->excel->getActiveSheet()->getStyle('A' . $row . ':K' . $row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+            $this->excel->getActiveSheet()->getStyle('A' . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+            $this->excel->getActiveSheet()->getStyle('A' . $row . ':K' . $row)->getFont()->setBold(true);
+
+
+            $this->excel->getActiveSheet()->getColumnDimension('A')->setWidth(10);
+            $this->excel->getActiveSheet()->getColumnDimension('B')->setWidth(15);
+            $this->excel->getActiveSheet()->getColumnDimension('C')->setWidth(15);
+            $this->excel->getActiveSheet()->getColumnDimension('D')->setWidth(20);
+            $this->excel->getActiveSheet()->getColumnDimension('E')->setWidth(20);
+            $this->excel->getActiveSheet()->getColumnDimension('F')->setWidth(25);
+            $this->excel->getActiveSheet()->getColumnDimension('G')->setWidth(15);
+            $this->excel->getActiveSheet()->getColumnDimension('H')->setWidth(15);
+            $this->excel->getActiveSheet()->getColumnDimension('I')->setWidth(15);
+            $this->excel->getActiveSheet()->getColumnDimension('J')->setWidth(15);
+            $this->excel->getActiveSheet()->getColumnDimension('K')->setWidth(15);
+            $filename = lang('Inventory Valuation Detail '). date('Y_m_d_H_i_s');
+            $this->excel->getDefaultStyle()->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+            if ($pdf) {
+                $styleArray = array(
+                    'borders' => array('allborders' => array('style' => PHPExcel_Style_Border::BORDER_THIN))
+                );
+                $this->excel->getDefaultStyle()->applyFromArray($styleArray);
+                $this->excel->getActiveSheet()->getPageSetup()->setOrientation(PHPExcel_Worksheet_PageSetup::ORIENTATION_LANDSCAPE);
+                require_once(APPPATH . "third_party" . DIRECTORY_SEPARATOR . "MPDF" . DIRECTORY_SEPARATOR . "mpdf.php");
+                $rendererName = PHPExcel_Settings::PDF_RENDERER_MPDF;
+                $rendererLibrary = 'MPDF';
+                $rendererLibraryPath = APPPATH . 'third_party' . DIRECTORY_SEPARATOR . $rendererLibrary;
+                if (!PHPExcel_Settings::setPdfRenderer($rendererName, $rendererLibraryPath)) {
+                    die('Please set the $rendererName: ' . $rendererName . ' and $rendererLibraryPath: ' . $rendererLibraryPath . ' values' .
+                        PHP_EOL . ' as appropriate for your directory structure');
                 }
-                if ($excel) {
-                    ob_clean();
-                    header('Content-Type: application/vnd.ms-excel');
-                    header('Content-Disposition: attachment;filename="' . $filename . '.xls"');
-                    header('Cache-Control: max-age=0');
-                    
-		
-                    ob_clean();
-                    $objWriter = PHPExcel_IOFactory::createWriter($this->excel, 'Excel5');
-                    $objWriter->save('php://output');
-                    exit();
-                }
+
+                header('Content-Type: application/pdf');
+                header('Content-Disposition: attachment;filename="' . $filename . '.pdf"');
+                header('Cache-Control: max-age=0');
+
+                $objWriter = PHPExcel_IOFactory::createWriter($this->excel, 'PDF');
+                $objWriter->save('php://output');
+                exit();
+            }
+            if ($excel) {
+                ob_clean();
+                header('Content-Type: application/vnd.ms-excel');
+                header('Content-Disposition: attachment;filename="' . $filename . '.xls"');
+                header('Cache-Control: max-age=0');
+
+
+                ob_clean();
+                $objWriter = PHPExcel_IOFactory::createWriter($this->excel, 'Excel5');
+                $objWriter->save('php://output');
+                exit();
+            }
         }
     }
 	

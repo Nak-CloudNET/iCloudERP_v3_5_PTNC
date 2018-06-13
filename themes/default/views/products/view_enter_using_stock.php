@@ -22,7 +22,7 @@
 
 <script>
     $(document).ready(function () {
-
+				
 		function row_statusX(x) {
 			if(x == null) {
 				return '';
@@ -75,6 +75,7 @@
         null,
         null,
 		{"sClass":"center"},
+		null,
 		{"mRender":row_statusX}, {"bVisible":false},
 		{"bSortable": false, "sClass":"center"}],
 			"fnFooterCallback": function (nRow, aaData, iStart, iEnd, aiDisplay) {
@@ -87,8 +88,8 @@
             {column_number: 3, filter_default_label: "[<?=lang('Project');?>]", filter_type: "text", data: []},
             {column_number: 4, filter_default_label: "[<?=lang('Warehouse');?>]", filter_type: "text", data: []},
             {column_number: 5, filter_default_label: "[<?=lang('Employee');?>]", filter_type: "text", data: []},
-            {column_number: 6, filter_default_label: "[<?=lang('Status');?>]", filter_type: "text", data: []},
-
+            {column_number: 6, filter_default_label: "[<?=lang('Description');?>]", filter_type: "text", data: []},
+			{column_number: 7, filter_default_label: "[<?=lang('Status');?>]", filter_type: "text", data: []},
         ], "footer");
       
     });
@@ -249,7 +250,7 @@
                                 <th><?php echo $this->lang->line("project"); ?></th>
 								<th><?php echo $this->lang->line("warehouse"); ?></th>
 								<th><?php echo $this->lang->line("employee"); ?></th>
-
+								<th><?php echo $this->lang->line("description"); ?></th>
 								<th><?php echo $this->lang->line("status");?></th>
 								<th></th>
 								<th style="width:100px;"><?= lang("actions"); ?></th>
@@ -274,7 +275,7 @@
 								<th></th>
 								<th></th>
 								<th></th>
-
+								<th></th>
 								<th><?=lang('action');?></th>
 							</tr>
                         </tfoot>
