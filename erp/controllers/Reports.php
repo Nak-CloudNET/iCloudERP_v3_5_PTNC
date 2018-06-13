@@ -25312,21 +25312,11 @@ class Reports extends MY_Controller
                 $this->excel->setActiveSheetIndex(0);
                 $this->excel->getActiveSheet()->setTitle(lang('using_stock'));
                 $this->excel->getActiveSheet()->SetCellValue('A1', lang("item"));
-                $this->excel->getActiveSheet()->SetCellValue('B1', lang("category_expense"));
-                $this->excel->getActiveSheet()->SetCellValue('C1', lang("item_description"));
-                $this->excel->getActiveSheet()->SetCellValue('D1', lang("quantity"));
-                $this->excel->getActiveSheet()->SetCellValue('E1', lang("unit"));
-                $this->excel->getActiveSheet()->SetCellValue('F1', lang("cost"));
-                $this->excel->getActiveSheet()->SetCellValue('G1', lang("Total"));
-                $this->excel->getActiveSheet()->getStyle('A1'. $row.':G1'.$row)->getFont()->setBold(true);
-
-                $this->excel->getActiveSheet()->getColumnDimension('A')->setWidth(20);
-                $this->excel->getActiveSheet()->getColumnDimension('B')->setWidth(25);
-                $this->excel->getActiveSheet()->getColumnDimension('C')->setWidth(25);
-                $this->excel->getActiveSheet()->getColumnDimension('D')->setWidth(15);
-                $this->excel->getActiveSheet()->getColumnDimension('E')->setWidth(15);
-                $this->excel->getActiveSheet()->getColumnDimension('F')->setWidth(15);
-                $this->excel->getActiveSheet()->getColumnDimension('G')->setWidth(15);
+                $this->excel->getActiveSheet()->SetCellValue('B1', lang("item_description"));
+                $this->excel->getActiveSheet()->SetCellValue('C1', lang("quantity"));
+                $this->excel->getActiveSheet()->SetCellValue('D1', lang("unit"));
+                $this->excel->getActiveSheet()->SetCellValue('E1', lang("cost"));
+                $this->excel->getActiveSheet()->SetCellValue('F1', lang("Total"));
 
                 //set font bold,font color,font size,font name and background color to excel  by dara
                 $styleArray = array(
@@ -25341,8 +25331,20 @@ class Reports extends MY_Controller
                         'color' => array('rgb' => '428BCA')
                     )
                 );
-            
-                $this->excel->getActiveSheet()->getStyle('A1:G1')->applyFromArray($styleArray);
+                $this->excel->getActiveSheet()->getStyle('A1:F1')->applyFromArray($styleArray);
+                $styleBorderArray = array(
+                    'borders' => array(
+                        'allborders' => array(
+                            'style' => PHPExcel_Style_Border::BORDER_THIN,
+                            'color' => array('rgb' => '357EBD')
+                        )
+                    )
+                );
+                $this->excel->getActiveSheet()->getStyle('A1:F1')->applyFromArray($styleBorderArray);
+                $this->excel->getActiveSheet()->getRowDimension(1)->setRowHeight(30);
+                $this->excel->getActiveSheet()->getStyle('A1:F1')->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+                $this->excel->getActiveSheet()->getStyle('A1:F1')->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+
                 $row    = 2;
                 $config = null;
                 foreach ($_POST['val'] as $id) {
@@ -25354,11 +25356,10 @@ class Reports extends MY_Controller
                         $query=$this->db->query("
                         SELECT
                             erp_enter_using_stock_items.*, erp_products. NAME AS product_name,
-                            erp_expense_categories. NAME AS exp_cate_name,
                             erp_enter_using_stock_items.unit AS unit_name,
                             erp_products.cost,
                             erp_position. NAME AS pname,
-                            erp_reasons.description AS rdescription,
+                            erp_position.name AS rdescription,
                             erp_product_variants.qty_unit AS variant_qty
                         FROM
                         erp_enter_using_stock_items
@@ -25371,41 +25372,59 @@ class Reports extends MY_Controller
 
                         $this->excel->getActiveSheet()->SetCellValue('A' . $row, $stock->refno.'>> '.$this->erp->hrld($stock->date).'>> '.$stock->company.'>> '.$stock->warehouse_name." >> ".$stock->username);
                         $this->excel->getActiveSheet()->getStyle('A'. $row)->getFont()->setSize(12)->setBold(true);
-                        $this->excel->getActiveSheet()->mergeCells('A'.$row.':G'.$row);
+                        $this->excel->getActiveSheet()->mergeCells('A'.$row.':F'.$row);
+                        $this->excel->getActiveSheet()->getRowDimension($row)->setRowHeight(25);
+                        $this->excel->getActiveSheet()->getStyle('A' . $row . ':F' . $row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+                        $styleBorderArray = array(
+                            'borders' => array(
+                                'allborders' => array(
+                                    'style' => PHPExcel_Style_Border::BORDER_THIN,
+                                    'color' => array('rgb' => 'e6e6e6')
+                                )
+                            )
+                        );
+                        $this->excel->getActiveSheet()->getStyle('A' . $row . ':F' . $row)->applyFromArray($styleBorderArray);
+
                         $row++;
                         foreach($query as $q){
                             // $this->erp->print_arrays($q);
                             $this->excel->getActiveSheet()->SetCellValue('A' . $row, $q->product_name.'('.$q->code .')');
-                            $this->excel->getActiveSheet()->SetCellValue('B' . $row, $q->exp_cate_name);
-                            $this->excel->getActiveSheet()->SetCellValue('C' . $row, $q->rdescription);
-                            $this->excel->getActiveSheet()->SetCellValue('D' . $row, $this->erp->formatQuantity($q->qty_use));
-                            $this->excel->getActiveSheet()->SetCellValue('E' . $row, $q->unit_name);
-                            $this->excel->getActiveSheet()->SetCellValue('F' . $row, $this->erp->formatMoney($q->cost));
-                            $this->excel->getActiveSheet()->SetCellValue('G' . $row, $this->erp->formatMoney($q->cost*$q->qty_use) );
-                            $this->excel->getActiveSheet()->getStyle('F'. $row.':G'.$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
-                            $this->excel->getActiveSheet()->getStyle('E'. $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+                            $this->excel->getActiveSheet()->SetCellValue('B' . $row, $q->rdescription);
+                            $this->excel->getActiveSheet()->SetCellValue('C' . $row, $this->erp->formatQuantity($q->qty_use));
+                            $this->excel->getActiveSheet()->SetCellValue('D' . $row, $q->unit_name);
+                            $this->excel->getActiveSheet()->SetCellValue('E' . $row, $this->erp->formatMoney($q->cost));
+                            $this->excel->getActiveSheet()->SetCellValue('F' . $row, $this->erp->formatMoney($q->cost*$q->qty_use) );
+                            $this->excel->getActiveSheet()->getStyle('E'. $row.':F'.$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                            $this->excel->getActiveSheet()->getStyle('C'. $row .':D'. $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+                            $this->excel->getActiveSheet()->getStyle('A' . $row . ':F' . $row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+                            $this->excel->getActiveSheet()->getRowDimension($row)->setRowHeight(25);
+
+                            $styleBorderArray = array(
+                                'borders' => array(
+                                    'allborders' => array(
+                                        'style' => PHPExcel_Style_Border::BORDER_THIN,
+                                        'color' => array('rgb' => 'e6e6e6')
+                                    )
+                                )
+                            );
+                            $this->excel->getActiveSheet()->getStyle('A' . $row . ':F' . $row)->applyFromArray($styleBorderArray);
+
                             $row++;
-                        } 
-                        // set border
-                        $styleArray1 = array(
-                            'borders' => array(
-                              'allborders' => array(
-                                  'style' => PHPExcel_Style_Border::BORDER_THIN
-                              )
-                            )
-                        );
-                        $this->excel->getActiveSheet()->getStyle('A1:G'.$row)->applyFromArray($styleArray1);
+                        }
                     }
                 }
+
+                $this->excel->getActiveSheet()->getColumnDimension('A')->setWidth(20);
+                $this->excel->getActiveSheet()->getColumnDimension('B')->setWidth(60);
+                $this->excel->getActiveSheet()->getColumnDimension('C')->setWidth(25);
+                $this->excel->getActiveSheet()->getColumnDimension('D')->setWidth(15);
+                $this->excel->getActiveSheet()->getColumnDimension('E')->setWidth(15);
+                $this->excel->getActiveSheet()->getColumnDimension('F')->setWidth(15);
                 
 
                 $filename = lang('Report List Using Stock'). date('Y_m_d_H_i_s');
                 $this->excel->getDefaultStyle()->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
                 if ($this->input->post('form_action') == 'export_pdf') {
-                    $styleArray = array(
-                        'borders' => array('allborders' => array('style' => PHPExcel_Style_Border::BORDER_THIN))
-                    );
-                    $this->excel->getDefaultStyle()->applyFromArray($styleArray);
                     $this->excel->getActiveSheet()->getPageSetup()->setOrientation(PHPExcel_Worksheet_PageSetup::ORIENTATION_LANDSCAPE);
                     require_once(APPPATH . "third_party" . DIRECTORY_SEPARATOR . "MPDF" . DIRECTORY_SEPARATOR . "mpdf.php");
                     $rendererName = PHPExcel_Settings::PDF_RENDERER_MPDF;
@@ -25413,7 +25432,7 @@ class Reports extends MY_Controller
                     $rendererLibraryPath = APPPATH . 'third_party' . DIRECTORY_SEPARATOR . $rendererLibrary;
                     if (!PHPExcel_Settings::setPdfRenderer($rendererName, $rendererLibraryPath)) {
                         die('Please set the $rendererName: ' . $rendererName . ' and $rendererLibraryPath: ' . $rendererLibraryPath . ' values' .
-                        PHP_EOL . ' as appropriate for your directory structure');
+                            PHP_EOL . ' as appropriate for your directory structure');
                     }
 
                     header('Content-Type: application/pdf');
