@@ -1,7 +1,3 @@
-<?php
-    //$this->erp->print_arrays($items);
-?>
-
 <script type="text/javascript">
 	var count = 1, usitems = {};
     $(document).ready(function () {
@@ -43,7 +39,7 @@
         <?php } ?>
 		
 		if (__getItem('usitems')) {
-			//__removeItem('usitems');
+			__removeItem('usitems');
 		}
 		if (__getItem('from_location')) {
 			__removeItem('from_location');
@@ -170,9 +166,8 @@
 		
 		$('#plan').trigger('change');
     });
-	<?php if ($items) { ?>
-
-        __setItem('usitems', JSON.stringify(<?= $items; ?>));
+	<?php if ($items) {?>
+		__setItem('usitems', JSON.stringify(<?=$items;?>));
 		__setItem('from_location', '<?= $where; ?>');
 		__setItem('authorize_id', '<?= $using_stock->authorize_id; ?>');
 		__setItem('employee_id', '<?= $using_stock->employee_id; ?>');

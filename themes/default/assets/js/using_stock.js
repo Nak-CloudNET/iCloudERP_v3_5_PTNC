@@ -1,5 +1,4 @@
 $(document).ready(function (e) {
-
 	var $customer = $('#customer');
 	$customer.change(function (e) {
         __setItem('customer', $(this).val());
@@ -43,14 +42,14 @@ $(document).ready(function (e) {
 		
     } 
 
-
+});
     /* ---------------------- 
 	 * On Edit 
 	 * ---------------------- */
 
-    if (__getItem('usitems')) {
-        loadItems();
-    }
+	if (__getItem('usitems')) {
+		loadItems();
+	}
 
 	/* ---------------------- 
 	 * Delete Row Method 
@@ -64,6 +63,7 @@ $(document).ready(function (e) {
 		row.remove();
 		loadItems();
 	});
+
 
 	/* ----------------------
 	 * Change Qty use
@@ -165,7 +165,7 @@ $(document).ready(function (e) {
         __setItem('usitems', JSON.stringify(usitems));
     });
 
-});
+
 
 /* -----------------------
  * Add Using Stock
@@ -340,6 +340,8 @@ function loadItems() {
         $("#UsData tbody").empty();
         usitems = JSON.parse(__getItem('usitems'));
 
+        console.log(usitems);
+        
 		var no_ = 1;
 		$('#from_location').select2("readonly", true);
 		item_description 		= '';
@@ -347,13 +349,12 @@ function loadItems() {
 		item_qty_use     		= 0;
 		item_qty_by_unit     	= '';
         $.each(usitems, function () {
-
             var item 			= this;
             var item_id 		= site.settings.item_addition == 1 ? item.item_id : item.id;
             usitems[item_id] 	= item;
-			var product_id 		= item.row.id, 
-				item_code 		= item.row.code, 
-				item_name 		= item.row.name, 
+			var product_id 		= item.row.pro_id, 
+				item_code 		= item.row.product_code, 
+				item_name 		= item.row.product_name, 
 				item_label 		= item.label, 
 				qoh 			= item.row.qoh, 
 				unit_name 		= item.row.unit_name, 
@@ -366,23 +367,20 @@ function loadItems() {
 				stock_item_id 	= item.stock_item;
 				item_qty_use 		= formatPurDecimal(item.row.qty_use);
 
-			var desc = $("<select id=\"description\" name=\"description\[\]\" style=\"padding-top: 2px !important;\" class=\"form-control description\" />");
-
-			if(item.positions !== false) {
+            var desc = $("<select id=\"description\" name=\"description\[\]\" style=\"padding-top: 2px !important;\" class=\"form-control description\" />");
+            if(item.positions !== false) {
                 $.each(item.positions, function () {
-
-                	if(this.id == item.row.description){
-                        $("<option />", {value: this.id, text: this.name, id:this.id, selected:'selected' }).appendTo(desc);
-					}else{
-                        $("<option />", {value: this.id, text: this.name, id:this.id }).appendTo(desc);
-					}
-
+                	if(item.row.description == this.id){
+                		$("<option />", {value: this.id, text: this.name, id:this.id, selected: 'selected'}).appendTo(desc);
+				  	}else{
+						$("<option />", {value: this.id, text: this.name, id:this.id}).appendTo(desc);  
+				  	}
+				  
 				});
             } else {
-                	$("<option />", {value: 0, text: 'n/a'}).appendTo(desc);
-                	desc = desc.hide();
+                $("<option />", {value: 0, text: 'n/a'}).appendTo(desc);
+                desc = desc.hide();
             }
-
 
             var opt = $("<select id=\"unit\" name=\"unit\[\]\" style=\"padding-top: 2px !important;\" class=\"form-control unit\" />");
             if(item.option_unit !== false) {
@@ -390,7 +388,7 @@ function loadItems() {
 				  if(item.row.unit == this.unit_variant){
 					$("<option />", {value: this.unit_variant, text: this.unit_variant, qty: this.qty_unit, selected: 'selected'}).appendTo(opt);
 				  }else{
-					$("<option />", {value: this.unit_variant, text: this.unit_variant, qty: this.qty_unit}).appendTo(opt);  
+					$("<option />", {value: item.row.unit, text: item.row.unit, qty: this.qty_unit}).appendTo(opt);  
 				  }
 				});
             } else {
@@ -416,13 +414,6 @@ function loadItems() {
                 exp_date = exp_date.hide();
             }
 			
-			
-			/*if(item.row.description){
-				item_description = item.row.description;
-			} else {
-				item_description = '';
-			}*/
-
 			if(item.reason){
 				item_reason = item.reason;
 			}
@@ -437,10 +428,7 @@ function loadItems() {
 				tr_html += '<td>'+(exp_date.get(0).outerHTML)+'</td>';
 			}
 
-
 			tr_html += '<td>'+ (desc.get(0).outerHTML) +'</td>';
-			//tr_html += '<td><select id="position" class="form-control description"></select></td>';
-			//tr_html += '<td><input type="text" value="'+ item_description +'" class="form-control" name="description[]"/></td>';
 			
 			tr_html += '<td class="text-center">'+ formatQuantity2(qoh) +'</td>';
 			
@@ -466,7 +454,7 @@ function loadItems() {
  ---------------------------- */
 
 function add_using_stock_item(item) {
-
+		
     if (count == 1) {
         usitems = {};
         if ($('#account').val()) {

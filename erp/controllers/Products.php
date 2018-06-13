@@ -1240,7 +1240,7 @@ class Products extends MY_Controller
                 
 
 				$expiry_date	= $this->site->getProductExpireDate($row->id, $warehouse_id);
-				$pr[] = array('id' => ($c + $r), 'item_id' => $row->id, 'label' => $row->name . " (" . $row->code . ")",'row' => $row, 'option_unit' => $option_unit, 'project_qty' => $project_qty, 'expiry_date' => $expiry_date, 'positions' => $positions);
+				$pr[] = array('id' => ($c + $r), 'item_id' => $row->id, 'label' => $row->product_name . " (" . $row->product_code . ")",'row' => $row, 'option_unit' => $option_unit, 'project_qty' => $project_qty, 'expiry_date' => $expiry_date, 'positions' => $positions);
 				$r++;
             }
             echo json_encode($pr);
@@ -4999,7 +4999,7 @@ class Products extends MY_Controller
                 'address_id'    => $address,
             );
             
-            //$this->erp->print_arrays($data, $item_data);
+            //$this->erp->print_arrays($data);
             $using_stock = $this->products_model->insert_enter_using_stock($data, $item_data);
             optimizeUsing(date('Y-m-d', strtotime($date)));
             if($using_stock){
@@ -5215,8 +5215,10 @@ class Products extends MY_Controller
 						
         $this->datatables
             ->select("erp_enter_using_stock.id as id,erp_enter_using_stock.date, erp_enter_using_stock.reference_no as refno,
-			erp_companies.company, erp_warehouses.name as warehouse_name, erp_users.username,erp_enter_using_stock.type as type, erp_enter_using_stock.is_return", FALSE)
+			erp_companies.company, erp_warehouses.name as warehouse_name, erp_users.username, erp_position.name, erp_enter_using_stock.type as type, erp_enter_using_stock.is_return", FALSE)
             ->from("erp_enter_using_stock")
+            ->join('erp_enter_using_stock_items', 'erp_enter_using_stock.reference_no=erp_enter_using_stock_items.reference_no', 'left')
+            ->join('erp_position', 'erp_enter_using_stock_items.description=erp_position.id', 'left')
 		    ->join('erp_companies', 'erp_companies.id=erp_enter_using_stock.shop', 'inner')
             ->join('erp_warehouses', 'erp_enter_using_stock.warehouse_id=erp_warehouses.id', 'left')
             ->join('erp_project_plan', 'erp_enter_using_stock.plan_id = erp_project_plan.id', 'left')
@@ -5316,7 +5318,7 @@ class Products extends MY_Controller
 	
 	public function edit_using_stock_by_id($id=NULL, $type=NULL)
 	{
-
+		$this->erp->checkPermissions('adjustments');
         $data['error'] 				= (validation_errors()) ? validation_errors() : $this->session->flashdata('error');
         $this->data['warehouses'] 	= $this->site->getAllWarehouses();
 		$AllUsers					= $this->site->getAllUsers();
@@ -5341,16 +5343,15 @@ class Products extends MY_Controller
         $reference_no               = $getUsingStock->reference_no;
 		$date				        = $getUsingStock->date;
 		$wh_id						= $getUsingStock->warehouse_id;
-
-		$getUsingStockItem			= $this->products_model->getUsingStockItemsByRef($reference_no);
-
+        $getUsingStockItem          = $this->products_model->getUsingStockItemsByID($id);
+		//$getUsingStockItem			= $this->products_model->getUsingStockItemsByRef($reference_no);
+		
 		$c = rand(100000, 9999999);
 		foreach ($getUsingStockItem as $row) {
-            $positions   	= $this->products_model->getAllPositionData();
-
-            //$this->erp->print_arrays($getUsingStockItem);
 			$option_unit  		= $this->products_model->getUnitAndVaraintByProductId($row->id);
 			$opt_pro      		= $this->products_model->getProductVariantByOptionID($row->option_id);
+            $positions          = $this->products_model->getAllPositionData();
+
 			$row->project_qty   = 0;
 			if($getUsingStock->plan_id){
 				$project_item 		= $this->products_model->getPlanUsing($getUsingStock->plan_id, $row->product_code, $getUsingStock->address_id);
@@ -5372,11 +5373,11 @@ class Products extends MY_Controller
 			}
 			
 			$ri = $this->Settings->item_addition ? $row->id : $c;
-			$pr[$ri] = array('id' => $c, 'item_id' => $row->id, 'label' => $row->name . " (" . $row->product_code . ")", 'row' => $row, 'option_unit' => $option_unit, 'project_qty' => $row->project_qty,'stock_item' => $row->e_id, 'expiry_date' => $expiry_date,'positions'=>$positions);
+			$pr[$ri] = array('id' => $c, 'item_id' => $row->id, 'label' => $row->product_name . " (" . $row->product_code . ")", 'row' => $row, 'option_unit' => $option_unit, 'project_qty' => $row->project_qty,'stock_item' => $row->e_id, 'expiry_date' => $expiry_date, 'positions' => $positions);
 			$c++;
 		
 		}
-
+	
 		$this->data['items'] 		= json_encode($pr);
 
         $this->data['refer']        = $reference_no;
@@ -5599,7 +5600,7 @@ class Products extends MY_Controller
 				$qty_balance	= $qty_use;
 				$option_id		= '';
 				$total_cost		= $product_cost * $qty_balance;	
-				
+
 				$variant 		= $this->site->getProductVariantByID($product_id, $unit);
 				if ($variant) {
 					$qty_balance 	= $qty_use * $variant->qty_unit;
@@ -5607,9 +5608,8 @@ class Products extends MY_Controller
 					$total_cost		= $product_cost * $qty_balance;
 						
 				}
-				
-				$warehouse 		= $this->site->getWarehouseQty($product_id, $warehouse_id);
 
+                $warehouse      = $this->site->getWarehouseQty($product_id, $warehouse_id);                
 				if(($warehouse->quantity + $qty_old) < $qty_balance){
 					$this->session->set_flashdata('error', $this->lang->line("quantity_bigger") );
 					redirect($_SERVER["HTTP_REFERER"]);
@@ -5639,7 +5639,7 @@ class Products extends MY_Controller
             } else {
                 krsort($item_data);
             }
-			
+            
 			$data = array(
     			'date' 			=> $date,
     			'reference_no' 	=> $reference_no,
@@ -5657,13 +5657,14 @@ class Products extends MY_Controller
 				'address_id'	=> $address,
 				
     		);
-			//$this->erp->print_arrays($data, $item_data);
+
 			$using_stock = $this->products_model->update_enter_using_stock($stock_id, $data, $item_data);
             optimizeUsing(date('Y-m-d', strtotime($date)));
 			if($using_stock){
 				$this->session->set_flashdata(lang('enter_using_stock_added.'));
                 $r_r = str_replace("/","-",$reference_no);
-                redirect('products/print_using_stock/' . $r_r);
+                $ref = str_replace("&","_",$r_r);
+                redirect('products/print_using_stock/' . $ref);
 			}
 			
 		} else {

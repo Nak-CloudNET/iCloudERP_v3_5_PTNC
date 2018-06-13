@@ -266,7 +266,7 @@
 		                            }
 									$acc_section[$GLChart->accountcode] = $GLChart->accountcode.' | '.$GLChart->accountname;
 								}
-		                        echo form_dropdown('account_sale', $acc_section, $selected,'id="account" class="form-control" style="width:100%;" ');
+		                        echo form_dropdown('account', $acc_section, $selected,'id="account" class="form-control" style="width:100%;" ');
                             ?>
 						</div>
 						<div class="form-group all">
