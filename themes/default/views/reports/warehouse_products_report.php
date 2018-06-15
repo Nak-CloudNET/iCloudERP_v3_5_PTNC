@@ -133,7 +133,7 @@ $(document).ready(function(){
                 </div>
                 <div class="clearfix"></div>
 				
-                <div class="table-responsive" style="width:100%;overflow:auto;">
+                <div class="table-responsive">
                     <table id="tbstock" class="table table-condensed table-bordered table-hover table-striped" >
                         <thead>
 							<tr>
@@ -160,14 +160,14 @@ $(document).ready(function(){
 							$str = "";
 							$tt_qty=0;
 							$arr = array();
-						if(is_array($products_details)){
-							foreach($products_details as $pro){
-								if($pro->uname){
-									$str= "(".$pro->uname.")";
-								}else{
-									$str  = "";
-								}
-						?>
+                            if(is_array($products_details)){
+                                foreach($products_details as $pro){
+                                    if($pro->uname){
+                                        $str= "(".$pro->uname.")";
+                                    }else{
+                                        $str  = "";
+                                    }
+                            ?>
 							<tr>
                                 <td style="text-align:center !important;">
                                     <ul class="enlarge">
@@ -207,7 +207,7 @@ $(document).ready(function(){
 									}
 								}
 								?>
-								<?php 
+								<?php
 									echo "<td class='text-right'><b>".$this->erp->formatQuantity($tt)."</b><br>".$this->erp->convert_unit_2_string($pro->id,$tt)."</td>";
 								?>
 							</tr>
