@@ -27148,7 +27148,7 @@ class Reports extends MY_Controller
         }
         $from_date      = NULL;
         $to_date        = NULL;
-		$row_nums = $this->reports_model->getAllProductsDetailsNUM($product,$category);
+		$row_nums = $this->products_model->getCountProductQTYByID();//$this->reports_model->getAllProductsDetailsNUM($product,$category);
 		
 		$config 							= array();
 		$config['suffix'] 					= "?v=1".$str;
@@ -27181,7 +27181,7 @@ class Reports extends MY_Controller
         $this->data['category2']            = $category;
 		$this->data['product2'] 	  		= $product;
 		$this->data['biller2']    			= $biller;
-        $this->data['warehouse2'] = $warehouse;
+        $this->data['warehouse2']           = $warehouse;
 		$this->data['from_date2']    		= $from_date;
 		$this->data['to_date2'] 	  		= $to_date;
 		
