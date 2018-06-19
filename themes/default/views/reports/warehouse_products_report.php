@@ -28,6 +28,9 @@ $(document).ready(function(){
 	}
 
 </style>
+<?php
+    echo form_open('reports/warehouse_products_action', 'id="action-form"');
+?>
 <div class="box">
     <div class="box-header">
         <h2 class="blue"><i class="fa-fw fa fa-barcode"></i><?= lang('warehouse_products') ; ?>
@@ -60,6 +63,13 @@ $(document).ready(function(){
             </ul>
         </div>       
     </div>
+    <div style="display: none;">
+        <input type="hidden" name="form_action" value="" id="form_action"/>
+        <input type="hidden" name="product" value="" id="product" value="<?= $product1 ?>" />
+        <input type="hidden" name="category" value="" id="category" value="<?= $category1 ?>" />
+        <?= form_submit('performAction', 'performAction', 'id="action-form-submit"') ?>
+    </div>
+    <?= form_close() ?>
     <div class="box-content">
         <div class="row">
             <div class="col-lg-12">
@@ -137,6 +147,9 @@ $(document).ready(function(){
                     <table id="tbstock" class="table table-condensed table-bordered table-hover table-striped" >
                         <thead>
 							<tr>
+                                <th style="min-width:30px; width: 30px; text-align: center;">
+                                    <input class="checkbox checkft" type="checkbox" name="check"/>
+                                </th>
                                 <th style="width:100px;"><?= lang("image") ?></th>
 								<th><?= lang("product_code") ?></th>
 								<th><?= lang("product_name") ?></th>
@@ -169,6 +182,7 @@ $(document).ready(function(){
 								}
 						?>
 							<tr>
+                                <td><input type="checkbox" class="checkbox multi-select input-xs" name='val[]' value="<?php echo $pro->id ?>" /></td>
                                 <td style="text-align:center !important;">
                                     <ul class="enlarge">
                                         <li>
@@ -217,7 +231,7 @@ $(document).ready(function(){
 						}
 						$col = 3;
 						if ($this->Settings->product_expiry == 0) {
-                            $col = 3;
+                            $col = 4;
 						}
 						?>
 							<tr>
@@ -265,7 +279,7 @@ $(document).ready(function () {
         $("#form").slideUp();
         return false;
     });
-    $('#excel').on('click', function (e) {
+    /*$('#excel').on('click', function (e) {
 		e.preventDefault();
 		if ($('.checkbox:checked').length <= 0) {
 			window.location.href = "<?= site_url('reports/warehouseProductReport/0/xls/'.$product1.'/'.$category1.'/'.$from_date1.'/'.$to_date1) ?>";
@@ -278,6 +292,6 @@ $(document).ready(function () {
 			window.location.href = "<?= site_url('reports/warehouseProductReport/pdf/0/'.$product1.'/'.$category1.'/'.$from_date1.'/'.$to_date1) ?>";
 			return false;
 		}
-	});	
+	});	*/
 });
 </script>
