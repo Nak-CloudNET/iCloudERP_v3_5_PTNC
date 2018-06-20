@@ -211,13 +211,15 @@ class Reports_model extends CI_Model
 		
 	}
 	 
-	public function getUsingStock($reference_no,$employee,$biller,$warehouse,$wid,$start_date,$end_date,$offset,$limit){
+	public function getUsingStock($reference_no,$employee,$biller,$warehouse,$description,$wid,$start_date,$end_date,$offset,$limit){
         //$this->erp->print_arrays($start_date,$end_date);
 	    $this->db->select("erp_companies.name as biller,erp_enter_using_stock.id as id,    erp_enter_using_stock.reference_no as refno,
 		erp_companies.company, erp_warehouses.name as warehouse_name, erp_users.username, erp_enter_using_stock.note, erp_enter_using_stock.type as type, erp_enter_using_stock.date, erp_enter_using_stock.total_cost", FALSE)
 		->join('erp_companies', 'erp_companies.id=erp_enter_using_stock.shop', 'inner')
 		->join('erp_warehouses', 'erp_enter_using_stock.warehouse_id=erp_warehouses.id', 'left')
-	    ->join('erp_users', 'erp_users.id=erp_enter_using_stock.employee_id', 'inner');
+	    ->join('erp_users', 'erp_users.id=erp_enter_using_stock.employee_id', 'inner')
+	    ->join('erp_enter_using_stock_items', 'erp_enter_using_stock.reference_no = erp_enter_using_stock_items.reference_no', 'left')
+	    ->join('erp_position', 'erp_enter_using_stock_items.description = erp_position.id', 'left');
 
 		$this->db->limit($limit,$offset);
 		if($reference_no){
@@ -228,6 +230,9 @@ class Reports_model extends CI_Model
 		}
 		if($biller){
 			$this->db->where('erp_companies.id',$biller);
+		}
+		if($description){
+			$this->db->where('erp_position.id',$description);
 		}
 		if($warehouse){
 			$this->db->where('erp_enter_using_stock.warehouse_id',$warehouse);

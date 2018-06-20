@@ -6684,6 +6684,13 @@ class Reports extends MY_Controller
 		}else{
 			$warehouse =null;
 		}
+		if($this->input->get('description')){
+			 $description =$this->input->get('description');
+			 $str.="&description=".$description;
+			 $this->data['description']=$description;
+		}else{
+            $description =null;
+		}
 		if($this->input->get('end_date')){
 			 $end_date =$this->input->get('end_date');
 			 $str.="&end_date=".$end_date;
@@ -6743,11 +6750,12 @@ class Reports extends MY_Controller
 		$this->pagination->initialize($config);
 		$this->data["pagination"] = $this->pagination->create_links();  
         $this->data['error'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('error');
-		$this->data['using_stock'] = $this->reports_model->getUsingStock($reference_no,$employee,$biller,$warehouse,$wid,$start_date,$end_date,$config["ob_set"],$config["per_page"]);
+		$this->data['using_stock'] = $this->reports_model->getUsingStock($reference_no,$employee,$biller,$warehouse,$description,$wid,$start_date,$end_date,$config["ob_set"],$config["per_page"]);
         $this->data['Employee'] = $this->reports_model->getUser();
         $this->data['billers'] = $this->site->getAllCompanies('biller');
 		$this->data['warehouses'] = $this->reports_model->getWareFullByUSER($wid);
        //$this->data['warehouses'] = $this->site->getAllWarehouses();
+		$this->data['descriptions'] = $this->site->getStockUsingDesc();
 		$this->data['billers'] = $this->reports_model->getBillers();
 		$this->data['biller_idd'] = $this->reports_model->getBiilerByUserID();
 		$this->data['customer_groups'] = $this->companies_model->getAllCustomerGroups();
@@ -25347,10 +25355,12 @@ class Reports extends MY_Controller
 
                 $row    = 2;
                 $config = null;
+                $gtotal_qty = 0; $gtotal_cost = 0; $gsubtotal = 0;
                 foreach ($_POST['val'] as $id) {
 
                     // $this->erp->print_arrays($id);
                     $using_stock = $this->reports_model->getUsingStockReport($id,$config["ob_set"],$config["per_page"]);
+
                     foreach($using_stock as $stock){
                         // $this->erp->print_arrays($stock);
                         $query=$this->db->query("
@@ -25386,7 +25396,11 @@ class Reports extends MY_Controller
                         $this->excel->getActiveSheet()->getStyle('A' . $row . ':F' . $row)->applyFromArray($styleBorderArray);
 
                         $row++;
+                        $tqty = 0; $tcost = 0; $subtotal = 0;
                         foreach($query as $q){
+                            $tqty += $q->qty_use;
+                            $tcost += $q->cost;
+                            $subtotal += $q->cost*$q->qty_use;
                             // $this->erp->print_arrays($q);
                             $this->excel->getActiveSheet()->SetCellValue('A' . $row, $q->product_name.'('.$q->code .')');
                             $this->excel->getActiveSheet()->SetCellValue('B' . $row, $q->rdescription);
@@ -25410,9 +25424,49 @@ class Reports extends MY_Controller
                             $this->excel->getActiveSheet()->getStyle('A' . $row . ':F' . $row)->applyFromArray($styleBorderArray);
 
                             $row++;
+
+                            $this->excel->getActiveSheet()->SetCellValue('A' . $row, lang('total'));
+                            $this->excel->getActiveSheet()->SetCellValue('B' . $row, '');
+                            $this->excel->getActiveSheet()->SetCellValue('C' . $row, $this->erp->formatQuantity($tqty));
+                            $this->excel->getActiveSheet()->SetCellValue('D' . $row, '');
+                            $this->excel->getActiveSheet()->SetCellValue('E' . $row, $this->erp->formatMoney($tcost));
+                            $this->excel->getActiveSheet()->SetCellValue('F' . $row, $this->erp->formatMoney($subtotal));
+
+                            $this->excel->getActiveSheet()->getStyle('A'. $row)->getFont()->setSize(12)->setBold(true);
+                            $this->excel->getActiveSheet()->getStyle('C'. $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+                            $this->excel->getActiveSheet()->getStyle('E'. $row .':F'. $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+
+                            $gtotal_qty += $tqty;
+                            $gtotal_cost += $tcost;
+                            $gsubtotal += $subtotal;
+
+                            $row++;
                         }
                     }
+                    $this->excel->getActiveSheet()->SetCellValue('A' . $row, lang('grand_total'));
+                    $this->excel->getActiveSheet()->SetCellValue('B' . $row, '');
+                    $this->excel->getActiveSheet()->SetCellValue('C' . $row, $this->erp->formatQuantity($gtotal_qty));
+                    $this->excel->getActiveSheet()->SetCellValue('D' . $row, '');
+                    $this->excel->getActiveSheet()->SetCellValue('E' . $row, $this->erp->formatMoney($gtotal_cost));
+                    $this->excel->getActiveSheet()->SetCellValue('F' . $row, $this->erp->formatMoney($gsubtotal));
+
+                    $this->excel->getActiveSheet()->getStyle('A'. $row)->getFont()->setSize(12)->setBold(true);
+                    $this->excel->getActiveSheet()->getStyle('C'. $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+                    $this->excel->getActiveSheet()->getStyle('E'. $row .':F'. $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
                 }
+                $styleArray = array(
+                    'font'  => array(
+                        'bold'  => true,
+                        'color' => array('rgb' => 'FFFFFF'),
+                        'size'  => 10,
+                        'name'  => 'Verdana'
+                    ),
+                    'fill' => array(
+                        'type' => PHPExcel_Style_Fill::FILL_SOLID,
+                        'color' => array('rgb' => '428BCA')
+                    )
+                );
+                $this->excel->getActiveSheet()->getStyle('A'.$row.':F'.$row)->applyFromArray($styleArray);
 
                 $this->excel->getActiveSheet()->getColumnDimension('A')->setWidth(20);
                 $this->excel->getActiveSheet()->getColumnDimension('B')->setWidth(60);
