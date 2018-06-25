@@ -6684,6 +6684,13 @@ class Reports extends MY_Controller
 		}else{
 			$warehouse =null;
 		}
+		if($this->input->get('description')){
+			 $description =$this->input->get('description');
+			 $str.="&description=".$description;
+			 $this->data['description']=$description;
+		}else{
+            $description =null;
+		}
 		if($this->input->get('end_date')){
 			 $end_date =$this->input->get('end_date');
 			 $str.="&end_date=".$end_date;
@@ -6743,11 +6750,12 @@ class Reports extends MY_Controller
 		$this->pagination->initialize($config);
 		$this->data["pagination"] = $this->pagination->create_links();  
         $this->data['error'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('error');
-		$this->data['using_stock'] = $this->reports_model->getUsingStock($reference_no,$employee,$biller,$warehouse,$wid,$start_date,$end_date,$config["ob_set"],$config["per_page"]);
+		$this->data['using_stock'] = $this->reports_model->getUsingStock($reference_no,$employee,$biller,$warehouse,$description,$wid,$start_date,$end_date,$config["ob_set"],$config["per_page"]);
         $this->data['Employee'] = $this->reports_model->getUser();
         $this->data['billers'] = $this->site->getAllCompanies('biller');
 		$this->data['warehouses'] = $this->reports_model->getWareFullByUSER($wid);
        //$this->data['warehouses'] = $this->site->getAllWarehouses();
+		$this->data['descriptions'] = $this->site->getStockUsingDesc();
 		$this->data['billers'] = $this->reports_model->getBillers();
 		$this->data['biller_idd'] = $this->reports_model->getBiilerByUserID();
 		$this->data['customer_groups'] = $this->companies_model->getAllCustomerGroups();
@@ -25347,10 +25355,12 @@ class Reports extends MY_Controller
 
                 $row    = 2;
                 $config = null;
+                $gtotal_qty = 0; $gtotal_cost = 0; $gsubtotal = 0;
                 foreach ($_POST['val'] as $id) {
 
                     // $this->erp->print_arrays($id);
                     $using_stock = $this->reports_model->getUsingStockReport($id,$config["ob_set"],$config["per_page"]);
+
                     foreach($using_stock as $stock){
                         // $this->erp->print_arrays($stock);
                         $query=$this->db->query("
@@ -25386,7 +25396,11 @@ class Reports extends MY_Controller
                         $this->excel->getActiveSheet()->getStyle('A' . $row . ':F' . $row)->applyFromArray($styleBorderArray);
 
                         $row++;
+                        $tqty = 0; $tcost = 0; $subtotal = 0;
                         foreach($query as $q){
+                            $tqty += $q->qty_use;
+                            $tcost += $q->cost;
+                            $subtotal += $q->cost*$q->qty_use;
                             // $this->erp->print_arrays($q);
                             $this->excel->getActiveSheet()->SetCellValue('A' . $row, $q->product_name.'('.$q->code .')');
                             $this->excel->getActiveSheet()->SetCellValue('B' . $row, $q->rdescription);
@@ -25410,9 +25424,49 @@ class Reports extends MY_Controller
                             $this->excel->getActiveSheet()->getStyle('A' . $row . ':F' . $row)->applyFromArray($styleBorderArray);
 
                             $row++;
+
+                            $this->excel->getActiveSheet()->SetCellValue('A' . $row, lang('total'));
+                            $this->excel->getActiveSheet()->SetCellValue('B' . $row, '');
+                            $this->excel->getActiveSheet()->SetCellValue('C' . $row, $this->erp->formatQuantity($tqty));
+                            $this->excel->getActiveSheet()->SetCellValue('D' . $row, '');
+                            $this->excel->getActiveSheet()->SetCellValue('E' . $row, $this->erp->formatMoney($tcost));
+                            $this->excel->getActiveSheet()->SetCellValue('F' . $row, $this->erp->formatMoney($subtotal));
+
+                            $this->excel->getActiveSheet()->getStyle('A'. $row)->getFont()->setSize(12)->setBold(true);
+                            $this->excel->getActiveSheet()->getStyle('C'. $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+                            $this->excel->getActiveSheet()->getStyle('E'. $row .':F'. $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+
+                            $gtotal_qty += $tqty;
+                            $gtotal_cost += $tcost;
+                            $gsubtotal += $subtotal;
+
+                            $row++;
                         }
                     }
+                    $this->excel->getActiveSheet()->SetCellValue('A' . $row, lang('grand_total'));
+                    $this->excel->getActiveSheet()->SetCellValue('B' . $row, '');
+                    $this->excel->getActiveSheet()->SetCellValue('C' . $row, $this->erp->formatQuantity($gtotal_qty));
+                    $this->excel->getActiveSheet()->SetCellValue('D' . $row, '');
+                    $this->excel->getActiveSheet()->SetCellValue('E' . $row, $this->erp->formatMoney($gtotal_cost));
+                    $this->excel->getActiveSheet()->SetCellValue('F' . $row, $this->erp->formatMoney($gsubtotal));
+
+                    $this->excel->getActiveSheet()->getStyle('A'. $row)->getFont()->setSize(12)->setBold(true);
+                    $this->excel->getActiveSheet()->getStyle('C'. $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+                    $this->excel->getActiveSheet()->getStyle('E'. $row .':F'. $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
                 }
+                $styleArray = array(
+                    'font'  => array(
+                        'bold'  => true,
+                        'color' => array('rgb' => 'FFFFFF'),
+                        'size'  => 10,
+                        'name'  => 'Verdana'
+                    ),
+                    'fill' => array(
+                        'type' => PHPExcel_Style_Fill::FILL_SOLID,
+                        'color' => array('rgb' => '428BCA')
+                    )
+                );
+                $this->excel->getActiveSheet()->getStyle('A'.$row.':F'.$row)->applyFromArray($styleArray);
 
                 $this->excel->getActiveSheet()->getColumnDimension('A')->setWidth(20);
                 $this->excel->getActiveSheet()->getColumnDimension('B')->setWidth(60);
@@ -27156,7 +27210,7 @@ class Reports extends MY_Controller
         $config["base_url"] 				= site_url("reports/warehouse_products/") ;
 		$config["total_rows"] 				= $row_nums;
 		$config["ob_set"] 					= $uri;
-        $config["per_page"] 				= 20; 
+        $config["per_page"] 				= 500; 
 		$config["uri_segment"] 				= 3;
 		$config['full_tag_open'] 			= '<ul class="pagination pagination-sm">';
 		$config['full_tag_close'] 			= '</ul>';
@@ -27224,6 +27278,180 @@ class Reports extends MY_Controller
         $meta = array('page_title' => lang('warehouse_products'), 'bc' => $bc);
         $this->page_construct('reports/warehouse_products_report', $meta, $this->data);
     }
+
+    function warehouse_products_action()
+    {
+        if (!empty($_POST['val'])) {
+
+        if ($this->input->post('form_action') == 'export_excel' || $this->input->post('form_action') == 'export_pdf') {
+           
+
+            $product = $this->input->post('product');
+            $category = $this->input->post('category');
+
+            $alphabet11 = array('D1', 'E1', 'F1', 'G1', 'H1', 'I1', 'J1', 'K1', 'L1', 'M1', 'N1', 'O1', 'P1', 'Q1', 'R1', 'S1', 'T1', 'U1', 'V1', 'W1', 'X1', 'Y1', 'Z1');
+            $alphabet22 = array('D2', 'E2', 'F2', 'G2', 'H2', 'I2', 'J2', 'K2', 'L2', 'M2', 'N2', 'O2', 'P2', 'Q2', 'R2', 'S2', 'T2', 'U2', 'V2', 'W2', 'X2', 'Y2', 'Z2');
+            $alphabet = array('D3', 'E3', 'F3', 'G3', 'H3', 'I3', 'J3', 'K3', 'L3', 'M3', 'N3', 'O3', 'P3', 'Q3', 'R3', 'S3', 'T3', 'U3', 'V3', 'W3', 'X3', 'Y3', 'Z3');
+
+            $alphabet1 = array('D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
+            //Header part
+            $wid = $this->reports_model->getWareByUserID();
+            $warefull = $this->reports_model->getWareFullByUSER($wid);
+            $this->load->library('excel');
+            $this->excel->setActiveSheetIndex(0);
+
+            $this->excel->getActiveSheet()->setTitle(lang('inventory'));
+            $this->excel->getActiveSheet()->SetCellValue('A3', lang('image'));
+            $this->excel->getActiveSheet()->SetCellValue('B3', lang('product_code'));
+            $this->excel->getActiveSheet()->SetCellValue('C3', lang('product_name'));
+
+
+            $styleArray = array(
+                'font' => array(
+                    'bold' => true,
+                    'size' => 16
+                )
+            );
+
+            $styleArray2 = array(
+                'font' => array(
+                    'bold' => true,
+                    'size' => 12
+                )
+            );
+
+            $a = 0;
+            if (is_array($warefull)) {
+                foreach ($warefull as $w) {
+                    $this->excel->getActiveSheet()->SetCellValue($alphabet[$a], $w->name);
+                    $a++;
+                    $j = $a;
+                }
+            }
+
+            $this->excel->getActiveSheet()->mergeCells('A1:' . $alphabet11[$j]);
+            $this->excel->getActiveSheet()->setCellValue('A1', 'Warehouse Products');
+
+            $this->excel->getActiveSheet()->SetCellValue($alphabet[$j], lang('total'));
+            /*$this->excel->getActiveSheet()->getStyle('A2'.':'.$alphabet[$j])->getFont()->setBold(true);
+            $this->excel->getActiveSheet()->getStyle('A2'.':'.$alphabet[$j])->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);*/
+            //End header
+            //Content
+            $this->excel->getActiveSheet()->getStyle('A1:' . $alphabet11[$j])->applyFromArray($styleArray);
+            $this->excel->getActiveSheet()->getStyle('A2:' . $alphabet22[$j])->applyFromArray($styleArray2);
+            $this->excel->getActiveSheet()->getStyle('A3:' . $alphabet[$j])->applyFromArray($styleArray2);
+            $this->excel->getActiveSheet()->getStyle('A1:' . $alphabet11[$j])->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+            $this->excel->getActiveSheet()->getStyle('A3:' . $alphabet[$j])->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+            $this->excel->getActiveSheet()->getStyle('A2:' . $alphabet22[$j])->getBorders()->getBottom()->setBorderStyle(PHPExcel_Style_Border:: BORDER_THIN);
+            $row = 4;
+
+            $total_q = 0;
+            $str = "";
+            $tt_qty = 0;
+
+            foreach ($_POST['val'] as $id) {
+
+                $products_details = $this->reports_model->getAllProductsDetail1($id, $product, $category);
+
+                foreach ($products_details as $pro) {
+                    $this->excel->getActiveSheet()->SetCellValue('A' . $row, $pro->image);
+                    $this->excel->getActiveSheet()->SetCellValue('B' . $row, $pro->code . " ");
+                    $this->excel->getActiveSheet()->SetCellValue('C' . $row, $pro->name);
+                    $i = 0;
+                    $tt = 0;
+                    if (is_array($warefull)) {
+                        foreach ($warefull as $w) {
+                            $qty = $this->reports_model->getQtyByWareForExport($pro->id, $w->id, $product, $category);
+                            if (isset($qty->wqty)) {
+                                $this->excel->getActiveSheet()->SetCellValue($alphabet1[$i] . $row, $this->erp->formatDecimal($qty->wqty));
+                                $tt += $qty->wqty;
+                            } else {
+                                $a = 0;
+                                $this->excel->getActiveSheet()->SetCellValue($alphabet1[$i] . $row, $a);
+                                $tt += 0;
+                            }
+                            $i++;
+                            $j = $i;
+                        }
+                    }
+
+                    $this->excel->getActiveSheet()->SetCellValue($alphabet1[$j] . $row, $this->erp->formatDecimal($tt));
+                    $tt_qty += $tt;
+
+                    $row++;
+                }
+            }
+
+                $this->excel->getActiveSheet()->SetCellValue('A'.$row, lang("total"));
+                $this->excel->getActiveSheet()->getStyle('A'.$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                $i = 0;
+                if(is_array($warefull)){
+                    foreach($warefull as $w){
+                        $this->excel->getActiveSheet()->SetCellValue($alphabet1[$i].$row, " ");
+                        $i++;
+                    }
+                }
+
+                $this->excel->getActiveSheet()->SetCellValue($alphabet1[$j].$row, $this->erp->formatDecimal($tt_qty));
+
+                $this->excel->getActiveSheet()->getStyle('A'.$row.':'.$alphabet1[$j].$row)->getFont()->setBold(true);
+                $this->excel->getActiveSheet()->mergeCells('A' . $row . ':C' . $row);
+                $this->excel->getActiveSheet()->getStyle($alphabet1['0'].$row.':'.$alphabet1[$j].$row)->getBorders()->getTop()->setBorderStyle(PHPExcel_Style_Border::BORDER_THIN);
+                //set colspan
+                $this->excel->getActiveSheet()->getColumnDimension('A')->setWidth(20);
+                $this->excel->getActiveSheet()->getColumnDimension('B')->setWidth(20);
+                $this->excel->getActiveSheet()->getColumnDimension('C')->setWidth(20);
+                $this->excel->getActiveSheet()->getColumnDimension('D')->setWidth(20);
+                $this->excel->getActiveSheet()->getColumnDimension('E')->setWidth(20);
+                $this->excel->getActiveSheet()->getColumnDimension('F')->setWidth(20);
+                $this->excel->getActiveSheet()->getColumnDimension('G')->setWidth(20);
+
+                $this->excel->getActiveSheet()->getStyle('A2'.':'.$alphabet[$j].$this->excel->getActiveSheet()->getHighestRow())
+                    ->getAlignment()->setWrapText(true);
+
+                $filename = lang('warehouse_products'). date('Y_m_d_H_i_s');
+                $this->excel->getDefaultStyle()->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+                if ($this->input->post('form_action') == 'export_pdf') {
+                    $styleArray = array(
+                        'borders' => array('allborders' => array('style' => PHPExcel_Style_Border::BORDER_THIN))
+                    );
+                    $this->excel->getDefaultStyle()->applyFromArray($styleArray);
+                    $this->excel->getActiveSheet()->getPageSetup()->setOrientation(PHPExcel_Worksheet_PageSetup::ORIENTATION_LANDSCAPE);
+                    require_once(APPPATH . "third_party" . DIRECTORY_SEPARATOR . "MPDF" . DIRECTORY_SEPARATOR . "mpdf.php");
+                    $rendererName = PHPExcel_Settings::PDF_RENDERER_MPDF;
+                    $rendererLibrary = 'MPDF';
+                    $rendererLibraryPath = APPPATH . 'third_party' . DIRECTORY_SEPARATOR . $rendererLibrary;
+                    if (!PHPExcel_Settings::setPdfRenderer($rendererName, $rendererLibraryPath)) {
+                        die('Please set the $rendererName: ' . $rendererName . ' and $rendererLibraryPath: ' . $rendererLibraryPath . ' values' .
+                            PHP_EOL . ' as appropriate for your directory structure');
+                    }
+
+                    header('Content-Type: application/pdf');
+                    header('Content-Disposition: attachment;filename="' . $filename . '.pdf"');
+                    header('Cache-Control: max-age=0');
+
+                    $objWriter = PHPExcel_IOFactory::createWriter($this->excel, 'PDF');
+                    $objWriter->save('php://output');
+                    exit();
+                }
+                if ($this->input->post('form_action') == 'export_excel') {
+                    ob_clean();
+                    header('Content-Type: application/vnd.ms-excel');
+                    header('Content-Disposition: attachment;filename="' . $filename . '.xls"');
+                    header('Cache-Control: max-age=0');
+
+
+                    ob_clean();
+                    $objWriter = PHPExcel_IOFactory::createWriter($this->excel, 'Excel2007');
+                    $objWriter->save('php://output');
+                    exit();
+                }
+            }
+        } else {
+            $this->session->set_flashdata('error', lang("no_warehouse_products_selected"));
+            redirect($_SERVER["HTTP_REFERER"]);
+        }
+    }
 	
 	function warehouseProductReport($pdf,$excel,$product,$category,$from_date,$to_date){
         if($excel || $pdf){
@@ -27255,8 +27483,6 @@ class Reports extends MY_Controller
             $this->excel->getActiveSheet()->SetCellValue('A3', lang('image'));
             $this->excel->getActiveSheet()->SetCellValue('B3', lang('product_code'));
             $this->excel->getActiveSheet()->SetCellValue('C3', lang('product_name'));
-
-            
 
             $styleArray = array(
                 'font'  => array(
@@ -27299,6 +27525,8 @@ class Reports extends MY_Controller
             $this->excel->getActiveSheet()->getStyle('A3:'.$alphabet[$j])->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
             $this->excel->getActiveSheet()->getStyle('A2:'.$alphabet22[$j])->getBorders()->getBottom()->setBorderStyle(PHPExcel_Style_Border:: BORDER_THIN);
             $row = 4;
+
+
 
             $total_q = 0;
             $str = "";
@@ -27394,7 +27622,7 @@ class Reports extends MY_Controller
                 
     
                 ob_clean();
-                $objWriter = PHPExcel_IOFactory::createWriter($this->excel, 'Excel5');
+                $objWriter = PHPExcel_IOFactory::createWriter($this->excel, 'Excel2007');
                 $objWriter->save('php://output');
                 exit();
             }

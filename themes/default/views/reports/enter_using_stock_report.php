@@ -50,7 +50,11 @@
 		});
     });
 </script>
-
+<style>
+    tfoot th {
+        border-color: #428BCA !important;
+    }
+</style>
 <?php
     echo form_open('reports/usingStockReport_action', 'id="action-form"');
 ?>
@@ -142,6 +146,18 @@
                                 ?>
                             </div>
                         </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <label class="control-label" for="description"><?= lang("description"); ?></label>
+                                <?php
+                                $desc[""] = "All Description";
+                                foreach ($descriptions as $description) {
+                                    $desc[$description->id] = $description->name;
+                                }
+                                echo form_dropdown('description', $desc, (isset($_GET['description']) ? $_GET['description'] : ""), 'class="form-control" id="description" data-placeholder="' . $this->lang->line("select") . " " . $this->lang->line("description") . '"');
+                                ?>
+                            </div>
+                        </div>
 						<?php if($this->Settings->product_serial) { ?>
                             <div class="col-sm-3">
                                 <div class="form-group">
@@ -191,6 +207,7 @@
 						</thead>
 						<?php  
 						if(is_array($using_stock)){
+						    $gtotal_qty = 0; $gtotal_cost = 0; $gsubtotal = 0;
 						 foreach($using_stock as $stock){
 						          $query=$this->db->query("
 							         SELECT
@@ -218,7 +235,13 @@
 								  <td colspan="7" style="font-size:14px;background-color:#E9EBEC;color:#265F7B  "><?=$stock->refno ." >> ".$this->erp->hrld($stock->date) ." >> ".$stock->company ." >> ".$stock->warehouse_name ." >> ".$stock->username ?></td>
 							       
 							   </tr>
-							   <?php foreach($query as $q){ ?>
+							   <?php
+                               $tqty = 0; $tcost = 0; $subtotal = 0;
+                               foreach($query as $q){
+                                   $tqty += $q->qty_use;
+                                   $tcost += $q->cost;
+                                   $subtotal += $q->cost*$q->qty_use;
+							       ?>
 							    <tr>
 							      <td style="min-width:30px; width: 30px; text-align: center;">
 									
@@ -231,8 +254,34 @@
 								  <td class="text-right"><?=$this->erp->formatMoney($q->cost*$q->qty_use) ?></td> 
 							   </tr>
 							   <?php }?>
-					</tbody> 
-						<?php } } ?>					
+                            <tr>
+                                <td></td>
+                                <td><strong><?= lang('total') ?></strong>:</td>
+                                <td></td>
+                                <td class="text-center"><?= $this->erp->formatQuantity($tqty); ?></td>
+                                <td></td>
+                                <td class="text-right"><?= $this->erp->formatMoney($tcost); ?></td>
+                                <td class="text-right"><?= $this->erp->formatMoney($subtotal); ?></td>
+                            </tr>
+					    </tbody>
+						<?php
+                             $gtotal_qty += $tqty;
+                             $gtotal_cost += $tcost;
+                             $gsubtotal += $subtotal;
+						    }
+						}
+						?>
+                        <tfoot>
+                            <tr style="background:#428BCA; color:white; font-size:16px !important;">
+                                <th></th>
+                                <th><strong><?= lang('grand_total') ?></strong>:</th>
+                                <th></th>
+                                <th class="text-center"><?= $this->erp->formatQuantity($gtotal_qty); ?></th>
+                                <th></th>
+                                <th class="text-right"><?= $this->erp->formatMoney($gtotal_cost); ?></th>
+                                <th class="text-right"><?= $this->erp->formatMoney($gsubtotal); ?></th>
+                            </tr>
+                        </tfoot>
                     </table>
                 </div>
 				<div class=" text-right">

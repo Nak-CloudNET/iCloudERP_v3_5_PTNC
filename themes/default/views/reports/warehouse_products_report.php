@@ -1,6 +1,6 @@
 <script type="text/javascript">
 $(document).ready(function(){
-
+	
 	$('body').on('click', '#excel1', function(e) {
 	   e.preventDefault();
 	   var k = false;
@@ -26,8 +26,8 @@ $(document).ready(function(){
 	#tbstock .shead th{
 		background-color: #428BCA;border-color: #357EBD;color:white;text-align:center;
 	}
-
 </style>
+
 <div class="box">
     <div class="box-header">
         <h2 class="blue"><i class="fa-fw fa fa-barcode"></i><?= lang('warehouse_products') ; ?>
@@ -58,12 +58,12 @@ $(document).ready(function(){
 					</a>
 				</li>
             </ul>
-        </div>
+        </div>       
     </div>
     <div class="box-content">
         <div class="row">
             <div class="col-lg-12">
-
+				
                 <p class="introtext"><?= lang('list_results'); ?></p>
                 <div id="form">
 				<?php echo form_open('reports/warehouse_products', 'id="action-form" method="GET"'); ?>
@@ -78,10 +78,10 @@ $(document).ready(function(){
                                 }
                                 echo form_dropdown('product', $pro, (isset($_GET['product']) ? $_GET['product'] : ''), 'class="form-control" id="product" data-placeholder="' . $this->lang->line("select") . " " . $this->lang->line("producte") . '"');
                                 ?>
-
+								
                             </div>
                         </div>
-
+                        
 						<div class="col-sm-4">
                             <div class="form-group">
                                 <?= lang("category", "category") ?>
@@ -129,11 +129,11 @@ $(document).ready(function(){
                             class="controls"> <?php echo form_submit('submit_report', $this->lang->line("submit"), 'class="btn btn-primary sub"'); ?> </div>
                     </div>
                     <?php echo form_close(); ?>
-
+					
                 </div>
                 <div class="clearfix"></div>
-
-                <div class="table-responsive">
+				
+                <div class="table-responsive" style="width:100%;overflow:auto;">
                     <table id="tbstock" class="table table-condensed table-bordered table-hover table-striped" >
                         <thead>
 							<tr>
@@ -152,7 +152,7 @@ $(document).ready(function(){
 								?>
 								<th><?= lang("total") ?></th>
 							</tr>
-
+							
 						</thead>
                         <tbody>
 						<?php
@@ -160,24 +160,21 @@ $(document).ready(function(){
 							$str = "";
 							$tt_qty=0;
 							$arr = array();
-                            if(is_array($products_details)){
-                                foreach($products_details as $pro){
-                                    if($pro->uname){
-                                        $str= "(".$pro->uname.")";
-                                    }else{
-                                        $str  = "";
-                                    }
-                                    $qoh=$this->products_model->getProductQTYByID($pro->id);
-                                    if($qoh->quantity>0) {
-
-                                        ?>
-                                        <tr>
-                                            <td style="text-align:center !important;">
-                                                <ul class="enlarge">
-                                                    <li>
-                                                        <img src="<?= base_url() ?>/assets/uploads/thumbs/<?= $pro->image ?>"
-                                                             class="img-responsive" style="width:50px;"/>
-                                                        <span>
+						if(is_array($products_details)){
+							foreach($products_details as $pro){
+								if($pro->uname){
+									$str= "(".$pro->uname.")";
+								}else{
+									$str  = "";
+								}
+						?>
+							<tr>
+                                <td style="text-align:center !important;">
+                                    <ul class="enlarge">
+                                        <li>
+                                            <img src="<?= base_url() ?>/assets/uploads/thumbs/<?= $pro->image ?>"
+                                                 class="img-responsive" style="width:50px;"/>
+                                            <span>
                                               <a href="<?= base_url() ?>/assets/uploads/thumbs/<?= $pro->image ?>"
                                                  data-toggle="lightbox">
                                                 <img src="<?= base_url() ?>/assets/uploads/thumbs/<?= $pro->image ?>"
@@ -185,40 +182,39 @@ $(document).ready(function(){
                                                      class="img-thumbnail"/>
                                               </a>
                                             </span>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                            <td><?= $pro->code ?></td>
-                                            <td><?= $pro->name . " " . $str ?></td>
-                                            <?php if ($Settings->product_expiry == 1) { ?>
-                                                <td><?= $this->erp->hrsd($pro->expiry); ?></td>
-                                            <?php } ?>
-                                            <?php
-                                            $tt = 0;
-                                            if (is_array($warefull)) {
-                                                foreach ($warefull as $w) {
-                                                    $qty = $this->reports_model->getQtyByWare($pro->id, $w->id, $product2, $category2, $biller2, $pro->expiry, $wid1, $start_date1, $end_date1, $warehouse2);
-                                                    //$this->erp->print_arrays($qty);
-                                                    if (isset($qty->wqty)) {
-                                                        echo "<td  class='text-right'>" . $this->erp->formatQuantity($qty->wqty) . "<br>" . $this->erp->convert_unit_2_string($pro->id, $qty->wqty) . "</td>";
-                                                        $tt += $qty->wqty;
-                                                    } else {
-                                                        echo "<td  class='text-right'>0.00</td>";
-                                                        $tt += 0;
-                                                    }
-                                                    $arr[$w->id] += $qty->wqty;
-                                                }
-                                            }
-                                            ?>
-                                            <?php
-                                            echo "<td class='text-right'><b>" . $this->erp->formatQuantity($tt) . "</b><br>" . $this->erp->convert_unit_2_string($pro->id, $tt) . "</td>";
-                                            ?>
-                                        </tr>
-                                        <?php
-                                        $tt_qty += $tt;
-                                    }
-                                }
-                            }
+                                        </li>
+                                    </ul>
+                                </td>
+								<td><?=$pro->code?></td>
+								<td><?=$pro->name." ".$str?></td>
+								<?php if ($Settings->product_expiry == 1) { ?>
+								<td><?= $this->erp->hrsd($pro->expiry); ?></td>
+								<?php } ?>
+								<?php
+								$tt = 0;
+								if(is_array($warefull)){
+									foreach($warefull as $w){
+										$qty = $this->reports_model->getQtyByWare($pro->id,$w->id,$product2,$category2,$biller2, $pro->expiry, $wid1, $start_date1, $end_date1, $warehouse2);
+										//$this->erp->print_arrays($qty);
+										if(isset($qty->wqty)){
+											echo "<td  class='text-right'>".$this->erp->formatQuantity($qty->wqty)."<br>".$this->erp->convert_unit_2_string($pro->id,$qty->wqty)."</td>";
+											$tt+=$qty->wqty;
+										}else{
+											echo "<td  class='text-right'>0.00</td>";
+											$tt+=0;
+										}
+										$arr[$w->id] += $qty->wqty;
+									}
+								}
+								?>
+								<?php 
+									echo "<td class='text-right'><b>".$this->erp->formatQuantity($tt)."</b><br>".$this->erp->convert_unit_2_string($pro->id,$tt)."</td>";
+								?>
+							</tr>
+						<?php
+							$tt_qty +=$tt;
+							}
+						}
 						$col = 3;
 						if ($this->Settings->product_expiry == 0) {
                             $col = 3;
@@ -228,14 +224,14 @@ $(document).ready(function(){
 								<td colspan="<?= $col; ?>" style='background-color: #428BCA;color:white;text-align:right;'><b><?= lang("total") ?></b></td>
 								<?php
 								if(is_array($warefull)){
-									foreach($warefull as $w){
+									foreach($warefull as $w){	
 										echo "<td style='background-color: #428BCA;color:white;text-align:right;'>".$arr[$w->id]."</td>";
 									}
 								}
 								?>
 								<td style='background-color: #428BCA;color:white;text-align:right;'><b><?=$this->erp->formatDecimal($tt_qty)?></b></td>
 							</tr>
-                        </tbody>
+                        </tbody>                       
                     </table>
                 </div>
 				<div class=" text-right">
@@ -282,6 +278,6 @@ $(document).ready(function () {
 			window.location.href = "<?= site_url('reports/warehouseProductReport/pdf/0/'.$product1.'/'.$category1.'/'.$from_date1.'/'.$to_date1) ?>";
 			return false;
 		}
-	});
+	});	
 });
 </script>
