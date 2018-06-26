@@ -678,7 +678,7 @@ class Products_model extends CI_Model
                 products.cost,
                 products.quantity,
                 products.code as product_code,
-                products.id as id,
+                products.id as pro_id,
                 warehouses_products.quantity as qoh,
                 products.unit as unit_type,
                 units.name as unit_name,
@@ -1795,6 +1795,30 @@ class Products_model extends CI_Model
         }
         return false;
     }
+    public function getProductQTYByID($product_id)
+    {
+        $this->db->select('SUM(quantity) as quantity')
+            ->from('warehouses_products')
+            ->where(array('product_id'=>$product_id));
+        $q = $this->db->get();
+        if($q->num_rows() > 0){
+            return $q->row();
+        }
+        return false;
+    }
+    public function getCountProductQTYByID()
+    {
+        $this->db->select('sum(quantity)')
+            ->from('warehouses_products');
+        $this->db->where('quantity >0')
+        ->group_by('product_id');
+        $q = $this->db->get();
+        if($q->num_rows() > 0){
+            return $q->num_rows();
+        }
+        return false;
+    }
+
 	
 	public function getUnits()
 	{

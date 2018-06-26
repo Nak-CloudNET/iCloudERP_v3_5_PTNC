@@ -1,8 +1,8 @@
 <style type="text/css" media="all">
-	#PRData{ 
-		white-space:nowrap; 
-		width:100%; 
-		display: block;  
+	#PRData{
+		white-space:nowrap;
+		width:100%;
+		display: block;
 	}
     #PRData td:nth-child(6), #PRData td:nth-child(7) {
         text-align: right;
@@ -63,7 +63,7 @@
                             <div class="form-group">
                                 <label class="control-label" for="cat"><?= lang("categories"); ?></label>
                                 <?php
-                             
+
 								$cat[""] = "ALL";
                                 foreach ($categories as $category) {
                                     $cat[$category->id] = $category->name;
@@ -76,7 +76,7 @@
                             <div class="form-group">
                                 <label class="control-label" for="cat"><?= lang("products"); ?></label>
                                 <?php
-                               
+
 								$pro[""] = "ALL";
                                 foreach ($products as $product) {
                                     $pro[$product->id] = $product->code.' / '.$product->name;
@@ -134,7 +134,7 @@
                             class="controls"> <?php echo form_submit('submit_report', $this->lang->line("submit"), 'class="btn btn-primary"'); ?> </div>
                     </div>
                     <?php echo form_close(); ?>
-					
+
                 </div>
                 <div class="clearfix"></div>
 
@@ -156,12 +156,12 @@
                             </tr>
                         </thead>
                         <tbody>
-							<?php 
+							<?php
 							$gtt = 0;
 							$gqty = 0;
 							if(is_array($warehouses)){
 							   foreach($warehouses as $warehouse){
-								
+
 							?>
 							<tr>
 								<td colspan="11" class="text-left" style="font-weight:bold; font-size:19px !important; color:green;">
@@ -170,33 +170,33 @@
 									&nbsp;&nbsp;<?=$warehouse->warehouse?>
 								</td>
 							</tr>
-							
-							<?php 
-							$categories = $this->reports_model->getCategoriesInventoryValuationByWarehouse($warehouse->warehouse_id,$cate_id1,$product_id1,$stockType1,$from_date1,$to_date1,$reference1,$biller1);	
+
+							<?php
+							$categories = $this->reports_model->getCategoriesInventoryValuationByWarehouse($warehouse->warehouse_id,$cate_id1,$product_id1,$stockType1,$from_date1,$to_date1,$reference1,$biller1);
 							$total_qoh_per_warehouse_cat = 0;
 							$total_assetVal_per_warehouse_cat = 0;
 							foreach($categories AS $category){ ?>
 							<tr>
-								<td colspan="11" class="text-left" style="font-weight:bold; color:orange;">&nbsp;&nbsp;&nbsp;&nbsp;								
+								<td colspan="11" class="text-left" style="font-weight:bold; color:orange;">&nbsp;&nbsp;&nbsp;&nbsp;
 									<?= lang("category"); ?>
 									<i class="fa fa-angle-double-right" aria-hidden="true"></i>
 									<?=$category->category_name?>
 								</td>
 							</tr>
-							
-							<?php 
+
+							<?php
 							$total_qoh_per_warehouse = 0;
 							$total_assetVal_per_warehouse = 0;
-							$products = $this->reports_model->getProductsInventoryValuationByWhCat($warehouse->warehouse_id,($cate_id1?$cate_id1:$category->category_id),$product_id1,$stockType1,$from_date1,$to_date1,$reference1,$biller1);							
-							foreach($products as $product){ 
+							$products = $this->reports_model->getProductsInventoryValuationByWhCat($warehouse->warehouse_id,($cate_id1?$cate_id1:$category->category_id),$product_id1,$stockType1,$from_date1,$to_date1,$reference1,$biller1);
+							foreach($products as $product){
 								if(!empty($product->product_id)){
 							?>
 							<tr>
 								<td colspan="11" class="left" style="font-weight:bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?=$product->product_code?$product->product_code:$product->product_id?> <i class="fa fa-angle-double-right" aria-hidden="true"></i> <?=$product->product_name?> (<?=$product->un;?>)</td>
-								
+
 							</tr>
-							
-							<?php 
+
+							<?php
 							}
 							$qty_on_hand = 0;
 							$total_on_hand = 0;
@@ -207,7 +207,7 @@
 							{
 								$p_cost = 0;
 								$p_qty = 0;
-								
+
 								if($pr->type == 'PURCHASE'
 								|| $pr->type == 'SALE RETURN'
 								|| $pr->type == 'OPENING QUANTITY')
@@ -275,61 +275,61 @@
 								<td class="text-right"><?= $cost ?></td>
 								<td class="text-right"><?= $this->erp->formatMoney($asset_value) ?></td>
 							</tr>
-							<?php 
+							<?php
 								$total_on_hand =$qty_on_hand;
-								$total_asset_val =$asset_value;
+								$total_asset_val +=$asset_value;
 							} ?>
-							
+
 							<tr class="active">
-								<td colspan="8" class="right" style="font-weight:bold;"><?= lang("total") ?> 
-									<i class="fa fa-angle-double-right" aria-hidden="true"></i> 
+								<td colspan="8" class="right" style="font-weight:bold;"><?= lang("total") ?>
+									<i class="fa fa-angle-double-right" aria-hidden="true"></i>
 								</td>
-								<td class="text-right"><b><?= $this->erp->formatDecimal($total_on_hand); ?></b></td>
+								<td class="text-right"><b><?= $this->erp->formatQuantity($total_on_hand); ?></b></td>
 								<td></td>
 								<td class="text-right"><b><?= $this->erp->formatMoney($total_asset_val); ?></b></td>
 							</tr>
-							<?php 
+							<?php
 								$total_qoh_per_warehouse += $total_on_hand;
 								$total_assetVal_per_warehouse += $total_asset_val;
-							} 
-							?>	
+							}
+							?>
 							<tr>
-								<td class="right" colspan="8" style="font-weight:bold; color:orange; "><?= lang("total") ?> 
-									<i class="fa fa-angle-double-right" aria-hidden="true"></i> 
+								<td class="right" colspan="8" style="font-weight:bold; color:orange; "><?= lang("total") ?>
+									<i class="fa fa-angle-double-right" aria-hidden="true"></i>
 									<?=$category->category_name?></td>
-								<td class="text-right"><b><?= $this->erp->formatDecimal($total_qoh_per_warehouse); ?></b></td>
+								<td class="text-right"><b><?= $this->erp->formatQuantity($total_qoh_per_warehouse); ?></b></td>
 								<td></td>
 								<td class="text-right"><b><?= $this->erp->formatMoney($total_assetVal_per_warehouse); ?></b></td>
-							</tr>	
+							</tr>
 							<?php
-								
+
 								$total_qoh_per_warehouse_cat +=$total_qoh_per_warehouse;
 								$total_assetVal_per_warehouse_cat +=$total_assetVal_per_warehouse;
 							} ?>
-							
+
 							<tr>
-								<td class="right" colspan="8" style="font-weight:bold; color:green;"><span style=" font-size:17px;"><?= lang("total") ?> 
-									<i class="fa fa-angle-double-right" aria-hidden="true"></i> 
+								<td class="right" colspan="8" style="font-weight:bold; color:green;"><span style=" font-size:17px;"><?= lang("total") ?>
+									<i class="fa fa-angle-double-right" aria-hidden="true"></i>
 									<?=$warehouse->warehouse?></span></td>
-								<td class="text-right"><b><?= $this->erp->formatDecimal($total_qoh_per_warehouse_cat); ?></b></td>
+								<td class="text-right"><b><?= $this->erp->formatQuantity($total_qoh_per_warehouse_cat); ?></b></td>
 								<td></td>
 								<td class="text-right"><b><?= $this->erp->formatMoney($total_assetVal_per_warehouse_cat); ?></b></td>
 							</tr>
-							
+
 							<?php
 							$gtt +=$total_qoh_per_warehouse_cat;
 							$gqty +=$total_assetVal_per_warehouse_cat;
-							} 
+							}
 							}
 							?>
 								<tr>
-								<td class="right" colspan="8" style="font-weight:bold; background-color: #428BCA;color:white;text-align:right;"><span style=" font-size:17px;"><?= lang("grand_total") ?></span> </td>	
-								<td class="text-right" style='background-color: #428BCA;color:white;text-align:right;'><span style=" font-size:17px;"><b><?= $this->erp->formatDecimal($gtt); ?></b></span></td>
+								<td class="right" colspan="8" style="font-weight:bold; background-color: #428BCA;color:white;text-align:right;"><span style=" font-size:17px;"><?= lang("grand_total") ?></span> </td>
+								<td class="text-right" style='background-color: #428BCA;color:white;text-align:right;'><span style=" font-size:17px;"><b><?= $this->erp->formatQuantity($gtt); ?></b></span></td>
 								<td style='background-color: #428BCA;color:white;text-align:right;'></td>
 								<td class="text-right" style='background-color: #428BCA;color:white;text-align:right;'><span style=" font-size:17px;"><b><?= $this->erp->formatMoney($gqty); ?></b></span></td>
-							</tr>		
+							</tr>
                         </tbody>
-                       
+
                     </table>
                 </div>
             </div>
@@ -347,35 +347,36 @@
         $("#form").slideUp();
         return false;
     });
-	$(document).ready(function(){
+    $(document).ready(function(){
 
-		$('body').on('click', '#multi_adjust', function() {
-			 if($('.checkbox').is(":checked") === false){
-				alert('Please select at least one.');
-				return false;
-			}
-			var arrItems = [];
-			$('.checkbox').each(function(i){
-				if($(this).is(":checked")){
-					if(this.value != ""){
-						arrItems[i] = $(this).val();   
-					}
-				}
-			});
-			$('#myModal').modal({remote: '<?=base_url('products/multi_adjustment');?>?data=' + arrItems + ''});
-			$('#myModal').modal('show');
-        });
-		$('#excel').on('click', function (e) {
-			
-            e.preventDefault();
-                window.location.href = "<?= site_url('reports/inventory/0/xls/'.$reference1.'/'.$wahouse_id1.'/'.$product_id1.'/'.$from_date1.'/'.$to_date1.'/'.$stockType1.'/'.$cate_id1.'/'.$biller1) ?>";
+        $('body').on('click', '#multi_adjust', function() {
+            if($('.checkbox').is(":checked") === false){
+                alert('Please select at least one.');
                 return false;
+            }
+            var arrItems = [];
+            $('.checkbox').each(function(i){
+                if($(this).is(":checked")){
+                    if(this.value != ""){
+                        arrItems[i] = $(this).val();
+                    }
+                }
+            });
+            $('#myModal').modal({remote: '<?=base_url('products/multi_adjustment');?>?data=' + arrItems + ''});
+            $('#myModal').modal('show');
+        });
+        $('#excel').on('click', function (e) {
+
+            e.preventDefault();
+            window.location.href = "<?= site_url('reports/inventory/0/xls/'.$reference1.'/'.$wahouse_id1.'/'.$product_id1.'/'.$from_date1.'/'.$to_date1.'/'.$stockType1.'/'.$cate_id1.'/'.$biller1) ?>";
+            return false;
         });
         $('#pdf').on('click', function (e) {
+
             e.preventDefault();
-                window.location.href = "<?= site_url('reports/inventory/pdf/0'.$reference1.'/'.$wahouse_id1.'/'.$product_id1.'/'.trim($from_date1).'/'.trim($to_date1).'/'.$stockType1.'/'.$cate_id1.'/'.$biller1) ?>";
-                return false;  
+            window.location.href = "<?= site_url('reports/inventory/xls/0/' . $reference1 . '/' . $wahouse_id1 . '/' . $product_id1 . '/' . $from_date1 . '/' . $to_date1 . '/' . $stockType1 . '/' . $cate_id1 . '/' . $biller1) ?>";
+            return false;
         });
-	});
+    });
 </script>
 

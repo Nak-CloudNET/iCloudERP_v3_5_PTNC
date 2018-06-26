@@ -26,8 +26,8 @@ $(document).ready(function(){
 	#tbstock .shead th{
 		background-color: #428BCA;border-color: #357EBD;color:white;text-align:center;
 	}
-
 </style>
+
 <div class="box">
     <div class="box-header">
         <h2 class="blue"><i class="fa-fw fa fa-barcode"></i><?= lang('warehouse_products') ; ?>

@@ -211,13 +211,15 @@ class Reports_model extends CI_Model
 		
 	}
 	 
-	public function getUsingStock($reference_no,$employee,$biller,$warehouse,$wid,$start_date,$end_date,$offset,$limit){
+	public function getUsingStock($reference_no,$employee,$biller,$warehouse,$description,$wid,$start_date,$end_date,$offset,$limit){
         //$this->erp->print_arrays($start_date,$end_date);
 	    $this->db->select("erp_companies.name as biller,erp_enter_using_stock.id as id,    erp_enter_using_stock.reference_no as refno,
 		erp_companies.company, erp_warehouses.name as warehouse_name, erp_users.username, erp_enter_using_stock.note, erp_enter_using_stock.type as type, erp_enter_using_stock.date, erp_enter_using_stock.total_cost", FALSE)
 		->join('erp_companies', 'erp_companies.id=erp_enter_using_stock.shop', 'inner')
 		->join('erp_warehouses', 'erp_enter_using_stock.warehouse_id=erp_warehouses.id', 'left')
-	    ->join('erp_users', 'erp_users.id=erp_enter_using_stock.employee_id', 'inner');
+	    ->join('erp_users', 'erp_users.id=erp_enter_using_stock.employee_id', 'inner')
+	    ->join('erp_enter_using_stock_items', 'erp_enter_using_stock.reference_no = erp_enter_using_stock_items.reference_no', 'left')
+	    ->join('erp_position', 'erp_enter_using_stock_items.description = erp_position.id', 'left');
 
 		$this->db->limit($limit,$offset);
 		if($reference_no){
@@ -228,6 +230,9 @@ class Reports_model extends CI_Model
 		}
 		if($biller){
 			$this->db->where('erp_companies.id',$biller);
+		}
+		if($description){
+			$this->db->where('erp_position.id',$description);
 		}
 		if($warehouse){
 			$this->db->where('erp_enter_using_stock.warehouse_id',$warehouse);
@@ -5463,6 +5468,79 @@ ORDER BY
 	        return FALSE;
 		}
 	}
+
+	public function getQtyByWareForExport($pid,$wid,$product2,$category2)
+	{
+		$user_warehouses = $this->session->userdata('warehouse_id');
+		if ($user_warehouses) {
+
+			if ($this->Settings->product_expiry == 1) {
+				$this->db->select("SUM(COALESCE(erp_warehouses_products.quantity_balance,0)) as wqty");
+				$this->db->join('products', 'purchase_items.product_id = products.id', 'left');
+			} else {
+				$this->db->select("erp_warehouses_products.quantity as wqty");
+				$this->db->join('products', 'purchase_items.product_id = products.id', 'left');
+			} 
+
+			$this->db->where("purchase_items.status =", "received");
+			$this->db->join('warehouses_products', 'purchase_items.product_id = warehouses_products.product_id', 'left');
+			$this->db->join('purchases', 'purchase_items.purchase_id = purchases.id', 'left');
+
+			if ($this->Settings->product_expiry == 1) {
+				$this->db->group_by('purchase_items.expiry');
+				$this->db->where("purchase_items.expiry",$expiry);
+			} else {
+				$this->db->group_by('purchase_items.product_id');
+			}
+			
+			$this->db->where("warehouses_products.product_id",$pid);
+			$this->db->where("warehouses_products.warehouse_id",$wid);
+			$this->db->where("warehouses_products.quantity <>", 0);
+
+			if($product2){
+				$this->db->where('erp_warehouses_products.product_id', $product2);
+			}
+			if($category2){
+				$this->db->where('products.category_id', $category2);
+			}
+
+			$q = $this->db->get("purchase_items");
+			if ($q->num_rows() > 0) {
+	            return $q->row();
+	        }
+	        return FALSE;
+		} else {
+			$this->db->select("COALESCE(erp_warehouses_products.quantity,0) as wqty");
+			$this->db->join('products', 'purchase_items.product_id = products.id', 'left');
+			$this->db->join('purchases', 'purchase_items.purchase_id = purchases.id', 'left');
+			$this->db->join('erp_warehouses_products', 'purchase_items.product_id = erp_warehouses_products.product_id', 'left');
+			$this->db->where("purchase_items.status =", "received");
+
+			if ($this->Settings->product_expiry == 1) {
+				$this->db->group_by('purchase_items.expiry');
+				$this->db->where("purchase_items.expiry",$expiry);
+			} else {
+				$this->db->group_by('purchase_items.product_id');
+			}
+
+			$this->db->where("erp_warehouses_products.product_id",$pid);
+			$this->db->where("erp_warehouses_products.warehouse_id",$wid);
+
+			if($product2){
+				$this->db->where('erp_warehouses_products.product_id', $product2);
+			}
+			if($category2){
+				$this->db->where('products.category_id', $category2);
+			}
+
+			$q = $this->db->get("purchase_items");
+			if ($q->num_rows() > 0) {
+	            return $q->row();
+	        }
+	        return FALSE;
+		}
+	}
+
 	public function getQtyByPro($pid,$product2,$category2){
 		$this->db->select("SUM(COALESCE(erp_warehouses_products.quantity,0)) as wqty");
 		$this->db->join("products","products.id=warehouses_products.product_id","LEFT");
@@ -5496,80 +5574,38 @@ ORDER BY
         return FALSE;
 	}
 
-	public function getAllProductsDetail1($pid,$cid, $from_date, $to_date)
+	public function getAllProductsDetail1($id, $pid,$cid)
 	{
-		$user_warehouses = $this->session->userdata('warehouse_id');
+        $this->db->select("products.*,units.name as uname, purchase_items.expiry");
+        $this->db->join("units","units.id=products.unit","LEFT");
+        $this->db->join("purchase_items","products.id = purchase_items.product_id","LEFT");
+        $this->db->where('products.id', $id);
 
-		if ($user_warehouses) {
-			$this->db->select("products.*,units.name as uname,purchase_items.expiry");
-			$this->db->join("units","units.id=products.unit","left");
-			$this->db->join("purchase_items","products.id = purchase_items.product_id","left");
-			$this->db->join('warehouses_products', 'purchase_items.product_id = warehouses_products.product_id', 'left');
+        if ($this->Settings->product_expiry == 1) {
+            $this->db->group_by('purchase_items.expiry');
+        } else {
+            $this->db->group_by('products.id');
+        }
 
-			if ($this->Settings->product_expiry == 1) {
-				$this->db->group_by('purchase_items.expiry');
-			} else {
-				$this->db->group_by('products.id');
-				$this->db->where("warehouses_products.warehouse_id",$user_warehouses);
-				$this->db->where("warehouses_products.quantity <>", 0);
-			}
-			if($pid){
-				$this->db->where("products.id", $pid);
-			}
-			if($cid){
-				$this->db->where("category_id", $cid);
-			}
+        if($pid){
+            $this->db->where("products.id",$pid);
+        }
 
-			$this->db->where("products.type !=", "service");
-			
+        if($cid){
+            $this->db->where("category_id",$cid);
+        }
 
-			if ($from_date) {
-				$this->db->where($this->db->dbprefix('purchase_items').'.date BETWEEN "' . $from_date . '" and "' . $to_date . '"');
-			}
-			
-			$this->db->limit($per_page, $ob_set); 
-			$q = $this->db->get('products');
-			if($q->num_rows()>0){
-				foreach($q->result() as $row){
-					$data[] = $row;
-				}
-				return $data;
-			}
-			return false;
+        $this->db->where("products.type !=", "service");
+      	
+        $q = $this->db->get('products');
+        if($q->num_rows()>0){
+            foreach($q->result() as $row){
+                $data[] = $row;
+            }
+            return $data;
+        }
+        return false;
 
-		} else {
-			$this->db->select("products.*,units.name as uname, purchase_items.expiry");
-			$this->db->join("units","units.id=products.unit","LEFT");
-			$this->db->join("purchase_items","products.id = purchase_items.product_id","LEFT");
-
-			if ($this->Settings->product_expiry == 1) {
-				$this->db->group_by('purchase_items.expiry');
-			} else {
-				$this->db->group_by('products.id');
-			}
-
-			if($pid){
-				$this->db->where("products.id",$pid);
-			}
-
-			if($cid){
-				$this->db->where("category_id",$cid);
-			}
-
-			$this->db->where("products.type !=", "service");
-			if ($from_date) {
-				$this->db->where($this->db->dbprefix('purchase_items').'.date BETWEEN "' . $from_date . '" and "' . $to_date . '"');
-			}
-
-			$q = $this->db->get('products');
-			if($q->num_rows()>0){
-				foreach($q->result() as $row){
-					$data[] = $row;
-				}
-				return $data;
-			}
-			return false;
-		}
 	}
 
 	public function getAllProductsDetailsNUM($pid,$cid){

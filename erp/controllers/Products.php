@@ -1235,7 +1235,7 @@ class Products extends MY_Controller
 				}
 				$row->qty_use 	= 0;
 				$row->qty_old 	= 0;
-                $option_unit    = $this->products_model->getUnitAndVaraintByProductId($row->id);
+                $option_unit    = $this->products_model->getUnitAndVaraintByProductId($row->pro_id);
 				$positions   	= $this->products_model->getAllPositionData();
                 
 

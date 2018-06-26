@@ -1,35 +1,3 @@
-<?php
-
-	/*$v = "";
-	
-	if ($this->input->post('reference_no')) {
-		$v .= "&reference_no=" . $this->input->post('reference_no');
-	}
-	if ($this->input->post('customer')) {
-		$v .= "&customer=" . $this->input->post('customer');
-	}
-	if ($this->input->post('driver')) {
-		$v .= "&driver=" . $this->input->post('driver');
-	}
-	if ($this->input->post('warehouse')) {
-		$v .= "&warehouse=" . $this->input->post('warehouse');
-	}
-	if ($this->input->post('user')) {
-		$v .= "&user=" . $this->input->post('user');
-	}
-	if ($this->input->post('serial')) {
-		$v .= "&serial=" . $this->input->post('serial');
-	}
-	if ($this->input->post('start_date')) {
-		$v .= "&start_date=" . $this->input->post('start_date');
-	}
-	if ($this->input->post('end_date')) {
-		$v .= "&end_date=" . $this->input->post('end_date');
-	}
-	if (isset($biller_id)) {
-		$v .= "&biller_id=" . $biller_id;
-	}*/
-?>
 <script type="text/javascript">
     $(document).ready(function () {
         $('#form').hide();
@@ -82,7 +50,11 @@
 		});
     });
 </script>
-
+<style>
+    tfoot th {
+        border-color: #428BCA !important;
+    }
+</style>
 <?php
     echo form_open('reports/usingStockReport_action', 'id="action-form"');
 ?>
@@ -110,21 +82,6 @@
                             class="icon fa fa-file-excel-o"></i></a></li>
                 <li class="dropdown"><a href="#" id="image" class="tip" title="<?= lang('save_image') ?>"><i
                             class="icon fa fa-file-picture-o"></i></a></li>
-				<!--<li class="dropdown">
-					<a data-toggle="dropdown" class="dropdown-toggle" href="#">
-						<i class="icon fa fa-building-o tip" data-placement="left" title="<?= lang("billers") ?>"></i>
-					</a>
-					<ul class="dropdown-menu pull-right" class="tasks-menus" role="menu"
-						aria-labelledby="dLabel">
-						<li><a href="<?= site_url('reports/sales') ?>"><i class="fa fa-building-o"></i> <?= lang('billers') ?></a></li>
-						<li class="divider"></li>
-						<?php
-						foreach ($billers as $biller){
-							echo '<li ' . ($biller_id && $biller_id == $biller->id ? 'class="active"' : '') . '><a href="' . site_url('reports/sales/' . $biller->id) . '"><i class="fa fa-building"></i>' . $biller->company . '</a></li>';
-						}
-						?>
-					</ul>
-				</li>-->
             </ul>
         </div>
 		
@@ -189,6 +146,18 @@
                                 ?>
                             </div>
                         </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <label class="control-label" for="description"><?= lang("description"); ?></label>
+                                <?php
+                                $desc[""] = "All Description";
+                                foreach ($descriptions as $description) {
+                                    $desc[$description->id] = $description->name;
+                                }
+                                echo form_dropdown('description', $desc, (isset($_GET['description']) ? $_GET['description'] : ""), 'class="form-control" id="description" data-placeholder="' . $this->lang->line("select") . " " . $this->lang->line("description") . '"');
+                                ?>
+                            </div>
+                        </div>
 						<?php if($this->Settings->product_serial) { ?>
                             <div class="col-sm-3">
                                 <div class="form-group">
@@ -209,8 +178,6 @@
                                 <?php echo form_input('end_date', (isset($_GET['end_date']) ? $_GET['end_date'] : $this->erp->hrsd($end_date)), 'class="form-control datetime" id="end_date"'); ?>
                             </div>
                         </div>
-						 
-						
 						
                     </div>
                     <div class="form-group col-lg-1"style="padding-left:0px;">
@@ -230,27 +197,25 @@
 								<th style="min-width:30px; width: 30px; text-align: center;">
 									<input class="checkbox checkth" type="checkbox" name="val" />
 								</th>
-								<th style="width:200px;" class="center"><?= lang("item"); ?></th> 
-								<th style="width:150px;"><?= lang("category_expense"); ?></th> 
+								<th style="width:200px;" class="center"><?= lang("item"); ?></th>
 								<th style="width:150px;"><?= lang("item_description"); ?></th> 
 								<th style="width:150px;"><?= lang("quantity"); ?></th>
 								<th style="width:150px;"><?= lang("unit"); ?></th>
-								<th style="width:150px;display:none"><?= lang("cost"); ?></th>
+								<th style="width:150px;"><?= lang("cost"); ?></th>
 								<th style="width:150px;"><?= lang("Total"); ?></th>
-								 									
 							</tr>
 						</thead>
 						<?php  
 						if(is_array($using_stock)){
+						    $gtotal_qty = 0; $gtotal_cost = 0; $gsubtotal = 0;
 						 foreach($using_stock as $stock){
 						          $query=$this->db->query("
 							         SELECT
 										erp_enter_using_stock_items.*, erp_products. NAME AS product_name,
-										erp_expense_categories. NAME AS exp_cate_name,
 										erp_enter_using_stock_items.unit AS unit_name,
 										erp_products.cost,
 										erp_position. NAME AS pname,
-										erp_reasons.description AS rdescription,
+										erp_position.name AS rdescription,
 										erp_product_variants.qty_unit AS variant_qty,
 										erp_product_variants.name as var_name
 									FROM
@@ -261,8 +226,6 @@
 									LEFT JOIN erp_product_variants ON erp_enter_using_stock_items.option_id = erp_product_variants.id
 									LEFT JOIN erp_expense_categories ON erp_enter_using_stock_items.exp_cate_id = erp_expense_categories.id where erp_enter_using_stock_items.reference_no='{$stock->refno}' 
 									 ")->result();
-								
-						      
 						?>
                         <tbody>
 						       <tr class="bold">
@@ -272,26 +235,53 @@
 								  <td colspan="7" style="font-size:14px;background-color:#E9EBEC;color:#265F7B  "><?=$stock->refno ." >> ".$this->erp->hrld($stock->date) ." >> ".$stock->company ." >> ".$stock->warehouse_name ." >> ".$stock->username ?></td>
 							       
 							   </tr>
-							   <?php foreach($query as $q){ ?>
+							   <?php
+                               $tqty = 0; $tcost = 0; $subtotal = 0;
+                               foreach($query as $q){
+                                   $tqty += $q->qty_use;
+                                   $tcost += $q->cost;
+                                   $subtotal += $q->cost*$q->qty_use;
+							       ?>
 							    <tr>
 							      <td style="min-width:30px; width: 30px; text-align: center;">
 									
 								  </td>
-								  <td><?=$q->product_name ."(".$q->code .")" ?></td> 
-							      <td><?=$q->exp_cate_name ?></td> 
-								  <td><?=$q->description ?></td> 
+								  <td><?=$q->product_name ."(".$q->code .")" ?></td>
+								  <td><?=$q->rdescription ?></td>
 							      <td class="text-center"><?=$this->erp->formatQuantity($q->qty_use)?></td> 
 							      <td class="text-center"><?=!empty($q->var_name)?$q->var_name :$q->unit_name ?></td> 
-								  <td class="text-right"style="display:none;"><?=$this->erp->formatMoney($q->cost)?></td>
+								  <td class="text-right"><?=$this->erp->formatMoney($q->cost)?></td>
 								  <td class="text-right"><?=$this->erp->formatMoney($q->cost*$q->qty_use) ?></td> 
 							   </tr>
 							   <?php }?>
-					   
-							     
-						  
-					  
-					</tbody> 
-						<?php } } ?>					
+                            <tr>
+                                <td></td>
+                                <td><strong><?= lang('total') ?></strong>:</td>
+                                <td></td>
+                                <td class="text-center"><?= $this->erp->formatQuantity($tqty); ?></td>
+                                <td></td>
+                                <td class="text-right"><?= $this->erp->formatMoney($tcost); ?></td>
+                                <td class="text-right"><?= $this->erp->formatMoney($subtotal); ?></td>
+                            </tr>
+					    </tbody>
+						<?php
+                             $gtotal_qty += $tqty;
+                             $gtotal_cost += $tcost;
+                             $gsubtotal += $subtotal;
+						    }
+						}
+						?>
+                        <tfoot>
+                            <tr style="background:#428BCA; color:white; font-size:16px !important;">
+                                <th></th>
+                                <th><strong><?= lang('grand_total') ?></strong>:</th>
+                                <th></th>
+                                <th class="text-center"><?= $this->erp->formatQuantity($gtotal_qty); ?></th>
+                                <th></th>
+                                <th class="text-right"><?= $this->erp->formatMoney($gtotal_cost); ?></th>
+                                <th class="text-right"><?= $this->erp->formatMoney($gsubtotal); ?></th>
+                            </tr>
+                        </tfoot>
                     </table>
                 </div>
 				<div class=" text-right">
@@ -299,39 +289,8 @@
 						<?= $pagination; ?>
 					</div>
 				</div>
-				
-			 
             </div>
         </div>
     </div>
 </div>
 <script type="text/javascript" src="<?= $assets ?>js/html2canvas.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-		
-        $('#pdf').click(function (event) {
-            event.preventDefault();
-            window.location.href = "<?=site_url('reports/getSalesReport/0/pdf/?v=1'.$v)?>";
-            return false;
-        });
-        $('#xls').click(function (event) {
-            event.preventDefault();
-            window.location.href = "<?=site_url('reports/getSalesReport/0/xls/?v=1'.$v)?>";
-            return false;
-        });
-		
-        $('#image').click(function (event) {
-            event.preventDefault();
-            html2canvas($('.box'), {
-                onrendered: function (canvas) {
-                    var img = canvas.toDataURL()
-                    window.open(img);
-                }
-            });
-            return false;
-        });
-    });
-</script>
-<style type="text/css">
-	
-</style>
