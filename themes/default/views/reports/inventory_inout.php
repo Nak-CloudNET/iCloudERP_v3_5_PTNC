@@ -249,7 +249,7 @@
 									$propur = $this->reports_model->getProPur($rw->id,$rc->id,$product2,$biller2,$from_date2,$to_date2);
 
 									foreach($propur as $rp){
-
+                                        //$this->erp->print_arrays($rp->product_cost);
 										$beginINqty = $this->reports_model->getBeginQtyINALL($rp->product_id,$rw->id,$from_date2,$to_date2,$biller2);
 										$beginOUTqty = $this->reports_model->getBeginQtyOUTALL($rp->product_id,$rw->id,$from_date2,$to_date2,$biller2);
 										$btotal_qty = $beginINqty->bqty-$beginOUTqty->bqty;
@@ -294,6 +294,7 @@
 										$amount_total_out = 0;
 											if(is_array($num)){
     											foreach($num as $tr){
+
     												if($tr->tran_type){
     													$allqty = $this->reports_model->getQtyINALL($rp->product_id,$rw->id,$tr->tran_type,$from_date2,$to_date2,$biller2);
     													$qty_unit = $this->reports_model->getQtyUnitINALL($rp->product_id,$rw->id,$tr->tran_type,$from_date2,$to_date2,$biller2);?>
@@ -317,14 +318,23 @@
 
                                                     }
     											}
+
                                                 $amount_total_in = $total_in * $rp->product_cost;
+
 											}?>
 											<td style='text-align:right;'>
                                                 <b><?=$this->erp->formatDecimal($total_in?$total_in:'')?></b>
                                             </td>
-                                            <td style='text-align:right;'>
-                                                <b><?= '$ '.$this->erp->formatDecimal($amount_total_in?$amount_total_in:'')?></b>
-                                            </td>
+                                            <?php if($amount_total_in!=''){ ?>
+                                                <td style='text-align:right;'>
+                                                    <b><?= '$ '.$this->erp->formatDecimal($amount_total_in?$amount_total_in:'')?></b>
+                                                </td>
+                                            <?php } else{ ?>
+                                                <td style='text-align:right;'>
+                                                    <b><?=$this->erp->formatDecimal($amount_total_in?$amount_total_in:'')?></b>
+                                                </td>
+                                            <?php } ?>
+
 											<?php
 											if(is_array($num2)){
 
@@ -351,14 +361,19 @@
 												 }
 
                                                 }
-                                                $amount_total_out = $total_out * $rp->product_price;
+                                                $amount_total_out = $total_out * $rp->product_cost;
 											}
 											//$qty_unit3 = $this->reports_model->getQtyUnitALL($rp->product_id,$rw->id,$from_date2,$to_date2);
 											$am = ($total_in-$total_out);
                                             $amount_balance=$amount_total_in-$amount_total_out;
 											?>
                                             <td style='text-align:right;'><b><?=$this->erp->formatDecimal($total_out?$total_out:'')?></b> </td>
-											<td style='text-align:right;'><b><?= '$ '.$this->erp->formatDecimal($amount_total_out?$amount_total_out:'')?></b> </td>
+                                            <?php if($amount_total_out!=''){ ?>
+                                                <td style='text-align:right;'><b><?= '$ '.$this->erp->formatDecimal($amount_total_out?$amount_total_out:'')?></b> </td>
+                                            <?php } else{ ?>
+                                                <td style='text-align:right;'><b><?= $this->erp->formatDecimal($amount_total_out?$amount_total_out:'')?></b> </td>
+                                            <?php } ?>
+
 											<td style='text-align:right;'><span><b><?=$this->erp->formatDecimal($am?$am:'')?></b></span>
 											<?php
 
@@ -369,7 +384,12 @@
                                             }
 													?>
 											</td>
-                                            <td style='text-align:right;'><b><?= '$ '.$this->erp->formatDecimal($amount_balance?$amount_balance:'')?></b> </td>
+                                            <?php if($amount_balance!=''){ ?>
+                                                <td style='text-align:right;'><b><?= '$ '.$this->erp->formatDecimal($amount_balance?$amount_balance:'')?></b> </td>
+                                            <?php } else{ ?>
+                                                <td style='text-align:right;'><b><?=$this->erp->formatDecimal($amount_balance?$amount_balance:'')?></b> </td>
+                                            <?php } ?>
+
 										</tr>
 
                                         <?php

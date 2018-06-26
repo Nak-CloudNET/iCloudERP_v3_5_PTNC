@@ -26910,7 +26910,7 @@ class Reports extends MY_Controller
                                         $j++;
                                         // $tout = $j+1;
                                     }
-                                    $amount_total_out = $total_out * $rp->product_price;
+                                    $amount_total_out = $total_out * $rp->product_cost;
                                     $am = ($total_in-$total_out);
                                 }
                                 $amount_balance=$amount_total_in-$amount_total_out;
