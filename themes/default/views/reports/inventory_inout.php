@@ -323,7 +323,7 @@
                                                 <b><?=$this->erp->formatDecimal($total_in?$total_in:'')?></b>
                                             </td>
                                             <td style='text-align:right;'>
-                                                <b><?=$this->erp->formatDecimal($amount_total_in?$amount_total_in:'')?></b>
+                                                <b><?= '$ '.$this->erp->formatDecimal($amount_total_in?$amount_total_in:'')?></b>
                                             </td>
 											<?php
 											if(is_array($num2)){
@@ -358,7 +358,7 @@
                                             $amount_balance=$amount_total_in-$amount_total_out;
 											?>
                                             <td style='text-align:right;'><b><?=$this->erp->formatDecimal($total_out?$total_out:'')?></b> </td>
-											<td style='text-align:right;'><b><?=$this->erp->formatDecimal($amount_total_out?$amount_total_out:'')?></b> </td>
+											<td style='text-align:right;'><b><?= '$ '.$this->erp->formatDecimal($amount_total_out?$amount_total_out:'')?></b> </td>
 											<td style='text-align:right;'><span><b><?=$this->erp->formatDecimal($am?$am:'')?></b></span>
 											<?php
 
@@ -369,7 +369,7 @@
                                             }
 													?>
 											</td>
-                                            <td style='text-align:right;'><b><?=$this->erp->formatDecimal($amount_balance?$amount_balance:'')?></b> </td>
+                                            <td style='text-align:right;'><b><?= '$ '.$this->erp->formatDecimal($amount_balance?$amount_balance:'')?></b> </td>
 										</tr>
 
                                         <?php
@@ -401,7 +401,12 @@
 										}
 									?>
                                         <td style='text-align:right;background:#F0F8FF;'><b><?=$this->erp->formatDecimal($total_inn?$total_inn:'')?></b></td>
-										<td style='text-align:right;background:#F0F8FF;'><b><?=$this->erp->formatDecimal($amount_total_inn?$amount_total_inn:'')?></b></td>
+                                        <?php if($amount_total_inn!=''){ ?>
+                                            <td style='text-align:right;background:#F0F8FF;'><b><?= '$ '.$this->erp->formatDecimal($amount_total_inn?$amount_total_inn:'')?></b></td>
+                                        <?php } else{ ?>
+                                            <td style='text-align:right;background:#F0F8FF;'><b><?= $this->erp->formatDecimal($amount_total_inn?$amount_total_inn:'')?></b></td>
+                                        <?php } ?>
+
 										<?php
 										if(is_array($num2)){
 
@@ -420,9 +425,19 @@
 										}
 										?>
                                     <td style='text-align:right;background:#F0F8FF;'><b><?=$this->erp->formatDecimal($total_outt?$total_outt:'')?></b></td>
-									<td style='text-align:right;background:#F0F8FF;'><b><?=$this->erp->formatDecimal($amount_total_outt?$amount_total_outt:'')?></b></td>
+                                    <?php if($amount_total_outt!=''){ ?>
+                                        <td style='text-align:right;background:#F0F8FF;'><b><?= '$ '.$this->erp->formatDecimal($amount_total_outt?$amount_total_outt:'')?></b></td>
+                                    <?php } else{ ?>
+                                        <td style='text-align:right;background:#F0F8FF;'><b><?=$this->erp->formatDecimal($amount_total_outt?$amount_total_outt:'')?></b></td>
+                                    <?php } ?>
+
 									<td style='text-align:right;background:#F0F8FF;'><b><?=$this->erp->formatDecimal($balance?$balance:'')?></b></td>
-									<td style='text-align:right;background:#F0F8FF;'><b><?=$this->erp->formatDecimal($amount_total_balance?$amount_total_balance:'')?></b></td>
+                                    <?php if($amount_total_balance!=''){ ?>
+                                        <td style='text-align:right;background:#F0F8FF;'><b><?= '$ '.$this->erp->formatDecimal($amount_total_balance?$amount_total_balance:'')?></b></td>
+                                    <?php } else{ ?>
+                                        <td style='text-align:right;background:#F0F8FF;'><b><?=$this->erp->formatDecimal($amount_total_balance?$amount_total_balance:'')?></b></td>
+                                    <?php } ?>
+
 								</tr>
 							<?php
 									$total_balance+=$balance;
@@ -439,7 +454,7 @@
                                         <b>Grand Total <i
                                                     class="fa fa-angle-double-right"
                                                     aria-hidden="true"></i> <?= $rw->name; ?></b></td>
-									<td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?=$this->erp->formatDecimal($total_begin_balance?$total_begin_balance:'')?></b></td>
+									<td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?= $this->erp->formatDecimal($total_begin_balance?$total_begin_balance:'')?></b></td>
 
 									<?php
 										if(is_array($num)){
@@ -453,7 +468,12 @@
 											}
 										}?>
                                         <td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?=$this->erp->formatDecimal($total2_inn?$total2_inn:'')?></b></td>
-										<td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?=$this->erp->formatDecimal($amount_total2_inn?$amount_total2_inn:'')?></b></td>
+                                        <?php if($amount_total2_inn!=''){ ?>
+                                            <td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?='$ '.$this->erp->formatDecimal($amount_total2_inn?$amount_total2_inn:'')?></b></td>
+                                        <?php } else{ ?>
+                                            <td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?=$this->erp->formatDecimal($amount_total2_inn?$amount_total2_inn:'')?></b></td>
+                                        <?php } ?>
+
 										
 										<?php
 										if(is_array($num2)){
@@ -470,9 +490,19 @@
 										}
 										?>
                                     <td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?=$this->erp->formatDecimal($total2_outt?$total2_outt:'')?></b></td>
-									<td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?=$this->erp->formatDecimal($amount_total2_outt?$amount_total2_outt:'')?></b></td>
+									<?php if($amount_total2_outt!=''){ ?>
+                                        <td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?= '$ '.$this->erp->formatDecimal($amount_total2_outt?$amount_total2_outt:'')?></b></td>
+                                    <?php } else{ ?>
+                                        <td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?=$this->erp->formatDecimal($amount_total2_outt?$amount_total2_outt:'')?></b></td>
+                                   <?php } ?>
+
 									<td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?=$this->erp->formatDecimal($total_balance?$total_balance:'')?></b></td>
-									<td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?=$this->erp->formatDecimal($amount_gtotal_balance?$amount_gtotal_balance:'')?></b></td>
+									<?php if($amount_gtotal_balance!=''){ ?>
+                                        <td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?= '$ '.$this->erp->formatDecimal($amount_gtotal_balance?$amount_gtotal_balance:'')?></b></td>
+                                    <?php } else{ ?>
+									    <td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?= $this->erp->formatDecimal($amount_gtotal_balance?$amount_gtotal_balance:'')?></b></td>
+                                   <?php } ?>
+
 									</tr>
 							<?php
 								}
