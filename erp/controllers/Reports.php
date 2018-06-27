@@ -26879,7 +26879,12 @@ class Reports extends MY_Controller
                                 $new=$tin-$k2;
                                 //$this->erp->print_arrays($tin,$k2);
                                 $this->excel->getActiveSheet()->setCellValue($alphabet[$new] . $row, $this->erp->formatDecimal($total_in ? $total_in : '')." ");
-                                $this->excel->getActiveSheet()->setCellValue($alphabet[$new+1] . $row, $this->erp->formatDecimal($amount_total_in ? $amount_total_in : '')." ");
+                                if($amount_total_in!=''){
+                                    $this->excel->getActiveSheet()->setCellValue($alphabet[$new+1] . $row, '$ '.$this->erp->formatDecimal($amount_total_in ? $amount_total_in : '')." ");
+                                }else{
+                                    $this->excel->getActiveSheet()->setCellValue($alphabet[$new+1] . $row, $this->erp->formatDecimal($amount_total_in ? $amount_total_in : '')." ");
+                                }
+
                                 $this->excel->getActiveSheet()->getStyle($alphabet[$new+1].$row)->getFont()->setBold(true);
                                 $this->excel->getActiveSheet()->getStyle($alphabet[$new+1].$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
                                 $this->excel->getActiveSheet()->getStyle($alphabet[$new+1] . $row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
@@ -26916,7 +26921,12 @@ class Reports extends MY_Controller
                                 $amount_balance=$amount_total_in-$amount_total_out;
                                 //Show total out
                                 $this->excel->getActiveSheet()->setCellValue($alphabet[$totalout+1] . $row, $this->erp->formatDecimal($total_out ? $total_out : ''). " ");
-                                $this->excel->getActiveSheet()->setCellValue($alphabet[$totalout+2] . $row, $this->erp->formatDecimal($amount_total_out ? $amount_total_out : '')." ");
+                                if($amount_total_out!=''){
+                                    $this->excel->getActiveSheet()->setCellValue($alphabet[$totalout+2] . $row, '$ '.$this->erp->formatDecimal($amount_total_out ? $amount_total_out : '')." ");
+                                }else{
+                                    $this->excel->getActiveSheet()->setCellValue($alphabet[$totalout+2] . $row, $this->erp->formatDecimal($amount_total_out ? $amount_total_out : '')." ");
+                                }
+
                                 $this->excel->getActiveSheet()->getStyle($alphabet[$totalout+1].$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
                                 $this->excel->getActiveSheet()->getStyle($alphabet[$totalout+1] . $row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
 
@@ -26925,7 +26935,11 @@ class Reports extends MY_Controller
                                 $this->excel->getActiveSheet()->getStyle($alphabet[$totalout+1].$row)->getFont()->setBold(true);
                                 //Show Balance
                                 $this->excel->getActiveSheet()->setCellValue($alphabet[$b+2].$row, $this->erp->formatDecimal($total_in-$total_out).' '.strip_tags($this->erp->convert_unit_2_string($rp->product_id,$am)));
-                                $this->excel->getActiveSheet()->setCellValue($alphabet[$b+3].$row, $this->erp->formatDecimal($amount_balance ? $amount_balance:'')." ");
+                                if($amount_balance!=''){
+                                    $this->excel->getActiveSheet()->setCellValue($alphabet[$b+3].$row, '$ '.$this->erp->formatDecimal($amount_balance ? $amount_balance:'')." ");
+                                }else{
+                                    $this->excel->getActiveSheet()->setCellValue($alphabet[$b+3].$row, $this->erp->formatDecimal($amount_balance ? $amount_balance:'')." ");
+                                }
                                 //$this->excel->getActiveSheet()->setCellValue($alphabet[$b+2].$row,$this->erp->formatDecimal($total_in-$total_out)." ");
                                 $this->excel->getActiveSheet()->getStyle($alphabet[$b].$row)->getFont()->setBold(true);
                                 $this->excel->getActiveSheet()->getStyle($alphabet[$b+2].$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
@@ -26978,7 +26992,12 @@ class Reports extends MY_Controller
                             }
 
                             $this->excel->getActiveSheet()->setCellValue($alphabet[$new] . $row, $this->erp->formatDecimal($total_inn ? $total_inn : ''). " ");
-                            $this->excel->getActiveSheet()->setCellValue($alphabet[$new+1] . $row, $this->erp->formatDecimal($amount_total_inn ? $amount_total_inn : ''). " ");
+                            if($amount_total_inn!=''){
+                                $this->excel->getActiveSheet()->setCellValue($alphabet[$new+1] . $row, '$ '.$this->erp->formatDecimal($amount_total_inn ? $amount_total_inn : ''). " ");
+                            }else{
+                                $this->excel->getActiveSheet()->setCellValue($alphabet[$new+1] . $row, $this->erp->formatDecimal($amount_total_inn ? $amount_total_inn : ''). " ");
+                            }
+
                             $this->excel->getActiveSheet()->getStyle($alphabet[$new] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
                             $this->excel->getActiveSheet()->getStyle($alphabet[$new+1] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
 
@@ -26995,13 +27014,23 @@ class Reports extends MY_Controller
                             //Show total out
                             
                             $this->excel->getActiveSheet()->setCellValue($alphabet[$totalout+1] . $row, $this->erp->formatDecimal($total_outt ? $total_outt : ''). " ");
-                            $this->excel->getActiveSheet()->setCellValue($alphabet[$totalout+2] . $row, $this->erp->formatDecimal($amount_total_outt ? $amount_total_outt : ''). " ");
+                            if($amount_total_outt!=''){
+                                $this->excel->getActiveSheet()->setCellValue($alphabet[$totalout+2] . $row, '$ '.$this->erp->formatDecimal($amount_total_outt ? $amount_total_outt : ''). " ");
+                            }else{
+                                $this->excel->getActiveSheet()->setCellValue($alphabet[$totalout+2] . $row, $this->erp->formatDecimal($amount_total_outt ? $amount_total_outt : ''). " ");
+                            }
+
                             $this->excel->getActiveSheet()->getStyle($alphabet[$totalout+1] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
                             $this->excel->getActiveSheet()->getStyle($alphabet[$totalout+2] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
 
                             $this->excel->getActiveSheet()->setCellValue($alphabet[$b+2].$row,$this->erp->formatDecimal($balance?$balance:''). " ");
                             $this->excel->getActiveSheet()->getStyle($alphabet[$b+2] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
-                            $this->excel->getActiveSheet()->setCellValue($alphabet[$b+3].$row,$this->erp->formatDecimal($amount_total_balance?$amount_total_balance:''). " ");
+                            if($amount_total_balance!=''){
+                                $this->excel->getActiveSheet()->setCellValue($alphabet[$b+3].$row,'$ '.$this->erp->formatDecimal($amount_total_balance?$amount_total_balance:''). " ");
+                            }else{
+                                $this->excel->getActiveSheet()->setCellValue($alphabet[$b+3].$row,$this->erp->formatDecimal($amount_total_balance?$amount_total_balance:''). " ");
+                            }
+
                             $this->excel->getActiveSheet()->getStyle($alphabet[$b+3] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
                             $total_balance+=$balance;
                             $total_begin_balance+=$begin_balance;
@@ -27054,7 +27083,12 @@ class Reports extends MY_Controller
                         }
                         //Show grand Total of total in
                         $this->excel->getActiveSheet()->setCellValue($alphabet[$new] . $row, $this->erp->formatDecimal($total2_inn ? $total2_inn : ''). " ");
-                        $this->excel->getActiveSheet()->setCellValue($alphabet[$new+1] . $row, $this->erp->formatDecimal($amount_total2_inn ? $amount_total2_inn : ''). " ");
+                        if($amount_total2_inn!=''){
+                            $this->excel->getActiveSheet()->setCellValue($alphabet[$new+1] . $row, '$ '.$this->erp->formatDecimal($amount_total2_inn ? $amount_total2_inn : ''). " ");
+                        }else{
+                            $this->excel->getActiveSheet()->setCellValue($alphabet[$new+1] . $row, $this->erp->formatDecimal($amount_total2_inn ? $amount_total2_inn : ''). " ");
+                        }
+
                         $this->excel->getActiveSheet()->getStyle($alphabet[$new] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
                         $this->excel->getActiveSheet()->getStyle($alphabet[$new+1] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
                         $j = $i+1;
@@ -27072,9 +27106,19 @@ class Reports extends MY_Controller
                         }
                         //Show grand Total of total out
                         $this->excel->getActiveSheet()->setCellValue($alphabet[$totalout+1].$row,$this->erp->formatDecimal($total2_outt?$total2_outt:''). " ");
-                        $this->excel->getActiveSheet()->setCellValue($alphabet[$totalout+2].$row,$this->erp->formatDecimal($amount_total2_outt?$amount_total2_outt:''). " ");
+                        if($amount_total2_outt!=''){
+                            $this->excel->getActiveSheet()->setCellValue($alphabet[$totalout+2].$row,'$ '.$this->erp->formatDecimal($amount_total2_outt?$amount_total2_outt:''). " ");
+                        }else{
+                            $this->excel->getActiveSheet()->setCellValue($alphabet[$totalout+2].$row,$this->erp->formatDecimal($amount_total2_outt?$amount_total2_outt:''). " ");
+                        }
+
                         $this->excel->getActiveSheet()->setCellValue($alphabet[$b+2].$row,$this->erp->formatDecimal($total_balance?$total_balance:''). " ");
-                        $this->excel->getActiveSheet()->setCellValue($alphabet[$b+3].$row,$this->erp->formatDecimal($amount_gtotal_balance?$amount_gtotal_balance:''). " ");
+                        if($amount_gtotal_balance!=''){
+                            $this->excel->getActiveSheet()->setCellValue($alphabet[$b+3].$row,'$ '.$this->erp->formatDecimal($amount_gtotal_balance?$amount_gtotal_balance:''). " ");
+                        }else{
+                            $this->excel->getActiveSheet()->setCellValue($alphabet[$b+3].$row,$this->erp->formatDecimal($amount_gtotal_balance?$amount_gtotal_balance:''). " ");
+                        }
+
 
                         $this->excel->getActiveSheet()->getStyle($alphabet[$totalout+1].$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
                         $this->excel->getActiveSheet()->getStyle($alphabet[$totalout+2].$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
