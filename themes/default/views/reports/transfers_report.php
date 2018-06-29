@@ -33,7 +33,7 @@
                     }
                 }
             },
-			$('#customer').val(<?= $this->input->post('customer') ?>);
+            //$('#customer').val(<?= $this->input->post('customer') ?>);
     })
 
         <?php } ?>
