@@ -25425,8 +25425,6 @@ class Reports extends MY_Controller
 
                             $row++;
 
-
-
                         }
 
                         $this->excel->getActiveSheet()->SetCellValue('A' . $row, lang('total'));
@@ -25476,7 +25474,6 @@ class Reports extends MY_Controller
                 $this->excel->getActiveSheet()->getColumnDimension('D')->setWidth(15);
                 $this->excel->getActiveSheet()->getColumnDimension('E')->setWidth(15);
                 $this->excel->getActiveSheet()->getColumnDimension('F')->setWidth(15);
-                
 
                 $filename = lang('Report List Using Stock'). date('Y_m_d_H_i_s');
                 $this->excel->getDefaultStyle()->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
