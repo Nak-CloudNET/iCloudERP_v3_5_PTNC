@@ -43,7 +43,7 @@ class Reports_model extends CI_Model
 			}
 			return false; 	
 	}
-	public function getTransfersReport($reference_no,$start_date,$end_date,$from_warehouse,$to_warehouse,$offset,$limit,$wid){ 
+	public function getTransfersReport($reference_no,$start_date,$end_date,$from_warehouse,$to_warehouse,$offset,$limit){
 		if($reference_no){
 			$this->db->where("erp_transfers.transfer_no",$reference_no);
 		} 
@@ -56,10 +56,10 @@ class Reports_model extends CI_Model
 		if($to_warehouse){
 			$this->db->where("erp_transfers.to_warehouse_id",$to_warehouse);
 		}
-		if($wid){
+		/*if($wid){
 			//$this->db->where("erp_transfers.from_warehouse_id IN ($wid)");
 			$this->db->where("erp_transfers.to_warehouse_id IN ($wid)");
-		}
+		}*/
 		$this->db->select("erp_transfers.*,username");
         $this->db->join("erp_users","erp_transfers.authorize_id=erp_users.id");
 		$this->db->order_by("erp_transfers.id","DESC");

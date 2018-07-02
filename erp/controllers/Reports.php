@@ -7088,6 +7088,7 @@ class Reports extends MY_Controller
         $datt = $this->reports_model->getLastDate("erp_transfers", "date");
 
 		$wid = $this->reports_model->getWareByUserID();
+		//echo $wid;exit;
 		$str="";
 		$to_warehouse = "";
 		$from_warehouse = "";
@@ -7169,7 +7170,7 @@ class Reports extends MY_Controller
 		$this->pagination->initialize($config);
 		$this->data["pagination"] = $this->pagination->create_links();  
         $this->data['error'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('error');
-		$this->data['transfers'] = $this->reports_model->getTransfersReport($reference_no,$start_date,$end_date,$from_warehouse,$to_warehouse,$config["ob_set"],$config["per_page"],$wid);
+		$this->data['transfers'] = $this->reports_model->getTransfersReport($reference_no,$start_date,$end_date,$from_warehouse,$to_warehouse,$config["ob_set"],$config["per_page"]);
         $this->data['users'] = $this->reports_model->getStaff();
         $this->data['warehouses'] = $this->reports_model->getWareFullByUSER($wid);
 		$this->data['warehousesa'] = $this->reports_model->getAllWarehouses();
