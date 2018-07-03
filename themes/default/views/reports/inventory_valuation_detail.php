@@ -388,33 +388,45 @@
         $("#swarehouse").select2().empty();
     });
     var $biller = $("#biller");
-    $(window).load(function(){
-        billerChange();
-    });
+       // $(window).load(function(){
+           // billerChange();
+       // });
+
+
     function billerChange(){
         var id = $biller.val();
 
         $("#swarehouse").empty();
-        $.ajax({
-            url: '<?= base_url() ?>auth/getWarehouseByProject/'+id,
-            dataType: 'json',
-            success: function(result){
-                __setItem('default_warehouse','<?= $setting->default_warehouse ?>');
-                var default_warehouse = __getItem('default_warehouse');
-                $.each(result, function(i,val){
-                    var b_id = val.id;
-                    var code = val.code;
-                    var name = val.name;
-                    var opt = '<option value="' + b_id + '">' +code+'-'+ name + '</option>';
-                    $("#swarehouse").append(opt);
-                });
+        if(id != ''){
 
-                var option=$('#swarehouse option:first-child').val();
-                $("#swarehouse").select2("val", option);
+            $.ajax({
+                url: '<?= base_url() ?>auth/getWarehouseByProject/'+id,
+                dataType: 'json',
+                success: function(result){
+                    __setItem('default_warehouse','<?= $setting->default_warehouse ?>');
+                    var default_warehouse = __getItem('default_warehouse');
+                    $.each(result, function(i,val){
+                        var b_id = val.id;
+                        var code = val.code;
+                        var name = val.name;
+                        var opt = '<option value="' + b_id + '">' +code+'-'+ name + '</option>';
+                        $("#swarehouse").append(opt);
+                    });
+
+                    var option=$('#swarehouse option:first-child').val();
+
+                    $("#swarehouse").select2("val", option);
 
 
-            }
-        });
+                }
+            });
+        }else{
+
+            //var option='All';
+            //alert(option);
+            //$("#swarehouse").val(option);
+        }
+
 
 
     }

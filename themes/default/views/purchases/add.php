@@ -1315,6 +1315,8 @@
         });
 
     }
+
+
     $(document).ready(function () {
 		$('body').on('click', '.add_product_auto', function(e) {
 			e.preventDefault();
