@@ -7088,6 +7088,7 @@ class Reports extends MY_Controller
         $datt = $this->reports_model->getLastDate("erp_transfers", "date");
 
 		$wid = $this->reports_model->getWareByUserID();
+		//echo $wid;exit;
 		$str="";
 		$to_warehouse = "";
 		$from_warehouse = "";
@@ -7169,7 +7170,7 @@ class Reports extends MY_Controller
 		$this->pagination->initialize($config);
 		$this->data["pagination"] = $this->pagination->create_links();  
         $this->data['error'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('error');
-		$this->data['transfers'] = $this->reports_model->getTransfersReport($reference_no,$start_date,$end_date,$from_warehouse,$to_warehouse,$config["ob_set"],$config["per_page"],$wid);
+		$this->data['transfers'] = $this->reports_model->getTransfersReport($reference_no,$start_date,$end_date,$from_warehouse,$to_warehouse,$config["ob_set"],$config["per_page"]);
         $this->data['users'] = $this->reports_model->getStaff();
         $this->data['warehouses'] = $this->reports_model->getWareFullByUSER($wid);
 		$this->data['warehousesa'] = $this->reports_model->getAllWarehouses();
@@ -25425,23 +25426,23 @@ class Reports extends MY_Controller
 
                             $row++;
 
-                            $this->excel->getActiveSheet()->SetCellValue('A' . $row, lang('total'));
-                            $this->excel->getActiveSheet()->SetCellValue('B' . $row, '');
-                            $this->excel->getActiveSheet()->SetCellValue('C' . $row, $this->erp->formatQuantity($tqty));
-                            $this->excel->getActiveSheet()->SetCellValue('D' . $row, '');
-                            $this->excel->getActiveSheet()->SetCellValue('E' . $row, $this->erp->formatMoney($tcost));
-                            $this->excel->getActiveSheet()->SetCellValue('F' . $row, $this->erp->formatMoney($subtotal));
-
-                            $this->excel->getActiveSheet()->getStyle('A'. $row)->getFont()->setSize(12)->setBold(true);
-                            $this->excel->getActiveSheet()->getStyle('C'. $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
-                            $this->excel->getActiveSheet()->getStyle('E'. $row .':F'. $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
-
-                            $gtotal_qty += $tqty;
-                            $gtotal_cost += $tcost;
-                            $gsubtotal += $subtotal;
-
-                            $row++;
                         }
+
+                        $this->excel->getActiveSheet()->SetCellValue('A' . $row, lang('total'));
+                        $this->excel->getActiveSheet()->SetCellValue('B' . $row, '');
+                        $this->excel->getActiveSheet()->SetCellValue('C' . $row, $this->erp->formatQuantity($tqty));
+                        $this->excel->getActiveSheet()->SetCellValue('D' . $row, '');
+                        $this->excel->getActiveSheet()->SetCellValue('E' . $row, $this->erp->formatMoney($tcost));
+                        $this->excel->getActiveSheet()->SetCellValue('F' . $row, $this->erp->formatMoney($subtotal));
+
+                        $this->excel->getActiveSheet()->getStyle('A'. $row)->getFont()->setSize(12)->setBold(true);
+                        $this->excel->getActiveSheet()->getStyle('C'. $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+                        $this->excel->getActiveSheet()->getStyle('E'. $row .':F'. $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+
+                        $gtotal_qty += $tqty;
+                        $gtotal_cost += $tcost;
+                        $gsubtotal += $subtotal;
+                        $row++;
                     }
                     $this->excel->getActiveSheet()->SetCellValue('A' . $row, lang('grand_total'));
                     $this->excel->getActiveSheet()->SetCellValue('B' . $row, '');
@@ -25474,7 +25475,6 @@ class Reports extends MY_Controller
                 $this->excel->getActiveSheet()->getColumnDimension('D')->setWidth(15);
                 $this->excel->getActiveSheet()->getColumnDimension('E')->setWidth(15);
                 $this->excel->getActiveSheet()->getColumnDimension('F')->setWidth(15);
-                
 
                 $filename = lang('Report List Using Stock'). date('Y_m_d_H_i_s');
                 $this->excel->getDefaultStyle()->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
@@ -26657,7 +26657,7 @@ class Reports extends MY_Controller
             if ($num) {
                 foreach ($num as $tr) {
                     if ($tr->tran_type) {
-                        $this->excel->getActiveSheet()->SetCellValue($alphabet2[$ttype1], strtolower($tr->tran_type));
+                        $this->excel->getActiveSheet()->SetCellValue($alphabet2[$ttype1], ucwords($tr->tran_type));
                     }
                     $ttype1++;
 
@@ -26679,7 +26679,7 @@ class Reports extends MY_Controller
                 $this->excel->getActiveSheet()->setCellValue($alphabet1[$tin+1],lang("amount_total_in"));
                 $this->excel->getActiveSheet()->mergeCells($alphabet1[$tin+1].':'.$alphabet3[$tin+1]);
             }
-
+               
             
             //**Out part
             if($k2){
@@ -26690,7 +26690,7 @@ class Reports extends MY_Controller
                 //Get Out transaction type
                 foreach($num2 as $tr2){
                     if($tr2->tran_type){
-                        $this->excel->getActiveSheet()->SetCellValue($alphabet2[$tin], strtolower($tr2->tran_type));
+                        $this->excel->getActiveSheet()->SetCellValue($alphabet2[$tin], ucwords($tr2->tran_type));
                     }
                     $tin++;
                     $totalout = $tin+1;
@@ -26709,6 +26709,7 @@ class Reports extends MY_Controller
                if(!$out){
                 $out=1;
                }
+
             $row      =null;
             if(is_array($num2)){
                 //set style transaction type 2
@@ -26740,12 +26741,16 @@ class Reports extends MY_Controller
             $this->excel->getActiveSheet()->mergeCells('A1'.':A2');
             $this->excel->getActiveSheet()->mergeCells('B1'.':B2');
             if($num || $num2){
-                //Balance part
-                $this->excel->getActiveSheet()->setCellValue($alphabet1[$b+2],lang("balance"));
+                //Quantity Balance part
+                $this->excel->getActiveSheet()->setCellValue($alphabet1[$b+2],lang("quantity_balance"));
                 $this->excel->getActiveSheet()->mergeCells($alphabet1[$b+2].':'.$alphabet3[$b+2]);
+
+                //Amount Balance part
+                $this->excel->getActiveSheet()->setCellValue($alphabet1[$b+3],lang("amount_balance"));
+                $this->excel->getActiveSheet()->mergeCells($alphabet1[$b+3].':'.$alphabet3[$b+3]);
                 //End header**
             }
-
+            
 
             $row = 3;
             //Get warehouse
@@ -26773,7 +26778,7 @@ class Reports extends MY_Controller
                                 'color' => array('rgb' => 'f9f9f9')
                             )
                         );
-                        $this->excel->getActiveSheet()->getStyle('A' . $row . ':' . $alphabet[$b+2] . $row)->applyFromArray($styleArrays);
+                        $this->excel->getActiveSheet()->getStyle('A' . $row . ':' . $alphabet[$b+3] . $row)->applyFromArray($styleArrays);
 
                         $row++;
                         //End warehouse part
@@ -26781,6 +26786,7 @@ class Reports extends MY_Controller
                         $total2_outt = 0;
                         $total_balance = 0;
                         $total_begin_balance = 0;
+                        $amount_total2_balance = 0;
                         //Get product category
                         $procat = $this->reports_model->getProCat($rw->id,$category,$product);
                         $total_in_cate_w = array();
@@ -26788,7 +26794,7 @@ class Reports extends MY_Controller
                         foreach($procat as $rc){
                             //$this->erp->print_arrays($rc);
                             $this->excel->getActiveSheet()->setCellValue('A' . $row, '     Category >> ' . $rc->name);
-                            $this->excel->getActiveSheet()->mergeCells('A' . $row . ':' . $alphabet[$b+2] . $row);
+                            $this->excel->getActiveSheet()->mergeCells('A' . $row . ':' . $alphabet[$b+3] . $row);
 
                             // Styles for categories
                             $this->excel->getActiveSheet()->getStyle('A'. $row.':'.$alphabet[$b].$row)->getFont()->setBold(true);
@@ -26801,7 +26807,6 @@ class Reports extends MY_Controller
                                     'name' => 'Verdana'
                                 )
                             );
-
                             $this->excel->getActiveSheet()->getStyle('A' . $row . ':' . $alphabet[$b] . $row)->applyFromArray($styleArrays);
                             $this->excel->getActiveSheet()->getRowDimension(2)->setRowHeight(28);
 
@@ -26819,121 +26824,127 @@ class Reports extends MY_Controller
                             $amount_total_outt = 0;
                             $amount_total2_inn = 0;
                             $amount_total2_outt = 0;
+                            $amount_balance = 0;
+                            $amount_total_balance = 0;
+                            
 
                             //Get product
                             $propur = $this->reports_model->getProPur($rw->id,$rc->id,$product?$product:0,0,$from_date,$to_date);
                             if (is_array($propur)) {
-                                foreach($propur as $rp){
-                                    // $this->erp->print_arrays($rp);
-                                    $beginINqty = $this->reports_model->getBeginQtyINALL($rp->product_id,$rw->id,$from_date,$to_date);
-                                    $beginOUTqty = $this->reports_model->getBeginQtyOUTALL($rp->product_id,$rw->id,$from_date,$to_date);
-                                    $btotal_qty = $beginINqty->bqty-$beginOUTqty->bqty;
-                                    $begin_qty = $this->reports_model->getBeginQtyALL($rp->product_id,$rw->id,$from_date,$to_date);
-                                    //Show product name
-                                    $this->excel->getActiveSheet()->setCellValue('A' . $row, $rp->name ? "                      " . $rp->name : "         " . $rp->product_id);
-                                    //Show begin Total
-                                    $this->excel->getActiveSheet()->setCellValue('B' . $row, $this->erp->formatDecimal($btotal_qty ? $btotal_qty : ''));
-                                    $this->excel->getActiveSheet()->getStyle('B'. $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
-                                    //End begin Total
-                                    $this->excel->getActiveSheet()->getRowDimension($row)->setRowHeight(25);
+                            foreach($propur as $rp){
+                                // $this->erp->print_arrays($rp);
+                                $beginINqty = $this->reports_model->getBeginQtyINALL($rp->product_id,$rw->id,$from_date,$to_date);
+                                $beginOUTqty = $this->reports_model->getBeginQtyOUTALL($rp->product_id,$rw->id,$from_date,$to_date);
+                                $btotal_qty = $beginINqty->bqty-$beginOUTqty->bqty;
+                                $begin_qty = $this->reports_model->getBeginQtyALL($rp->product_id,$rw->id,$from_date,$to_date);
+                                //Show product name
+                                $this->excel->getActiveSheet()->setCellValue('A' . $row, $rp->name ? "                      " . $rp->name : "         " . $rp->product_id);
+                                //Show begin Total
+                                $this->excel->getActiveSheet()->setCellValue('B' . $row, $this->erp->formatDecimal($btotal_qty ? $btotal_qty : ''));
+                                $this->excel->getActiveSheet()->getStyle('B'. $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                                //End begin Total
+                                $this->excel->getActiveSheet()->getRowDimension($row)->setRowHeight(25);
 
-                                    $total_in = 0;
-                                    $total_out = 0;
-                                    $amount_total_in = 0;
-                                    $amount_total_out = 0;
-                                    $i = 0;
-                                    if(is_array($num)){
-                                        foreach($num as $tr){
-                                            if($tr->tran_type){
-                                                $allqty = $this->reports_model->getQtyINALL($rp->product_id,$rw->id,$tr->tran_type,$from_date,$to_date);
-                                                $qty_unit = $this->reports_model->getQtyUnitINALL($rp->product_id,$rw->id,$tr->tran_type,$from_date,$to_date);
-                                                $a = "";
+                                $total_in = 0;
+                                $total_out = 0;
+                                $amount_total_in = 0;
+                                $amount_total_out = 0;
+                                $i = 0;
+                                if(is_array($num)){
+                                    foreach($num as $tr){
+                                        if($tr->tran_type){
+                                            $allqty = $this->reports_model->getQtyINALL($rp->product_id,$rw->id,$tr->tran_type,$from_date,$to_date);
+                                            $qty_unit = $this->reports_model->getQtyUnitINALL($rp->product_id,$rw->id,$tr->tran_type,$from_date,$to_date);
+                                            $a = "";
 
-                                                if(1){
+                                            if(1){
 
-                                                    //show the all quantity of each transaction In
-                                                    $this->excel->getActiveSheet()->setCellValue($alphabet0[$i] . $row, $this->erp->formatDecimal($allqty->bqty ? $allqty->bqty : '') .' '. strip_tags($this->erp->convert_unit_2_string($rp->product_id,$qty_unit->bqty)). " ");
-                                                    //$this->excel->getActiveSheet()->setCellValue($alphabet0[$i] . $row, $this->erp->formatDecimal($allqty->bqty ? $allqty->bqty : ''). " ");
-                                                    $this->excel->getActiveSheet()->getStyle($alphabet0[$i] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
-                                                }
-
-                                                $total_in +=$allqty->bqty;
-                                                $total_in_cate[$tr->tran_type] +=$allqty->bqty;
+                                                //show the all quantity of each transaction In
+                                                $this->excel->getActiveSheet()->setCellValue($alphabet0[$i] . $row, $this->erp->formatDecimal($allqty->bqty ? $allqty->bqty : '') .' '. strip_tags($this->erp->convert_unit_2_string($rp->product_id,$qty_unit->bqty)). " ");
+                                                //$this->excel->getActiveSheet()->setCellValue($alphabet0[$i] . $row, $this->erp->formatDecimal($allqty->bqty ? $allqty->bqty : ''). " ");
+                                                $this->excel->getActiveSheet()->getStyle($alphabet0[$i] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
                                             }
 
-                                            $i++;
+                                            $total_in +=$allqty->bqty;
+                                            $total_in_cate[$tr->tran_type] +=$allqty->bqty;
                                         }
-                                        $amount_total_in = $total_in * $rp->product_cost;
 
+                                        $i++;
                                     }
-                                    //Show total in
+                                    $amount_total_in = $total_in * $rp->product_cost;
 
-                                    $new=$tin-$k2;
-                                    //$this->erp->print_arrays($tin,$k2);
-                                    $this->excel->getActiveSheet()->setCellValue($alphabet[$new] . $row, $this->erp->formatDecimal($total_in ? $total_in : '')." ");
-                                    $this->excel->getActiveSheet()->setCellValue($alphabet[$new+1] . $row, $this->erp->formatDecimal($amount_total_in ? $amount_total_in : '')." ");
-                                    $this->excel->getActiveSheet()->getStyle($alphabet[$new+1].$row)->getFont()->setBold(true);
-                                    $this->excel->getActiveSheet()->getStyle($alphabet[$new+1].$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
-                                    $this->excel->getActiveSheet()->getStyle($alphabet[$new+1] . $row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
-                                    $this->excel->getActiveSheet()->getStyle($alphabet[$new].$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
-                                    $this->excel->getActiveSheet()->getStyle($alphabet[$new] . $row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
-
-                                    $j          = $i+1;
-                                    $from_date2 =  NULL;
-                                    $to_date2   =  NULL;
-                                    if(is_array($num2)){
-                                        foreach($num2 as $tr2){
-                                            if($tr2->tran_type){
-                                                $allqty2 = $this->reports_model->getQtyOUTALL($rp->product_id,$rw->id,$tr2->tran_type,$from_date,$to_date);
-                                                $qty_unit2 = $this->reports_model->getQtyUnitOUTALL($rp->product_id,$rw->id,$tr->tran_type,$from_date,$to_date);
-                                                $a = "";
-                                                if(1){
-
-                                                    //show the all quantity of each transaction Out
-                                                    $this->excel->getActiveSheet()->setCellValue($alphabet0[$j+1] . $row, $this->erp->formatDecimal($allqty2->bqty ? $allqty2->bqty : '') .' '. strip_tags($this->erp->convert_unit_2_string($rp->product_id,$allqty2->bqty)). " ");
-                                                    //$this->excel->getActiveSheet()->setCellValue($alphabet0[$j+1] . $row, $this->erp->formatDecimal($allqty2->bqty ? $allqty2->bqty : ''). " ");
-                                                    $this->excel->getActiveSheet()->getStyle($alphabet0[$j+1] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
-                                                }
-
-                                                $total_out+=$allqty2->bqty;
-                                                $total_out_cate[$tr2->tran_type] +=$allqty2->bqty;
-                                            }
-                                            $qty_unit3 = $this->reports_model->getQtyUnitALL($rp->product_id,$rw->id,$from_date2,$to_date2);
-                                            $j++;
-                                            // $tout = $j+1;
-                                        }
-                                        $amount_total_out = $total_out * $rp->product_price;
-                                        $am = ($total_in-$total_out);
-                                    }
-                                    //Show total out
-                                    $this->excel->getActiveSheet()->setCellValue($alphabet[$totalout+1] . $row, $this->erp->formatDecimal($total_out ? $total_out : ''). " ");
-                                    $this->excel->getActiveSheet()->setCellValue($alphabet[$totalout+2] . $row, $this->erp->formatDecimal($amount_total_out ? $amount_total_out : '')." ");
-                                    $this->excel->getActiveSheet()->getStyle($alphabet[$totalout+1].$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
-                                    $this->excel->getActiveSheet()->getStyle($alphabet[$totalout+1] . $row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
-
-                                    $this->excel->getActiveSheet()->getStyle($alphabet[$totalout+2].$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
-                                    $this->excel->getActiveSheet()->getStyle($alphabet[$totalout+2] . $row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
-                                    $this->excel->getActiveSheet()->getStyle($alphabet[$totalout+1].$row)->getFont()->setBold(true);
-                                    //Show Balance
-                                    $this->excel->getActiveSheet()->setCellValue($alphabet[$b+2].$row, $this->erp->formatDecimal($total_in-$total_out).' '.strip_tags($this->erp->convert_unit_2_string($rp->product_id,$am)));
-                                    //$this->excel->getActiveSheet()->setCellValue($alphabet[$b+2].$row,$this->erp->formatDecimal($total_in-$total_out)." ");
-                                    $this->excel->getActiveSheet()->getStyle($alphabet[$b].$row)->getFont()->setBold(true);
-                                    $this->excel->getActiveSheet()->getStyle($alphabet[$b+2].$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
-                                    $this->excel->getActiveSheet()->getStyle($alphabet[$b] . $row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
-                                    //End balance
-
-                                    $balance+=($total_in-$total_out);
-                                    $begin_balance+=$btotal_qty;
-                                    $total_inn +=$total_in;
-                                    $total_outt +=$total_out;
-
-                                    $amount_total_inn += $amount_total_in;
-                                    $amount_total_outt += $amount_total_out;
-
-                                    $row++;
                                 }
-                        }
+                                //Show total in
 
+                                $new=$tin-$k2;
+                                //$this->erp->print_arrays($tin,$k2);
+                                $this->excel->getActiveSheet()->setCellValue($alphabet[$new] . $row, $this->erp->formatDecimal($total_in ? $total_in : '')." ");
+                                $this->excel->getActiveSheet()->setCellValue($alphabet[$new+1] . $row, $this->erp->formatDecimal($amount_total_in ? $amount_total_in : '')." ");
+                                $this->excel->getActiveSheet()->getStyle($alphabet[$new+1].$row)->getFont()->setBold(true);
+                                $this->excel->getActiveSheet()->getStyle($alphabet[$new+1].$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                                $this->excel->getActiveSheet()->getStyle($alphabet[$new+1] . $row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+                                $this->excel->getActiveSheet()->getStyle($alphabet[$new].$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                                $this->excel->getActiveSheet()->getStyle($alphabet[$new] . $row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+
+                                $j          = $i+1;
+                                $from_date2 =  NULL;
+                                $to_date2   =  NULL;
+                                if(is_array($num2)){
+                                    foreach($num2 as $tr2){
+                                        if($tr2->tran_type){
+                                            $allqty2 = $this->reports_model->getQtyOUTALL($rp->product_id,$rw->id,$tr2->tran_type,$from_date,$to_date);
+                                            $qty_unit2 = $this->reports_model->getQtyUnitOUTALL($rp->product_id,$rw->id,$tr->tran_type,$from_date,$to_date);
+                                            $a = "";
+                                            if(1){
+                                                
+                                                //show the all quantity of each transaction Out
+                                                $this->excel->getActiveSheet()->setCellValue($alphabet0[$j+1] . $row, $this->erp->formatDecimal($allqty2->bqty ? $allqty2->bqty : '') .' '. strip_tags($this->erp->convert_unit_2_string($rp->product_id,$allqty2->bqty)). " ");
+                                                //$this->excel->getActiveSheet()->setCellValue($alphabet0[$j+1] . $row, $this->erp->formatDecimal($allqty2->bqty ? $allqty2->bqty : ''). " ");
+                                                $this->excel->getActiveSheet()->getStyle($alphabet0[$j+1] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                                            }
+
+                                            $total_out+=$allqty2->bqty;
+                                            $total_out_cate[$tr2->tran_type] +=$allqty2->bqty;
+                                        }
+                                        $qty_unit3 = $this->reports_model->getQtyUnitALL($rp->product_id,$rw->id,$from_date2,$to_date2);
+                                        $j++;
+                                        // $tout = $j+1;
+                                    }
+                                    $amount_total_out = $total_out * $rp->product_price;
+                                    $am = ($total_in-$total_out);
+                                }
+                                
+                                //Show total out
+                                $this->excel->getActiveSheet()->setCellValue($alphabet[$totalout+1] . $row, $this->erp->formatDecimal($total_out ? $total_out : ''). " ");
+                                $this->excel->getActiveSheet()->setCellValue($alphabet[$totalout+2] . $row, $this->erp->formatDecimal($amount_total_out ? $amount_total_out : '')." ");
+                                $this->excel->getActiveSheet()->getStyle($alphabet[$totalout+1].$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                                $this->excel->getActiveSheet()->getStyle($alphabet[$totalout+1] . $row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+
+                                $this->excel->getActiveSheet()->getStyle($alphabet[$totalout+2].$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                                $this->excel->getActiveSheet()->getStyle($alphabet[$totalout+2] . $row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+                                $this->excel->getActiveSheet()->getStyle($alphabet[$totalout+1].$row)->getFont()->setBold(true);
+                                //Show Balance
+                                $this->excel->getActiveSheet()->setCellValue($alphabet[$b+2].$row, $this->erp->formatDecimal($total_in-$total_out).' '.strip_tags($this->erp->convert_unit_2_string($rp->product_id,$am)));
+                                $this->excel->getActiveSheet()->setCellValue($alphabet[$b+3] . $row, $this->erp->formatDecimal($amount_total_in - $amount_total_out)." ");
+                                //$this->excel->getActiveSheet()->setCellValue($alphabet[$b+2].$row,$this->erp->formatDecimal($total_in-$total_out)." ");
+                                $this->excel->getActiveSheet()->getStyle($alphabet[$b].$row)->getFont()->setBold(true);
+                                $this->excel->getActiveSheet()->getStyle($alphabet[$b+2].$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                                $this->excel->getActiveSheet()->getStyle($alphabet[$b+3].$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                                $this->excel->getActiveSheet()->getStyle($alphabet[$b] . $row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+                                //End balance
+
+                                $balance+=($total_in-$total_out);
+                                $begin_balance+=$btotal_qty;
+                                $total_inn +=$total_in;
+                                $total_outt +=$total_out;
+
+                                $amount_total_inn += $amount_total_in;
+                                $amount_total_outt += $amount_total_out;
+                                $amount_total_balance += ($amount_total_in - $amount_total_out);
+
+                                $row++;
+                            }
+                        }
                             //$this->erp->print_arrays($row);
                             $styleArray = array(
                                 'fill' => array(
@@ -26941,9 +26952,10 @@ class Reports extends MY_Controller
                                     'color' => array('rgb' => 'F0F8FF')
                                 )
                             );
-                            $this->excel->getActiveSheet()->getStyle('A'.$row.':'.$alphabet[$b+2].''.$row)->applyFromArray($styleArray)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+                            $this->excel->getActiveSheet()->getStyle('A'.$row.':'.$alphabet[$b+3].''.$row)->applyFromArray($styleArray)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
                             $this->excel->getActiveSheet()->getRowDimension($row)->setRowHeight(20);
                             $this->excel->getActiveSheet()->getStyle('B' . $row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+
                             //Show total each category
                             $this->excel->getActiveSheet()->setCellValue('A' . $row, "Total >> " . $rc->name);
                             $this->excel->getActiveSheet()->setCellValue('B' . $row, $this->erp->formatDecimal($begin_balance ? $begin_balance : ''). " ");
@@ -26959,14 +26971,13 @@ class Reports extends MY_Controller
                                     $i++;
                                 }
                             }
-                            if($new) {
-                                $this->excel->getActiveSheet()->setCellValue($alphabet[$new] . $row, $this->erp->formatDecimal($total_inn ? $total_inn : '') . " ");
-                                $this->excel->getActiveSheet()->setCellValue($alphabet[$new + 1] . $row, $this->erp->formatDecimal($amount_total_inn ? $amount_total_inn : '') . " ");
-                                $this->excel->getActiveSheet()->getStyle($alphabet[$new] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
-                                $this->excel->getActiveSheet()->getStyle($alphabet[$new + 1] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
-                            }
-                            $j = $i+1;
 
+                            $this->excel->getActiveSheet()->setCellValue($alphabet[$new] . $row, $this->erp->formatDecimal($total_inn ? $total_inn : ''). " ");
+                            $this->excel->getActiveSheet()->setCellValue($alphabet[$new+1] . $row, $this->erp->formatDecimal($amount_total_inn ? $amount_total_inn : ''). " ");
+                            $this->excel->getActiveSheet()->getStyle($alphabet[$new] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                            $this->excel->getActiveSheet()->getStyle($alphabet[$new+1] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+
+                            $j = $i+1;
                             foreach($num2 as $tr2){
                                 if($tr2->tran_type){
                                     $amount_qty2 = $this->reports_model->getAmountQtyOUTALL($product2, $rw->id, $tr2->transaction_type, $rc->id, $from_date, $to_date);
@@ -26977,23 +26988,27 @@ class Reports extends MY_Controller
                                 $j++;
                             }
                             //Show total out
-
+                            
                             $this->excel->getActiveSheet()->setCellValue($alphabet[$totalout+1] . $row, $this->erp->formatDecimal($total_outt ? $total_outt : ''). " ");
                             $this->excel->getActiveSheet()->setCellValue($alphabet[$totalout+2] . $row, $this->erp->formatDecimal($amount_total_outt ? $amount_total_outt : ''). " ");
                             $this->excel->getActiveSheet()->getStyle($alphabet[$totalout+1] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
                             $this->excel->getActiveSheet()->getStyle($alphabet[$totalout+2] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
 
                             $this->excel->getActiveSheet()->setCellValue($alphabet[$b+2].$row,$this->erp->formatDecimal($balance). " ");
+                            $this->excel->getActiveSheet()->setCellValue($alphabet[$b+3].$row,$this->erp->formatDecimal($amount_total_balance). " ");
                             $this->excel->getActiveSheet()->getStyle($alphabet[$b+2] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                            $this->excel->getActiveSheet()->getStyle($alphabet[$b+3] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
                             $total_balance+=$balance;
                             $total_begin_balance+=$begin_balance;
                             $total2_inn +=$total_inn;
                             $total2_outt +=$total_outt;
                             $amount_total2_inn +=$amount_total_inn;
                             $amount_total2_outt +=$amount_total_outt;
+                            $amount_total2_balance +=$amount_total_balance;
 
                             $row++;
                         }
+
                         $this->excel->getActiveSheet()->setCellValue('A' . $row, "Grand Total >> " . $rw->name);
                         $this->excel->getActiveSheet()->getStyle('A'. $row.':'.$alphabet[$b].$row)->getFont()->setBold(true);
                         $this->excel->getActiveSheet()->getStyle('A'. $row.':'.$alphabet[$b].$row)->getFont()->setSize(12);
@@ -27015,9 +27030,9 @@ class Reports extends MY_Controller
                                 'color' => array('rgb' => '357EBD')
                             )
                         );
-                        $this->excel->getActiveSheet()->getStyle('A' . $row . ':' . $alphabet[$b+2] . $row)->applyFromArray($styleArrays);
+                        $this->excel->getActiveSheet()->getStyle('A' . $row . ':' . $alphabet[$b+3] . $row)->applyFromArray($styleArrays);
                         $this->excel->getActiveSheet()->getRowDimension($row)->setRowHeight(30);
-                        $this->excel->getActiveSheet()->getStyle('A' . $row . ':' . $alphabet[$b+2] . $row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+                        $this->excel->getActiveSheet()->getStyle('A' . $row . ':' . $alphabet[$b+3] . $row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
 
                         $i = 0;
                         if(is_array($num)){
@@ -27029,13 +27044,11 @@ class Reports extends MY_Controller
                                 $i++;
                             }
                         }
-                        if($new) {
-                            //Show grand Total of total in
-                            $this->excel->getActiveSheet()->setCellValue($alphabet[$new] . $row, $this->erp->formatDecimal($total2_inn ? $total2_inn : '') . " ");
-                            $this->excel->getActiveSheet()->setCellValue($alphabet[$new + 1] . $row, $this->erp->formatDecimal($amount_total2_inn ? $amount_total2_inn : '') . " ");
-                            $this->excel->getActiveSheet()->getStyle($alphabet[$new] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
-                            $this->excel->getActiveSheet()->getStyle($alphabet[$new + 1] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
-                        }
+                        //Show grand Total of total in
+                        $this->excel->getActiveSheet()->setCellValue($alphabet[$new] . $row, $this->erp->formatDecimal($total2_inn ? $total2_inn : ''). " ");
+                        $this->excel->getActiveSheet()->setCellValue($alphabet[$new+1] . $row, $this->erp->formatDecimal($amount_total2_inn ? $amount_total2_inn : ''). " ");
+                        $this->excel->getActiveSheet()->getStyle($alphabet[$new] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                        $this->excel->getActiveSheet()->getStyle($alphabet[$new+1] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
                         $j = $i+1;
                         if(is_array($num2)){
                             foreach($num2 as $tr2){
@@ -27053,10 +27066,11 @@ class Reports extends MY_Controller
                         $this->excel->getActiveSheet()->setCellValue($alphabet[$totalout+1].$row,$this->erp->formatDecimal($total2_outt?$total2_outt:''). " ");
                         $this->excel->getActiveSheet()->setCellValue($alphabet[$totalout+2].$row,$this->erp->formatDecimal($amount_total2_outt?$amount_total2_outt:''). " ");
                         $this->excel->getActiveSheet()->setCellValue($alphabet[$b+2].$row,$this->erp->formatDecimal($total_balance?$total_balance:''). " ");
+                        $this->excel->getActiveSheet()->setCellValue($alphabet[$b+3].$row,$this->erp->formatDecimal($amount_total2_balance?$amount_total2_balance:''). " ");
 
                         $this->excel->getActiveSheet()->getStyle($alphabet[$totalout+1].$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
-                        $this->excel->getActiveSheet()->getStyle($alphabet[$totalout+2].$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
-                        $this->excel->getActiveSheet()->getStyle($alphabet[$b+2].$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                        $this->excel->getActiveSheet()->getStyle($alphabet[$totalout+3].$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                        $this->excel->getActiveSheet()->getStyle($alphabet[$b+3].$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
 
                         $row++;
                     }
@@ -27072,8 +27086,8 @@ class Reports extends MY_Controller
                             'color' => array('rgb' => '428BCA')
                         )
                     );
-                    $this->excel->getActiveSheet()->getStyle('A1:'.$alphabet[$b+2].'1')->applyFromArray($styleArray)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
-                    $this->excel->getActiveSheet()->getStyle('A2:'.$alphabet[$b+2].'2')->applyFromArray($styleArray)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);;
+                    $this->excel->getActiveSheet()->getStyle('A1:'.$alphabet[$b+3].'1')->applyFromArray($styleArray)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+                    $this->excel->getActiveSheet()->getStyle('A2:'.$alphabet[$b+3].'2')->applyFromArray($styleArray)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);;
 
                 }
             }
@@ -27091,6 +27105,7 @@ class Reports extends MY_Controller
             $this->excel->getActiveSheet()->getColumnDimension('H')->setWidth(20);
             $this->excel->getActiveSheet()->getColumnDimension('I')->setWidth(20);
             $this->excel->getActiveSheet()->getColumnDimension('J')->setWidth(20);
+            $this->excel->getActiveSheet()->getColumnDimension('K')->setWidth(20);
 
             $filename = lang('inventory_inout '). date('Y_m_d_H_i_s');
             $styleArray = array(

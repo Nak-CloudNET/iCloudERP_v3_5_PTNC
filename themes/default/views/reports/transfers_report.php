@@ -33,7 +33,7 @@
                     }
                 }
             },
-			$('#customer').val(<?= $this->input->post('customer') ?>);
+            //$('#customer').val(<?= $this->input->post('customer') ?>);
     })
 
         <?php } ?>
@@ -185,7 +185,7 @@
 								<th style="min-width:30px; width: 30px; text-align: center;">
 									<input class="checkbox checkth" type="checkbox" name="val" />
 								</th>
-                                <th style="width:60px;" class="center"><?= lang("image"); ?></th>
+                                <th style="width:70px;" class="center"><?= lang("image"); ?></th>
                                 <th style="width:250px;" class="center"><?= lang("Description"); ?></th>
 								<th style="width:150px;"><?= lang("unit_cost"); ?></th>
                                 <th style="width:150px;"><?= lang("quantity"); ?></th>
@@ -200,7 +200,8 @@
 						   $g_tax=0;
 						   $g_subtotal=0;
 						   if(is_array($transfers)){
-						foreach($transfers as $transfer){ 
+						foreach($transfers as $transfer){
+
 						       $query=$this->db->query("
 							      SELECT product_name,
 									product_code,
@@ -274,12 +275,12 @@
 						   $g_cost += $t_cost;
 						   $g_tax += $t_tax;
 						   $g_subtotal += $total_cost;
-					   } 
+					   }
 						   }?>
 						
 					</tbody>
 					<tfoot>
-					           <tr style="background:#428BCA; color:white; font-size:16px !important;"> 
+					           <tr style="background:#428BCA; color:white; font-size:16px !important;">
 							       <td></td>
                                    <td class="bold right"><?= lang("grand_total") ?>:</td>
                                    <td></td>

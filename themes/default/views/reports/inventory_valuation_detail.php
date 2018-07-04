@@ -92,18 +92,7 @@
                                 echo form_dropdown('type', $types, (isset($_POST['type']) ? $_POST['type'] : "") , 'class="form-control input-tip" id="type" data-placeholder="'. $this->lang->line("select type") .'"'); ?>
 							</div>
                         </div>
-						<div class="col-sm-4">
-                            <div class="form-group">
-                                <label class="control-label" for="warehouse"><?= lang("warehouse"); ?></label>
-                                <?php
-								$wh[""] = "ALL";
-                                foreach ($swarehouses as $swarehouse) {
-                                    $wh[$swarehouse->id] =  $swarehouse->code.' / '.$swarehouse->name;
-                                }
-                                echo form_dropdown('swarehouse', $wh, (isset($_POST['swarehouse']) ? $_POST['swarehouse'] : ""), 'class="form-control" id="swarehouse" data-placeholder="' . $this->lang->line("select") . " " . $this->lang->line("warehouse") . '"');
-                                ?>
-                            </div>
-                        </div>
+
 						<div class="col-sm-4">
                             <div class="form-group">
                                 <label class="control-label" for="warehouse"><?= lang("biller"); ?></label>
@@ -116,6 +105,21 @@
                                 ?>
                             </div>
                         </div>
+
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label class="control-label" for="warehouse"><?= lang("warehouse"); ?></label>
+                                <?php
+                                $wh[""] = "ALL";
+                                foreach ($swarehouses as $swarehouse) {
+                                    $wh[$swarehouse->id] =  $swarehouse->code.' / '.$swarehouse->name;
+                                }
+                                echo form_dropdown('swarehouse', $wh, (isset($_POST['swarehouse']) ? $_POST['swarehouse'] : ""), 'class="form-control" id="swarehouse" data-placeholder="' . $this->lang->line("select") . " " . $this->lang->line("warehouse") . '"');
+                                ?>
+                            </div>
+                        </div>
+
+
                         <div class="col-sm-4">
                             <div class="form-group">
                                 <?= lang("from_date", "from_date"); ?>
@@ -378,5 +382,43 @@
             return false;
         });
     });
+
+    $('#biller').change(function(){
+        billerChange();
+        $("#swarehouse").select2().empty();
+    });
+    var $biller = $("#biller");
+    $(window).load(function(){
+        billerChange();
+    });
+    function billerChange(){
+        var id = $biller.val();
+
+        $("#swarehouse").empty();
+        $.ajax({
+            url: '<?= base_url() ?>auth/getWarehouseByProject/'+id,
+            dataType: 'json',
+            success: function(result){
+                __setItem('default_warehouse','<?= $setting->default_warehouse ?>');
+                var default_warehouse = __getItem('default_warehouse');
+                $.each(result, function(i,val){
+                    var b_id = val.id;
+                    var code = val.code;
+                    var name = val.name;
+                    var opt = '<option value="' + b_id + '">' +code+'-'+ name + '</option>';
+                    $("#swarehouse").append(opt);
+                });
+
+                var option=$('#swarehouse option:first-child').val();
+                $("#swarehouse").select2("val", option);
+
+
+            }
+        });
+
+
+    }
+
+
 </script>
 
