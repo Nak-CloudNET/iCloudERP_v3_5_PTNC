@@ -218,6 +218,7 @@
                                     $amount_total2_outt = 0;
                                     $total_balance = 0;
 									$total_begin_balance = 0;
+									$my_total_balance=0;
 									$procat = $this->reports_model->getProCat($rw->id,$category2,$product2,$biller2);
 
 									$total_in_cate_w = array();
@@ -232,6 +233,7 @@
                                         </td>
 									</tr>
 								<?php
+
 									$balance = 0;
                                     $total_inn = 0;
                                     $total_outt = 0;
@@ -247,7 +249,6 @@
 									$total_in_cate = array();
 									$total_out_cate = array();
 									$propur = $this->reports_model->getProPur($rw->id,$rc->id,$product2,$biller2,$from_date2,$to_date2);
-
 									foreach($propur as $rp){
                                         //$this->erp->print_arrays($rp->product_cost);
 										$beginINqty = $this->reports_model->getBeginQtyINALL($rp->product_id,$rw->id,$from_date2,$to_date2,$biller2);
@@ -361,7 +362,7 @@
 												 }
 
                                                 }
-                                                $amount_total_out = $total_out * $rp->product_cost;
+                                                $amount_total_out = $total_out * $rp->product_price;
 											}
 											//$qty_unit3 = $this->reports_model->getQtyUnitALL($rp->product_id,$rw->id,$from_date2,$to_date2);
 											$am = ($total_in-$total_out);
@@ -374,7 +375,7 @@
                                                 <td style='text-align:right;'><b><?= $this->erp->formatDecimal($amount_total_out?$amount_total_out:'')?></b> </td>
                                             <?php } ?>
 
-											<td style='text-align:right;'><span><b><?=$this->erp->formatDecimal($am?$am:'')?></b></span>
+											<td style='text-align:right;'><span><b><?=$this->erp->formatDecimal($am?$am:'0.00')?></b></span>
 											<?php
 
                                             if($am){
@@ -385,9 +386,9 @@
 													?>
 											</td>
                                             <?php if($amount_balance!=''){ ?>
-                                                <td style='text-align:right;'><b><?= '$ '.$this->erp->formatDecimal($amount_balance?$amount_balance:'')?></b> </td>
+                                                <td style='text-align:right;'><b><?= '$ '.$this->erp->formatDecimal($amount_balance?$amount_balance:'0.00')?></b> </td>
                                             <?php } else{ ?>
-                                                <td style='text-align:right;'><b><?=$this->erp->formatDecimal($amount_balance?$amount_balance:'')?></b> </td>
+                                                <td style='text-align:right;'><b><?=$this->erp->formatDecimal($amount_balance?$amount_balance:'0.00')?></b> </td>
                                             <?php } ?>
 
 										</tr>
@@ -467,11 +468,12 @@
                                     $amount_total2_inn +=$amount_total_inn;
 									$amount_total2_outt +=$amount_total_outt;
 									$amount_gtotal_balance+=$amount_total_balance;
+									$my_total_balance+=$amount_gtotal_balance;
 									}
-							?>		
+							?>
 								<tr>
                                     <td colspan="2" style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;">
-                                        <b>Grand Total <i
+                                        <b>Grand Total<i
                                                     class="fa fa-angle-double-right"
                                                     aria-hidden="true"></i> <?= $rw->name; ?></b></td>
 									<td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?= $this->erp->formatDecimal($total_begin_balance?$total_begin_balance:'')?></b></td>
@@ -518,9 +520,9 @@
 
 									<td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?=$this->erp->formatDecimal($total_balance?$total_balance:'')?></b></td>
 									<?php if($amount_gtotal_balance!=''){ ?>
-                                        <td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?= '$ '.$this->erp->formatDecimal($amount_gtotal_balance?$amount_gtotal_balance:'')?></b></td>
+                                        <td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?= '$ '.$this->erp->formatDecimal($my_total_balance?$my_total_balance:'0.00')?></b></td>
                                     <?php } else{ ?>
-									    <td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?= $this->erp->formatDecimal($amount_gtotal_balance?$amount_gtotal_balance:'')?></b></td>
+									    <td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?= $this->erp->formatDecimal($my_total_balance?$my_total_balance:'')?></b></td>
                                    <?php } ?>
 
 									</tr>
@@ -530,6 +532,7 @@
 							?>
                         </tbody>                       
                     </table>
+
                 </div>
 				
             </div>
