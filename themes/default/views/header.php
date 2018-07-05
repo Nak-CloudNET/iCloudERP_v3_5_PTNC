@@ -1898,7 +1898,7 @@
 											<?php } ?>
 											<?php if ($GP['products-using_stock']) { ?>
 												<li id="products_enter_using_stock" class="sub_navigation">
-													<a class="submenu" href="<?= site_url('products/enter_using_stock'); ?>">
+													<a class="submenu" href="<?= site_url('products/using_stock'); ?>">
 														<i class="fa fa-plus-circle"></i>
 														<span class="text"> <?= lang('add_stock_using'); ?></span>
 													</a>
