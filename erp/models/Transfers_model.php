@@ -48,6 +48,7 @@ class Transfers_model extends CI_Model
         $status = $data['status'];
         if ($this->db->insert('transfers', $data)) {
             $transfer_id = $this->db->insert_id();
+           
             if ($this->site->getReference('to',$data['biller_id']) == $data['transfer_no']) {
                 $this->site->updateReference('to',$data['biller_id']);
             }
