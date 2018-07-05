@@ -420,11 +420,6 @@
 
                 }
             });
-        }else{
-
-            //var option='All';
-            //alert(option);
-            //$("#swarehouse").val(option);
         }
 
 
