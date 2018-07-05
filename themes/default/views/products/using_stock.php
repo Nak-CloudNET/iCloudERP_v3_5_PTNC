@@ -231,11 +231,17 @@
 							<div class="form-group">
 
                                 <?php
-                                $default_biller = JSON_decode($this->session->userdata('biller_id'));
+                                $default_biller = $Settings->default_biller;
                                 if ($Owner || $Admin || !$this->session->userdata('biller_id')) {
                                     echo get_dropdown_project('shop', 'shop');
                                 } else {
-                                    echo get_dropdown_project('shop', 'shop', $default_biller);
+                                    //echo form_dropdown('shop', $shop,2);
+                                    foreach ($biller as $b) {
+                                        $bil[$b->id] = $b->company;
+                                    }
+                                    echo  lang('project', 'project');
+                                    echo form_dropdown('biller_id', $bil,$default_biller, 'class="form-control"  required  id="shop" placeholder="' . lang("select") . ' ' . lang("authorize_id") . '" style="width:100%"');
+
                                 }
                                 ?>
 							</div>

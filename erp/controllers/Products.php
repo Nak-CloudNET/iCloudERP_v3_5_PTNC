@@ -4690,8 +4690,14 @@ class Products extends MY_Controller
         $this->data['getGLChart'] 	= $getGLChart; 
         $this->data['AllUsers'] 	= $AllUsers; 
         $this->data['CurrentUser'] 	= $CurrentUser; 
-        $this->data['setting'] 		= $setting; 
-        $this->data['biller'] 		= $biller; 
+        $this->data['setting'] 		= $setting;
+        if ($this->Owner || $this->Admin || !$this->session->userdata('biller_id'))
+        {
+            $this->data['biller'] 		= $biller;
+        }else{
+            $this->data['biller'] 		= $this->site->getCompanyByArray($this->session->userdata('biller_id'));
+        }
+
         $this->data['all_unit'] 	= $all_unit; 
         $this->data['employees'] 	= $employee; 
         $this->data['product'] 		= $product; 
