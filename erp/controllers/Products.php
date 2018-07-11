@@ -5204,6 +5204,7 @@ class Products extends MY_Controller
             ->join('erp_project_plan', 'erp_enter_using_stock.plan_id = erp_project_plan.id', 'left')
 		    ->join('erp_products', 'erp_enter_using_stock.address_id = erp_products.id', 'left')
 			->join('erp_users', 'erp_users.id=erp_enter_using_stock.employee_id', 'inner')
+            ->group_by('enter_using_stock.id')
             ->order_by('enter_using_stock.id', 'desc');
 			if($fdate && $tdate){
 				$this->datatables->where('erp_enter_using_stock.date>=',$start_date);
