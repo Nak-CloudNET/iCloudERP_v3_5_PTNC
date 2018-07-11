@@ -330,6 +330,7 @@ class Products extends MY_Controller
 
     function getProducts($warehouse_id = NULL)
     {
+        $this->erp->checkPermissions('index',null,'products');
         if (!$this->Owner && !$this->Admin) {
             $gp = $this->site->checkPermissions();
             $this->permission = $gp[0];
@@ -337,8 +338,6 @@ class Products extends MY_Controller
         } else {
             $this->permission[] = NULL;
         }
-
-        $this->erp->checkPermissions('index',null,'products');
         if ($this->input->get('product')) {
             $product = $this->input->get('product');
         } else {
@@ -397,83 +396,58 @@ class Products extends MY_Controller
         }
 
         $this->load->library('datatables');
-            if ($this->session->userdata('warehouse_id')) {
-                $this->datatables
-                ->select($this->db->dbprefix('products') . ".id as productid, " . 
-                $this->db->dbprefix('products') . ".image as image, " . 
-                $this->db->dbprefix('products') . ".code as code, " . 
-                $this->db->dbprefix('products') . ".name as name, " . 
-                $this->db->dbprefix('products') . ".name_kh as kname, " .
-                $this->db->dbprefix('categories') . ".name as cname,
-				subcategories.name as sub_name, 
-				cost as cost, 
-				price as price, 
-				IF(erp_products.type = 'service', 
-						CONCAT(COALESCE(erp_products.quantity, 0), '=', 
-						erp_products.id),
-						CONCAT(COALESCE(SUM(wp.quantity), 0), '=', 
-						erp_products.id)
-					) as quantity, " .
-                $this->db->dbprefix("units").".name as unit, 
-				alert_quantity", FALSE)        
+        if ($warehouse_id) {
+            $this->datatables
+                ->select($this->db->dbprefix('products') . ".id as productid, " .
+                    $this->db->dbprefix('products') . ".image as image, " .
+                    $this->db->dbprefix('products') . ".code as code, " .
+                    $this->db->dbprefix('products') . ".name as name, " .
+                    $this->db->dbprefix('products') . ".name_kh as kname, " .
+                    $this->db->dbprefix('categories') . ".name as cname,subcategories.name as sub_name, cost as cost, price as price, COALESCE(sum(wp.quantity), 0) as quantity, ".
+                    $this->db->dbprefix("units").".name as unit, alert_quantity", FALSE)
                 ->from('products');
 
-                if ($this->Settings->display_all_products) {
-                    $this->datatables->join("( SELECT * from {$this->db->dbprefix('warehouses_products')} WHERE warehouse_id = {$warehouse_id}) wp", 'products.id=wp.product_id', 'left');
-                } else {
-					if($warehouse_id){
-						$this->datatables->join('warehouses_products wp', 'products.id = wp.product_id', 'left')
-						->where_in('wp.warehouse_id', $warehouse_id)
-						->where("wp.rack LIKE '%##" . $this->session->userdata('user_id') . "##%'");
-					}else{
-						$this->datatables->join('warehouses_products wp', 'products.id = wp.product_id', 'left')
-						->where("wp.rack LIKE '%##" . $this->session->userdata('user_id') . "##%'");
-					}
-                }
+            if ($this->Settings->display_all_products) {
+                $this->datatables->join("( SELECT * from {$this->db->dbprefix('warehouses_products')} WHERE warehouse_id = {$warehouse_id}) wp", 'products.id=wp.product_id', 'left');
+            } else {
 
-                $this->datatables->join('categories', 'products.category_id=categories.id', 'left')
+                $this->datatables->join('warehouses_products wp', 'products.id=wp.product_id', 'left')
+                    ->where_in('wp.warehouse_id', $warehouse_id);
+            }
+
+            $this->datatables->join('categories', 'products.category_id=categories.id', 'left')
                 ->join('units', 'products.unit=units.id', 'left')
                 ->join('subcategories', 'subcategories.id=products.subcategory_id', 'left')
                 ->group_by("products.id");
-              
-            } else {
-                $this->datatables
-                ->select(
-					$this->db->dbprefix('products') . ".id as productid, " . 
-					$this->db->dbprefix('products') . ".image as image, " . 
-					$this->db->dbprefix('products') . ".code as code, " . 
-					$this->db->dbprefix('products') . ".name as name, " . 
-					$this->db->dbprefix('products') . ".name_kh as kname, " . 
-					$this->db->dbprefix('categories') . ".name as cname, subcategories.name as sub_name, 
-					cost as cost,
-					price as price,
-					IF(erp_products.type = 'service', 
-						CONCAT(COALESCE(erp_products.quantity, 0), '=', 
-						erp_products.id),
-						CONCAT(COALESCE(SUM(wp.quantity), 0), '=', 
-						erp_products.id)
-					) as quantity, " .
-					$this->db->dbprefix('units').".name as unit, 
-					alert_quantity", FALSE
-					)
-                ->from('products')
-				->join('warehouses_products wp', 'products.id = wp.product_id', 'left')
-                ->join('categories', 'products.category_id=categories.id', 'left')
-				->join('subcategories', 'subcategories.id=products.subcategory_id', 'left')
-				->join('units', 'products.unit=units.id', 'left');
 
-				if($warehouse_id){
-					$this->datatables->where_in('wp.warehouse_id', $warehouse_id);
-                    $this->datatables->where('wp.quantity <>', NULL);
-                }
-                $this->datatables->group_by("products.id");
+        } else {
+            $this->datatables
+                ->select($this->db->dbprefix('products') . ".id as productid, " .
+                    $this->db->dbprefix('products') . ".image as image, " .
+                    $this->db->dbprefix('products') . ".code as code, " .
+                    $this->db->dbprefix('products') . ".name as name, " .
+                    $this->db->dbprefix('products') . ".name_kh as kname, " .
+                    $this->db->dbprefix('categories') . ".name as cname, subcategories.name as sub_name, cost as cost,price as price,COALESCE(erp_products.quantity, 0) as quantity, ".
+                    $this->db->dbprefix('units').".name as unit, alert_quantity", FALSE)
+                ->from('products')
+                ->join('categories', 'products.category_id=categories.id', 'left')
+                ->join('subcategories', 'subcategories.id=products.subcategory_id', 'left')
+                ->join('units', 'products.unit=units.id', 'left');
+
+            if (!$this->Owner && !$this->Admin) {
+                $this->datatables->join('warehouses_products wp', 'products.id=wp.product_id', 'left')
+                    ->where_in('wp.warehouse_id', $this->session->userdata('warehouse_id'));
+
             }
+            $this->datatables->group_by("products.id");
+
+        }
 
         if (!$this->Owner && !$this->Admin) {
-            if (!$gp[0]['products-cost']) {
+            if (!$this->session->userdata('show_cost')) {
                 $this->datatables->unset_column("cost");
             }
-            if (!$gp[0]['products-price']) {
+            if (!$this->session->userdata('show_price')) {
                 $this->datatables->unset_column("price");
             }
         }
