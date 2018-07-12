@@ -219,7 +219,8 @@ class Reports_model extends CI_Model
 		->join('erp_warehouses', 'erp_enter_using_stock.warehouse_id=erp_warehouses.id', 'left')
 	    ->join('erp_users', 'erp_users.id=erp_enter_using_stock.employee_id', 'inner')
 	    ->join('erp_enter_using_stock_items', 'erp_enter_using_stock.reference_no = erp_enter_using_stock_items.reference_no', 'left')
-	    ->join('erp_position', 'erp_enter_using_stock_items.description = erp_position.id', 'left');
+	    ->join('erp_position', 'erp_enter_using_stock_items.description = erp_position.id', 'left')
+        ->group_by('enter_using_stock.id');
 
 		$this->db->limit($limit,$offset);
 		if($reference_no){

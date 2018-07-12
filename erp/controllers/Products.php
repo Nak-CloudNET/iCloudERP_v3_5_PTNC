@@ -4645,7 +4645,7 @@ class Products extends MY_Controller
 	
 	public function using_stock($purchase_id = null, $id = NULL)
 	{
-		$this->erp->checkPermissions('adjustments');
+		$this->erp->checkPermissions('using_stock');
         $data['error'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('error');
 
         $this->data['warehouses'] = $this->site->getAllWarehouses();
@@ -4667,9 +4667,9 @@ class Products extends MY_Controller
         $this->data['setting'] 		= $setting;
         if ($this->Owner || $this->Admin || !$this->session->userdata('biller_id'))
         {
-            $this->data['biller'] 		= $biller;
+            $this->data['biller'] 	= $biller;
         }else{
-            $this->data['biller'] 		= $this->site->getCompanyByArray($this->session->userdata('biller_id'));
+            $this->data['biller'] 	= $this->site->getCompanyByArray($this->session->userdata('biller_id'));
         }
 
         $this->data['all_unit'] 	= $all_unit; 
@@ -5204,6 +5204,7 @@ class Products extends MY_Controller
             ->join('erp_project_plan', 'erp_enter_using_stock.plan_id = erp_project_plan.id', 'left')
 		    ->join('erp_products', 'erp_enter_using_stock.address_id = erp_products.id', 'left')
 			->join('erp_users', 'erp_users.id=erp_enter_using_stock.employee_id', 'inner')
+            ->group_by('enter_using_stock.id')
             ->order_by('enter_using_stock.id', 'desc');
 			if($fdate && $tdate){
 				$this->datatables->where('erp_enter_using_stock.date>=',$start_date);
