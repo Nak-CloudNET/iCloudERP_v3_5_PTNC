@@ -290,7 +290,9 @@
                                             </td>
 										<?php
 										$total_in = 0;
-                                        $total_out = 0;
+										$total_out=0;
+                                        $total_out_other = 0;
+                                        $total_out_using_stock = 0;
                                         $amount_total_in = 0;
 										$amount_total_out = 0;
 											if(is_array($num)){
@@ -339,30 +341,52 @@
 											<?php
 											if(is_array($num2)){
 
-                                                foreach($num2 as $tr2){
+                                                foreach($num2 as $tr2)
+                                                {
 
-                                                    if($tr2->tran_type){
-													$allqty2 = $this->reports_model->getQtyOUTALL($rp->product_id,$rw->id,$tr2->tran_type,$from_date2,$to_date2,$biller2);
-														$qty_unit2 = $this->reports_model->getQtyUnitOUTALL($rp->product_id,$rw->id,$tr2->tran_type,$from_date2,$to_date2,$biller2);?>
+                                                    if($tr2->tran_type)
+                                                    {
+                                                        if($tr2->tran_type!="USING STOCK")
+                                                        {
+                                                            $allqty2 = $this->reports_model->getQtyOUTALL($rp->product_id,$rw->id,$tr2->tran_type,$from_date2,$to_date2,$biller2);
+                                                            $qty_unit2 = $this->reports_model->getQtyUnitOUTALL($rp->product_id,$rw->id,$tr2->tran_type,$from_date2,$to_date2,$biller2);?>
 
-                                                        <td style='text-align:right;'>
-													 <?php if($allqty2->bqty){?>
-													 <span style="color:blue;"><?=$this->erp->formatDecimal($allqty2->bqty)?></span>
-													 <?php
-														 if($qty_unit2->bqty){
-															echo   $this->erp->convert_unit_2_string($rp->product_id,$qty_unit2->bqty);
-														 }
-													 }
-													?>
-													 </td>
+                                                            <td style='text-align:right;'>
+                                                                <?php if($allqty2->bqty){?>
+                                                                    <span style="color:blue;"><?=$this->erp->formatDecimal($allqty2->bqty)?></span>
+                                                                    <?php
+                                                                    if($qty_unit2->bqty){
+                                                                        echo   $this->erp->convert_unit_2_string($rp->product_id,$qty_unit2->bqty);
+                                                                    }
+                                                                }
+                                                                ?>
+                                                            </td>
+                                                            <?php
+                                                            $total_out_other+=$allqty2->bqty;
+                                                        }else{
+                                                            $allqty2 = $this->reports_model->getQtyOUTALL($rp->product_id,$rw->id,$tr2->tran_type,$from_date2,$to_date2,$biller2);
+                                                            $qty_unit2 = $this->reports_model->getQtyUnitOUTALL($rp->product_id,$rw->id,$tr2->tran_type,$from_date2,$to_date2,$biller2);?>
 
-                                                        <?php
-													 $total_out+=$allqty2->bqty;
+                                                            <td style='text-align:right;'>
+                                                                <?php if($allqty2->bqty){?>
+                                                                    <span style="color:blue;"><?=$this->erp->formatDecimal($allqty2->bqty)?></span>
+                                                                    <?php
+                                                                    if($qty_unit2->bqty){
+                                                                        echo   $this->erp->convert_unit_2_string($rp->product_id,$qty_unit2->bqty);
+                                                                    }
+                                                                }
+                                                                ?>
+                                                            </td>
+                                                            <?php
+                                                            $total_out_using_stock+=$allqty2->bqty;
+                                                        }
 
-												 }
+
+												    }
 
                                                 }
-                                                $amount_total_out = $total_out * $rp->product_price;
+                                                $total_out=$total_out_other+$total_out_using_stock;
+                                                $amount_total_out = ($total_out_other * $rp->product_price)+($total_out_using_stock*$rp->product_cost);
 											}
 											//$qty_unit3 = $this->reports_model->getQtyUnitALL($rp->product_id,$rw->id,$from_date2,$to_date2);
 											$am = ($total_in-$total_out);
