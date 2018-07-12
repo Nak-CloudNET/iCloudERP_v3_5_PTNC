@@ -26842,6 +26842,8 @@ class Reports extends MY_Controller
 
                                     $total_in = 0;
                                     $total_out = 0;
+                                    $total_out_using_stock=0;
+                                    $total_out_other=0;
                                     $amount_total_in = 0;
                                     $amount_total_out = 0;
                                     $i = 0;
@@ -26887,25 +26889,46 @@ class Reports extends MY_Controller
                                     if(is_array($num2)){
                                         foreach($num2 as $tr2){
                                             if($tr2->tran_type){
-                                                $allqty2 = $this->reports_model->getQtyOUTALL($rp->product_id,$rw->id,$tr2->tran_type,$from_date,$to_date);
-                                                $qty_unit2 = $this->reports_model->getQtyUnitOUTALL($rp->product_id,$rw->id,$tr->tran_type,$from_date,$to_date);
-                                                $a = "";
-                                                if(1){
+                                                if($tr2->tran_type!="USING STOCK")
+                                                {
+                                                    $allqty2 = $this->reports_model->getQtyOUTALL($rp->product_id,$rw->id,$tr2->tran_type,$from_date,$to_date);
+                                                    $qty_unit2 = $this->reports_model->getQtyUnitOUTALL($rp->product_id,$rw->id,$tr->tran_type,$from_date,$to_date);
+                                                    $a = "";
+                                                    if(1){
 
-                                                    //show the all quantity of each transaction Out
-                                                    $this->excel->getActiveSheet()->setCellValue($alphabet0[$j+1] . $row, $this->erp->formatDecimal($allqty2->bqty ? $allqty2->bqty : '') .' '. strip_tags($this->erp->convert_unit_2_string($rp->product_id,$allqty2->bqty)). " ");
-                                                    //$this->excel->getActiveSheet()->setCellValue($alphabet0[$j+1] . $row, $this->erp->formatDecimal($allqty2->bqty ? $allqty2->bqty : ''). " ");
-                                                    $this->excel->getActiveSheet()->getStyle($alphabet0[$j+1] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                                                        //show the all quantity of each transaction Out
+                                                        $this->excel->getActiveSheet()->setCellValue($alphabet0[$j+1] . $row, $this->erp->formatDecimal($allqty2->bqty ? $allqty2->bqty : '') .' '. strip_tags($this->erp->convert_unit_2_string($rp->product_id,$allqty2->bqty)). " ");
+                                                        //$this->excel->getActiveSheet()->setCellValue($alphabet0[$j+1] . $row, $this->erp->formatDecimal($allqty2->bqty ? $allqty2->bqty : ''). " ");
+                                                        $this->excel->getActiveSheet()->getStyle($alphabet0[$j+1] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                                                    }
+
+                                                    $total_out_other+=$allqty2->bqty;
+                                                }else{
+                                                    $allqty2 = $this->reports_model->getQtyOUTALL($rp->product_id,$rw->id,$tr2->tran_type,$from_date,$to_date);
+                                                    $qty_unit2 = $this->reports_model->getQtyUnitOUTALL($rp->product_id,$rw->id,$tr->tran_type,$from_date,$to_date);
+                                                    $a = "";
+                                                    if(1){
+
+                                                        //show the all quantity of each transaction Out
+                                                        $this->excel->getActiveSheet()->setCellValue($alphabet0[$j+1] . $row, $this->erp->formatDecimal($allqty2->bqty ? $allqty2->bqty : '') .' '. strip_tags($this->erp->convert_unit_2_string($rp->product_id,$allqty2->bqty)). " ");
+                                                        //$this->excel->getActiveSheet()->setCellValue($alphabet0[$j+1] . $row, $this->erp->formatDecimal($allqty2->bqty ? $allqty2->bqty : ''). " ");
+                                                        $this->excel->getActiveSheet()->getStyle($alphabet0[$j+1] . $row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                                                    }
+
+                                                    $total_out_using_stock+=$allqty2->bqty;
+
                                                 }
-
-                                                $total_out+=$allqty2->bqty;
                                                 $total_out_cate[$tr2->tran_type] +=$allqty2->bqty;
+
                                             }
+
+
                                             $qty_unit3 = $this->reports_model->getQtyUnitALL($rp->product_id,$rw->id,$from_date2,$to_date2);
                                             $j++;
                                             // $tout = $j+1;
                                         }
-                                        $amount_total_out = $total_out * $rp->product_price;
+                                        $total_out=$total_out_other+$total_out_using_stock;
+                                        $amount_total_out = ($total_out_other * $rp->product_price)+($total_out_using_stock* $rp->product_cost);
                                         $am = ($total_in-$total_out);
                                     }
                                     //Show total out
