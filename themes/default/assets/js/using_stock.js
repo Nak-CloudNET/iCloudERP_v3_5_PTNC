@@ -340,8 +340,6 @@ function loadItems() {
         $("#UsData tbody").empty();
         usitems = JSON.parse(__getItem('usitems'));
 
-        console.log(usitems);
-        
 		var no_ = 1;
 		$('#from_location').select2("readonly", true);
 		item_description 		= '';
@@ -373,9 +371,9 @@ function loadItems() {
                 	if(item.row.description == this.id){
                 		$("<option />", {value: this.id, text: this.name, id:this.id, selected: 'selected'}).appendTo(desc);
 				  	}else{
-						$("<option />", {value: this.id, text: this.name, id:this.id}).appendTo(desc);  
+						$("<option />", {value: this.id, text: this.name, id:this.id}).appendTo(desc);
 				  	}
-				  
+
 				});
             } else {
                 $("<option />", {value: 0, text: 'n/a'}).appendTo(desc);
