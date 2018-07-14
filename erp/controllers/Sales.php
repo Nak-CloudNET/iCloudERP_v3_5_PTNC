@@ -9732,7 +9732,7 @@ class Sales extends MY_Controller
             if($this->Settings->system_management == 'biller') {
                 $biller_id = $this->input->post('biller');
             }else {
-                $biller_id = $purchase->biller_id;
+                $biller_id = $sale->biller_id;
             }
 
 			$reference_no = $this->input->post("sale_id");
@@ -9861,7 +9861,6 @@ class Sales extends MY_Controller
 				$this->data['biller_id'] = $sale->biller_id;
 				$this->data['reference'] = $this->site->getReference('sp',$sale->biller_id);
 			}
-
             $this->data['return'] = $this->sales_model->getReturnSaleBySID($id);
             $this->data['modal_js'] = $this->site->modal_js();
 			$this->data['currency'] = $this->site->getCurrency();

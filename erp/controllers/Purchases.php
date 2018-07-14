@@ -6865,7 +6865,7 @@ class Purchases extends MY_Controller
             $id = $this->input->get('id');
         }
 
-        $this->form_validation->set_rules('reference_no', lang("reference_no"), 'trim|required|is_unique[payments.reference_no]');
+        //$this->form_validation->set_rules('reference_no', lang("reference_no"), 'trim|required|is_unique[payments.reference_no]');
         $this->form_validation->set_rules('paid_by', lang("paid_by"), 'required');
         $this->form_validation->set_rules('userfile', lang("attachment"), 'xss_clean');
         if ($this->form_validation->run() == true) {
