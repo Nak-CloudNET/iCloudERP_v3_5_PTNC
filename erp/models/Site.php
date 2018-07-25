@@ -1783,7 +1783,6 @@ class Site extends CI_Model
 		}
 		
 		if($this->get_setting()->separate_ref == 1){
-
 			if($biller){
 				
 				if ($this->get_setting()->reference_format == 4 || $this->get_setting()->reference_format == 5) {
@@ -1843,10 +1842,10 @@ class Site extends CI_Model
 					}
 					return FALSE;
 				}
-				$q = $this->db->get_where('order_ref', array('DATE_FORMAT(date,"%Y-%m")' => date('Y-m'), 'biller_id'=>$default_biller), 1);
+				$q = $this->db->get_where('order_ref', array('DATE_FORMAT(date,"%Y-%m")' => date('Y-m'), 'biller_id'=>$default_biller[0]), 1);
 				if ($q->num_rows() > 0) {
 					$ref = $q->row();
-					$this->db->update('order_ref', array($field => $ref->{$field} + 1), array('DATE_FORMAT(date,"%Y-%m")' => date('Y-m'),'biller_id'=>$default_biller));
+					$this->db->update('order_ref', array($field => $ref->{$field} + 1), array('DATE_FORMAT(date,"%Y-%m")' => date('Y-m'),'biller_id'=>$default_biller[0]));
 					return TRUE;
 				}
 				return FALSE;

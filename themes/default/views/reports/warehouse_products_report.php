@@ -1,4 +1,4 @@
-<script type="text/javascript">
+                         <script type="text/javascript">
 $(document).ready(function(){
 	
 	$('body').on('click', '#excel1', function(e) {
@@ -160,14 +160,14 @@ $(document).ready(function(){
 							$str = "";
 							$tt_qty=0;
 							$arr = array();
-						if(is_array($products_details)){
-							foreach($products_details as $pro){
-								if($pro->uname){
-									$str= "(".$pro->uname.")";
-								}else{
-									$str  = "";
-								}
-						?>
+                            if(is_array($products_details)){
+                                foreach($products_details as $pro){
+                                    if($pro->uname){
+                                        $str= "(".$pro->uname.")";
+                                    }else{
+                                        $str  = "";
+                                    }
+                            ?>
 							<tr>
                                 <td style="text-align:center !important;">
                                     <ul class="enlarge">

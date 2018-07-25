@@ -229,15 +229,7 @@
 						
 						<div class="form-group">
 							<div class="form-group">
-
-                                <?php
-                                $default_biller = JSON_decode($this->session->userdata('biller_id'));
-                                if ($Owner || $Admin || !$this->session->userdata('biller_id')) {
-                                    echo get_dropdown_project('shop', 'shop');
-                                } else {
-                                    echo get_dropdown_project('shop', 'shop', $default_biller);
-                                }
-                                ?>
+                                <?= get_dropdown_project('shop', 'shop'); ?>
 							</div>
 						</div>
 						
