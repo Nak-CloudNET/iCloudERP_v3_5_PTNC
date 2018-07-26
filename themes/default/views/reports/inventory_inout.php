@@ -292,6 +292,7 @@
 										$total_in = 0;
 										$total_out=0;
                                         $total_out_other = 0;
+                                        $total_out_other2 = 0;
                                         $total_out_using_stock = 0;
                                         $amount_total_in = 0;
 										$amount_total_out = 0;
@@ -346,7 +347,7 @@
 
                                                     if($tr2->tran_type)
                                                     {
-                                                        if($tr2->tran_type!="USING STOCK")
+                                                        if($tr2->tran_type == "USING STOCK" || $tr2->tran_type == "ADJUSTMENT" || $tr2->tran_type == "TRANSFER" || $tr2->tran_type == "CONVERT")
                                                         {
                                                             $allqty2 = $this->reports_model->getQtyOUTALL($rp->product_id,$rw->id,$tr2->tran_type,$from_date2,$to_date2,$biller2);
                                                             $qty_unit2 = $this->reports_model->getQtyUnitOUTALL($rp->product_id,$rw->id,$tr2->tran_type,$from_date2,$to_date2,$biller2);?>
@@ -385,8 +386,10 @@
 												    }
 
                                                 }
+
                                                 $total_out=$total_out_other+$total_out_using_stock;
-                                                $amount_total_out = ($total_out_other * $rp->product_price)+($total_out_using_stock*$rp->product_cost);
+                                                $amount_total_out = $total_out_other * $rp->product_cost;
+                                                //$amount_total_out = ($total_out_other * $rp->product_price)+($total_out_using_stock*$rp->product_cost);
 											}
 											//$qty_unit3 = $this->reports_model->getQtyUnitALL($rp->product_id,$rw->id,$from_date2,$to_date2);
 											$am = ($total_in-$total_out);
