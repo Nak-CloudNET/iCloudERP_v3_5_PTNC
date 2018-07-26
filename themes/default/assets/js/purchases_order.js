@@ -1161,7 +1161,19 @@ function loadItems() {
             var newTr = $('<tr id="row_' + row_no + '" class="row_' + item_id + '" data-item-id="' + item_id + '"></tr>');
 			tr_html = '<td class="text-right"><span class="text-center">#'+ no_ +'<input name="create_id[]" type="hidden" class="create_id" value="' + create_id + '"><input type="hidden" class="count" value="' + item_id + '"><input name="create_request_id[]" type="hidden" class="create_request_id" value="' + create_request_id + '"></td>';
 			
-            tr_html += '<td><input name="product_id[]" type="hidden" class="rid" value="' + product_id + '"><input name="product[]" type="hidden" class="rcode" value="' + item_code + '"><input name="product_name[]" type="hidden" class="rname" value="' + item_name + '"><input name="type[]" type="hidden" class="rtype" value="' + type + '"><input type="hidden" name="tax_method[]" class="tax_method" value="' + item_tax_method + '" /><input name="product_option[]" type="hidden" class="roption" value="' + item_option + '"><input name="part_no[]" type="hidden" class="rpart_no" value="' + item_supplier_part_no + '"><input name="rsupplier_id[]" type="hidden" class="rsupplier_id" value="' + supplier_id + '"><input name="piece[]" type="hidden" class="piece" value="' + piece + '"><input name="wpiece[]" type="hidden" class="wpiece" value="' + wpiece + '"><span class="sname" id="name_' + row_no + '">' + item_name + ' (' + item_code + ') ('+ item.row.unit +')'+(sel_opt != '' ? ' ('+sel_opt+')' : '')+' <span class="">'+ supplier_name +'</span><span class="label label-default">'+item_supplier_part_no+'</span></span> <i class="pull-right fa fa-edit tip edit" id="' + row_no + '" data-item="' + item_id + '" title="Edit" style="cursor:pointer;"></i></td>';
+            tr_html += '<td><input name="product_id[]" type="hidden" class="rid" value="' + product_id + '">' +
+				'<input name="product[]" type="hidden" class="rcode" value="' + item_code + '">' +
+				'<input name="product_name[]" type="hidden" class="rname" value="' + item_name + '">' +
+				'<input name="type[]" type="hidden" class="rtype" value="' + type + '">' +
+				'<input type="hidden" name="tax_method[]" class="tax_method" value="' + item_tax_method + '" />' +
+				'<input name="product_option[]" type="hidden" class="roption" value="' + item_option + '">' +
+				'<input name="part_no[]" type="hidden" class="rpart_no" value="' + item_supplier_part_no + '">' +
+				'<input name="rsupplier_id[]" type="hidden" class="rsupplier_id" value="' + supplier_id + '">' +
+				'<input name="piece[]" type="hidden" class="piece" value="' + piece + '">' +
+				'<input name="wpiece[]" type="hidden" class="wpiece" value="' + wpiece + '">' +
+				'<span class="sname" id="name_' + row_no + '">' + item_name + ' (' + item_code + ') ('+ item.row.unit +')'+(sel_opt != '' ? ' ('+sel_opt+')' : '')+' <span class="">'+ supplier_name +'</span>' +
+				'<span class="label label-default">'+item_supplier_part_no+'</span>' +
+				'</span> <i class="pull-right fa fa-edit tip edit" id="' + row_no + '" data-item="' + item_id + '" title="Edit" style="cursor:pointer;"></i></td>';
 			
             /*if (site.settings.product_expiry == 1){
                 tr_html += '<td><input class="form-control date rexpiry" name="expiry[]" type="text" value="' + item_expiry + '" data-id="' + row_no + '" data-item="' + item_id + '" id="expiry_' + row_no + '"></td>';
