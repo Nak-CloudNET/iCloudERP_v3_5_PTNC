@@ -120,8 +120,7 @@
                            </div>
                         </div>
                         <div class="form-group">
-                            <div
-                                class="controls"> <?php echo form_submit('submit_report', $this->lang->line("submit"), 'class="btn btn-primary sub"'); ?> </div>
+                            <div class="controls"> <?php echo form_submit('submit_report', $this->lang->line("submit"), 'class="btn btn-primary sub"'); ?> </div>
                         </div>
                     <?php echo form_close(); ?>
 					
@@ -388,7 +387,7 @@
                                                 }
 
                                                 $total_out=$total_out_other+$total_out_using_stock;
-                                                $amount_total_out = $total_out_other * $rp->product_cost;
+                                                $amount_total_out = $total_out * $rp->product_cost;
                                                 //$amount_total_out = ($total_out_other * $rp->product_price)+($total_out_using_stock*$rp->product_cost);
 											}
 											//$qty_unit3 = $this->reports_model->getQtyUnitALL($rp->product_id,$rw->id,$from_date2,$to_date2);
