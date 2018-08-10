@@ -171,9 +171,9 @@
 								<th rowspan="2"><?= lang("amount_total_in") ?></th>
 								<?php if($k2){?>
 								<th  colspan="<?=$k2?>"><?= lang("out") ?></th>
-								<?php } ?>
                                 <th rowspan="2"><?= lang("total_out") ?></th>
-								<th rowspan="2"><?= lang("amount_total_out") ?></th>
+                                <th rowspan="2"><?= lang("amount_total_out") ?></th>
+								<?php } ?>
 								<th rowspan="2"><?= lang("Quantity Balance") ?></th>
 								<th rowspan="2"><?= lang("Amount Balance") ?></th>
 							</tr>
@@ -390,7 +390,7 @@
                                                 $total_out=$total_out_other+$total_out_using_stock;
                                                 $amount_total_out = $total_out_other * $rp->product_cost;
                                                 //$amount_total_out = ($total_out_other * $rp->product_price)+($total_out_using_stock*$rp->product_cost);
-											}
+											
 											//$qty_unit3 = $this->reports_model->getQtyUnitALL($rp->product_id,$rw->id,$from_date2,$to_date2);
 											$am = ($total_in-$total_out);
                                             $amount_balance=$amount_total_in-$amount_total_out;
@@ -400,7 +400,9 @@
                                                 <td style='text-align:right;'><b><?= '$ '.$this->erp->formatDecimal($amount_total_out?$amount_total_out:'')?></b> </td>
                                             <?php } else{ ?>
                                                 <td style='text-align:right;'><b><?= $this->erp->formatDecimal($amount_total_out?$amount_total_out:'')?></b> </td>
-                                            <?php } ?>
+                                            <?php } 
+                                        }
+                                        ?>
 
 											<td style='text-align:right;'><span><b><?=$this->erp->formatDecimal($am?$am:'0.00')?></b></span>
 											<?php
@@ -470,14 +472,16 @@
                                                 }
 
                                             }
-										}
+										
 										?>
                                     <td style='text-align:right;background:#F0F8FF;'><b><?=$this->erp->formatDecimal($total_outt?$total_outt:'')?></b></td>
                                     <?php if($amount_total_outt!=''){ ?>
                                         <td style='text-align:right;background:#F0F8FF;'><b><?= '$ '.$this->erp->formatDecimal($amount_total_outt?$amount_total_outt:'')?></b></td>
                                     <?php } else{ ?>
                                         <td style='text-align:right;background:#F0F8FF;'><b><?=$this->erp->formatDecimal($amount_total_outt?$amount_total_outt:'')?></b></td>
-                                    <?php } ?>
+                                    <?php } 
+                                }
+                                    ?>
 
 									<td style='text-align:right;background:#F0F8FF;'><b><?=$this->erp->formatDecimal($balance?$balance:'')?></b></td>
                                     <?php if($amount_total_balance!=''){ ?>
@@ -536,14 +540,16 @@
 												}
 												 
 											}
-										}
+										
 										?>
                                     <td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?=$this->erp->formatDecimal($total2_outt?$total2_outt:'')?></b></td>
 									<?php if($amount_total2_outt!=''){ ?>
                                         <td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?= '$ '.$this->erp->formatDecimal($amount_total2_outt?$amount_total2_outt:'')?></b></td>
                                     <?php } else{ ?>
                                         <td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?=$this->erp->formatDecimal($amount_total2_outt?$amount_total2_outt:'')?></b></td>
-                                   <?php } ?>
+                                   <?php }
+                               }
+                                   ?>
 
 									<td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?=$this->erp->formatDecimal($total_balance?$total_balance:'')?></b></td>
 									<?php if($amount_gtotal_balance!=''){ ?>
