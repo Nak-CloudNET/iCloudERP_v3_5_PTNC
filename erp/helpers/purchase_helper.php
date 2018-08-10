@@ -236,26 +236,26 @@ if (!function_exists('optimizePurchases')) {
                             $product_unit_cost = ($item->subtotal + $product_cost_ship);
                         }
 
-                        $ci->db->update('purchase_items',
-                            ['real_unit_cost' => $product_unit_cost], ['id' => $item->id]);
+                        /*$ci->db->update('purchase_items',
+                            ['real_unit_cost' => $product_unit_cost], ['id' => $item->id]);*/
 
                         $ci->db->insert('stock_trans',
                             [
-                                'biller_id' => $row_purchase->biller_id,
-                                'purchase_item_id' => $item->id,
-                                'tran_date' => $row_purchase->date,
-                                'product_id' => $item->product_id,
-                                'warehouse_id' => $item->warehouse_id,
-                                'option_id' => $item->option_id,
-                                'quantity' => $item->quantity,
+                                'biller_id'             => $row_purchase->biller_id,
+                                'purchase_item_id'      => $item->id,
+                                'tran_date'             => $row_purchase->date,
+                                'product_id'            => $item->product_id,
+                                'warehouse_id'          => $item->warehouse_id,
+                                'option_id'             => $item->option_id,
+                                'quantity'              => $item->quantity,
                                 'quantity_balance_unit' => $item->quantity_balance,
-                                'tran_type' => 'PURCHASE',
-                                'tran_id' => $row_purchase->id,
-                                'manufacture_cost' => $item->net_unit_cost,
-                                'freight_cost' => $product_cost_ship,
-                                'total_cost' => $product_unit_cost,
-                                'expired_date' => $item->expiry,
-                                'serial' => $item->serial_no
+                                'tran_type'             => 'PURCHASE',
+                                'tran_id'               => $row_purchase->id,
+                                'manufacture_cost'      => $item->net_unit_cost,
+                                'freight_cost'          => $item->net_shipping,
+                                'total_cost'            => $item->real_unit_cost,
+                                'expired_date'          => $item->expiry,
+                                'serial'                => $item->serial_no
                             ]);
 
                         //Will use this function in the future
@@ -267,7 +267,7 @@ if (!function_exists('optimizePurchases')) {
             }
 
             //Will use this function in the future
-            getAvgCost($tran_date, $arr_product_id);
+            //getAvgCost($tran_date, $arr_product_id);
 
         }
     }
