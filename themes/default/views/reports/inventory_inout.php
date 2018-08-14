@@ -153,7 +153,7 @@
                         }
 					}
 				?>
-                <div class="table-responsive" style="width:100%;overflow:auto;">
+                <div class="table-responsive" style="width:100%;">
                     <table id="tbstock" class="table table-condensed table-bordered table-hover table-striped" >
                         <thead>
 							<tr>
@@ -254,7 +254,7 @@
 
 										$beginINqty = $this->reports_model->getBeginQtyINALL($rp->product_id,$rw->id,$from_date2,$to_date2,$biller2);
 										$beginOUTqty = $this->reports_model->getBeginQtyOUTALL($rp->product_id,$rw->id,$from_date2,$to_date2,$biller2);
-										$btotal_qty = $beginINqty->bqty-$beginOUTqty->bqty;
+                                        $btotal_qty = $beginINqty->bqty-$beginOUTqty->bqty;
 										$begin_qty = $this->reports_model->getBeginQtyALL($rp->product_id,$rw->id,$from_date2,$to_date2,$biller2);
 
                                         ?>
@@ -316,7 +316,7 @@
     											</td>
 
     											<?php
-                                                         $total_in += $allqty->bqty;
+                                                         $total_in += $allqty->bqty + $btotal_qty ;
 
 
                                                         // $total_in_cate[$tr->tran_type] +=$allqty->bqty;
@@ -325,6 +325,7 @@
     											}
 
                                                 $amount_total_in = $total_in * $rp->product_cost;
+    											//$this->erp->print_arrays($amount_total_in);
 
 											}?>
 											<td style='text-align:right;'>
@@ -393,9 +394,10 @@
                                                 //$amount_total_out = ($total_out_other * $rp->product_price)+($total_out_using_stock*$rp->product_cost);
 
 											//$qty_unit3 = $this->reports_model->getQtyUnitALL($rp->product_id,$rw->id,$from_date2,$to_date2);
-											$am = ($total_in-$total_out);
-                                            $amount_balance=$amount_total_in-$amount_total_out;
+
+
 											?>
+
                                             <td style='text-align:right;'><b><?=$this->erp->formatDecimal($total_out?$total_out:'')?></b> </td>
                                             <?php if($amount_total_out!=''){ ?>
                                                 <td style='text-align:right;'><b><?= '$ '.$this->erp->formatDecimal($amount_total_out?$amount_total_out:'')?></b> </td>
@@ -403,6 +405,9 @@
                                                 <td style='text-align:right;'><b><?= $this->erp->formatDecimal($amount_total_out?$amount_total_out:'')?></b> </td>
                                             <?php }
                                         }
+                                            $am = ($total_in -$total_out);
+
+                                            $amount_balance=($amount_total_in-$amount_total_out);
                                         ?>
 
 											<td style='text-align:right;'><span><b><?=$this->erp->formatDecimal($am?$am:'0.00')?></b></span>
@@ -415,6 +420,7 @@
                                             }
 													?>
 											</td>
+
                                             <?php if($amount_balance!=''){ ?>
                                                 <td style='text-align:right;'><b><?= '$ '.$this->erp->formatDecimal($amount_balance?$amount_balance:'0.00')?></b> </td>
                                             <?php } else{ ?>
@@ -432,9 +438,10 @@
 										$amount_total_outt += $amount_total_out;
                                         $amount_total_balance+=$amount_balance;
 									}
+
 								?>
 								<tr>
-                                    <td colspan="2" style=" text-align:right;background:#F0F8FF;"><b>Total <span style="color:orange;"> <i class="fa fa-angle-double-right"aria-hidden="true"></i></span> <?= $rc->name; ?></b></td>
+                                    <td colspan="2" style=" text-align:left;background:#F0F8FF;" ><b>Total <span style="color:orange;"> <i class="fa fa-angle-double-right"aria-hidden="true"></i></span> <?= $rc->name; ?></b></td>
 
 									<td style='text-align:right;background:#F0F8FF;'>
 												<b><?=$this->erp->formatDecimal($begin_balance?$begin_balance:'')?></b>
@@ -504,7 +511,7 @@
 									}
 							?>
 								<tr>
-                                    <td colspan="2" style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;">
+                                    <td colspan="2" style="text-align:left; background:#428BCA;color:white;border-color: #357EBD;">
                                         <b>Grand Total<i
                                                     class="fa fa-angle-double-right"
                                                     aria-hidden="true"></i> <?= $rw->name; ?></b></td>

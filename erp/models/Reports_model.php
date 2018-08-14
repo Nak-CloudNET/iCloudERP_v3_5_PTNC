@@ -5017,7 +5017,7 @@ ORDER BY
         return FALSE;
 	}
     public function getProPur($wid,$cid,$product2=null,$biller,$start=null,$end=null){
-        $this->db->select("product_id,products.code,products.name,units.name as name_unit,products.category_id,stock_trans.warehouse_id, products.image")
+        $this->db->select("product_id,products.code,products.name,units.name as name_unit,products.category_id,stock_trans.warehouse_id, products.image,erp_products.cost as product_cost")
             ->join("products","products.id = stock_trans.product_id","LEFT")
             ->join("units","units.id = products.unit","LEFT")
             //->join("erp_purchases","erp_purchases.id=stock_trans.tran_id","LEFT")
@@ -5241,7 +5241,7 @@ ORDER BY
         if($biller){
             $this->db->where("erp_purchases.biller_id",$biller);
         }
-        $this->db->where('stock_trans.tran_date <="'.$start.'"');
+        $this->db->where('stock_trans.tran_date <"'.$start.'"');
         $this->db->where(array("product_id"=>$id,"stock_trans.warehouse_id"=>$wid));
         $q = $this->db->get("stock_trans");
         if ($q->num_rows() > 0) {
@@ -5277,7 +5277,7 @@ ORDER BY
         if($biller){
             $this->db->where("erp_purchases.biller_id",$biller);
         }
-        $this->db->where('stock_trans.tran_date <="'.$start.'" ');
+        $this->db->where('stock_trans.tran_date <"'.$start.'" ');
         $this->db->where(array("product_id"=>$id,"stock_trans.warehouse_id"=>$wid));
         $q = $this->db->get("stock_trans");
         if ($q->num_rows() > 0) {
@@ -5679,7 +5679,7 @@ ORDER BY
 		if($biller){
 			$this->db->where("erp_purchases.biller_id",$biller);
 		}
-		$this->db->where('stock_trans.tran_date >="'.$startDate.'" AND stock_trans.tran_date<="'.$endDate.'"');
+		$this->db->where('stock_trans.tran_date <"'.$startDate.'" ');
 		$this->db->where(array("stock_trans.product_id"=>$id,"stock_trans.warehouse_id"=>$wid));
 	
 		$q = $this->db->get("stock_trans");
