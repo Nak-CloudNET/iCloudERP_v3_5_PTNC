@@ -56,7 +56,7 @@
 					</a>
 				</li>
             </ul>
-        </div>       
+        </div>
     </div>
     <div class="box-content">
         <div class="row">
@@ -123,7 +123,7 @@
                             <div class="controls"> <?php echo form_submit('submit_report', $this->lang->line("submit"), 'class="btn btn-primary sub"'); ?> </div>
                         </div>
                     <?php echo form_close(); ?>
-					
+
                 </div>
                 <!--============= Search Area ===============-->
 
@@ -142,7 +142,7 @@
                             }
                         }
 					}
-					
+
 					$num2 = $this->reports_model->getTransuctionsPurOUT($product2,$warehouse2,$from_date2,$to_date2,$biller2);
 					$k2 = 0;
 					if(is_array($num2)){
@@ -177,7 +177,7 @@
 								<th rowspan="2"><?= lang("Amount Balance") ?></th>
 							</tr>
 							<tr class="shead">
-								
+
 								<?php
 									if (is_array($num)) {
                                         foreach($num as $tr){
@@ -196,7 +196,7 @@
                                         }
 									}
 								?>
-								
+
 							</tr>
 						</thead>
                         <tbody>
@@ -222,6 +222,7 @@
 
 									$total_in_cate_w = array();
 									$total_out_cate_w = array();
+
 									foreach($procat as $rc){
 
 								?>
@@ -248,8 +249,9 @@
 									$total_in_cate = array();
 									$total_out_cate = array();
 									$propur = $this->reports_model->getProPur($rw->id,$rc->id,$product2,$biller2,$from_date2,$to_date2);
+
 									foreach($propur as $rp){
-                                        //$this->erp->print_arrays($rp->product_cost);
+
 										$beginINqty = $this->reports_model->getBeginQtyINALL($rp->product_id,$rw->id,$from_date2,$to_date2,$biller2);
 										$beginOUTqty = $this->reports_model->getBeginQtyOUTALL($rp->product_id,$rw->id,$from_date2,$to_date2,$biller2);
 										$btotal_qty = $beginINqty->bqty-$beginOUTqty->bqty;
@@ -315,7 +317,7 @@
 
     											<?php
                                                          $total_in += $allqty->bqty;
-    													
+
 
                                                         // $total_in_cate[$tr->tran_type] +=$allqty->bqty;
 
@@ -389,7 +391,7 @@
                                                 $total_out=$total_out_other+$total_out_using_stock;
                                                 $amount_total_out = $total_out * $rp->product_cost;
                                                 //$amount_total_out = ($total_out_other * $rp->product_price)+($total_out_using_stock*$rp->product_cost);
-											
+
 											//$qty_unit3 = $this->reports_model->getQtyUnitALL($rp->product_id,$rw->id,$from_date2,$to_date2);
 											$am = ($total_in-$total_out);
                                             $amount_balance=$amount_total_in-$amount_total_out;
@@ -399,7 +401,7 @@
                                                 <td style='text-align:right;'><b><?= '$ '.$this->erp->formatDecimal($amount_total_out?$amount_total_out:'')?></b> </td>
                                             <?php } else{ ?>
                                                 <td style='text-align:right;'><b><?= $this->erp->formatDecimal($amount_total_out?$amount_total_out:'')?></b> </td>
-                                            <?php } 
+                                            <?php }
                                         }
                                         ?>
 
@@ -471,14 +473,14 @@
                                                 }
 
                                             }
-										
+
 										?>
                                     <td style='text-align:right;background:#F0F8FF;'><b><?=$this->erp->formatDecimal($total_outt?$total_outt:'')?></b></td>
                                     <?php if($amount_total_outt!=''){ ?>
                                         <td style='text-align:right;background:#F0F8FF;'><b><?= '$ '.$this->erp->formatDecimal($amount_total_outt?$amount_total_outt:'')?></b></td>
                                     <?php } else{ ?>
                                         <td style='text-align:right;background:#F0F8FF;'><b><?=$this->erp->formatDecimal($amount_total_outt?$amount_total_outt:'')?></b></td>
-                                    <?php } 
+                                    <?php }
                                 }
                                     ?>
 
@@ -513,9 +515,9 @@
 											foreach($num as $tr){
 												if($tr->tran_type){
 													$amount_qty_cat = $this->reports_model->getAmountQtyINALLCAT($product2,$rw->id,$tr->tran_type,$category2,$from_date2,$to_date2,$biller2);
-													
+
 													 echo "<td style='text-align:right; background:#428BCA;color:white;border-color: #357EBD;'><b>".$this->erp->formatDecimal($total_in_cate_w[$tr->tran_type]?$total_in_cate_w[$tr->tran_type]:'')."</b></td>";
-												
+
 												}
 											}
 										}?>
@@ -526,20 +528,20 @@
                                             <td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?=$this->erp->formatDecimal($amount_total2_inn?$amount_total2_inn:'')?></b></td>
                                         <?php } ?>
 
-										
+
 										<?php
 										if(is_array($num2)){
 											foreach($num2 as $tr2){
-												
+
 												if($tr2->tran_type){
 													 $amount_qty_cat2 = $this->reports_model->getAmountQtyOUTALLCAT($product2,$rw->id,$tr2->tran_type,$category2,$from_date2,$to_date2,$biller2);
-													
+
 													 echo "<td style='text-align:right; background:#428BCA;color:white;border-color: #357EBD;'><b>".$this->erp->formatDecimal($amount_qty_cat2->bqty?$amount_qty_cat2->bqty:'')."</b></td>";
-													
+
 												}
-												 
+
 											}
-										
+
 										?>
                                     <td style="text-align:right; background:#428BCA;color:white;border-color: #357EBD;"><b><?=$this->erp->formatDecimal($total2_outt?$total2_outt:'')?></b></td>
 									<?php if($amount_total2_outt!=''){ ?>
@@ -562,11 +564,11 @@
 								}
 							}
 							?>
-                        </tbody>                       
+                        </tbody>
                     </table>
 
                 </div>
-				
+
             </div>
         </div>
     </div>
@@ -606,9 +608,9 @@ $(document).ready(function () {
             window.location.href = "<?= site_url('reports/inventoryInoutReport2/pdf/0/'.$product1.'/'.$category1.'/'.$warehouse1.'/'.$from_date2.'/'.$to_date2) ?>";
 			return false;
 		}
-	});	
+	});
 });
 
 
-		
+
 </script>

@@ -26865,19 +26865,15 @@ class Reports extends MY_Controller
                                                 $total_in +=$allqty->bqty;
                                                 $total_in_cate[$tr->tran_type] +=$allqty->bqty;
                                             }
-
                                             $i++;
                                         }
                                         $amount_total_in = $total_in * $rp->product_cost;
-
                                     }
                                     //Show total in
-
                                     $new=$tin-$k2;
-                                    //$this->erp->print_arrays($tin,$k2);
-                                    $this->excel->getActiveSheet()->setCellValue($alphabet[$new] . $row, $this->erp->formatDecimal($total_in ? $total_in : '')." ");
-                                    $this->excel->getActiveSheet()->setCellValue($alphabet[$new+1] . $row, $this->erp->formatDecimal($amount_total_in ? $amount_total_in : '')." ");
-                                    $this->excel->getActiveSheet()->getStyle($alphabet[$new+1].$row)->getFont()->setBold(true);
+                                    //$this->er+p->print_arrays($tin,$k2);
+                                    //$this->excel->getActiveSheet()->setCellValue($alphabet[$new+1] . $row, $this->erp->formatDecimal($amount_total_in ? $amount_total_in : '')." ");
+//->excel->getActiveSheet()->getStyle($alphabet[$new+1].$row)->getFont()->setBold(true);
                                     $this->excel->getActiveSheet()->getStyle($alphabet[$new+1].$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
                                     $this->excel->getActiveSheet()->getStyle($alphabet[$new+1] . $row)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
                                     $this->excel->getActiveSheet()->getStyle($alphabet[$new].$row)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
