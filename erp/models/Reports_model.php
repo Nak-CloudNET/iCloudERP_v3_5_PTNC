@@ -5258,7 +5258,7 @@ ORDER BY
 		if($biller){
 			$this->db->where("erp_purchases.biller_id",$biller);
 		}
-		$this->db->where('purchase_items.date >="'.$startDate.'" AND purchase_items.date<="'.$endDate.'"');
+		//$this->db->where('purchase_items.date >="'.$startDate.'" AND purchase_items.date<="'.$endDate.'"');
 		$this->db->where(array("product_id"=>$id,"purchase_items.warehouse_id"=>$wid));
 		$q = $this->db->get("purchase_items");
 		if ($q->num_rows() > 0) {
