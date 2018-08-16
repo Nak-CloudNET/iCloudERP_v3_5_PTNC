@@ -1,12 +1,10 @@
 <script type="text/javascript">
     $(document).ready(function(){
-
         $('body').on('click', '#excel1', function(e) {
            e.preventDefault();
            var k = false;
            $.each($("input[name='val[]']:checked"), function(){
             k = true;
-
            });
            $('#form_action').val($('#excel1').attr('data-action'));
            $('#action-form-submit').trigger('click');
@@ -213,11 +211,11 @@
 								<?php
 									$total2_inn = 0;
                                     $total2_outt = 0;
-									$amount_total2_inn = 0;
+                                    $amount_total2_inn = 0;
                                     $amount_total2_outt = 0;
                                     $total_balance = 0;
-									$total_begin_balance = 0;
-									$my_total_balance=0;
+                                    $total_begin_balance = 0;
+                                    $my_total_balance=0;
 									$procat = $this->reports_model->getProCat($rw->id,$category2,$product2,$biller2);
 
 									$total_in_cate_w = array();
