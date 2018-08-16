@@ -1154,16 +1154,12 @@ function loadItems() {
             if (ds.indexOf("%") !== -1) {
                 var pds = ds.split("%");
                 if (!isNaN(pds[0])) {
-					item_discount = (parseFloat(((unit_cost) * parseFloat(pds[0])) / 100)) ;
-				} else {
-                    item_discount = (ds) / (qty_received == item_qty? item_qty:qty_received);
+                    item_discount = parseFloat(((unit_cost) * parseFloat(pds[0])) / 100);
+                } else {
+                    item_discount = parseFloat(ds/item_qty);
                 }
             } else {
-				if(item_tax_method == 0){
-					item_discount = (parseFloat(ds) / (qty_received == item_qty? item_qty:qty_received));
-				}else{
-					item_discount = (parseFloat(ds) / (qty_received == item_qty? item_qty:qty_received));
-				}
+                item_discount = parseFloat(ds/item_qty);
             }
 
 			product_discount += isNaN(parseFloat(item_discount * (qty_received == item_qty? item_qty:qty_received)))?0:parseFloat(item_discount * (qty_received == item_qty? item_qty:qty_received));
@@ -1181,7 +1177,8 @@ function loadItems() {
 							pr_tax_val = ((unit_cost) * parseFloat(pr_tax.rate)) / (100 + parseFloat(pr_tax.rate));
 							pr_tax_rate = formatDecimal(pr_tax.rate) + '%';
 						} else {
-							pr_tax_val = ((unit_cost) * parseFloat(pr_tax.rate)) / 100;
+							//pr_tax_val = ((unit_cost) * parseFloat(pr_tax.rate)) / 100;
+							pr_tax_val = formatPurDecimal(((unit_cost) * parseFloat(pr_tax.rate)) / 100);
 							pr_tax_rate = formatDecimal(pr_tax.rate) + '%';
 						}
 
@@ -1271,7 +1268,7 @@ function loadItems() {
             }
 
 			/* Sub Total */
-            tr_html += '<td class="text-right"><span class="text-right ssubtotal" id="subtotal_' + row_no + '">' + formatMoney((parseFloat(item_cost) + parseFloat(pr_tax_val)) * (item_qty - 0)) + '</span></td>';
+            tr_html += '<td class="text-right"><span class="text-right ssubtotal" id="subtotal_' + row_no + '">' + formatMoney((parseFloat(item_cost) + parseFloat(pr_tax_val)) * (item_qty - 0) ) + '</span></td>';
 
             tr_html += '<td class="text-center"><i class="fa fa-times tip podel" id="' + row_no + '" title="Remove" style="cursor:pointer;"></i></td>';
 
@@ -1279,7 +1276,6 @@ function loadItems() {
             newTr.appendTo("#poTable");
 
 			/* Total */
-
 			if(item_tax_method==0) {
 				total += formatPurDecimal(parseFloat(item_cost_in)* parseFloat(item_qty) - (parseFloat(item_ds)*parseFloat(item_qty)) );
 			} else {
