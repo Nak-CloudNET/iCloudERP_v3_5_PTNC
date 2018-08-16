@@ -5020,7 +5020,7 @@ ORDER BY
             ->join("products","products.id = stock_trans.product_id","LEFT")
             ->join("units","units.id = products.unit","LEFT")
             //->join("erp_purchases","erp_purchases.id=stock_trans.tran_id","LEFT")
-            ->where('stock_trans.tran_date >= "'.$start.'" AND stock_trans.tran_date <= "'.$end.'"')
+            //->where('stock_trans.tran_date >= "'.$start.'" AND stock_trans.tran_date <= "'.$end.'"')
             ->where('stock_trans.quantity_balance_unit !=', 0);
         if($product2){
             $this->db->where(array("stock_trans.product_id"=>$product2));
