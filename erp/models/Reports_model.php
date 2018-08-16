@@ -4964,8 +4964,7 @@ ORDER BY
         }
         return FALSE;
 	}
-	
-	
+
 	public function getWarePur($wid,$warehouse,$product,$category,$biller=NULL){
 		$this->db->select("erp_warehouses.id,erp_warehouses.name")
 				 ->join("erp_warehouses","erp_warehouses.id = stock_trans.warehouse_id","LEFT")
@@ -5259,7 +5258,7 @@ ORDER BY
 		if($biller){
 			$this->db->where("erp_purchases.biller_id",$biller);
 		}
-		$this->db->where('purchase_items.date >="'.$startDate.'" AND purchase_items.date<="'.$endDate.'"');
+		//$this->db->where('purchase_items.date >="'.$startDate.'" AND purchase_items.date<="'.$endDate.'"');
 		$this->db->where(array("product_id"=>$id,"purchase_items.warehouse_id"=>$wid));
 		$q = $this->db->get("purchase_items");
 		if ($q->num_rows() > 0) {
@@ -5679,7 +5678,7 @@ ORDER BY
 		if($biller){
 			$this->db->where("erp_purchases.biller_id",$biller);
 		}
-		$this->db->where('stock_trans.tran_date <"'.$startDate.'" ');
+		$this->db->where('stock_trans.tran_date <"'.$start.'" ');
 		$this->db->where(array("stock_trans.product_id"=>$id,"stock_trans.warehouse_id"=>$wid));
 	
 		$q = $this->db->get("stock_trans");

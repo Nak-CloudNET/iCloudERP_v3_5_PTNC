@@ -928,7 +928,7 @@
 					</div>-->
 
                     <?php if ($Settings->tax1) { ?>
-                        <!--<div class="form-group">
+                        <div class="form-group">
                             <label class="col-sm-4 control-label"><?= lang('tax_method') ?></label>
                             <div class="col-sm-8">
                                 <?php
@@ -939,7 +939,7 @@
                                 echo form_dropdown('tax_method', $tm, '', 'class="form-control select" id="tax_method" style="width:100%"')
                                 ?>
                             </div>
-                        </div>-->
+                        </div>
                         <div class="form-group">
                             <label class="col-sm-4 control-label"><?= lang('product_tax'); ?></label>
                             <div class="col-sm-8">

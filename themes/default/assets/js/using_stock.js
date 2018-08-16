@@ -111,6 +111,15 @@ $(document).ready(function (e) {
 		//loadItems();
 	});
 
+	$(document).on("change", '.description', function () {
+		var row 		= $(this).closest('tr');
+		var description	= $(this).val(),
+		item_id 		= row.attr('data-item-id');
+
+		usitems[item_id].row.description 	 = description;
+		__setItem('usitems', JSON.stringify(usitems));
+	});
+
 
 	var old_unit = $('.unit').val();
 	$(document).on("change", '.unit', function () {
@@ -346,6 +355,7 @@ function loadItems() {
 		item_reason      		= '';
 		item_qty_use     		= 0;
 		item_qty_by_unit     	= '';
+
         $.each(usitems, function () {
             var item 			= this;
             var item_id 		= site.settings.item_addition == 1 ? item.item_id : item.id;
@@ -368,6 +378,7 @@ function loadItems() {
             var desc = $("<select id=\"description\" name=\"description\[\]\" style=\"padding-top: 2px !important;\" class=\"form-control description\" />");
             if(item.positions !== false) {
                 $.each(item.positions, function () {
+
                 	if(item.row.description == this.id){
                 		$("<option />", {value: this.id, text: this.name, id:this.id, selected: 'selected'}).appendTo(desc);
 				  	}else{
@@ -452,7 +463,6 @@ function loadItems() {
  ---------------------------- */
 
 function add_using_stock_item(item) {
-		
     if (count == 1) {
         usitems = {};
         if ($('#account').val()) {
