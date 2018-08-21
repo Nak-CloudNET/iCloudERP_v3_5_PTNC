@@ -256,7 +256,7 @@
 
                                         ?>
 										<tr>
-                                            <td style="text-align:center !important;">
+                                            <!--<td style="text-align:center !important;">
                                                 <ul class="enlarge">
                                                     <li>
                                                         <img src="<?= base_url() ?>/assets/uploads/thumbs/<?= $rp->image ?>"
@@ -271,8 +271,8 @@
                                             </span>
                                                     </li>
                                                 </ul>
-                                            </td>
-                                            <td>
+                                            </td>-->
+                                            <td colspan="2" style="padding-left: 20px;">
                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?= $rp->name ? $rp->name : $rp->product_id; ?><?= " (" . $rp->name_unit . ")" ?></td>
                                             <td style='text-align:right;'>
 											<?php if($btotal_qty){?>
