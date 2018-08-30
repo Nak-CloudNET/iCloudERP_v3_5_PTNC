@@ -5069,33 +5069,33 @@ ORDER BY
         }
         return FALSE;
 	}
-	
-	public function getProCat($wid,$category2,$product2,$biller=NULL){
-		$this->db->select("erp_categories.id,erp_categories.name")
-				 ->join("erp_categories","erp_categories.id=products.category_id","LEFT")
-				 ->join("stock_trans","stock_trans.product_id = products.id","LEFT")
-                ->join("erp_purchases","erp_purchases.id = stock_trans.tran_id","LEFT");
-		if($category2){
-			$this->db->where(array("products.category_id"=>$category2));
-		}
-		if($product2){
-			$this->db->where(array("products.id"=>$product2));
-		}
+
+    public function getProCat($wid,$category2,$product2,$biller=NULL){
+        $this->db->select("erp_categories.id,erp_categories.name")
+            ->join("erp_categories","erp_categories.id=products.category_id","LEFT")
+            ->join("stock_trans","stock_trans.product_id = products.id","LEFT")
+            ->join("erp_purchases","erp_purchases.id = stock_trans.tran_id","LEFT");
+        if($category2){
+            $this->db->where(array("products.category_id"=>$category2));
+        }
+        if($product2){
+            $this->db->where(array("products.id"=>$product2));
+        }
         if($biller){
             $this->db->where("erp_purchases.biller_id",$biller);
         }
-		$this->db->where(array("stock_trans.warehouse_id"=>$wid));
-		//$this->db->limit(2);
-		$this->db->group_by("products.category_id");
-		$q = $this->db->get("products");
-		if ($q->num_rows() > 0) {
+        $this->db->where(array("stock_trans.warehouse_id"=>$wid));
+        //$this->db->limit(2);
+        $this->db->group_by("products.category_id");
+        $q = $this->db->get("products");
+        if ($q->num_rows() > 0) {
             foreach (($q->result()) as $row) {
                 $data[] = $row;
             }
             return $data;
         }
         return FALSE;
-	}
+    }
 	public function getTransuctionsPurIN($product2,$warehouse2,$start,$end,$biller=NULL){
 		$this->db->select("tran_type");
 		$this->db->join("erp_purchases","erp_purchases.id = stock_trans.tran_id","LEFT");
