@@ -197,7 +197,7 @@ $(document).ready(function(){
 										$qty = $this->reports_model->getQtyByWare($pro->id,$w->id,$product2,$category2,$biller2, $pro->expiry, $wid1, $start_date1, $end_date1, $warehouse2);
 										//$this->erp->print_arrays($qty);
 										if(isset($qty->wqty)){
-											echo "<td  class='text-right'>".$this->erp->formatQuantity($qty->wqty)."<br>".$this->erp->convert_unit_2_string($pro->id,$qty->wqty)."</td>";
+											echo "<td  class='text-right'>".$this->erp->formatQuantity($qty->wqty).$this->erp->convert_unit_2_string($pro->id,$qty->wqty)."</td>";
 											$tt+=$qty->wqty;
 										}else{
 											echo "<td  class='text-right'>0.00</td>";
@@ -208,7 +208,7 @@ $(document).ready(function(){
 								}
 								?>
 								<?php 
-									echo "<td class='text-right'><b>".$this->erp->formatQuantity($tt)."</b><br>".$this->erp->convert_unit_2_string($pro->id,$tt)."</td>";
+									echo "<td class='text-right'><b>".$this->erp->formatQuantity($tt)."</b>".$this->erp->convert_unit_2_string($pro->id,$tt)."</td>";
 								?>
 							</tr>
 						<?php
