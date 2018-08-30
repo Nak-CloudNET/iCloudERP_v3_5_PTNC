@@ -662,7 +662,8 @@ class Transfers extends MY_Controller
                         'quantity_balance' 	=> $quantity_balance,
                         'warehouse_id' 		=> $to_warehouse,
                         'expiry' 			=> $item_expiry,
-						'date' 				=> $date
+						'date' 				=> $date,
+                        'unit_cost'         => $product_details->cost
                     );
                 }
             }

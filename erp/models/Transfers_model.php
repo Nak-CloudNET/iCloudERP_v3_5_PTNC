@@ -102,10 +102,11 @@ class Transfers_model extends CI_Model
 	
 	public function getProductWarehouseOptionQtyByUnitOne($id,$warehouse_id)
 	{
-        $this->db->select('COALESCE(SUM(quantity),0) AS qty');
+        $this->db->select('COALESCE(quantity) AS qty');
 			$this->db->from('erp_warehouses_products');
 			$this->db->where('erp_warehouses_products.warehouse_id',$warehouse_id);
 	        $this->db->where('erp_warehouses_products.product_id',$id);
+            $this->db->group_by('quantity');
 	    $q = $this->db->get();
 		if ($q->num_rows() > 0) {
             return $q->row();
