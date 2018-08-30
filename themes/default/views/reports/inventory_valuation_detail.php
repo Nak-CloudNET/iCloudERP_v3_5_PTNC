@@ -273,7 +273,7 @@
 								<td><?= $pr->product_name ?></td>
 								<td><?= $pr->reference_no ?></td>
                                 <td><?= $pr->biller_company ? $pr->biller_company : $pr->biller_name ?></td>
-								<td class="text-right"><?= $this->erp->formatQuantity($p_qty) ?> <br><?php  echo $unit_name;?></td>
+								<td class="text-right"><?= $this->erp->formatQuantity($p_qty) ?><?php  echo $unit_name;?></td>
 								<td class="text-right"><?= $p_cost ?></td>
 								<td class="text-right"><?= $this->erp->formatQuantity($qty_on_hand) ?></td>
 								<td class="text-right"><?= $cost ?></td>

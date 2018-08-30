@@ -155,7 +155,7 @@
                     <table id="tbstock" class="table table-condensed table-bordered table-hover table-striped" >
                         <thead>
 							<tr>
-                                <th rowspan="2" style="width:80px;"><?= lang("image") ?></th>
+                                <!--<th rowspan="2" style="width:80px;"><?= lang("image") ?></th>-->
                                 <th rowspan="2"><span>Location</span> <span style="color:orange;"><i
                                                 class="fa fa-angle-double-right" aria-hidden="true"></i></span> <span>Category</span>
                                     <span style="color:orange;"><i class="fa fa-angle-double-right"
@@ -203,7 +203,7 @@
 								foreach($ware as $rw){
                                     ?>
 								<tr>
-                                    <td colspan="<?= $k + $k2 + 9 ?>" style="color:green;"><span
+                                    <td colspan="<?= $k + $k2 + 8 ?>" style="color:green;"><span
                                                 style="font-size:19px;"><b>Warehouse <i class="fa fa-angle-double-right"
                                                                                         aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;<?= $rw->name; ?></b></span>
                                     </td>
@@ -225,7 +225,7 @@
 
 								?>
 									<tr>
-                                        <td colspan="<?= $k + $k2 + 9 ?>" style="color:orange;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        <td colspan="<?= $k + $k2 + 8 ?>" style="color:orange;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
                                                     style="font-size:13px;"><b>Category <i
                                                             class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;&nbsp;<?= $rc->name; ?></b></span>
                                         </td>
@@ -256,7 +256,7 @@
 
                                         ?>
 										<tr>
-                                            <td style="text-align:center !important;">
+                                            <!--<td style="text-align:center !important;">
                                                 <ul class="enlarge">
                                                     <li>
                                                         <img src="<?= base_url() ?>/assets/uploads/thumbs/<?= $rp->image ?>"
@@ -271,8 +271,8 @@
                                             </span>
                                                     </li>
                                                 </ul>
-                                            </td>
-                                            <td>
+                                            </td>-->
+                                            <td style="padding-left: 20px;">
                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?= $rp->name ? $rp->name : $rp->product_id; ?><?= " (" . $rp->name_unit . ")" ?></td>
                                             <td style='text-align:right;'>
 											<?php if($btotal_qty){?>
@@ -438,7 +438,7 @@
 
 								?>
 								<tr>
-                                    <td colspan="2" style=" text-align:left;background:#F0F8FF;" ><b>Total <span style="color:orange;"> <i class="fa fa-angle-double-right"aria-hidden="true"></i></span> <?= $rc->name; ?></b></td>
+                                    <td style=" text-align:left;background:#F0F8FF;" ><b>Total <span style="color:orange;"> <i class="fa fa-angle-double-right"aria-hidden="true"></i></span> <?= $rc->name; ?></b></td>
 
 									<td style='text-align:right;background:#F0F8FF;'>
 												<b><?=$this->erp->formatDecimal($begin_balance?$begin_balance:'')?></b>
@@ -508,7 +508,7 @@
 									}
 							?>
 								<tr>
-                                    <td colspan="2" style="text-align:left; background:#428BCA;color:white;border-color: #357EBD;">
+                                    <td style="text-align:left; background:#428BCA;color:white;border-color: #357EBD;">
                                         <b>Grand Total<i
                                                     class="fa fa-angle-double-right"
                                                     aria-hidden="true"></i> <?= $rw->name; ?></b></td>
