@@ -216,7 +216,7 @@
                                     $total_balance = 0;
                                     $total_begin_balance = 0;
                                     $my_total_balance=0;
-									$procat = $this->reports_model->getProCat($rw->id,$category2,$product2,$biller2);
+									$procat = $this->reports_model->getProCat($rw->id,$category2,$product2,$biller2,$start,$end);
 
 									$total_in_cate_w = array();
 									$total_out_cate_w = array();
