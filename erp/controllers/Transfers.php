@@ -697,6 +697,7 @@ class Transfers extends MY_Controller
                 $config['max_size'] = $this->allowed_file_size;
                 $config['overwrite'] = FALSE;
                 $config['encrypt_name'] = TRUE;
+
                 $this->upload->initialize($config);
                 if (!$this->upload->do_upload('document')) {
                     $error = $this->upload->display_errors();
