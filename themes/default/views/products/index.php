@@ -9,6 +9,9 @@
 	if ($this->input->post('product_type')) {
 		$v .= "&product_type=" . $this->input->post('product_type');
 	}
+    if ($this->input->post('warehouse')) {
+    $v .= "&warehouse=" . $this->input->post('warehouse');
+    }
 	if ($this->input->post('start_date')) {
 		$v .= "&start_date=" . $this->input->post('start_date');
 	}
@@ -250,20 +253,7 @@
                 </li>
                 <?php } ?>
 
-                <?php if (!empty($warehouses)) { ?>
-                    <li class="dropdown">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="icon fa fa-building-o tip" data-placement="left" title="<?= lang("warehouses") ?>"></i></a>
-                        <ul class="dropdown-menu pull-right" class="tasks-menus" role="menu" aria-labelledby="dLabel">
-                            <li><a href="<?= site_url('products') ?>"><i class="fa fa-building-o"></i> <?= lang('all_warehouses') ?></a></li>
-                            <li class="divider"></li>
-                            <?php
-                            foreach ($warehouses as $warehouse) {
-                               echo '<li><a href="' . site_url('products/index/' . $warehouse->id) . '"><i class="fa fa-building"></i>' . $warehouse->name . '</a></li>';
-                            }
-                            ?>
-                        </ul>
-                    </li>
-                <?php } ?>
+
             </ul>
         </div>
     </div>
@@ -292,7 +282,18 @@
                                 ?>
                             </div>
                         </div>
-						
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label class="control-label" for="warehouse"><?= lang("warehouse"); ?></label>
+                                <?php
+                                $wh[""] = "";
+                                foreach ($warehouses as $warehouse) {
+                                    $wh[$warehouse->id] = $warehouse->name;
+                                }
+                                echo form_dropdown('warehouse', $wh, (isset($_POST['warehouse']) ? $_POST['warehouse'] : ""), 'class="form-control" id="warehouse" data-placeholder="' . $this->lang->line("select") . " " . $this->lang->line("warehouse") . '"');
+                                ?>
+                            </div>
+                        </div>
 						<div class="col-sm-4">
                             <div class="form-group">
                                 <?= lang("category", "category") ?>

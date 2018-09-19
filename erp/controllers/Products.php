@@ -338,10 +338,19 @@ class Products extends MY_Controller
         } else {
             $this->permission[] = NULL;
         }
+
         if ($this->input->get('product')) {
             $product = $this->input->get('product');
         } else {
             $product = NULL;
+        }
+        if($warehouse_id){
+            $warehouse_ids      = explode('-', $warehouse_id);
+        }
+        if ($this->input->get('warehouse')) {
+            $warehouse          = $this->input->get('warehouse');
+        } else {
+            $warehouse          = NULL;
         }
         if ($this->input->get('category')) {
             $category = $this->input->get('category');
@@ -394,6 +403,7 @@ class Products extends MY_Controller
         if($warehouse_id) {
             $warehouse_id = explode('-', $warehouse_id);
         }
+
 
         $this->load->library('datatables');
         if ($warehouse_id) {
@@ -454,6 +464,9 @@ class Products extends MY_Controller
 		if ($product) {
             $this->datatables->where($this->db->dbprefix('products') . ".id", $product);
         }
+        if ($warehouse) {
+            $this->datatables->where('sales.warehouse_id', $warehouse);
+        }
         if ($category) {
             $this->datatables->where($this->db->dbprefix('products') . ".category_id", $category);
         }
@@ -464,6 +477,7 @@ class Products extends MY_Controller
 		}
         $this->datatables->add_column("Actions", $action, "productid, image, code, name");
         echo $this->datatables->generate();
+
     }
 
     function set_rack($product_id = NULL, $warehouse_id = NULL)

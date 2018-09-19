@@ -5573,39 +5573,80 @@ ORDER BY
         return FALSE;
 	}
 
-	public function getAllProductsDetail1($id, $pid,$cid)
-	{
-        $this->db->select("products.*,units.name as uname, purchase_items.expiry");
-        $this->db->join("units","units.id=products.unit","LEFT");
-        $this->db->join("purchase_items","products.id = purchase_items.product_id","LEFT");
-        $this->db->where('products.id', $id);
+    public function getAllProductsDetail1($pid,$cid, $from_date, $to_date)
+    {
+        $user_warehouses = $this->session->userdata('warehouse_id');
 
-        if ($this->Settings->product_expiry == 1) {
-            $this->db->group_by('purchase_items.expiry');
-        } else {
-            $this->db->group_by('products.id');
-        }
+        if ($user_warehouses) {
+            $this->db->select("products.*,units.name as uname,purchase_items.expiry");
+            $this->db->join("units","units.id=products.unit","left");
+            $this->db->join("purchase_items","products.id = purchase_items.product_id","left");
+            $this->db->join('warehouses_products', 'purchase_items.product_id = warehouses_products.product_id', 'left');
 
-        if($pid){
-            $this->db->where("products.id",$pid);
-        }
-
-        if($cid){
-            $this->db->where("category_id",$cid);
-        }
-
-        $this->db->where("products.type !=", "service");
-      	
-        $q = $this->db->get('products');
-        if($q->num_rows()>0){
-            foreach($q->result() as $row){
-                $data[] = $row;
+            if ($this->Settings->product_expiry == 1) {
+                $this->db->group_by('purchase_items.expiry');
+            } else {
+                $this->db->group_by('products.id');
+                $this->db->where("warehouses_products.warehouse_id",$user_warehouses);
+                $this->db->where("warehouses_products.quantity <>", 0);
             }
-            return $data;
-        }
-        return false;
+            if($pid){
+                $this->db->where("products.id", $pid);
+            }
+            if($cid){
+                $this->db->where("category_id", $cid);
+            }
 
-	}
+            $this->db->where("products.type !=", "service");
+
+
+            if ($from_date) {
+                $this->db->where($this->db->dbprefix('purchase_items').'.date BETWEEN "' . $from_date . '" and "' . $to_date . '"');
+            }
+
+            $q = $this->db->get('products');
+            if($q->num_rows()>0){
+                foreach($q->result() as $row){
+                    $data[] = $row;
+                }
+                return $data;
+            }
+            return false;
+
+        } else {
+            $this->db->select("products.*,units.name as uname, purchase_items.expiry");
+            $this->db->join("units","units.id=products.unit","LEFT");
+            $this->db->join("purchase_items","products.id = purchase_items.product_id","LEFT");
+
+            if ($this->Settings->product_expiry == 1) {
+                $this->db->group_by('purchase_items.expiry');
+            } else {
+                $this->db->group_by('products.id');
+            }
+
+            if($pid){
+                $this->db->where("products.id",$pid);
+            }
+
+            if($cid){
+                $this->db->where("category_id",$cid);
+            }
+
+            $this->db->where("products.type !=", "service");
+            if ($from_date) {
+                $this->db->where($this->db->dbprefix('purchase_items').'.date BETWEEN "' . $from_date . '" and "' . $to_date . '"');
+            }
+
+            $q = $this->db->get('products');
+            if($q->num_rows()>0){
+                foreach($q->result() as $row){
+                    $data[] = $row;
+                }
+                return $data;
+            }
+            return false;
+        }
+    }
 
 	public function getAllProductsDetailsNUM($pid,$cid){
 		$this->db->select("products.*,units.name as uname");
