@@ -27237,7 +27237,7 @@ class Reports extends MY_Controller
         }
         $from_date      = NULL;
         $to_date        = NULL;
-		$row_nums = $this->products_model->getCountProductQTYByID();//$this->reports_model->getAllProductsDetailsNUM($product,$category);
+		$row_nums = $this->reports_model->getAllProductsDetailsNUM($product,$category);
 		
 		$config 							= array();
 		$config['suffix'] 					= "?v=1".$str;
