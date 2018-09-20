@@ -345,13 +345,14 @@ class Products extends MY_Controller
             $product = NULL;
         }
         if($warehouse_id){
-            $warehouse_ids      = explode('-', $warehouse_id);
+            $warehouse_id      = explode('-', $warehouse_id);
         }
         if ($this->input->get('warehouse')) {
             $warehouse          = $this->input->get('warehouse');
         } else {
             $warehouse          = NULL;
         }
+
         if ($this->input->get('category')) {
             $category = $this->input->get('category');
         } else {
@@ -422,7 +423,7 @@ class Products extends MY_Controller
             } else {
 
                 $this->datatables->join('warehouses_products wp', 'products.id=wp.product_id', 'left')
-                    ->where_in('wp.warehouse_id', $warehouse_id);
+                    ->where_in('warehouses_products.warehouse_id', $warehouse_id);
             }
 
             $this->datatables->join('categories', 'products.category_id=categories.id', 'left')
@@ -435,18 +436,23 @@ class Products extends MY_Controller
                 ->select($this->db->dbprefix('products') . ".id as productid, " .
                     $this->db->dbprefix('products') . ".image as image, " .
                     $this->db->dbprefix('products') . ".code as code, " .
-                    $this->db->dbprefix('products') . ".name as name, " .
+                    $this->db->dbprefix('producuts') . ".name as name, " .
                     $this->db->dbprefix('products') . ".name_kh as kname, " .
                     $this->db->dbprefix('categories') . ".name as cname, subcategories.name as sub_name, cost as cost,price as price,COALESCE(erp_products.quantity, 0) as quantity, ".
                     $this->db->dbprefix('units').".name as unit, alert_quantity", FALSE)
+
+
                 ->from('products')
+                ->join('warehouses_products', 'products.id=warehouses_products.product_id', 'left')
+
                 ->join('categories', 'products.category_id=categories.id', 'left')
                 ->join('subcategories', 'subcategories.id=products.subcategory_id', 'left')
                 ->join('units', 'products.unit=units.id', 'left');
 
+
             if (!$this->Owner && !$this->Admin) {
                 $this->datatables->join('warehouses_products wp', 'products.id=wp.product_id', 'left')
-                    ->where_in('wp.warehouse_id', $this->session->userdata('warehouse_id'));
+                    ->where_in('warehouses_products.warehouse_id', $this->session->userdata('warehouse_id'));
 
             }
             $this->datatables->group_by("products.id");
@@ -461,12 +467,13 @@ class Products extends MY_Controller
                 $this->datatables->unset_column("price");
             }
         }
+        if ($warehouse){
+            $this->datatables->where('warehouses_products.id', $warehouse);
+        }
 		if ($product) {
             $this->datatables->where($this->db->dbprefix('products') . ".id", $product);
         }
-        if ($warehouse) {
-            $this->datatables->where('sales.warehouse_id', $warehouse);
-        }
+
         if ($category) {
             $this->datatables->where($this->db->dbprefix('products') . ".category_id", $category);
         }
