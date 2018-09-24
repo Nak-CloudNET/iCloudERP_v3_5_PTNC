@@ -436,7 +436,7 @@ class Products extends MY_Controller
                 ->select($this->db->dbprefix('products') . ".id as productid, " .
                     $this->db->dbprefix('products') . ".image as image, " .
                     $this->db->dbprefix('products') . ".code as code, " .
-                    $this->db->dbprefix('producuts') . ".name as name, " .
+                    $this->db->dbprefix('products') . ".name as name, " .
                     $this->db->dbprefix('products') . ".name_kh as kname, " .
                     $this->db->dbprefix('categories') . ".name as cname, subcategories.name as sub_name, cost as cost,price as price,COALESCE(erp_products.quantity, 0) as quantity, ".
                     $this->db->dbprefix('units').".name as unit, alert_quantity", FALSE)
