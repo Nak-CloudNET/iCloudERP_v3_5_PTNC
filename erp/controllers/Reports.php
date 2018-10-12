@@ -27237,7 +27237,7 @@ class Reports extends MY_Controller
         }
         $from_date      = NULL;
         $to_date        = NULL;
-		$row_nums = $this->products_model->getCountProductQTYByID();//$this->reports_model->getAllProductsDetailsNUM($product,$category);
+		$row_nums = $this->reports_model->getAllProductsDetailsNUM($product,$category);
 		
 		$config 							= array();
 		$config['suffix'] 					= "?v=1".$str;
@@ -27568,6 +27568,7 @@ class Reports extends MY_Controller
             $tt_qty=0;
             $products_details = $this->reports_model->getAllProductsDetail1($product,$category, $from_date, $to_date);
 
+//$this->erp->print_arrays($products_details);exit();
             foreach($products_details as $pro)
             {
                 $this->excel->getActiveSheet()->SetCellValue('A' . $row, $pro->image);

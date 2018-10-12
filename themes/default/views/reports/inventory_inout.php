@@ -288,6 +288,7 @@
                                             </td>
 										<?php
 										$total_in = 0;
+										$total_in2 = 0;
 										$total_out=0;
                                         $total_out_other = 0;
                                         $total_out_other2 = 0;
@@ -313,7 +314,13 @@
     											</td>
 
     											<?php
-                                                         $total_in += $allqty->bqty + $btotal_qty ;
+                                                        if ($btotal_qty){
+                                                            $total_in = $allqty->bqty + $btotal_qty ;
+                                                        }
+                                                        else{
+                                                            $total_in += $allqty->bqty + $btotal_qty ;
+                                                        }
+
 
 
                                                         // $total_in_cate[$tr->tran_type] +=$allqty->bqty;
@@ -322,7 +329,7 @@
     											}
 
                                                 $amount_total_in = $total_in * $rp->product_cost;
-    											//$this->erp->print_arrays($amount_total_in);
+
 
 											}?>
 											<td style='text-align:right;'>
