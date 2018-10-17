@@ -213,6 +213,7 @@ class Reports_model extends CI_Model
 	 
 	public function getUsingStock($reference_no,$employee,$biller,$warehouse,$description,$wid,$start_date,$end_date,$offset,$limit){
         //$this->erp->print_arrays($start_date,$end_date);
+
 	    $this->db->select("erp_companies.name as biller,erp_enter_using_stock.id as id,    erp_enter_using_stock.reference_no as refno,
 		erp_companies.company, erp_warehouses.name as warehouse_name, erp_users.username, erp_enter_using_stock.note, erp_enter_using_stock.type as type, erp_enter_using_stock.date, erp_enter_using_stock.total_cost", FALSE)
 		->join('erp_companies', 'erp_companies.id=erp_enter_using_stock.shop', 'inner')
@@ -222,7 +223,7 @@ class Reports_model extends CI_Model
 	    ->join('erp_position', 'erp_enter_using_stock_items.description = erp_position.id', 'left')
         ->group_by('enter_using_stock.id');
 
-		$this->db->limit($limit,$offset);
+
 		if($reference_no){
 			$this->db->where('erp_enter_using_stock.reference_no',$reference_no);
 		}
@@ -244,7 +245,10 @@ class Reports_model extends CI_Model
 		}
 		/*Fixed date format*/
 		if($start_date){
-			$this->db->where("date_format(erp_enter_using_stock.date,'%d/%m/%Y') BETWEEN '{$start_date}' AND '{$end_date}'");
+		    $date_start = $this->erp->fld($start_date). '00:00:00';
+		    $date_end = $this->erp->fld($end_date). '00:00:00';
+
+			$this->db->where("(erp_enter_using_stock.date) BETWEEN '$date_start' AND '$date_end'");
 		}		$q =$this->db->get('erp_enter_using_stock');
 		if ($q->num_rows() > 0){
             foreach (($q->result()) as $row) {
@@ -345,7 +349,8 @@ class Reports_model extends CI_Model
 					 $this->db->where('erp_deliveries.delivery_by',$driver);
 				 }
 				 if($start_date){
-					 $this->db->where("date_format(erp_deliveries.date,'%Y-%m-%d') BETWEEN '$start_date' AND '$end_date'"); 
+					 $this->db->where("date_format(erp_deliveries.date,'%Y-%m-%d') BETWEEN '$start_date' AND '$end_date'");
+
 				 }
 				 if($warehouse){
 					 $this->db->join("erp_delivery_items","erp_delivery_items.delivery_id=erp_deliveries.id","LEFT");

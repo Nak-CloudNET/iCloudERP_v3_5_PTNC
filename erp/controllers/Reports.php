@@ -6648,13 +6648,14 @@ class Reports extends MY_Controller
 		$start = "";
 		$end = "";
 		$datt =$this->reports_model->getLastDate("erp_enter_using_stock","date");
+
         if($this->input->get('reference_no')){
 			 $reference_no = $this->input->get('reference_no');
 			 $str.="&reference_no=".$reference_no;
 			 $this->data['reference_no'] =$reference_no;
 		}else{
 			 $reference_no =null;
-		} 
+		}
 		if($this->input->get('employee')){
 			 $employee = $this->input->get('employee');
 			 $str.="&employee=".$employee;
@@ -6699,7 +6700,7 @@ class Reports extends MY_Controller
 			$end_date =date_format($datt,"d/m/Y");
 			 $this->data['end_date'] =$datt;
 		}
-		
+
 		$this->db->select("enter_using_stock.*");
 		if($employee){
 			$this->db->where('erp_enter_using_stock.employee_id',$employee);
@@ -6723,13 +6724,13 @@ class Reports extends MY_Controller
 		$this->db->group_by('reference_no');
 		$sales_nums = $this->db->get('enter_using_stock')
 		->num_rows();
-		
+
 		$config = array();
 		$config['suffix'] = "?v=1".$str;
         $config["base_url"] = base_url() . "reports/list_using_stock_report/";
 		$config["total_rows"] = $sales_nums;
 		$config["ob_set"] = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
-        $config["per_page"] = 50; 
+        $config["per_page"] = 50;
 		$config["uri_segment"] = 3;
 		$config['full_tag_open'] = '<ul class="pagination pagination-sm">';
 		$config['full_tag_close'] = '</ul>';
@@ -6745,12 +6746,13 @@ class Reports extends MY_Controller
 		$config['last_tag_close'] = '<li>';
 		$config['num_tag_open'] = '<li>';
 		$config['num_tag_close'] = '</li>';
-		
-		
+
+
 		$this->pagination->initialize($config);
-		$this->data["pagination"] = $this->pagination->create_links();  
+		$this->data["pagination"] = $this->pagination->create_links();
         $this->data['error'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('error');
-		$this->data['using_stock'] = $this->reports_model->getUsingStock($reference_no,$employee,$biller,$warehouse,$description,$wid,$start_date,$end_date,$config["ob_set"],$config["per_page"]);
+		$iii = $this->data['using_stock'] = $this->reports_model->getUsingStock($reference_no,$employee,$biller,$warehouse,$description,$wid,$start_date,$end_date,$config["ob_set"],$config["per_page"]);
+		//$this->erp->print_arrays($iii);
         $this->data['Employee'] = $this->reports_model->getUser();
         $this->data['billers'] = $this->site->getAllCompanies('biller');
 		$this->data['warehouses'] = $this->reports_model->getWareFullByUSER($wid);
@@ -6762,7 +6764,7 @@ class Reports extends MY_Controller
 		$this->data['customers'] = $this->site->getCustomers();
         $bc = array(array('link' => base_url(), 'page' => lang('home')), array('link' =>site_url('reports'), 'page' => lang('reports')), array('link' => '#', 'page' =>lang('report_list_using_stock')));
         $meta = array('page_title' => lang('report_list_using_stock'), 'bc' => $bc);
-        $this->page_construct('reports/enter_using_stock_report', $meta, $this->data);  
+        $this->page_construct('reports/enter_using_stock_report', $meta, $this->data);
 	}
 	/*function convert_reports(){
 		$this->erp->checkPermissions('report_sale',NULL,'sale_report');
@@ -25361,6 +25363,7 @@ class Reports extends MY_Controller
                     // $this->erp->print_arrays($id);
                     $using_stock = $this->reports_model->getUsingStockReport($id,$config["ob_set"],$config["per_page"]);
 
+
                     foreach($using_stock as $stock){
                         // $this->erp->print_arrays($stock);
                         $query=$this->db->query("
@@ -27510,7 +27513,9 @@ class Reports extends MY_Controller
             $alphabet1 = array('D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
             //Header part
             $wid = $this->reports_model->getWareByUserID();
+
             $warefull = $this->reports_model->getWareFullByUSER($wid);
+
             $this->load->library('excel');
             $this->excel->setActiveSheetIndex(0);
 

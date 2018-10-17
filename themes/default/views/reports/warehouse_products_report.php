@@ -126,7 +126,8 @@ $(document).ready(function(){
 					</div>
 					<div class="form-group">
                         <div
-                            class="controls"> <?php echo form_submit('submit_report', $this->lang->line("submit"), 'class="btn btn-primary sub"'); ?> </div>
+                            class="controls"> <?php echo form_submit('submit_report', $this->lang->line("submit"), 'class="btn btn-primary sub"'); ?>
+                        </div>
                     </div>
                     <?php echo form_close(); ?>
 					

@@ -226,6 +226,7 @@
 									LEFT JOIN erp_product_variants ON erp_enter_using_stock_items.option_id = erp_product_variants.id
 									LEFT JOIN erp_expense_categories ON erp_enter_using_stock_items.exp_cate_id = erp_expense_categories.id where erp_enter_using_stock_items.reference_no='{$stock->refno}' 
 									 ")->result();
+
 						?>
                         <tbody>
 						       <tr class="bold">
